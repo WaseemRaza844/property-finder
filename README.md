@@ -1,5 +1,21 @@
 # Property Finder
 
+## Automatic search discovery (Tavily)
+
+Automatic discovery collects individual property-page URLs and short search-result titles, deduplicates links, and saves four days of observations in `web/data/discoveries.json`. It does not fetch property websites, copy snippets/descriptions/photos, infer prices, or confirm availability. Market labels are query matches, not verified geography. Search coverage is incomplete and can include stale/sold/unrelated properties. Full licensed listing ingestion remains separate.
+
+### Activate the free search API
+
+1. Create your account at https://app.tavily.com and keep the **Researcher/free** plan. Tavily currently advertises 1,000 free credits/month, no card, and stops requests when free credits run out: https://www.tavily.com/pricing . Review its terms during signup: https://www.tavily.com/terms . This integration uses basic search only, no generated answers/extraction/crawling. Provider access does not grant rights to republish entire listing pages.
+2. In this repository, Settings → Secrets and variables → Actions → New repository secret: name `TAVILY_API_KEY`, value your key. Never place the key in a file, browser code, issue, or chat. Do not enable paid/PAYG billing for a zero-cost project.
+3. Run **Refresh and deploy Property Finder** on `main`, or wait for 7:30 AM America/New_York. After it finishes, reload the dashboard. New links appear automatically under **Automatic discovery**, without copy/paste. The manual shortlist remains optional and browser-local.
+
+Nine basic searches per refresh cover three markets × three sites, up to 10 results each. A daily run uses at most 279 basic credits in a 31-day month. The app reserves at most 400 credits per UTC calendar month, including manual and failed requests. Reservations are committed to `.state/search-budget.json` before any requests; failure to persist prevents requests. Reruns of the same workflow ID do not spend again. Unused reservations are deliberately not refunded. Active reservations are consumed before requests to prevent local replay. There are no retries, additional pages, or automatically selected advanced searches. Use a dedicated key; this budget does not know usage from other applications on your Tavily account. The free provider plan is the final account-level cost boundary.
+
+Queries are editable in `config/searches.json` (maximum nine). Dashboard market/source/title filters operate on saved results. GitHub Pages cannot safely hold an API key or directly launch authenticated workflow requests, so **Run fresh searches on GitHub** opens the workflow for the repository owner. Its results are published back to the dashboard when the run finishes. This is scheduled/manual batch discovery, not an instant browser-to-provider search. Price/radius filters are not applied to these search discoveries because their values are unknown.
+
+Missing key, exhausted allowance, provider errors, partial success, and no accepted matches have separate visible states. Failed searches keep prior links without updating their last-seen dates. Unexpected internal failures stop deployment. Old links expire four days after last discovery; rediscovery after expiration begins a new history.
+
 A free, dependency-free property discovery workspace focused on duplexes, triplexes, and multifamily homes. Prepare searches across Realtor.com, Redfin, and Homes.com, then keep promising property links in a browser-local shortlist. Python also supports authorized exports; GitHub Actions retains those imported observations and publishes the site to GitHub Pages.
 
 ## Unified search and saved links
@@ -10,7 +26,7 @@ Copy an individual property URL into **Save listing link** with your own label a
 
 Saved links and search preferences use localStorage on the site's origin in this browser/device. They are not published to GitHub, synced to other devices, or checked by the daily workflow. Saved links remain until removed or browser data is cleared. Export/restore a JSON backup to move them to another device. Removing a link offers Undo. If storage is blocked/full, the page warns that the shortlist lasts only for the current visit. Backup restore accepts at most 500 valid links from a file under 2 MB.
 
-This version performs **no automated Google or property-portal requests**. It requires no account, API key, or billing details. Collecting search results into the site automatically remains a future integration requiring an authorized search service and suitable storage/display rights.
+The optional guided-search tools perform **no automated Google or property-portal requests** and need no account or API key. Automatic collection is provided separately by the Tavily integration above, which requires a free account and a private Actions secret.
 
 **Current data: no live listing feeds are connected.** Realtor.com, Homes.com, and Redfin are explicitly unconnected. There are no fabricated listing cards, hidden scraping adapters, paid APIs, or requests to property websites. The empty import is a valid, empty export, not a live connection.
 

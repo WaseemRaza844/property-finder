@@ -29,13 +29,30 @@ jobs:
       - run: npm test
       - name: Refresh authorized imports
         run: python -m property_finder.refresh
+      - name: Reserve search allowance
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: python -m property_finder.discovery reserve
+      - name: Persist allowance before making search requests
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .state/search-budget.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: reserve bounded search allowance'
+            git push
+          fi
+      - name: Collect and save property search links
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: python -m property_finder.discovery refresh
       - name: Build static artifact including truthful source errors
         run: python scripts/build.py
       - name: Persist four-day observations and price history
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add web/data/listings.json
+          git add web/data/listings.json web/data/discoveries.json
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh authorized property observations'
             git push
