@@ -18,7 +18,7 @@ def location(title, url):
     match = re.search(r',\s*([A-Za-z][A-Za-z .\x27-]{1,45}?),?\s+([A-Z]{2})\s+(\d{5})(?:\D|$)', title)
     if match:
         town, state, postal = match.groups()
-    return {'town': town, 'state': state, 'zip': postal}
+    return {'town': town.strip() if town else None, 'state': state, 'zip': postal}
 
 
 def current_section(text):
@@ -58,19 +58,27 @@ def extract_facts(row, url, at):
              'status_evidence': evidence, 'facts_observed_at': at, 'price': None, 'beds': None, 'baths': None,
              'sqft': None, 'units': None, 'property_type': None, **location(title, url)}
     # Exclude generic title/metadata from numbers; use only the current page section.
-    price = re.search(r'(?im)^\s*(?:#{1,6}\s*)?(?:(?:list(?:ing)? price|price|for sale)\s*[:|-]?\s*)?\$\s*([\d,]+)(?:\.00)?\s*(?:$|\n|\|)', section)
-    if price:
+    for price in re.finditer(r'(?im)^\s*(?:#{1,6}\s*)?(?:(?:list(?:ing)? price|price|for sale)\s*[:|-]?\s*)?\$\s*([\d,]+)(?:\.00)?\s*(?:$|\n|\|)', section):
+        context = section[max(0, price.start()-80):price.start()]
+        if re.search(r'(?i)(?:estimate|estimated value|zestimate|home value)\s*[:\n]*\s*$', context):
+            continue
         amount = int(price.group(1).replace(',', ''))
         if 10000 <= amount <= 100000000:
             facts['price'] = amount
+            break
     for key, pattern in [('beds', r'\b(\d{1,2}(?:\.5)?)\s*(?:beds?|bd|bedrooms?)\b'),
                          ('baths', r'\b(\d{1,2}(?:\.5)?)\s*(?:baths?|ba|bathrooms?)\b'),
                          ('sqft', r'\b(\d[\d,]{2,6})\s*(?:sq\.?\s*ft\.?|sqft|square feet)\b'),
                          ('units', r'\b(\d{1,3})[ -]+(?:units?|family|families)\b')]:
-        match = re.search(pattern, section, re.I)
-        if match:
+        for match in re.finditer(pattern, section, re.I):
+            before, after = section[max(0,match.start()-24):match.start()], section[match.end():match.end()+35]
+            if key == 'sqft' and (re.search(r'(?i)(?:lot|land)(?: area| size)?\s*[:\n]*\s*$',before) or re.match(r'(?i)\s*(?:\(\s*)?(?:lot|land)\b',after)):
+                continue
+            if key == 'units' and re.search(r'\d+\s*(?:-|–|to)\s*$',before):
+                continue
             n = float(match.group(1).replace(',', ''))
             facts[key] = int(n) if n.is_integer() else n
+            break
     types = [('single-family', r'\bsingle[ -]family\b'), ('duplex', r'\bduplex\b'),
              ('triplex', r'\btriplex\b'), ('fourplex', r'\b(?:fourplex|quadplex)\b'),
              ('multifamily', r'\b(?:multi[ -]?family|apartment building)\b')]
