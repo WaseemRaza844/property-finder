@@ -143,6 +143,23 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(data['results'][0]['not_searched_this_run'])
         self.assertEqual(data['results'][0]['last_seen'],NOW.isoformat())
 
+    def test_missing_result_cannot_reappear_on_unscheduled_day(self):
+        self.prepare()
+        fake=lambda *a:[{'url':URL,'title':'Test'}]
+        refresh(self.root,'run-1',NOW,key='test',requester=fake)
+        self.prepare('run-2',NOW+timedelta(hours=1))
+        refresh(self.root,'run-2',NOW+timedelta(hours=1),key='test',requester=lambda *a:[])
+        write_json(self.root / 'config/searches.json',{'markets':[{'id':'easton','towns':['Easton PA']}],'domains':['homes.com']})
+        self.prepare('run-3',NOW+timedelta(days=1))
+        result=refresh(self.root,'run-3',NOW+timedelta(days=1),key='test',requester=lambda *a:[])
+        self.assertFalse(result['results'][0]['not_searched_this_run'])
+        self.assertTrue(result['results'][0]['search_excluded'])
+        write_json(self.root / 'config/searches.json',{'markets':[{'id':'easton','towns':['Easton PA']}],'domains':['redfin.com']})
+        self.prepare('run-4',NOW+timedelta(hours=25))
+        result=refresh(self.root,'run-4',NOW+timedelta(hours=25),key='test',requester=fake)
+        self.assertTrue(result['results'][0]['observed_this_run'])
+        self.assertFalse(result['results'][0].get('search_excluded',False))
+
     def test_committed_browser_catalog_matches_ingestion_config(self):
         from scripts.sync_markets import catalog
         root=Path(__file__).resolve().parents[1]
