@@ -23,6 +23,7 @@ class HomesProbeTests(unittest.TestCase):
         self.assertEqual(reserve(self.root,'three',NOW,True)['status'],'budget_exhausted')
 
     def test_requests_only_homes_and_discards_raw_content(self):
+        write_json(self.root / 'web/data/discoveries.json',{'reserved_requests':39})
         reserve(self.root,'one',NOW,True)
         def fake(query,domain,key):
             self.assertEqual(domain,'homes.com/property')
@@ -33,5 +34,6 @@ class HomesProbeTests(unittest.TestCase):
         self.assertEqual(len(report['queries']),4)
         self.assertEqual(report['queries'][0]['accepted'],1)
         self.assertNotIn('PRIVATE RAW TEXT',json.dumps(report))
+        self.assertEqual(json.loads((self.root / 'web/data/discoveries.json').read_text())['reserved_requests'],43)
         refresh(self.root,'one',NOW,'test',lambda *a:self.fail('Replay'))
         with self.assertRaises(ValueError):refresh(self.root,'wrong',NOW,'test',fake)

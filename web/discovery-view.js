@@ -1,6 +1,6 @@
 import {markets} from './markets.js';
 const closed=r=>['sold','off_market','pending'].includes(r.listing_status);
-const fresh=(r,now)=>r.observed_this_run&&Number.isFinite(Date.parse(r.facts_observed_at))&&now-Date.parse(r.facts_observed_at)<=36*3600000;
+const fresh=(r,now)=>(r.observed_this_run||r.not_searched_this_run)&&Number.isFinite(Date.parse(r.facts_observed_at))&&now-Date.parse(r.facts_observed_at)<=36*3600000;
 const norm=s=>s.toLowerCase().replace(/[.]/g,'').replace(/\b(street|avenue|road|drive|boulevard|lane|court|place|apartment|suite)\b/g,w=>({street:'st',avenue:'ave',road:'rd',drive:'dr',boulevard:'blvd',lane:'ln',court:'ct',place:'pl',apartment:'unit',suite:'unit'}[w])).replace(/\s+/g,' ').trim();
 export function propertyIdentity(r){
  // Require an explicit street address and full locality. Never fuzzy-match titles.
@@ -10,7 +10,7 @@ export function propertyIdentity(r){
 }
 export function uniqueProperties(rows,now=Date.now(),source=''){
  const groups=new Map();for(const r of rows){const key=propertyIdentity(r);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r);}
- const rank={'homes.com':0,'redfin.com':1,'realtor.com':2};
+ const rank={'homes.com':0,'realtor.com':1,'redfin.com':2};
  return [...groups.values()].flatMap(group=>{
   // Current contradictory closed evidence suppresses the entire matched property.
   if(group.some(r=>closed(r)&&fresh(r,now)))return [];
@@ -22,7 +22,7 @@ export function uniqueProperties(rows,now=Date.now(),source=''){
 export function selectDiscoveries(rows,f,now=Date.now()){
   return uniqueProperties(rows,now,f.source).filter(r=>{
     if(['sold','off_market','pending'].includes(r.listing_status))return false;
-    if(f.status==='active'&&(r.listing_status!=='active'||!r.observed_this_run||!r.facts_observed_at||!Number.isFinite(Date.parse(r.facts_observed_at))||now-Date.parse(r.facts_observed_at)>36*3600000))return false;
+    if(f.status==='active'&&(r.listing_status!=='active'||!fresh(r,now)))return false;
     if(f.market&&!r.markets.includes(f.market)||f.source&&r.source!==f.source||f.town&&`${r.town||''}, ${r.state||''}`!==f.town||f.zip&&r.zip!==f.zip)return false;
     if(f.region&&!r.markets.some(m=>markets[m]?.region===f.region))return false;
     if(f.price!=null&&f.price!==''&&(r.price==null||r.price>Number(f.price)))return false;

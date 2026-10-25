@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from urllib.request import Request, build_opener, HTTPRedirectHandler
-from .listing_facts import extract_facts
+from .listing_facts import extract_facts, clean_title
 
 CAP = 400
 DOMAINS = ('realtor.com', 'redfin.com', 'homes.com')
@@ -49,17 +49,21 @@ def property_url(value):
         return None
 
 
-def queries(root):
+def queries(root, now=None):
+    now = now or datetime.now(timezone.utc)
     config = json.loads((root / 'config/searches.json').read_text(encoding='utf-8'))
     result = []
     domain_sets = [config['domains']] if config.get('query_mode') == 'combined' else config['domains']
-    for market in config['markets']:
-        for domain in domain_sets:
+    for index, market in enumerate(config['markets']):
+        selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 3 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
+        for domain in selected:
             allowed = domain if isinstance(domain, list) else [domain]
             if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
             result.append({'market': market['id'], 'domain': domain,
                            'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
+            if domain == 'homes.com':
+                result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Exclude rentals, sold and off-market homes.'
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
     return result
@@ -72,7 +76,8 @@ def reserve(root, run_id, now, has_key):
     month = now.strftime('%Y-%m')
     if ledger['month'] != month:
         ledger = {'month': month, 'reserved': 0, 'runs': []}
-    count = len(queries(root))
+    tasks = queries(root, now)
+    count = len(tasks)
     status = 'ready'
     if not has_key:
         status = 'not_configured'
@@ -85,15 +90,18 @@ def reserve(root, run_id, now, has_key):
         ledger['runs'].append(run_id)
     write_json(path, ledger)
     plan = {'run_id': run_id, 'status': status, 'allowance': count if status == 'ready' else 0,
-            'reserved': ledger['reserved'], 'monthly_limit': CAP}
+            'reserved': ledger['reserved'], 'monthly_limit': CAP, 'tasks': tasks}
     write_json(root / '.state/active-search.json', plan)
     return plan
 
 
 def search(query, domain, key):
+    # Domain paths keep market catalogs from crowding out individual properties.
+    domains = domain if isinstance(domain, list) else [domain]
+    domains = [{'homes.com':'homes.com/property','realtor.com':'realtor.com/realestateandhomes-detail'}.get(d,d) for d in domains]
     request = Request('https://api.exa.ai/search', method='POST',
                       headers={'x-api-key': key, 'Content-Type': 'application/json'},
-                      data=json.dumps({'query': query, 'includeDomains': domain if isinstance(domain, list) else [domain],
+                      data=json.dumps({'query': query, 'includeDomains': domains,
                                        'type': 'lite', 'numResults': 10,
                                        'contents': {'text': {'maxCharacters': 16000}, 'highlights': False}}).encode())
     # No retries or redirects: one authorized endpoint, bounded credit use.
@@ -111,7 +119,7 @@ def refresh(root, run_id, now=None, key=None, requester=search):
     plan = json.loads((root / '.state/active-search.json').read_text(encoding='utf-8'))
     if plan['run_id'] != run_id:
         raise ValueError('Reservation belongs to another run')
-    tasks = queries(root)
+    tasks = plan.get('tasks') or queries(root, now)
     old = {r['url']: r for r in prior['results'] if datetime.fromisoformat(r['last_seen']) > now - timedelta(days=4)}
     seen, reports = {}, []
     if plan['status'] == 'ready' and not key:
@@ -122,11 +130,12 @@ def refresh(root, run_id, now=None, key=None, requester=search):
         write_json(root / '.state/active-search.json', dict(plan, status='consumed', allowance=0))
         for task in tasks:
             allowed = task['domain'] if isinstance(task['domain'], list) else [task['domain']]
-            report = {'market': task['market'], 'domain': ', '.join(allowed), 'status': 'ok', 'accepted': 0}
+            report = {'market': task['market'], 'domain': ', '.join(allowed), 'status': 'ok', 'returned':0, 'accepted': 0, 'source_counts':{}}
             try:
                 rows = requester(task['query'], task['domain'], key)
                 if not isinstance(rows, list):
                     raise ValueError('Invalid search result array')
+                report['returned'] = len(rows[:10])
                 for row in rows[:10]:
                     if not isinstance(row, dict):
                         continue
@@ -136,13 +145,15 @@ def refresh(root, run_id, now=None, key=None, requester=search):
                         continue
                     if url not in seen:
                         seen[url] = {'url': url, 'source': urlsplit(url).hostname.removeprefix('www.'),
-                                     'title': str(row.get('title') or 'Property page')[:200],
+                                     'title': clean_title(row.get('title')),
                                      'markets': [], 'first_seen': old.get(url, {}).get('first_seen', now.isoformat()),
                                      'last_seen': now.isoformat(), 'observed_this_run': True,
                                      **extract_facts(row, url, now.isoformat())}
                     if task['market'] not in seen[url]['markets']:
                         seen[url]['markets'].append(task['market'])
                     report['accepted'] += 1
+                    source = urlsplit(url).hostname.removeprefix('www.')
+                    report['source_counts'][source] = report['source_counts'].get(source,0)+1
             except HTTPError as error:
                 report.update(status='error', note=f'Search provider returned HTTP {error.code}; no retry attempted')
             except (URLError, TimeoutError, OSError, ValueError, TypeError):
@@ -150,7 +161,10 @@ def refresh(root, run_id, now=None, key=None, requester=search):
             reports.append(report)
     for url, row in old.items():
         if url not in seen:
-            seen[url] = dict(row, observed_this_run=False)
+            # Preserve a genuinely recent observation when its source was not
+            # scheduled today; a searched-but-missing/failed source is excluded.
+            searched = any(t['market'] in row['markets'] and row['source'] in (t['domain'] if isinstance(t['domain'],list) else [t['domain']]) for t in tasks)
+            seen[url] = dict(row, observed_this_run=False, not_searched_this_run=plan['status']=='ready' and not searched)
     status = plan['status']
     if status == 'ready':
         errors = sum(r['status'] == 'error' for r in reports)
