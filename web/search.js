@@ -13,8 +13,8 @@ export function buildSearches({market='bedminster',type='multifamily',price='',n
   if(price) realtor+=`/price-na-${Number(price)}`;
   return [
     {id:'homes',name:'Homes.com',url:google('homes.com/property'),detail:'Preferred source · Search Google for Homes.com property pages.'},
-    {id:'redfin',name:'Redfin',url:google('redfin.com'),detail:'Search Google for Redfin property pages.'},
     {id:'realtor',name:'Realtor.com',url:google('realtor.com/realestateandhomes-detail'),direct:realtor,detail:'Search Google for property pages from Realtor.com.'},
+    {id:'redfin',name:'Redfin',url:google('redfin.com'),detail:'Search Google for Redfin property pages.'},
   ].map(s=>({...s,query}));
 }
 export function listingURL(input) {

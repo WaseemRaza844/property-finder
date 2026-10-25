@@ -9,6 +9,14 @@ class FactsTests(unittest.TestCase):
     def facts(self,text,title='1 Test St, Easton, PA 18042'):
         return extract_facts({'title':title,'text':text},URL,AT)
 
+    def test_homes_multiline_title_and_not_listed_label(self):
+        title='1334 W 70th St \n       \n Cleveland, OH \n 44102'
+        row=self.facts('NOT LISTED FOR SALE\n$112,000\n5 beds\n2 units',title)
+        self.assertEqual(row['listing_status'],'off_market')
+        self.assertEqual((row['town'],row['state'],row['zip']),('Cleveland','OH','44102'))
+        self.assertEqual(self.facts('FOR RENT\n2 beds')['listing_status'],'off_market')
+        self.assertIsNone(self.facts('117 Old NC Highway 345 Unit 301\n2 beds')['units'])
+
     def test_current_facts_and_historical_sale_are_separate(self):
         row=self.facts('For sale\n$425,000\n4 beds\n2.5 baths\n2,400 sq ft\nProperty type: Duplex\nPrice history\nSold for $200,000\n9 beds')
         self.assertEqual(row['listing_status'],'active')

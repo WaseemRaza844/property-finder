@@ -3,6 +3,16 @@ import re
 from urllib.parse import unquote, urlsplit
 
 
+def clean_title(value):
+    title = str(value or 'Property page')
+    # Homes.com index titles often split street, city/state and ZIP over lines.
+    match = re.match(r'^\s*([^\n]+?)\s*\n\s*([A-Za-z][A-Za-z .\x27-]+),\s*([A-Z]{2})\s+(\d{5})\s*$', title)
+    if match:
+        street,town,state,postal = match.groups()
+        title = f'{street.strip()}, {town.strip()}, {state} {postal}'
+    return re.sub(r'\s+', ' ', title).strip()[:200]
+
+
 def location(title, url):
     state = town = postal = None
     parsed = urlsplit(url)
@@ -27,14 +37,14 @@ def current_section(text):
 
 
 def extract_facts(row, url, at):
-    title = str(row.get('title') or 'Property page')[:200]
+    title = clean_title(row.get('title'))
     text = row.get('text') if isinstance(row.get('text'), str) else ''
     section = current_section(text)
     header = title + '\n' + section[:4000]
     lines = [re.sub(r'^[#*\s]+', '', line).strip() for line in header.splitlines()]
     lines = [re.sub(r'^(?:listing\s+)?status\b\s*[:|–—-]?\s*', '', line, flags=re.I) for line in lines]
     negative = [
-        ('off_market', r'^(?:this (?:home|property) is\s+)?(?:off[ -]market|not (?:currently )?for sale|listing (?:removed|withdrawn)|withdrawn|expired|not available)\b'),
+        ('off_market', r'^(?:this (?:home|property) is\s+)?(?:off[ -]market|not (?:currently |listed )?for sale|for rent|listing (?:removed|withdrawn)|withdrawn|expired|not available)\b'),
         ('sold', r'^(?:this (?:home|property) (?:was|is)\s+)?(?:sold(?:\s+on|\s+for|\s+[a-z]{3,9}\s+\d|\s*[-:—]|\s*$)|recently sold)\b'),
         ('pending', r'^(?:status\s*[:|-]?\s*)?(?:pending|contingent|under contract|active under contract|coming soon)\b'),
     ]
@@ -76,6 +86,8 @@ def extract_facts(row, url, at):
                 continue
             if key == 'units' and re.search(r'\d+\s*(?:-|–|to)\s*$',before):
                 continue
+            if key == 'units' and re.search(r'(?i)\bunit$',match.group(0)) and re.match(r'\s+\d',after):
+                continue  # e.g. Highway 345 Unit 301 is an address, not 345 units.
             n = float(match.group(1).replace(',', ''))
             facts[key] = int(n) if n.is_integer() else n
             break

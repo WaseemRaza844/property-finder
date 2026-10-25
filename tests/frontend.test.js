@@ -49,6 +49,7 @@ test('exact cross-source addresses prefer active Homes.com without blending fact
  const reviewable=uniqueProperties([{...red,listing_status:'unknown'},{...homes,listing_status:'sold',observed_this_run:false}],discoveryNow);
  assert.equal(reviewable[0].source,'redfin.com');assert.equal(reviewable[0].alternates[0].status,'sold');
  assert.equal(uniqueProperties([red,homes],discoveryNow,'redfin.com')[0].source,'redfin.com');
+ assert.equal(uniqueProperties([red,{...homes,source:'realtor.com'}],discoveryNow)[0].source,'realtor.com');
 });
 test('region filters follow market catalog and regional grouping remains available',()=>{
  const ohio={...fact,url:'oh',markets:['cleveland'],source:'homes.com'};
@@ -86,6 +87,8 @@ test('discovery defaults hide closed, unknown, stale, and unobserved results',()
  assert.equal(selectDiscoveries([row,{...row,url:row.url+'2',listing_status:'sold'},{...row,url:row.url+'3',listing_status:'unknown'},{...row,url:row.url+'4',observed_this_run:false},{...row,url:row.url+'5',facts_observed_at:'2026-10-20T00:00:00Z'}],f,now).length,1);
  assert.equal(selectDiscoveries([{...row,url:row.url+'2',listing_status:'sold'},{...row,url:row.url+'3',listing_status:'unknown'}],{...f,status:'review'},now).length,1);
  assert.equal(selectDiscoveries([row],{...f,zip:'99999'},now).length,0);
+ assert.equal(selectDiscoveries([{...row,observed_this_run:false,not_searched_this_run:true}],f,now).length,1);
+ assert.equal(selectDiscoveries([{...row,observed_this_run:false,not_searched_this_run:true,facts_observed_at:'2026-10-20T00:00:00Z'}],f,now).length,0);
 });
 test('numeric discovery sort places unknowns last and groups number consecutively',()=>{
  const row={title:'Test',markets:['easton'],first_seen:'2026-10-25',town:'Easton',state:'PA',zip:'18042'};

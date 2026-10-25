@@ -1,5 +1,5 @@
 {
-  "query_mode": "combined",
+  "query_mode": "homes_priority",
   "markets": [
     {"id":"bedminster","region":"Central New Jersey","name":"Bedminster & Somerset County, NJ","slug":"Bedminster_NJ","towns":["Bedminster NJ","Somerville NJ","Bridgewater NJ","Bernardsville NJ","Raritan NJ","Bound Brook NJ","Manville NJ"]},
     {"id":"easton","region":"Lehigh Valley","name":"Easton & eastern Lehigh Valley, PA–NJ","slug":"Easton_PA","towns":["Easton PA","Palmer Township PA","Wilson PA","Forks Township PA","Phillipsburg NJ","Nazareth PA","Bangor PA","Pen Argyl PA"]},
@@ -14,5 +14,5 @@
     {"id":"charlotte","region":"North Carolina","name":"Charlotte metro, NC","slug":"Charlotte_NC","towns":["Charlotte NC","Gastonia NC","Concord NC","Kannapolis NC","Monroe NC","Mount Holly NC","Belmont NC"]},
     {"id":"triangle","region":"North Carolina","name":"Raleigh–Durham & the Triangle, NC","slug":"Raleigh_NC","towns":["Raleigh NC","Durham NC","Cary NC","Garner NC","Wake Forest NC","Knightdale NC","Chapel Hill NC","Hillsborough NC"]}
   ],
-  "domains": ["homes.com","redfin.com","realtor.com"]
+  "domains": ["homes.com","realtor.com","redfin.com"]
 }

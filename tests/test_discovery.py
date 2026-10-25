@@ -116,7 +116,32 @@ class DiscoveryTests(unittest.TestCase):
         with patch('property_finder.discovery.build_opener') as opener:
             opener.return_value.open.return_value=response
             search('test',['homes.com','redfin.com'],'test-key')
-        self.assertEqual(json.loads(opener.return_value.open.call_args.args[0].data)['includeDomains'],['homes.com','redfin.com'])
+        self.assertEqual(json.loads(opener.return_value.open.call_args.args[0].data)['includeDomains'],['homes.com/property','redfin.com'])
+
+    def test_homes_rotation_covers_all_markets_and_freezes_plan(self):
+        config={'query_mode':'homes_priority','markets':[{'id':f'm{i}','towns':['Example PA']} for i in range(12)],'domains':['homes.com','realtor.com','redfin.com']}
+        write_json(self.root / 'config/searches.json',config)
+        dedicated=[]
+        for offset in range(3):
+            tasks=queries(self.root,NOW+timedelta(days=offset))
+            self.assertEqual(len(tasks),12)
+            homes={t['market'] for t in tasks if t['domain']=='homes.com'}
+            self.assertEqual(len(homes),4)
+            dedicated.extend(homes)
+        self.assertEqual(len(set(dedicated)),12)
+        plan=self.prepare()
+        calls=[]
+        refresh(self.root,'run-1',NOW+timedelta(days=1),key='test',requester=lambda q,d,k:calls.append(d) or [])
+        self.assertEqual(calls,[t['domain'] for t in plan['tasks']])
+
+    def test_unscheduled_source_preserves_date_but_failure_does_not(self):
+        self.prepare()
+        refresh(self.root,'run-1',NOW,key='test',requester=lambda *a:[{'url':URL,'title':'Test'}])
+        write_json(self.root / 'config/searches.json',{'markets':[{'id':'easton','towns':['Easton PA']}],'domains':['homes.com']})
+        self.prepare('run-2',NOW+timedelta(hours=1))
+        data=refresh(self.root,'run-2',NOW+timedelta(hours=1),key='test',requester=lambda *a:[])
+        self.assertTrue(data['results'][0]['not_searched_this_run'])
+        self.assertEqual(data['results'][0]['last_seen'],NOW.isoformat())
 
     def test_committed_browser_catalog_matches_ingestion_config(self):
         from scripts.sync_markets import catalog

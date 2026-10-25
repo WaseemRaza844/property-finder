@@ -76,6 +76,11 @@ def refresh(root, run_id, now, key, requester=search):
         reports.append(report)
     result={'generated_at':now.isoformat(),'reserved_requests':plan['reserved'],'monthly_limit':CAP,'queries':reports}
     write_json(root / 'web/data/homes-diagnostic.json',result)
+    discovery_path=root / 'web/data/discoveries.json'
+    if discovery_path.exists():
+        data=json.loads(discovery_path.read_text(encoding='utf-8'))
+        data['reserved_requests']=plan['reserved']
+        write_json(discovery_path,data)
     return result
 
 
