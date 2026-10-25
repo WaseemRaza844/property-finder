@@ -46,7 +46,7 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(request.get_header('X-api-key'),'test-secret')
         body=json.loads(request.data)
         self.assertEqual(body,{'query':'Easton PA duplex for sale','includeDomains':['redfin.com'],
-                               'type':'lite','numResults':10,'contents':{'text':False,'highlights':False}})
+                               'type':'lite','numResults':10,'contents':{'text':{'maxCharacters':16000},'highlights':False}})
         self.assertNotIn('test-secret',request.full_url)
         self.assertNotIn('test-secret',request.data.decode())
         self.assertEqual(result[0]['url'],URL)

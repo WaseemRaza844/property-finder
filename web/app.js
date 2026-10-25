@@ -1,6 +1,6 @@
 import {filterListings, safeURL} from './filters.js';
 import './search-app.js';
-import './discovery-app.js';
+import './discovery-ui.js';
 const $ = id => document.getElementById(id);
 const money = value => value == null ? 'Not provided' : new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
 const date = value => new Date(value).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
