@@ -1,6 +1,16 @@
 # Property Finder
 
-A free, dependency-free property discovery workspace focused on duplexes, triplexes, and multifamily homes. Python validates authorized exports; GitHub Actions retains observations and publishes a responsive static site to GitHub Pages.
+A free, dependency-free property discovery workspace focused on duplexes, triplexes, and multifamily homes. Prepare searches across Realtor.com, Redfin, and Homes.com, then keep promising property links in a browser-local shortlist. Python also supports authorized exports; GitHub Actions retains those imported observations and publishes the site to GitHub Pages.
+
+## Unified search and saved links
+
+Choose Bedminster NJ, Easton PA, or Bethlehem PA; a property type; an optional maximum price; and extra keywords. **Prepare searches** generates three Google searches restricted to the property sources. Each link opens results in a new tab. An additional direct Realtor.com link applies the city, broad multifamily category, and price filter. Exact unit type, keywords, and nearby-town expansion are Google search hints, not guaranteed portal filters. Nearby towns are an explicit preset list, not an exact mile radius. Google may return expired listings and general market pages; verify details on the source.
+
+Copy an individual property URL into **Save listing link** with your own label and notes. No external page is fetched, no listing facts are extracted, and saved links do not claim verified prices or availability. Only supported HTTPS property-page URLs are accepted. Tracking parameters/fragments are removed; duplicate links are rejected.
+
+Saved links and search preferences use localStorage on the site's origin in this browser/device. They are not published to GitHub, synced to other devices, or checked by the daily workflow. Saved links remain until removed or browser data is cleared. Export/restore a JSON backup to move them to another device. Removing a link offers Undo. If storage is blocked/full, the page warns that the shortlist lasts only for the current visit. Backup restore accepts at most 500 valid links from a file under 2 MB.
+
+This version performs **no automated Google or property-portal requests**. It requires no account, API key, or billing details. Collecting search results into the site automatically remains a future integration requiring an authorized search service and suitable storage/display rights.
 
 **Current data: no live listing feeds are connected.** Realtor.com, Homes.com, and Redfin are explicitly unconnected. There are no fabricated listing cards, hidden scraping adapters, paid APIs, or requests to property websites. The empty import is a valid, empty export, not a live connection.
 
