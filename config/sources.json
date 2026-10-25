@@ -1,0 +1,6 @@
+[
+  {"id":"realtor","name":"Realtor.com","enabled":false,"note":"No authorized feed configured","homepage":"https://www.realtor.com/"},
+  {"id":"homes","name":"Homes.com","enabled":false,"note":"No authorized feed configured","homepage":"https://www.homes.com/"},
+  {"id":"redfin","name":"Redfin","enabled":false,"note":"No authorized feed configured","homepage":"https://www.redfin.com/"},
+  {"id":"authorized-import","name":"Authorized import","enabled":true,"adapter":"json_file","path":"imports/listings.json","authorization":"Owner-supplied data approved for public redistribution"}
+]

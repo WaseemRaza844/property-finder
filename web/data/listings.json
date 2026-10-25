@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-10-25T04:41:22.754196+00:00",
+  "retention_days": 4,
+  "sources": [
+    {
+      "id": "realtor",
+      "name": "Realtor.com",
+      "status": "not_connected",
+      "count": 0,
+      "note": "No authorized feed configured"
+    },
+    {
+      "id": "homes",
+      "name": "Homes.com",
+      "status": "not_connected",
+      "count": 0,
+      "note": "No authorized feed configured"
+    },
+    {
+      "id": "redfin",
+      "name": "Redfin",
+      "status": "not_connected",
+      "count": 0,
+      "note": "No authorized feed configured"
+    },
+    {
+      "id": "authorized-import",
+      "name": "Authorized import",
+      "status": "ok",
+      "count": 0,
+      "note": "Import checked; no records supplied"
+    }
+  ],
+  "listings": []
+}
