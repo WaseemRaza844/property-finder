@@ -43,8 +43,9 @@ export function readSaved(storage) {
   for(const row of rows) {
     if(!row || typeof row!=='object') continue;
     const valid=typeof row.url==='string' && listingURL(row.url);
-    if(!valid || !Number.isFinite(Date.parse(row.saved_at)) || !markets[row.market]) continue;
-    unique.set(valid.url,{...valid,title:String(row.title || 'Saved property').slice(0,160),note:String(row.note || '').slice(0,1000),market:row.market,saved_at:row.saved_at});
+    if(!valid || typeof row.saved_at!=='string' || !Number.isFinite(Date.parse(row.saved_at)) || !markets[row.market]) continue;
+    unique.set(valid.url,{...valid,title:String(row.title || 'Saved property').slice(0,160),note:String(row.note || '').slice(0,1000),market:row.market,saved_at:new Date(row.saved_at).toISOString()});
   }
-  return [...unique.values()].slice(0,500);
+  if(unique.size>500)throw Error('capacity');
+  return [...unique.values()];
 }

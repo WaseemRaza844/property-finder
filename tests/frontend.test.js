@@ -40,4 +40,8 @@ test('backup restoration rejects invalid data and deduplicates saved properties'
   assert.equal(readSaved(JSON.stringify([r,r,null,{...r,url:'https://evil.example/'}])).length,1);
   assert.equal(readSaved(JSON.stringify([{...r,market:'unsupported'}])).length,0);
   assert.throws(()=>readSaved('{}'));
+  assert.equal(readSaved(JSON.stringify([{...r,saved_at:2026}])).length,0);
+  const many=Array.from({length:501},(_,i)=>({...r,url:`https://www.redfin.com/PA/test/home/${i}`}));
+  assert.throws(()=>readSaved(JSON.stringify(many)),/capacity/);
+  assert.equal(readSaved(JSON.stringify(many.slice(0,500))).length,500);
 });
