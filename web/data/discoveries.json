@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-25T06:07:06.000135+00:00",
-  "last_success_at": "2026-10-25T06:07:06.000135+00:00",
+  "generated_at": "2026-10-25T06:33:44.355056+00:00",
+  "last_success_at": "2026-10-25T06:33:44.355056+00:00",
   "provider": "Exa",
   "status": "ok",
-  "reserved_requests": 9,
+  "reserved_requests": 18,
   "monthly_limit": 400,
   "retention_days": 4,
   "queries": [
@@ -11,19 +11,19 @@
       "market": "bedminster",
       "domain": "realtor.com",
       "status": "ok",
-      "accepted": 5
+      "accepted": 10
     },
     {
       "market": "bedminster",
       "domain": "redfin.com",
       "status": "ok",
-      "accepted": 9
+      "accepted": 10
     },
     {
       "market": "bedminster",
       "domain": "homes.com",
       "status": "ok",
-      "accepted": 1
+      "accepted": 2
     },
     {
       "market": "easton",
@@ -41,13 +41,13 @@
       "market": "easton",
       "domain": "homes.com",
       "status": "ok",
-      "accepted": 1
+      "accepted": 2
     },
     {
       "market": "bethlehem",
       "domain": "realtor.com",
       "status": "ok",
-      "accepted": 8
+      "accepted": 10
     },
     {
       "market": "bethlehem",
@@ -59,10 +59,1524 @@
       "market": "bethlehem",
       "domain": "homes.com",
       "status": "ok",
-      "accepted": 0
+      "accepted": 1
     }
   ],
   "results": [
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/35-Ski-Hill-Dr_Bedminster_NJ_07921_M57036-59231",
+      "source": "realtor.com",
+      "title": "35 Ski Hill Dr, Bedminster Twp, NJ 07921 [Updated 5/19]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 979000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": null,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Bedminster Twp",
+      "state": "NJ",
+      "zip": "07921"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/30-32-Centre-St_Nutley_NJ_07110_M98091-83124",
+      "source": "realtor.com",
+      "title": "30-32 Centre St, Nutley, NJ 07110 [Updated 5/17]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1350000,
+      "beds": 5,
+      "baths": 4,
+      "sqft": 1600,
+      "units": 2,
+      "property_type": "multifamily",
+      "town": "Nutley",
+      "state": "NJ",
+      "zip": "07110"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/360-Farnsworth-Ave_Bordentown_NJ_08505_M60493-13474",
+      "source": "realtor.com",
+      "title": "360 Farnsworth Ave, Bordentown, NJ 08505 [Updated 5/16]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 550000,
+      "beds": 2,
+      "baths": null,
+      "sqft": 2688,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Bordentown",
+      "state": "NJ",
+      "zip": "08505"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/211-213-S-Main-St_Elmer_NJ_08318_M91739-99848",
+      "source": "realtor.com",
+      "title": "211-213 S Main St, Elmer, NJ 08318 [Updated 4/20]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 330000,
+      "beds": null,
+      "baths": null,
+      "sqft": 3206,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Elmer",
+      "state": "NJ",
+      "zip": "08318"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/33-Eton-Ct_Bedminster_NJ_07921_M59961-23571",
+      "source": "realtor.com",
+      "title": "33 Eton Ct, Bedminster Twp, NJ 07921 [Updated 4/28]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 650000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1481,
+      "units": null,
+      "property_type": null,
+      "town": "Bedminster Twp",
+      "state": "NJ",
+      "zip": "07921"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/401-Union-Ave_Scotch-Plains_NJ_07076_M64510-56230",
+      "source": "realtor.com",
+      "title": "401 Union Ave, Scotch Plains, NJ 07076 [Updated 5/17]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 749000,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 6534,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Scotch Plains",
+      "state": "NJ",
+      "zip": "07076"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/208-State-Rt-284_Sussex_NJ_07461_M51967-45226",
+      "source": "realtor.com",
+      "title": "208 State Rt 284, Wantage Township, NJ 07461 [Updated 4/30]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 509900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2400,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Wantage Township",
+      "state": "NJ",
+      "zip": "07461"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/123-Main-Ave-Apt-1_Ocean-Grove_NJ_07756_M66032-92680",
+      "source": "realtor.com",
+      "title": "123 Main Ave, Ocean Grove, NJ 07756 [Updated 4/30]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1300000,
+      "beds": 6,
+      "baths": 3,
+      "sqft": null,
+      "units": 3,
+      "property_type": "multifamily",
+      "town": "Ocean Grove",
+      "state": "NJ",
+      "zip": "07756"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Palisades-Park/441-Hillcrest-Pl-07650/home/35817569",
+      "source": "redfin.com",
+      "title": "441 Hillcrest Pl, Palisades Park, NJ 07650 | MLS# 26002031 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1999000,
+      "beds": 6,
+      "baths": 7,
+      "sqft": 5502,
+      "units": null,
+      "property_type": null,
+      "town": "Palisades Park",
+      "state": "NJ",
+      "zip": "07650"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Clementon/221-White-Horse-Pike-08021/home/184895314",
+      "source": "redfin.com",
+      "title": "221 White Horse Pike, Clementon, NJ 08021 | MLS# NJCD2122636 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 249900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 10001,
+      "units": null,
+      "property_type": null,
+      "town": "Clementon",
+      "state": "NJ",
+      "zip": "08021"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Bridgeton/643-Fordville-Rd-08302/home/100398845",
+      "source": "redfin.com",
+      "title": "643 Fordville Rd, Bridgeton, NJ 08302 | MLS# NJCB2031934 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 225000,
+      "beds": 6,
+      "baths": null,
+      "sqft": 1560,
+      "units": null,
+      "property_type": null,
+      "town": "Bridgeton",
+      "state": "NJ",
+      "zip": "08302"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/New-Brunswick/115-Remsen-Ave-08901/home/36851304",
+      "source": "redfin.com",
+      "title": "115 Remsen Ave , New Brunswick ,  NJ   08901",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "FOR SALE - ACTIVE",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 549000,
+      "beds": null,
+      "baths": null,
+      "sqft": 2736,
+      "units": null,
+      "property_type": null,
+      "town": "New Brunswick ",
+      "state": "NJ",
+      "zip": "08901"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Paterson/276-Ellison-St-07501/home/104483416",
+      "source": "redfin.com",
+      "title": "276 Ellison St, Paterson, NJ 07501 | MLS# 25043059 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "units": 8,
+      "property_type": "multifamily",
+      "town": "Paterson",
+      "state": "NJ",
+      "zip": "07501"
+    },
+    {
+      "url": "https://www.homes.com/property/607-lake-ave-lyndhurst-nj/j0rdz61jbkwzq",
+      "source": "homes.com",
+      "title": "607 Lake Ave \n                                 \n                     \n                             Lyndhurst, NJ \n                             07071",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Not Available",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 859000,
+      "beds": 4,
+      "baths": 4,
+      "sqft": 5118,
+      "units": 2,
+      "property_type": "multifamily",
+      "town": null,
+      "state": null,
+      "zip": null
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/3813-Belcourt-Dr_Easton_PA_18040_M43654-13284",
+      "source": "realtor.com",
+      "title": "3813 Belcourt Rd, Forks Township, PA 18040 [Updated 5/11]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 244900,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1302,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Forks Township",
+      "state": "PA",
+      "zip": "18040"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/2580-Hickory-Dr_Easton_PA_18040_M43839-10157",
+      "source": "realtor.com",
+      "title": "2580 Hickory Dr, Easton, PA 18040 [Updated 5/19]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 499990,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1876,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18040"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/30-32-Timpson-St_Ashley_PA_18706_M95662-90192",
+      "source": "realtor.com",
+      "title": "30-32 Timpson St, Ashley, PA 18706 [Updated 5/4]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 299999,
+      "beds": 9,
+      "baths": 4,
+      "sqft": 4100,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": "Ashley",
+      "state": "PA",
+      "zip": "18706"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/202-Canal-Park_Easton_PA_18042_M45536-05682",
+      "source": "realtor.com",
+      "title": "202 Canal Park, Easton, PA 18042 [Updated 5/16]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 220000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1020,
+      "units": null,
+      "property_type": null,
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/132-Leneake-St_Turtle-Creek_PA_15145_M30283-67764",
+      "source": "realtor.com",
+      "title": "132 Leneake St, Turtle Creek, PA 15145 [Updated 4/20]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 78000,
+      "beds": 6,
+      "baths": 2,
+      "sqft": 8882,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Turtle Creek",
+      "state": "PA",
+      "zip": "15145"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/326-Bosler-Ave_Lemoyne_PA_17043_M35977-11576",
+      "source": "realtor.com",
+      "title": "326 Bosler Ave, Lemoyne, PA 17043 [Updated 5/8]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 389899,
+      "beds": 1,
+      "baths": 1,
+      "sqft": 2894,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Lemoyne",
+      "state": "PA",
+      "zip": "17043"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/122-W-Nesquehoning-St-18042/home/167984076",
+      "source": "redfin.com",
+      "title": "122 W Nesquehoning St, Easton, PA 18042 | MLS# 784336 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1350000,
+      "beds": 12,
+      "baths": 6,
+      "sqft": 9375,
+      "units": 6,
+      "property_type": "multifamily",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/506-W-Berwick-St-18042/home/76756500",
+      "source": "redfin.com",
+      "title": "506 W Berwick St, Easton, PA 18042 | MLS# 784283 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 850000,
+      "beds": 8,
+      "baths": 4,
+      "sqft": 3816,
+      "units": null,
+      "property_type": null,
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/607-Northampton-St-18042/home/59198613",
+      "source": "redfin.com",
+      "title": "607 Northampton St, Easton, PA 18042 | MLS# 780546 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": null,
+      "baths": null,
+      "sqft": 6544,
+      "units": 12,
+      "property_type": "multifamily",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Phillipsburg/244-Sitgreaves-St-08865/home/37889852",
+      "source": "redfin.com",
+      "title": "244 Sitgreaves St, Phillipsburg, NJ 08865 | MLS# 4020162 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 390000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1998,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Phillipsburg",
+      "state": "NJ",
+      "zip": "08865"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/833-Walnut-Ave-18042/home/59195540",
+      "source": "redfin.com",
+      "title": "833 Walnut Ave, Easton, PA 18042 | MLS# 784187 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 259900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 2328,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/200-N-8th-St-18042/home/59196494",
+      "source": "redfin.com",
+      "title": "200 N 8th St, Easton, PA 18042 | MLS# PANH2010878 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 315000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1850,
+      "units": null,
+      "property_type": null,
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.homes.com/property/3202-village-rd-orwigsburg-pa/t0f3k31w7gn24",
+      "source": "homes.com",
+      "title": "3202 Village Rd \n                                 \n                     \n                             Orwigsburg, PA \n                             17961",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 1709,
+      "units": null,
+      "property_type": null,
+      "town": null,
+      "state": null,
+      "zip": null
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/1019-Lincoln-St_Freemansburg_PA_18017_M39473-41503",
+      "source": "realtor.com",
+      "title": "1019 Lincoln St, Freemansburg, PA 18017 [Updated 3/31]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 395000,
+      "beds": 3,
+      "baths": 1.5,
+      "sqft": 2002,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Freemansburg",
+      "state": "PA",
+      "zip": "18017"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/707-E-5th-St_Bethlehem_PA_18015_M48688-06682",
+      "source": "realtor.com",
+      "title": "707 E 5th St, Bethlehem, PA 18015 [Updated 5/18]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 225000,
+      "beds": 3,
+      "baths": 1.5,
+      "sqft": 1550,
+      "units": null,
+      "property_type": null,
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/1128-Maple-St_Bethlehem_PA_18018_M38699-30359",
+      "source": "realtor.com",
+      "title": "1128 Maple St, Bethlehem, PA 18018 [Updated 5/20]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 285000,
+      "beds": 4,
+      "baths": 1,
+      "sqft": 1632,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18018"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/2950-Santee-Dr_Bethlehem_PA_18017_M44903-82408",
+      "source": "realtor.com",
+      "title": "2950 Santee Dr, Bethlehem, PA 18017 [Updated 4/8]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 499900,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2729,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18017"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/2584-Raya-Way_Easton_PA_18045_M90344-85025",
+      "source": "realtor.com",
+      "title": "2584 Raya Way, Bethlehem, PA 18045 [Updated 5/17]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 649000,
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 3259,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18045"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/3470-Park-Pl_Bethlehem_PA_18017_M45618-04190",
+      "source": "realtor.com",
+      "title": "3470 Park Pl, Hanover Township, PA 18017 [Updated 4/11]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 345000,
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": 1692,
+      "units": null,
+      "property_type": null,
+      "town": "Hanover Township",
+      "state": "PA",
+      "zip": "18017"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/1282-Steel-Ave-18015/home/76764345",
+      "source": "redfin.com",
+      "title": "1282 Steel Ave, Bethlehem, PA 18015 | MLS# PANH2010524 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": 4,
+      "baths": null,
+      "sqft": 2106,
+      "units": null,
+      "property_type": null,
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Allentown/146-N-11th-St-18102/home/59196518",
+      "source": "redfin.com",
+      "title": "146 11th St, Allentown, PA 18102 | MLS# 777608 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 395000,
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": 2459,
+      "units": null,
+      "property_type": null,
+      "town": "Allentown",
+      "state": "PA",
+      "zip": "18102"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/704-Pawnee-St-18015/home/59120897",
+      "source": "redfin.com",
+      "title": "704 Pawnee St, Bethlehem, PA 18015 | MLS# 775181 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 1995,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/1901-Willow-Park-Rd-18020/home/76760535",
+      "source": "redfin.com",
+      "title": "1901 Willow Park Rd, Bethlehem, PA 18020 | MLS# 780698 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 474900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2318,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18020"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/13-E-3rd-St-18015/home/76763153",
+      "source": "redfin.com",
+      "title": "13 E 3rd St, Bethlehem, PA 18015 | MLS# 778699 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:33:44.355056+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1995000,
+      "beds": null,
+      "baths": null,
+      "sqft": 17350,
+      "units": null,
+      "property_type": null,
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/274-Greylock-Pkwy_Belleville_NJ_07109_M67113-09161",
+      "source": "realtor.com",
+      "title": "274 Greylock Pkwy, Belleville, NJ 07109 [Updated 2/16]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 775000,
+      "beds": 5,
+      "baths": 3,
+      "sqft": null,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": "Belleville",
+      "state": "NJ",
+      "zip": "07109"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/218-Limroth-Dr_Point-Pleasant-Beach_NJ_M50648-19236",
+      "source": "realtor.com",
+      "title": "218 Limroth Row Dr Unit A and B, Point Pleasant, NJ 08742 [Updated 5/20]",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 649900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 900,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Point Pleasant",
+      "state": "NJ",
+      "zip": "08742"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Raritan/89-W-Somerset-St-08869/home/37967661",
+      "source": "redfin.com",
+      "title": "87-89 W Somerset St, Raritan, NJ 08869 | MLS# 4046263 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 550000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2084,
+      "units": null,
+      "property_type": null,
+      "town": "Raritan",
+      "state": "NJ",
+      "zip": "08869"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Bridgeton/145-Oak-St-08302/home/100394860",
+      "source": "redfin.com",
+      "title": "143-145 Oak St, Bridgeton, NJ 08302 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "SOLD AUG 3, 2026",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 186100,
+      "beds": 6,
+      "baths": 1,
+      "sqft": 3009,
+      "units": null,
+      "property_type": null,
+      "town": "Bridgeton",
+      "state": "NJ",
+      "zip": "08302"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Williamstown/2442-S-Black-Horse-Pike-08094/home/36437885",
+      "source": "redfin.com",
+      "title": "2442 S Black Horse Pike, Williamstown, NJ 08094 | MLS# NJGL2074970 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 525000,
+      "beds": 10,
+      "baths": 4,
+      "sqft": 2939,
+      "units": null,
+      "property_type": null,
+      "town": "Williamstown",
+      "state": "NJ",
+      "zip": "08094"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Bridgeton/190-W-Commerce-St-08302/home/100394873",
+      "source": "redfin.com",
+      "title": "188-190 W Commerce St, Bridgeton, NJ 08302 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Sold on sep 2026",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 260000,
+      "beds": 7,
+      "baths": 1.5,
+      "sqft": 4554,
+      "units": null,
+      "property_type": null,
+      "town": "Bridgeton",
+      "state": "NJ",
+      "zip": "08302"
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Palisades-Park/273-275-9th-St-07650/home/205691989",
+      "source": "redfin.com",
+      "title": "273-275 9th St, Palisades Park, NJ 07650 | MLS# 26036491 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 2195000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1200,
+      "units": 5,
+      "property_type": "multifamily",
+      "town": "Palisades Park",
+      "state": "NJ",
+      "zip": "07650"
+    },
+    {
+      "url": "https://www.homes.com/property/400-prospect-ave-asbury-park-nj/k4xdjv83tmy83",
+      "source": "homes.com",
+      "title": "400 Prospect Ave, Asbury Park, NJ 07712 | Homes.com",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": 7,
+      "baths": 4,
+      "sqft": 1000,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": "Asbury Park",
+      "state": "NJ",
+      "zip": "07712"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/2840-Norton-Ave_Easton_PA_18045_M90756-49345",
+      "source": "realtor.com",
+      "title": "2840 Norton Ave, Easton, PA 18045 | Realtor.com\u00ae",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 499900,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 1710,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18045"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/530-S-Main-St_Phillipsburg_NJ_08865_M52782-98059",
+      "source": "realtor.com",
+      "title": "530 S Main St, Phillipsburg, NJ 08865 [Updated 4/21]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 250000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 19998,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Phillipsburg",
+      "state": "NJ",
+      "zip": "08865"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/127-Willow-Dr_Palmer-Twp_PA_18045_M42245-74742",
+      "source": "realtor.com",
+      "title": "127 Willow Dr, Palmer Township, PA 18045 [Updated 5/13]",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 459900,
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 2952,
+      "units": null,
+      "property_type": null,
+      "town": "Palmer Township",
+      "state": "PA",
+      "zip": "18045"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/429-Melrose-Ave_Clarks-Summit_PA_18411_M49080-41451",
+      "source": "realtor.com",
+      "title": "429 A & B Melrose and B Ave Unit A, Clarks Summit, PA 18411 [Updated 5/14]",
+      "markets": [
+        "easton",
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 259500,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 2293,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Clarks Summit",
+      "state": "PA",
+      "zip": "18411"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/1501-Washington-St-18042/home/59198902",
+      "source": "redfin.com",
+      "title": "1501 Washington St, Easton, PA 18042 | MLS# 781732 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": 6,
+      "baths": 3,
+      "sqft": 2708,
+      "units": null,
+      "property_type": null,
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/2446-Freemansburg-Ave-18042/home/76756920",
+      "source": "redfin.com",
+      "title": "2446 Freemansburg Ave, Easton, PA 18042 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 562683,
+      "beds": 7,
+      "baths": 3.5,
+      "sqft": 3117,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/1337-Washington-St-18042/home/73691347",
+      "source": "redfin.com",
+      "title": "1337 Washington St, Easton, PA 18042 | MLS# 781633 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 530000,
+      "beds": 6,
+      "baths": 3.5,
+      "sqft": 3778,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Easton/1917-Ferry-St-18042/home/76748799",
+      "source": "redfin.com",
+      "title": "1917 Ferry St, Easton, PA 18042 | MLS# 780074 | Redfin",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 299900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1766,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Easton",
+      "state": "PA",
+      "zip": "18042"
+    },
+    {
+      "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
+      "source": "homes.com",
+      "title": "491 Prospect Rd \n                                 \n                     \n                             Warminster, PA \n                             18974",
+      "markets": [
+        "easton",
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1150000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 2184,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": null,
+      "state": null,
+      "zip": null
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/507-N-Refwal-St_Allentown_PA_18102_M30422-83522",
+      "source": "realtor.com",
+      "title": "507 N Refwal St, Allentown, PA 18102 [Updated 5/21]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 169900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 960,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Allentown",
+      "state": "PA",
+      "zip": "18102"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/1322-1324-E-4th-St_Bethlehem_PA_18015_M38475-66848",
+      "source": "realtor.com",
+      "title": "1322-1324 E 4th St, Bethlehem, PA 18015 | Realtor.com\u00ae",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 249900,
+      "beds": 15,
+      "baths": 7.5,
+      "sqft": 8219,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/19-N-11th-St_Allentown_PA_18101_M94651-63205",
+      "source": "realtor.com",
+      "title": "19 N 11th St, Allentown, PA 18101 [Updated 4/9]",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1495000,
+      "beds": 51,
+      "baths": 44,
+      "sqft": 34320,
+      "units": null,
+      "property_type": "multifamily",
+      "town": "Allentown",
+      "state": "PA",
+      "zip": "18101"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/818-High-St-18018/home/76762175",
+      "source": "redfin.com",
+      "title": "818 High St, Bethlehem, PA 18018 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market jun 2023 for $324K",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 382154,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 1912,
+      "units": 3,
+      "property_type": "triplex",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18018"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/414-Wyandotte-St-18015/home/59196296",
+      "source": "redfin.com",
+      "title": "414 Wyandotte St, Bethlehem, PA 18015 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Sold on sep 2026",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 311250,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2581,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/3348-Easton-Ave-18020/home/205996232",
+      "source": "redfin.com",
+      "title": "3348 Easton Ave, Bethlehem, PA 18020 | MLS# 785386 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 1475000,
+      "beds": 5,
+      "baths": 7,
+      "sqft": 6886,
+      "units": 7,
+      "property_type": "multifamily",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18020"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/328-Polk-St-18015/home/59195869",
+      "source": "redfin.com",
+      "title": "328 Polk St, Bethlehem, PA 18015 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market dec 2012 for $173K",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": null,
+      "beds": null,
+      "baths": null,
+      "sqft": 2975,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Bethlehem/402-W-9th-St-18015/home/59061236",
+      "source": "redfin.com",
+      "title": "402-404 W 9th St, Bethlehem, PA 18015 | Redfin",
+      "markets": [
+        "bethlehem"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-10-25T06:33:44.355056+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market sep 2023 for $354K",
+      "facts_observed_at": "2026-10-25T06:33:44.355056+00:00",
+      "price": 386537,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 1288,
+      "units": null,
+      "property_type": null,
+      "town": "Bethlehem",
+      "state": "PA",
+      "zip": "18015"
+    },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/110-Village-Dr_Basking-Ridge_NJ_07920_M63050-43896",
       "source": "realtor.com",
@@ -72,7 +1586,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/285-W-Palisade-Ave_Englewood_NJ_07631_M64002-56820",
@@ -83,7 +1597,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/90-Chestnut-St_Morristown_NJ_07960_M63363-38545",
@@ -94,29 +1608,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/274-Greylock-Pkwy_Belleville_NJ_07109_M67113-09161",
-      "source": "realtor.com",
-      "title": "274 Greylock Pkwy, Belleville, NJ 07109 [Updated 2/16]",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/218-Limroth-Dr_Point-Pleasant-Beach_NJ_M50648-19236",
-      "source": "realtor.com",
-      "title": "218 Limroth Row Dr Unit A and B, Point Pleasant, NJ 08742 [Updated 5/20]",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bernardsville/23-Morristown-Rd-07924/home/202371775",
@@ -127,40 +1619,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Raritan/89-W-Somerset-St-08869/home/37967661",
-      "source": "redfin.com",
-      "title": "87-89 W Somerset St, Raritan, NJ 08869 | MLS# 4046263 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Williamstown/2442-S-Black-Horse-Pike-08094/home/36437885",
-      "source": "redfin.com",
-      "title": "2442 S Black Horse Pike, Williamstown, NJ 08094 | MLS# NJGL2074970 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Bridgeton/145-Oak-St-08302/home/100394860",
-      "source": "redfin.com",
-      "title": "143-145 Oak St, Bridgeton, NJ 08302 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Kendall-Park/3774-New-Jersey-27-08824/home/197987156",
@@ -171,18 +1630,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Bridgeton/190-W-Commerce-St-08302/home/100394873",
-      "source": "redfin.com",
-      "title": "188-190 W Commerce St, Bridgeton, NJ 08302 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Belleville/302-Belmont-Ave-07109/home/36104422",
@@ -193,7 +1641,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Summit/24-Franklin-Pl-07901/home/38097050",
@@ -204,51 +1652,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Palisades-Park/273-275-9th-St-07650/home/205691989",
-      "source": "redfin.com",
-      "title": "273-275 9th St, Palisades Park, NJ 07650 | MLS# 26036491 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.homes.com/property/400-prospect-ave-asbury-park-nj/k4xdjv83tmy83",
-      "source": "homes.com",
-      "title": "400 Prospect Ave \n                                 \n                     \n                             Asbury Park, NJ \n                             07712",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/530-S-Main-St_Phillipsburg_NJ_08865_M52782-98059",
-      "source": "realtor.com",
-      "title": "530 S Main St, Phillipsburg, NJ 08865 [Updated 4/21]",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/2840-Norton-Ave_Easton_PA_18045_M90756-49345",
-      "source": "realtor.com",
-      "title": "2840 Norton Ave, Easton, PA 18045 | Realtor.com\u00ae",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/108-110-Bennett-St_Phillipsburg-Town_NJ_08865_M92546-20885",
@@ -259,7 +1663,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/134-N-3rd-St_Easton_PA_18042_M32150-67324",
@@ -270,18 +1674,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/127-Willow-Dr_Palmer-Twp_PA_18045_M42245-74742",
-      "source": "realtor.com",
-      "title": "127 Willow Dr, Palmer Township, PA 18045 [Updated 5/13]",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/81-Moor-Dr_Palmer-Twp_PA_18045_M46575-03130",
@@ -292,7 +1685,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/224-Park-Ridge-Dr_Easton_PA_18040_M43647-73070",
@@ -303,18 +1696,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/429-Melrose-Ave_Clarks-Summit_PA_18411_M49080-41451",
-      "source": "realtor.com",
-      "title": "429 A & B Melrose and B Ave Unit A, Clarks Summit, PA 18411 [Updated 5/14]",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/245-Wilson-Ave_Lyndhurst_NJ_07071_M59532-68807",
@@ -325,7 +1707,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/3514-W-Allegheny-Ave_Philadelphia_PA_19132_M33477-65932",
@@ -336,40 +1718,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Easton/2446-Freemansburg-Ave-18042/home/76756920",
-      "source": "redfin.com",
-      "title": "2446 Freemansburg Ave, Easton, PA 18042 | Redfin",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Easton/1501-Washington-St-18042/home/59198902",
-      "source": "redfin.com",
-      "title": "1501 Washington St, Easton, PA 18042 | MLS# 781732 | Redfin",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Easton/1337-Washington-St-18042/home/73691347",
-      "source": "redfin.com",
-      "title": "1337 Washington St, Easton, PA 18042 | MLS# 781633 | Redfin",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/801-W-Berwick-St-18042/home/59197717",
@@ -380,7 +1729,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/697-Ferry-St-18042/home/76747144",
@@ -391,7 +1740,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/1319-Northampton-St-18042/home/59196865",
@@ -402,7 +1751,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/584-Roseberry-St-08865/home/37848220",
@@ -413,7 +1762,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/87-Lewis-St-08865/home/205702386",
@@ -424,7 +1773,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/17-Railroad-Ave-08865/home/37844059",
@@ -435,40 +1784,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Easton/1917-Ferry-St-18042/home/76748799",
-      "source": "redfin.com",
-      "title": "1917 Ferry St, Easton, PA 18042 | MLS# 780074 | Redfin",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
-      "source": "homes.com",
-      "title": "491 Prospect Rd \n                                 \n                     \n                             Warminster, PA \n                             18974",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/507-N-Refwal-St_Allentown_PA_18102_M30422-83522",
-      "source": "realtor.com",
-      "title": "507 N Refwal St, Allentown, PA 18102 [Updated 5/21]",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/438-N-7th-St-Apt-2_Allentown_PA_18102_M30627-42524",
@@ -479,29 +1795,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/19-N-11th-St_Allentown_PA_18101_M94651-63205",
-      "source": "realtor.com",
-      "title": "19 N 11th St, Allentown, PA 18101 [Updated 4/9]",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.realtor.com/realestateandhomes-detail/1322-1324-E-4th-St_Bethlehem_PA_18015_M38475-66848",
-      "source": "realtor.com",
-      "title": "1322-1324 E 4th St, Bethlehem, PA 18015 | Realtor.com\u00ae",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/722-Wyandotte-St_Bethlehem_PA_18015_M30849-49174",
@@ -512,7 +1806,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/535-Main-St-Apt-12_Bethlehem_PA_18018_M45984-36611",
@@ -523,7 +1817,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/611-E-Federal-St_Allentown_PA_18103_M49257-78787",
@@ -534,7 +1828,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2713-Center-St_Bethlehem_PA_18017_M35545-11422",
@@ -545,7 +1839,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Fountain-Hill/913-Seneca-St-18015/home/59185728",
@@ -556,18 +1850,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Bethlehem/414-Wyandotte-St-18015/home/59196296",
-      "source": "redfin.com",
-      "title": "414 Wyandotte St, Bethlehem, PA 18015 | Redfin",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/1334-W-Turner-St-18102/home/69115447",
@@ -578,18 +1861,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Bethlehem/818-High-St-18018/home/76762175",
-      "source": "redfin.com",
-      "title": "818 High St, Bethlehem, PA 18018 | Redfin",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/726-W-Turner-St-18102/home/59198598",
@@ -600,7 +1872,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/606-Hayes-St-18015/home/59199027",
@@ -611,18 +1883,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Bethlehem/328-Polk-St-18015/home/59195869",
-      "source": "redfin.com",
-      "title": "328 Polk St, Bethlehem, PA 18015 | Redfin",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/114-N-8th-St-18101/home/147672965",
@@ -633,29 +1894,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Bethlehem/3348-Easton-Ave-18020/home/205996232",
-      "source": "redfin.com",
-      "title": "3348 Easton Ave, Bethlehem, PA 18020 | MLS# 785386 | Redfin",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
-    },
-    {
-      "url": "https://www.redfin.com/PA/Bethlehem/402-W-9th-St-18015/home/59061236",
-      "source": "redfin.com",
-      "title": "402-404 W 9th St, Bethlehem, PA 18015 | Redfin",
-      "markets": [
-        "bethlehem"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T06:07:06.000135+00:00",
-      "observed_this_run": true
+      "observed_this_run": false
     }
   ]
 }
