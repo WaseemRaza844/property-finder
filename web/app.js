@@ -38,7 +38,7 @@ try {
   const response=await fetch('data/listings.json',{cache:'no-store'});if(!response.ok) throw Error('Dataset unavailable');
   data=await response.json();if(!Array.isArray(data.listings)||!Array.isArray(data.sources)||!Number.isFinite(Date.parse(data.generated_at)))throw Error('Invalid dataset');
   $('total').textContent=data.listings.length;$('new-count').textContent=data.listings.filter(r=>day(r.first_seen)===day(new Date())).length;
-  $('connected').textContent=`${data.sources.filter(s=>s.status==='ok').length} / ${data.sources.length}`;
+  $('connected').textContent=`${data.sources.filter(s=>s.status==='ok' && s.count > 0).length} / ${data.sources.length}`;
   $('updated').textContent=date(data.generated_at);const stale=Date.now()-Date.parse(data.generated_at)>36*3600000;
   $('freshness').textContent=stale?'Refresh is overdue · data may be stale':'Eastern time · latest import check';
   for(const s of data.sources){const card=el('article',null,'source-card');card.append(el('h3',s.name),el('span',s.status==='ok'?'Import checked':s.status==='error'?'Import error':'Not connected',`status ${s.status}`),el('p',s.note),el('p',`${s.count} records this run`));$('source-grid').append(card);}

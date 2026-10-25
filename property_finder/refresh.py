@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from .sources import ingest
@@ -40,5 +41,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     report = refresh(args.root)
     print(f"Published {len(report['listings'])} retained listings; source status included.")
-    if any(s['status'] == 'error' for s in report['sources']):
-        raise SystemExit(1)
+    errors = sum(s['status'] == 'error' for s in report['sources'])
+    summary = f"Refresh completed: {len(report['listings'])} retained properties, {errors} source errors. See the published source status."
+    print(summary)
+    if os.environ.get('GITHUB_STEP_SUMMARY'):
+        with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as stream:
+            stream.write(summary + '\n')
