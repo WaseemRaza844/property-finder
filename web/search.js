@@ -1,23 +1,20 @@
 // Search links are ordinary user-opened URLs. No portal or search engine is scraped.
-export const markets = {
-  bedminster: {name:'Bedminster, NJ', slug:'Bedminster_NJ', nearby:['Somerville NJ','Bridgewater NJ','Bernardsville NJ','Raritan NJ']},
-  easton: {name:'Easton, PA', slug:'Easton_PA', nearby:['Palmer Township PA','Wilson PA','Forks Township PA','Phillipsburg NJ']},
-  bethlehem: {name:'Bethlehem, PA', slug:'Bethlehem_PA', nearby:['Allentown PA','Fountain Hill PA','Freemansburg PA','Hellertown PA']},
-};
+import {markets} from './markets.js';
+export {markets};
 const typeTerms = {multifamily:'("multi family" OR multifamily OR duplex OR triplex)',duplex:'duplex',triplex:'triplex',fourplex:'(fourplex OR "4 unit" OR "four unit")',all:'homes'};
 export function buildSearches({market='bedminster',type='multifamily',price='',nearby=false,keywords=''}) {
   const place=markets[market]; if(!place || !typeTerms[type]) throw Error('Choose a supported market and property type');
   if(price !== '' && (!Number.isFinite(Number(price)) || Number(price)<=0)) throw Error('Enter a positive maximum price');
-  const location=nearby ? `("${place.name}" OR ${place.nearby.map(t=>`"${t}"`).join(' OR ')})` : `"${place.name}"`;
+  const location=nearby ? `("${place.city}" OR ${place.nearby.map(t=>`"${t}"`).join(' OR ')})` : `"${place.city}"`;
   const query=`${location} ${typeTerms[type]} for sale${price ? ` under $${Number(price).toLocaleString('en-US')}`:''}${keywords.trim() ? ` ${keywords.trim().slice(0,160)}`:''}`;
   const google=domain=>'https://www.google.com/search?'+new URLSearchParams({q:`site:${domain} ${query}`});
   let realtor=`https://www.realtor.com/realestateandhomes-search/${place.slug}`;
   if(type!=='all') realtor+='/type-multi-family-home';
   if(price) realtor+=`/price-na-${Number(price)}`;
   return [
-    {id:'realtor',name:'Realtor.com',url:google('realtor.com/realestateandhomes-detail'),direct:realtor,detail:'Search Google for property pages from Realtor.com.'},
+    {id:'homes',name:'Homes.com',url:google('homes.com/property'),detail:'Preferred source · Search Google for Homes.com property pages.'},
     {id:'redfin',name:'Redfin',url:google('redfin.com'),detail:'Search Google for Redfin property pages.'},
-    {id:'homes',name:'Homes.com',url:google('homes.com/property'),detail:'Search Google for property pages from Homes.com.'},
+    {id:'realtor',name:'Realtor.com',url:google('realtor.com/realestateandhomes-detail'),direct:realtor,detail:'Search Google for property pages from Realtor.com.'},
   ].map(s=>({...s,query}));
 }
 export function listingURL(input) {
