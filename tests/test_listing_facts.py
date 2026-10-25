@@ -45,3 +45,13 @@ class FactsTests(unittest.TestCase):
         row=location('Property page','https://www.realtor.com/realestateandhomes-detail/1-Test-St_Bethlehem_PA_18018_M123')
         self.assertEqual(row,{'town':'Bethlehem','state':'PA','zip':'18018'})
         self.assertIsNone(self.facts('For sale')['units'])
+
+    def test_lot_area_and_unit_ranges_are_not_exact_home_facts(self):
+        row=self.facts('For sale\n10,001 sq ft lot\nProperty type: Multi-Family (2-4 units)')
+        self.assertIsNone(row['sqft']);self.assertIsNone(row['units'])
+        self.assertIsNone(self.facts('For sale\n10,001 sq ft (Lot Size)')['sqft'])
+        row=self.facts('For sale\nLot size:\n10,001 sq ft\nLiving area:\n2,400 sq ft\n2 to 4 units')
+        self.assertEqual(row['sqft'],2400);self.assertIsNone(row['units'])
+
+    def test_estimated_value_is_not_an_asking_price(self):
+        self.assertIsNone(self.facts('For sale\nRedfin Estimate:\n$500,000')['price'])
