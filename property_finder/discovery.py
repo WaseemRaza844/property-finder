@@ -1,7 +1,7 @@
 """Exa Lite search discovery. Never fetches or scrapes property websites.
 
-Only titles, canonical property URLs, query-market labels and observation dates
-are stored. Snippets, images, answers, prices and raw page content are discarded.
+Structured facts and a short current-status evidence line are extracted from
+Exa's cached index text. Raw text, descriptions, images and answers are discarded.
 """
 import argparse
 import json
@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from urllib.request import Request, build_opener, HTTPRedirectHandler
+from .listing_facts import extract_facts
 
 CAP = 400
 DOMAINS = ('realtor.com', 'redfin.com', 'homes.com')
@@ -55,9 +56,8 @@ def queries(root):
         for domain in config['domains']:
             if domain not in DOMAINS:
                 raise ValueError('Unsupported search domain')
-            places = ' OR '.join('"' + t + '"' for t in market['towns'])
             result.append({'market': market['id'], 'domain': domain,
-                           'query': f'({places}) (multifamily OR "multi family" OR duplex OR triplex OR fourplex) homes for sale'})
+                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Exclude sold, off-market, pending and rental listings.'})
     if not 1 <= len(result) <= 9:
         raise ValueError('At most nine Lite queries per run')
     return result
@@ -93,7 +93,7 @@ def search(query, domain, key):
                       headers={'x-api-key': key, 'Content-Type': 'application/json'},
                       data=json.dumps({'query': query, 'includeDomains': [domain],
                                        'type': 'lite', 'numResults': 10,
-                                       'contents': {'text': False, 'highlights': False}}).encode())
+                                       'contents': {'text': {'maxCharacters': 16000}, 'highlights': False}}).encode())
     # No retries or redirects: one authorized endpoint, bounded credit use.
     with build_opener(NoRedirect).open(request, timeout=35) as response:
         data = json.loads(response.read(2000000))
@@ -135,7 +135,8 @@ def refresh(root, run_id, now=None, key=None, requester=search):
                         seen[url] = {'url': url, 'source': task['domain'],
                                      'title': str(row.get('title') or 'Property page')[:200],
                                      'markets': [], 'first_seen': old.get(url, {}).get('first_seen', now.isoformat()),
-                                     'last_seen': now.isoformat(), 'observed_this_run': True}
+                                     'last_seen': now.isoformat(), 'observed_this_run': True,
+                                     **extract_facts(row, url, now.isoformat())}
                     if task['market'] not in seen[url]['markets']:
                         seen[url]['markets'].append(task['market'])
                     report['accepted'] += 1

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {filterListings,miles,safeURL} from '../web/filters.js';
 import {buildSearches,listingURL,readSaved} from '../web/search.js';
+import {selectDiscoveries,groupDiscoveries} from '../web/discovery-view.js';
 const rows=[
   {id:'a',market:'Central New Jersey',property_type:'duplex',price:400000,latitude:40.6807,longitude:-74.649,first_seen:'2026-10-25'},
   {id:'b',market:'Central Ohio',property_type:'triplex',price:200000,latitude:39.9612,longitude:-82.9988,first_seen:'2026-10-24'},
@@ -44,4 +45,20 @@ test('backup restoration rejects invalid data and deduplicates saved properties'
   const many=Array.from({length:501},(_,i)=>({...r,url:`https://www.redfin.com/PA/test/home/${i}`}));
   assert.throws(()=>readSaved(JSON.stringify(many)),/capacity/);
   assert.equal(readSaved(JSON.stringify(many.slice(0,500))).length,500);
+});
+test('discovery defaults hide closed, unknown, stale, and unobserved results',()=>{
+ const now=Date.parse('2026-10-25T12:00:00Z'),row={url:'https://www.redfin.com/PA/Easton/1/home/1',title:'Duplex',markets:['easton'],first_seen:'2026-10-25T10:00:00Z',facts_observed_at:'2026-10-25T11:00:00Z',listing_status:'active',observed_this_run:true,price:400000,town:'Easton',state:'PA',zip:'18042'};
+ const f={status:'active',price:'',sort:'price'};
+ assert.equal(selectDiscoveries([row,{...row,listing_status:'sold'},{...row,listing_status:'unknown'},{...row,observed_this_run:false},{...row,facts_observed_at:'2026-10-20T00:00:00Z'}],f,now).length,1);
+ assert.equal(selectDiscoveries([{...row,listing_status:'sold'},{...row,listing_status:'unknown'}],{...f,status:'review'},now).length,1);
+ assert.equal(selectDiscoveries([row],{...f,zip:'99999'},now).length,0);
+});
+test('numeric discovery sort places unknowns last and groups number consecutively',()=>{
+ const row={title:'Test',markets:['easton'],first_seen:'2026-10-25',town:'Easton',state:'PA',zip:'18042'};
+ const rows=[{...row,url:'a',price:null},{...row,url:'b',price:500000},{...row,url:'c',price:300000,town:'Bethlehem',zip:'18018'}];
+ const sorted=selectDiscoveries(rows,{status:'review',price:'',sort:'price_desc'});
+ assert.deepEqual(sorted.map(r=>r.url),['b','c','a']);
+ const groups=groupDiscoveries(sorted,'town');assert.deepEqual(groups.flatMap(g=>g.items.map(r=>r.number)),[1,2,3]);
+ assert.equal(groupDiscoveries(sorted,'zip').length,2);
+ assert.equal(selectDiscoveries(rows,{status:'review',price:'400000'}).length,1);
 });
