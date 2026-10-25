@@ -2,7 +2,7 @@ import {listingURL, markets} from './search.js';
 const $=id=>document.getElementById(id);
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
 const date=x=>x?new Date(x).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Not yet';
-const states={not_configured:'Setup needed: add the TAVILY_API_KEY repository secret to enable automatic searches.',budget_exhausted:'Application search allowance reached. Automatic searches resume next month; recent links remain below.',already_reserved:'This workflow run has already reserved its searches. No additional requests were sent.',consumed:'This search reservation has already been used. No additional requests were sent.',error:'All search requests failed. Retained links may be stale; see the source status below.',partial:'Some searches failed. Results below include retained discoveries from earlier runs.',ok:'Automatic search completed.'};
+const states={not_configured:'Setup needed: add the EXA_API_KEY repository secret to enable automatic searches.',budget_exhausted:'Application search allowance reached. Automatic searches resume next month; recent links remain below.',already_reserved:'This workflow run has already reserved its searches. No additional requests were sent.',consumed:'This search reservation has already been used. No additional requests were sent.',error:'All search requests failed. Retained links may be stale; see the source status below.',partial:'Some searches failed. Results below include retained discoveries from earlier runs.',ok:'Automatic search completed.'};
 let data;
 function render(){
   if(!data)return;
@@ -18,7 +18,7 @@ try{
   const response=await fetch('data/discoveries.json',{cache:'no-store'});if(!response.ok)throw Error();
   const raw=await response.json();if(!Array.isArray(raw.results)||!Array.isArray(raw.queries))throw Error();
   data={...raw,results:raw.results.filter(r=>r&&typeof r.title==='string'&&listingURL(r.url)&&Array.isArray(r.markets)&&Number.isFinite(Date.parse(r.first_seen))&&Number.isFinite(Date.parse(r.last_seen)))};
-  $('discovery-status').textContent=`${states[data.status]||'Search status unknown.'} Last complete search: ${date(data.last_success_at)}. Reserved this month: ${data.reserved_credits} / ${data.monthly_limit} basic credits.`;
+  $('discovery-status').textContent=`${states[data.status]||'Search status unknown.'} Last complete search: ${date(data.last_success_at)}. Reserved this month: ${data.reserved_requests} / ${data.monthly_limit} Lite search requests.`;
   $('discovery-reports').replaceChildren(...data.queries.map(q=>el('p',`${markets[q.market]?.name||q.market} · ${q.domain}: ${q.status==='ok'?`${q.accepted} property-page matches`:q.note||q.status}`)));
   render();
 }catch{$('discovery-status').textContent='Automatic search data could not be loaded. Status is unknown; reload the page after the deployment finishes.';}
