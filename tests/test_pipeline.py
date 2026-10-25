@@ -36,6 +36,18 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(len(merged[0]['sources']),2)
         self.assertNotEqual(a['id'],self.row(address='1 Test Street Unit 2')['id'])
 
+    def test_non_object_rows_rejected(self):
+        for raw in [None, [], 'invalid', 42]:
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                normalize(raw, SOURCE)
+
+    def test_rediscovery_after_expiry_starts_new_history(self):
+        previous = merge_history([], [self.row()], NOW)
+        later = NOW + timedelta(days=7)
+        result = merge_history(previous, [self.row(price=390000)], later)
+        self.assertEqual(result[0]['first_seen'], later.isoformat())
+        self.assertEqual(result[0]['price_history'], [{'at': later.isoformat(), 'price':390000}])
+
     def test_history_and_retention(self):
         old=merge_history([], [self.row()], NOW)
         updated=merge_history(old, [self.row(price=390000)], NOW+timedelta(days=1))

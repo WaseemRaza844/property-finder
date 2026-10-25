@@ -16,6 +16,8 @@ def number(value, low=0, high=1e12):
 
 
 def normalize(raw, source):
+    if not isinstance(raw, dict):
+        raise ValueError('Each listing must be a JSON object')
     address = str(raw.get('address', '')).strip()
     city = str(raw.get('city', '')).strip()
     state = str(raw.get('state', '')).strip().upper()

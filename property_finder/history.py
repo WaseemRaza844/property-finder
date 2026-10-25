@@ -14,7 +14,8 @@ def merge_history(previous, incoming, now, days=4):
                     target[field] = value
         else:
             combined[key] = dict(row)
-    old = {r['id']: r for r in previous}
+    old = {r['id']: r for r in previous
+           if datetime.fromisoformat(r['last_seen']) > now - timedelta(days=days)}
     result = []
     for key, row in combined.items():
         prior = old.get(key, {})
