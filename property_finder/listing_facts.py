@@ -23,7 +23,7 @@ def location(title, url):
 
 def current_section(text):
     # Historical sales, comparable homes, and recommendations cannot supply facts.
-    return re.split(r'(?im)^\s*(?:#{1,6}\s*)?(?:sale and tax history|price history|property history|sale history|tax history|nearby homes|similar homes|recently sold homes|home history)\b', text[:24000], maxsplit=1)[0][:12000]
+    return re.split(r'(?im)^\s*(?:#{1,6}\s*)?(?:sale (?:and|&) tax history|price (?:and|&) sale history|price history|property history|sale history|tax history|nearby(?: recently sold)? homes|similar homes|comparable homes|recently sold homes|home history)\b', text[:24000], maxsplit=1)[0][:12000]
 
 
 def extract_facts(row, url, at):
@@ -32,6 +32,7 @@ def extract_facts(row, url, at):
     section = current_section(text)
     header = title + '\n' + section[:4000]
     lines = [re.sub(r'^[#*\s]+', '', line).strip() for line in header.splitlines()]
+    lines = [re.sub(r'^(?:listing\s+)?status\b\s*[:|–—-]?\s*', '', line, flags=re.I) for line in lines]
     negative = [
         ('off_market', r'^(?:this (?:home|property) is\s+)?(?:off[ -]market|not (?:currently )?for sale|listing (?:removed|withdrawn)|withdrawn|expired|not available)\b'),
         ('sold', r'^(?:this (?:home|property) (?:was|is)\s+)?(?:sold(?:\s+on|\s+for|\s+[a-z]{3,9}\s+\d|\s*[-:—]|\s*$)|recently sold)\b'),
@@ -45,7 +46,7 @@ def extract_facts(row, url, at):
         evidence = title[:120]
     # Title status and explicit current-status lines override positive wording.
     for label, pattern in negative if status == 'unknown' else []:
-        hit = next((line for line in lines if re.search(pattern, line, re.I) or re.search(r'\b(?:status|listing status)\s*[:|-]\s*' + ('sold' if label == 'sold' else 'off[ -]market' if label == 'off_market' else 'pending|under contract'), line, re.I)), None)
+        hit = next((line for line in lines if re.search(pattern, line, re.I)), None)
         if hit:
             status, evidence = label, hit[:120]
             break

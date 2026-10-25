@@ -25,6 +25,18 @@ class FactsTests(unittest.TestCase):
         self.assertEqual(row['listing_status'],'unknown')
         self.assertIsNone(row['price']);self.assertIsNone(row['beds'])
 
+    def test_all_labeled_unavailable_statuses_override_for_sale(self):
+        for label in ['Listing status:','Status:','Listing Status —']:
+            for value in ['Contingent','Coming soon','Not for sale','Off market','Sold','Pending','Under contract','Withdrawn','Expired']:
+                with self.subTest(label=label,value=value):
+                    self.assertNotEqual(self.facts('For sale\n'+label+' '+value)['listing_status'],'active')
+
+    def test_ampersand_history_is_not_current_evidence(self):
+        row=self.facts('For sale\n$425,000\nSale & Tax History\nSold on Oct 1, 2020\n$200,000\n9 beds')
+        self.assertEqual(row['listing_status'],'active')
+        self.assertEqual(row['price'],425000)
+        self.assertIsNone(row['beds'])
+
     def test_comparables_do_not_supply_facts(self):
         row=self.facts('For sale\nSimilar homes\n$900,000\n8 beds\n4 units')
         self.assertIsNone(row['price']);self.assertIsNone(row['beds']);self.assertIsNone(row['units'])
