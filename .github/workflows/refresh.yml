@@ -19,6 +19,9 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Refresh jobs persist data; reruns must start from the latest ledger.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
