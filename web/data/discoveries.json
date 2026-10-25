@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-25T07:29:00.256983+00:00",
-  "last_success_at": "2026-10-25T07:29:00.256983+00:00",
+  "generated_at": "2026-10-25T07:31:33.213485+00:00",
+  "last_success_at": "2026-10-25T07:31:33.213485+00:00",
   "provider": "Exa",
   "status": "ok",
-  "reserved_requests": 83,
+  "reserved_requests": 95,
   "monthly_limit": 400,
   "retention_days": 4,
   "queries": [
@@ -144,12 +144,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1540000,
       "beds": 4,
       "baths": 5,
@@ -168,12 +168,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 10367,
       "beds": 6,
       "baths": 4,
@@ -192,12 +192,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 659999,
       "beds": 3,
       "baths": 2.5,
@@ -216,12 +216,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 525000,
       "beds": 3,
       "baths": 1.5,
@@ -240,12 +240,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 249000,
       "beds": 3,
       "baths": 1.5,
@@ -264,12 +264,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 739000,
       "beds": 4,
       "baths": 2,
@@ -288,12 +288,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 10371,
       "beds": 3,
       "baths": 3.5,
@@ -312,12 +312,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 550000,
       "beds": 3,
       "baths": 1,
@@ -336,12 +336,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": null,
       "baths": null,
@@ -360,12 +360,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market jan 2026 for $340K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 343825,
       "beds": 4,
       "baths": 2,
@@ -384,12 +384,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 434999,
       "beds": 4,
       "baths": 3,
@@ -408,12 +408,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 699900,
       "beds": 2,
       "baths": 1,
@@ -432,12 +432,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 250000,
       "beds": 4,
       "baths": 2,
@@ -456,12 +456,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 179900,
       "beds": 3,
       "baths": 1.5,
@@ -480,12 +480,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD JUL 8, 2025",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 140000,
       "beds": 9,
       "baths": 3.5,
@@ -504,12 +504,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 365000,
       "beds": 3,
       "baths": 1.5,
@@ -528,12 +528,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 103700,
       "beds": 2,
       "baths": 1.5,
@@ -552,12 +552,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1510000,
       "beds": 5,
       "baths": 4.5,
@@ -576,12 +576,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 339000,
       "beds": 4,
       "baths": 3,
@@ -600,12 +600,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 140000,
       "beds": 3,
       "baths": 2,
@@ -624,12 +624,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on jun 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 66000,
       "beds": 6,
       "baths": null,
@@ -648,12 +648,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market dec 2025 for $100K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 3,
       "baths": 2,
@@ -672,12 +672,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on sep 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 310000,
       "beds": 8,
       "baths": 4,
@@ -696,12 +696,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on sep 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 310000,
       "beds": 8,
       "baths": 4,
@@ -720,12 +720,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 247900,
       "beds": 3,
       "baths": 2,
@@ -744,12 +744,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 339900,
       "beds": 5,
       "baths": 3,
@@ -768,12 +768,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 59500,
       "beds": 3,
       "baths": 1,
@@ -792,12 +792,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 4500000,
       "beds": 18,
       "baths": 10,
@@ -817,12 +817,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 158000,
       "beds": 5,
       "baths": 2,
@@ -841,12 +841,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 276000,
       "beds": 4,
       "baths": 2,
@@ -866,12 +866,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 153000,
       "beds": 4,
       "baths": 2,
@@ -890,12 +890,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 421000,
       "beds": 3,
       "baths": 3,
@@ -914,12 +914,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 349900,
       "beds": 4,
       "baths": 3,
@@ -938,12 +938,12 @@
         "toledo"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 135000,
       "beds": 2,
       "baths": 1.5,
@@ -962,12 +962,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 329000,
       "beds": 7,
       "baths": 3,
@@ -986,12 +986,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 259000,
       "beds": 6,
       "baths": 2,
@@ -1010,12 +1010,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 135000,
       "beds": 6,
       "baths": 3,
@@ -1034,12 +1034,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 260000,
       "beds": 8,
       "baths": 4,
@@ -1058,12 +1058,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 199000,
       "beds": 12,
       "baths": 4,
@@ -1082,12 +1082,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 435000,
       "beds": 8,
       "baths": null,
@@ -1106,12 +1106,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 165000,
       "beds": 3,
       "baths": null,
@@ -1130,12 +1130,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 4,
       "baths": null,
@@ -1154,12 +1154,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 5,
       "baths": 3,
@@ -1178,12 +1178,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 3,
       "baths": 2.5,
@@ -1202,12 +1202,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 269900,
       "beds": 3,
       "baths": 2,
@@ -1226,12 +1226,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 174900,
       "beds": 2,
       "baths": 2,
@@ -1250,12 +1250,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 255000,
       "beds": 2,
       "baths": 2,
@@ -1274,12 +1274,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 245900,
       "beds": 3,
       "baths": 2.5,
@@ -1298,12 +1298,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 580000,
       "beds": 3,
       "baths": 3,
@@ -1322,12 +1322,12 @@
         "cincinnati"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 105000,
       "beds": 4,
       "baths": 1,
@@ -1346,12 +1346,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD JUN 8, 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 840000,
       "beds": null,
       "baths": 6,
@@ -1370,12 +1370,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market dec 2024 for $848K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 12,
       "baths": 5,
@@ -1394,12 +1394,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 750000,
       "beds": 6,
       "baths": 6,
@@ -1418,12 +1418,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market dec 2023 for $333K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 295000,
       "beds": 4,
       "baths": 2,
@@ -1442,12 +1442,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market dec 2018 for $212K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 392124,
       "beds": 4,
       "baths": 3,
@@ -1466,12 +1466,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 850000,
       "beds": 3,
       "baths": 2,
@@ -1490,12 +1490,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 399000,
       "beds": 3,
       "baths": 2.5,
@@ -1514,12 +1514,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 650000,
       "beds": 2,
       "baths": 3,
@@ -1538,12 +1538,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 879000,
       "beds": 5,
       "baths": 3,
@@ -1562,12 +1562,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 649900,
       "beds": 4,
       "baths": 3.5,
@@ -1586,12 +1586,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 164900,
       "beds": 4,
       "baths": null,
@@ -1610,12 +1610,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "New Listing: Fully Rented 3-Unit Investment Opportunity Start generating income from day one with this well-maintained, ",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 150000,
       "beds": 7,
       "baths": null,
@@ -1634,12 +1634,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 149900,
       "beds": 3,
       "baths": 2,
@@ -1658,12 +1658,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 95000,
       "beds": 6,
       "baths": 2,
@@ -1682,12 +1682,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 150000,
       "beds": 2,
       "baths": 2,
@@ -1706,12 +1706,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD AUG 4, 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 55000,
       "beds": null,
       "baths": 6,
@@ -1730,12 +1730,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 70000,
       "beds": 6,
       "baths": 3,
@@ -1754,12 +1754,12 @@
         "johnstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 5,
       "baths": 4,
@@ -1778,12 +1778,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 225000,
       "beds": 8,
       "baths": 4,
@@ -1802,12 +1802,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 135000,
       "beds": 5,
       "baths": 2,
@@ -1826,12 +1826,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 95000,
       "beds": 4,
       "baths": 2,
@@ -1850,12 +1850,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 165000,
       "beds": 6,
       "baths": 4,
@@ -1874,12 +1874,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 180000,
       "beds": 12,
       "baths": 4,
@@ -1898,12 +1898,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 85000,
       "beds": 3,
       "baths": 2,
@@ -1922,12 +1922,12 @@
         "youngstown"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 70000,
       "beds": 3,
       "baths": 2,
@@ -1946,12 +1946,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 289900,
       "beds": 7,
       "baths": 3,
@@ -1970,12 +1970,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 155000,
       "beds": 4,
       "baths": 2,
@@ -1994,12 +1994,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 114900,
       "beds": 4,
       "baths": 2,
@@ -2018,12 +2018,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 148000,
       "beds": 4,
       "baths": 2,
@@ -2042,12 +2042,12 @@
         "cleveland"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 5,
       "baths": 3,
@@ -2066,12 +2066,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 534500,
       "beds": 8,
       "baths": null,
@@ -2090,12 +2090,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 524000,
       "beds": 2,
       "baths": 1,
@@ -2114,12 +2114,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 599900,
       "beds": 8,
       "baths": null,
@@ -2138,12 +2138,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 225000,
       "beds": 6,
       "baths": null,
@@ -2162,12 +2162,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 6,
       "baths": 1,
@@ -2186,12 +2186,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 209900,
       "beds": 6,
       "baths": null,
@@ -2210,12 +2210,12 @@
         "columbus"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 440000,
       "beds": 4,
       "baths": 1,
@@ -2234,12 +2234,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 540000,
       "beds": 3,
       "baths": 3,
@@ -2258,12 +2258,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 449999,
       "beds": 4,
       "baths": 4,
@@ -2282,12 +2282,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 8,
       "baths": 4,
@@ -2306,12 +2306,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1045000,
       "beds": 16,
       "baths": 8,
@@ -2330,12 +2330,12 @@
         "charlotte"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 415000,
       "beds": 6,
       "baths": 3,
@@ -2354,12 +2354,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1295000,
       "beds": 12,
       "baths": 6,
@@ -2378,12 +2378,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 550000,
       "beds": 6,
       "baths": 3,
@@ -2402,12 +2402,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1100000,
       "beds": 7,
       "baths": 6.5,
@@ -2426,12 +2426,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 559800,
       "beds": 3,
       "baths": null,
@@ -2450,12 +2450,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 750000,
       "beds": 2,
       "baths": 2,
@@ -2474,12 +2474,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 519500,
       "beds": 4,
       "baths": 4,
@@ -2498,12 +2498,12 @@
         "triangle"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 369900,
       "beds": 4,
       "baths": 2,
@@ -2537,7 +2537,8 @@
       "town": "South Bound Brook",
       "state": "NJ",
       "zip": "08880",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bound-Brook/437-Talmadge-Ave-08805/home/37721661",
@@ -2562,7 +2563,8 @@
       "town": "Bound Brook",
       "state": "NJ",
       "zip": "08805",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/South-Bound-Brook/173-Clinton-St-08880/home/37664492",
@@ -2587,7 +2589,8 @@
       "town": "South Bound Brook",
       "state": "NJ",
       "zip": "08880",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/1110-Bushkill-St-18042/home/59198028",
@@ -2612,7 +2615,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/3227-Hardie-Way-15213/home/74577404",
@@ -2637,7 +2641,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15213",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/225-Spring-Ave-15202/home/74461272",
@@ -2662,7 +2667,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15202",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Homestead/1405-1407-West-St-15120/home/194796736",
@@ -2687,7 +2693,8 @@
       "town": "Homestead",
       "state": "PA",
       "zip": "15120",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/197-199-E-Bellevue-Ave-15202/home/192322444",
@@ -2712,7 +2719,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15202",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/McKeesport/1615-Sumac-St-15132/home/74611383",
@@ -2737,7 +2745,8 @@
       "town": "McKeesport",
       "state": "PA",
       "zip": "15132",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Carnegie/443-Carothers-Ave-15106/home/73516242",
@@ -2762,7 +2771,8 @@
       "town": "Carnegie",
       "state": "PA",
       "zip": "15106",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/411-Hampton-Ave-15221/home/74517481",
@@ -2787,7 +2797,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15221",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/430-Brownsville-Rd-15210/home/74590023",
@@ -2812,7 +2823,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15210",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/4911-Sciota-St-15224/home/74661667",
@@ -2837,7 +2849,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15224",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/549-551-Ardmore-Blvd-15221/home/189888744",
@@ -2862,7 +2875,8 @@
       "town": "Pittsburgh",
       "state": "PA",
       "zip": "15221",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/PA/Johnstown/315-Village-St-15902/home/118315330",
@@ -2887,7 +2901,8 @@
       "town": "Johnstown",
       "state": "PA",
       "zip": "15902",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Youngstown/2021-Felicia-Ave-44504/home/66260424",
@@ -2912,7 +2927,8 @@
       "town": "Youngstown",
       "state": "OH",
       "zip": "44504",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/East-Cleveland/1711-Holyoke-Ave-44112/home/70973355",
@@ -2937,7 +2953,8 @@
       "town": "East Cleveland",
       "state": "OH",
       "zip": "44112",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/1102-Hamilton-St-43607/home/121327090",
@@ -2962,7 +2979,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43607",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/501-Clark-St-43605/home/121748548",
@@ -2987,7 +3005,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43605",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/553-Dover-Pl-43605/home/123336543",
@@ -3012,7 +3031,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43605",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/2240-Franklin-Ave-43620/home/121264833",
@@ -3037,7 +3057,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43620",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/3104-Franklin-Ave-43608/home/121793414",
@@ -3062,7 +3083,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43608",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2010-Airport-Hwy_Toledo_OH_43609_M42584-15398",
@@ -3087,7 +3109,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43609",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/405-Victoria-Pl-43610/home/121726777",
@@ -3112,7 +3135,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43610",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/853-South-Ave-43609/home/122972448",
@@ -3137,7 +3161,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43609",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/237-Yondota-St-43605/home/123590930",
@@ -3162,7 +3187,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43605",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Toledo/2201-W-Sylvania-Ave-43613/home/122617072",
@@ -3187,7 +3213,8 @@
       "town": "Toledo",
       "state": "OH",
       "zip": "43613",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/889-E-143rd-St_Cleveland_OH_44110_M37999-53540",
@@ -3212,7 +3239,8 @@
       "town": "Cleveland",
       "state": "OH",
       "zip": "44110",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/3438-Martin-Luther-King-Jr-Dr_Cleveland_OH_44104_M46061-74386",
@@ -3237,7 +3265,8 @@
       "town": "Cleveland",
       "state": "OH",
       "zip": "44104",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Cleveland/2838-E-124th-St-44120/home/66574033",
@@ -3262,7 +3291,8 @@
       "town": "Cleveland",
       "state": "OH",
       "zip": "44120",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Cleveland/2797-E-125th-St-44120/home/66567670",
@@ -3287,7 +3317,8 @@
       "town": "Cleveland",
       "state": "OH",
       "zip": "44120",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/329-331-Whitethorne-Ave_Columbus_OH_43223_M34175-50554",
@@ -3312,7 +3343,8 @@
       "town": "Columbus",
       "state": "OH",
       "zip": "43223",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Columbus/1443-Hunter-Ave-43201/home/99781059",
@@ -3337,7 +3369,8 @@
       "town": "Columbus",
       "state": "OH",
       "zip": "43201",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/2310-Indian-Mound-Ave-45212/home/101048508",
@@ -3362,7 +3395,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45212",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/5855-Lathrop-Pl-45224/home/100985461",
@@ -3387,7 +3421,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45224",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Middletown/28-Curtis-St-45044/home/201893583",
@@ -3412,7 +3447,8 @@
       "town": "Middletown",
       "state": "OH",
       "zip": "45044",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/1988-Lexington-Ave-45212/home/101049997",
@@ -3437,7 +3473,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45212",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/5013-Stewart-Park-45212/home/101048728",
@@ -3462,7 +3499,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45212",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2462-Fairview-Ave_Cincinnati_OH_45219_M48562-83063",
@@ -3487,7 +3525,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45219",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/58-Gorman-Ln-45215/home/78968641",
@@ -3512,7 +3551,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45215",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/6494-Hasler-Ln-45216/home/101050303",
@@ -3537,7 +3577,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45216",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/3636-Besuden-Ct-45208/home/78980213",
@@ -3562,7 +3603,8 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45208",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NC/Kannapolis/218-Odell-Dr-NW-28083/home/200230356",
@@ -3587,7 +3629,8 @@
       "town": "Kannapolis",
       "state": "NC",
       "zip": "28083",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Gastonia/423-N-Carpenter-St-28054/home/40997307",
@@ -3612,7 +3655,8 @@
       "town": "Gastonia",
       "state": "NC",
       "zip": "28054",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Charlotte/4102-Craig-Ave-28211/home/44143535",
@@ -3637,7 +3681,8 @@
       "town": "Charlotte",
       "state": "NC",
       "zip": "28211",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Gastonia/1304-S-York-Rd-28052/home/40993213",
@@ -3662,7 +3707,8 @@
       "town": "Gastonia",
       "state": "NC",
       "zip": "28052",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Charlotte/11701-Shandon-Cir-28226/home/44033607",
@@ -3687,7 +3733,8 @@
       "town": "Charlotte",
       "state": "NC",
       "zip": "28226",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Durham/4405-American-Dr-27705/home/43573125",
@@ -3712,7 +3759,8 @@
       "town": "Durham",
       "state": "NC",
       "zip": "27705",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Durham/320-Clark-St-27701/home/43523038",
@@ -3737,7 +3785,8 @@
       "town": "Durham",
       "state": "NC",
       "zip": "27701",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NC/Durham/1016-Camden-Ave-27701/home/43610020",
@@ -3762,7 +3811,8 @@
       "town": "Durham",
       "state": "NC",
       "zip": "27701",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.homes.com/property/607-lake-ave-lyndhurst-nj/j0rdz61jbkwzq",
@@ -3772,12 +3822,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 859000,
       "beds": 4,
       "baths": 4,
@@ -3796,12 +3846,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1350000,
       "beds": 12,
       "baths": 6,
@@ -3821,12 +3871,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 164900,
       "beds": 4,
       "baths": 2.5,
@@ -3845,12 +3895,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 5,
       "baths": 2,
@@ -3869,12 +3919,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 395000,
       "beds": 2,
       "baths": 2.5,
@@ -3893,12 +3943,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 474900,
       "beds": 4,
       "baths": 2,
@@ -3932,7 +3982,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/607-Northampton-St-18042/home/59198613",
@@ -3957,7 +4008,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/833-Walnut-Ave-18042/home/59195540",
@@ -3982,7 +4034,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/13-E-3rd-St-18015/home/76763153",
@@ -4007,7 +4060,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18015",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/35-Ski-Hill-Dr_Bedminster_NJ_07921_M57036-59231",
@@ -4032,7 +4086,8 @@
       "town": "Bedminster Twp",
       "state": "NJ",
       "zip": "07921",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/30-32-Centre-St_Nutley_NJ_07110_M98091-83124",
@@ -4057,7 +4112,8 @@
       "town": "Nutley",
       "state": "NJ",
       "zip": "07110",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/360-Farnsworth-Ave_Bordentown_NJ_08505_M60493-13474",
@@ -4082,7 +4138,8 @@
       "town": "Bordentown",
       "state": "NJ",
       "zip": "08505",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/211-213-S-Main-St_Elmer_NJ_08318_M91739-99848",
@@ -4107,7 +4164,8 @@
       "town": "Elmer",
       "state": "NJ",
       "zip": "08318",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/33-Eton-Ct_Bedminster_NJ_07921_M59961-23571",
@@ -4132,7 +4190,8 @@
       "town": "Bedminster Twp",
       "state": "NJ",
       "zip": "07921",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/401-Union-Ave_Scotch-Plains_NJ_07076_M64510-56230",
@@ -4157,7 +4216,8 @@
       "town": "Scotch Plains",
       "state": "NJ",
       "zip": "07076",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/208-State-Rt-284_Sussex_NJ_07461_M51967-45226",
@@ -4182,7 +4242,8 @@
       "town": "Wantage Township",
       "state": "NJ",
       "zip": "07461",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/123-Main-Ave-Apt-1_Ocean-Grove_NJ_07756_M66032-92680",
@@ -4207,7 +4268,8 @@
       "town": "Ocean Grove",
       "state": "NJ",
       "zip": "07756",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Palisades-Park/441-Hillcrest-Pl-07650/home/35817569",
@@ -4232,7 +4294,8 @@
       "town": "Palisades Park",
       "state": "NJ",
       "zip": "07650",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Clementon/221-White-Horse-Pike-08021/home/184895314",
@@ -4257,7 +4320,8 @@
       "town": "Clementon",
       "state": "NJ",
       "zip": "08021",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bridgeton/643-Fordville-Rd-08302/home/100398845",
@@ -4282,7 +4346,8 @@
       "town": "Bridgeton",
       "state": "NJ",
       "zip": "08302",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/New-Brunswick/115-Remsen-Ave-08901/home/36851304",
@@ -4307,7 +4372,8 @@
       "town": "New Brunswick",
       "state": "NJ",
       "zip": "08901",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Paterson/276-Ellison-St-07501/home/104483416",
@@ -4332,7 +4398,8 @@
       "town": "Paterson",
       "state": "NJ",
       "zip": "07501",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/3813-Belcourt-Dr_Easton_PA_18040_M43654-13284",
@@ -4357,7 +4424,8 @@
       "town": "Forks Township",
       "state": "PA",
       "zip": "18040",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2580-Hickory-Dr_Easton_PA_18040_M43839-10157",
@@ -4382,7 +4450,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18040",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/30-32-Timpson-St_Ashley_PA_18706_M95662-90192",
@@ -4407,7 +4476,8 @@
       "town": "Ashley",
       "state": "PA",
       "zip": "18706",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/202-Canal-Park_Easton_PA_18042_M45536-05682",
@@ -4432,7 +4502,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/132-Leneake-St_Turtle-Creek_PA_15145_M30283-67764",
@@ -4457,7 +4528,8 @@
       "town": "Turtle Creek",
       "state": "PA",
       "zip": "15145",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/326-Bosler-Ave_Lemoyne_PA_17043_M35977-11576",
@@ -4482,7 +4554,8 @@
       "town": "Lemoyne",
       "state": "PA",
       "zip": "17043",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/506-W-Berwick-St-18042/home/76756500",
@@ -4507,7 +4580,8 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/244-Sitgreaves-St-08865/home/37889852",
@@ -4532,7 +4606,8 @@
       "town": "Phillipsburg",
       "state": "NJ",
       "zip": "08865",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/1019-Lincoln-St_Freemansburg_PA_18017_M39473-41503",
@@ -4557,7 +4632,8 @@
       "town": "Freemansburg",
       "state": "PA",
       "zip": "18017",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/707-E-5th-St_Bethlehem_PA_18015_M48688-06682",
@@ -4582,7 +4658,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18015",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/1128-Maple-St_Bethlehem_PA_18018_M38699-30359",
@@ -4607,7 +4684,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18018",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2950-Santee-Dr_Bethlehem_PA_18017_M44903-82408",
@@ -4632,7 +4710,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18017",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2584-Raya-Way_Easton_PA_18045_M90344-85025",
@@ -4657,7 +4736,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18045",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/3470-Park-Pl_Bethlehem_PA_18017_M45618-04190",
@@ -4682,7 +4762,8 @@
       "town": "Hanover Township",
       "state": "PA",
       "zip": "18017",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/1282-Steel-Ave-18015/home/76764345",
@@ -4707,7 +4788,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18015",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.homes.com/property/400-prospect-ave-asbury-park-nj/k4xdjv83tmy83",
@@ -4717,12 +4799,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 550000,
       "beds": 7,
       "baths": 4,
@@ -4741,12 +4823,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": null,
       "beds": 6,
       "baths": 3,
@@ -4765,12 +4847,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 180000,
       "beds": 7,
       "baths": 3.5,
@@ -4789,12 +4871,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 499900,
       "beds": 4,
       "baths": 2.5,
@@ -4813,12 +4895,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 530000,
       "beds": 6,
       "baths": 3.5,
@@ -4837,12 +4919,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 299900,
       "beds": 3,
       "baths": 2,
@@ -4861,12 +4943,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on sep 2026",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 311250,
       "beds": 4,
       "baths": 2.5,
@@ -4885,12 +4967,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 450000,
       "beds": 3,
       "baths": 3,
@@ -4909,12 +4991,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1475000,
       "beds": 5,
       "baths": 7,
@@ -4933,12 +5015,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 599900,
       "beds": 3,
       "baths": null,
@@ -4957,12 +5039,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market sep 2023 for $354K",
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 255000,
       "beds": 4,
       "baths": 2.5,
@@ -4981,12 +5063,12 @@
         "pittsburgh"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-10-25T07:31:33.213485+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-10-25T07:29:00.256983+00:00",
+      "facts_observed_at": "2026-10-25T07:31:33.213485+00:00",
       "price": 1150000,
       "beds": 2,
       "baths": 1,
@@ -5020,7 +5102,8 @@
       "town": "Raritan",
       "state": "NJ",
       "zip": "08869",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/274-Greylock-Pkwy_Belleville_NJ_07109_M67113-09161",
@@ -5045,7 +5128,8 @@
       "town": "Belleville",
       "state": "NJ",
       "zip": "07109",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/218-Limroth-Dr_Point-Pleasant-Beach_NJ_M50648-19236",
@@ -5070,7 +5154,8 @@
       "town": "Point Pleasant",
       "state": "NJ",
       "zip": "08742",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bridgeton/145-Oak-St-08302/home/100394860",
@@ -5095,7 +5180,8 @@
       "town": "Bridgeton",
       "state": "NJ",
       "zip": "08302",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Williamstown/2442-S-Black-Horse-Pike-08094/home/36437885",
@@ -5120,7 +5206,8 @@
       "town": "Williamstown",
       "state": "NJ",
       "zip": "08094",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bridgeton/190-W-Commerce-St-08302/home/100394873",
@@ -5145,7 +5232,8 @@
       "town": "Bridgeton",
       "state": "NJ",
       "zip": "08302",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Palisades-Park/273-275-9th-St-07650/home/205691989",
@@ -5170,7 +5258,8 @@
       "town": "Palisades Park",
       "state": "NJ",
       "zip": "07650",
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/530-S-Main-St_Phillipsburg_NJ_08865_M52782-98059",
@@ -5195,7 +5284,8 @@
       "town": "Phillipsburg",
       "state": "NJ",
       "zip": "08865",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/127-Willow-Dr_Palmer-Twp_PA_18045_M42245-74742",
@@ -5220,7 +5310,8 @@
       "town": "Palmer Township",
       "state": "PA",
       "zip": "18045",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/429-Melrose-Ave_Clarks-Summit_PA_18411_M49080-41451",
@@ -5246,7 +5337,8 @@
       "town": "Clarks Summit",
       "state": "PA",
       "zip": "18411",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/507-N-Refwal-St_Allentown_PA_18102_M30422-83522",
@@ -5271,7 +5363,8 @@
       "town": "Allentown",
       "state": "PA",
       "zip": "18102",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/1322-1324-E-4th-St_Bethlehem_PA_18015_M38475-66848",
@@ -5296,7 +5389,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18015",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/19-N-11th-St_Allentown_PA_18101_M94651-63205",
@@ -5321,7 +5415,8 @@
       "town": "Allentown",
       "state": "PA",
       "zip": "18101",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/818-High-St-18018/home/76762175",
@@ -5346,7 +5441,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18018",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/328-Polk-St-18015/home/59195869",
@@ -5371,7 +5467,8 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18015",
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/110-Village-Dr_Basking-Ridge_NJ_07920_M63050-43896",
@@ -5383,7 +5480,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/285-W-Palisade-Ave_Englewood_NJ_07631_M64002-56820",
@@ -5395,7 +5493,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/90-Chestnut-St_Morristown_NJ_07960_M63363-38545",
@@ -5407,7 +5506,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Bernardsville/23-Morristown-Rd-07924/home/202371775",
@@ -5419,7 +5519,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Kendall-Park/3774-New-Jersey-27-08824/home/197987156",
@@ -5431,7 +5532,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Belleville/302-Belmont-Ave-07109/home/36104422",
@@ -5443,7 +5545,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.redfin.com/NJ/Summit/24-Franklin-Pl-07901/home/38097050",
@@ -5455,7 +5558,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": true
+      "not_searched_this_run": true,
+      "search_excluded": false
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/108-110-Bennett-St_Phillipsburg-Town_NJ_08865_M92546-20885",
@@ -5467,7 +5571,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/134-N-3rd-St_Easton_PA_18042_M32150-67324",
@@ -5479,7 +5584,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/81-Moor-Dr_Palmer-Twp_PA_18045_M46575-03130",
@@ -5491,7 +5597,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/224-Park-Ridge-Dr_Easton_PA_18040_M43647-73070",
@@ -5503,7 +5610,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/245-Wilson-Ave_Lyndhurst_NJ_07071_M59532-68807",
@@ -5515,7 +5623,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/3514-W-Allegheny-Ave_Philadelphia_PA_19132_M33477-65932",
@@ -5527,7 +5636,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/801-W-Berwick-St-18042/home/59197717",
@@ -5539,7 +5649,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/697-Ferry-St-18042/home/76747144",
@@ -5551,7 +5662,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/1319-Northampton-St-18042/home/59196865",
@@ -5563,7 +5675,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/584-Roseberry-St-08865/home/37848220",
@@ -5575,7 +5688,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/87-Lewis-St-08865/home/205702386",
@@ -5587,7 +5701,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/NJ/Phillipsburg/17-Railroad-Ave-08865/home/37844059",
@@ -5599,7 +5714,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/438-N-7th-St-Apt-2_Allentown_PA_18102_M30627-42524",
@@ -5611,7 +5727,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/722-Wyandotte-St_Bethlehem_PA_18015_M30849-49174",
@@ -5623,7 +5740,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/535-Main-St-Apt-12_Bethlehem_PA_18018_M45984-36611",
@@ -5635,7 +5753,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/611-E-Federal-St_Allentown_PA_18103_M49257-78787",
@@ -5647,7 +5766,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2713-Center-St_Bethlehem_PA_18017_M35545-11422",
@@ -5659,7 +5779,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Fountain-Hill/913-Seneca-St-18015/home/59185728",
@@ -5671,7 +5792,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/1334-W-Turner-St-18102/home/69115447",
@@ -5683,7 +5805,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/606-Hayes-St-18015/home/59199027",
@@ -5695,7 +5818,8 @@
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-10-25T06:07:06.000135+00:00",
       "observed_this_run": false,
-      "not_searched_this_run": false
+      "not_searched_this_run": false,
+      "search_excluded": true
     }
   ]
 }
