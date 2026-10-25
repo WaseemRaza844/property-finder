@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-10-25T07:17:54.192640+00:00",
+  "reserved_requests": 55,
+  "monthly_limit": 400,
+  "queries": [
+    {
+      "market": "easton",
+      "query": "Easton PA duplex for sale Homes.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 1,
+      "results": [
+        {
+          "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
+          "title": "491 Prospect Rd \n                                 \n                     \n                             Warminster, PA \n                             18974",
+          "text_characters": 10978,
+          "status_labels": [],
+          "listing_status": "unknown",
+          "status_basis": "No explicit current status found",
+          "status_evidence": null,
+          "facts_observed_at": "2026-10-25T07:17:54.192640+00:00",
+          "price": 1150000,
+          "beds": 2,
+          "baths": 1,
+          "sqft": 2184,
+          "units": 4,
+          "property_type": "multifamily",
+          "town": null,
+          "state": null,
+          "zip": null
+        }
+      ]
+    },
+    {
+      "market": "pittsburgh",
+      "query": "Pittsburgh PA multifamily for sale Homes.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 1,
+      "results": [
+        {
+          "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
+          "title": "491 Prospect Rd \n                                 \n                     \n                             Warminster, PA \n                             18974",
+          "text_characters": 10978,
+          "status_labels": [],
+          "listing_status": "unknown",
+          "status_basis": "No explicit current status found",
+          "status_evidence": null,
+          "facts_observed_at": "2026-10-25T07:17:54.192640+00:00",
+          "price": 1150000,
+          "beds": 2,
+          "baths": 1,
+          "sqft": 2184,
+          "units": 4,
+          "property_type": "multifamily",
+          "town": null,
+          "state": null,
+          "zip": null
+        }
+      ]
+    },
+    {
+      "market": "cleveland",
+      "query": "Cleveland OH duplex for sale Homes.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 0,
+      "results": []
+    },
+    {
+      "market": "charlotte",
+      "query": "Charlotte NC multifamily for sale Homes.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 0,
+      "results": []
+    }
+  ]
+}
