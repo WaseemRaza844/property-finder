@@ -31,7 +31,7 @@ jobs:
         run: python -m property_finder.refresh
       - name: Reserve search allowance
         env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.discovery reserve
       - name: Persist allowance before making search requests
         run: |
@@ -44,7 +44,7 @@ jobs:
           fi
       - name: Collect and save property search links
         env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.discovery refresh
       - name: Build static artifact including truthful source errors
         run: python scripts/build.py

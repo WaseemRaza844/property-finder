@@ -1,10 +1,11 @@
 import json
 import tempfile
 import unittest
+from unittest.mock import patch, MagicMock
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import URLError
-from property_finder.discovery import reserve, refresh, property_url, write_json, CAP
+from property_finder.discovery import reserve, refresh, property_url, write_json, CAP, search
 
 NOW = datetime(2026, 10, 25, 12, tzinfo=timezone.utc)
 URL = 'https://www.redfin.com/PA/Example/home/123'
@@ -32,7 +33,30 @@ class DiscoveryTests(unittest.TestCase):
         reserve(self.root,'run-1',NOW,False)
         report=refresh(self.root,'run-1',NOW,requester=lambda *a:self.fail('Unexpected network call'))
         self.assertEqual(report['status'],'not_configured')
-        self.assertEqual(report['reserved_credits'],0)
+        self.assertEqual(report['reserved_requests'],0)
+
+    def test_exa_request_uses_lite_domain_filter_and_private_header(self):
+        response=MagicMock()
+        response.__enter__.return_value.read.return_value=json.dumps({'results':[{'url':URL,'title':'Test'}]}).encode()
+        with patch('property_finder.discovery.build_opener') as opener:
+            opener.return_value.open.return_value=response
+            result=search('Easton PA duplex for sale','redfin.com','test-secret')
+        request=opener.return_value.open.call_args.args[0]
+        self.assertEqual(request.full_url,'https://api.exa.ai/search')
+        self.assertEqual(request.get_header('X-api-key'),'test-secret')
+        body=json.loads(request.data)
+        self.assertEqual(body,{'query':'Easton PA duplex for sale','includeDomains':['redfin.com'],
+                               'type':'lite','numResults':10,'contents':{'text':False,'highlights':False}})
+        self.assertNotIn('test-secret',request.full_url)
+        self.assertNotIn('test-secret',request.data.decode())
+        self.assertEqual(result[0]['url'],URL)
+
+    def test_invalid_exa_response_is_rejected(self):
+        response=MagicMock()
+        response.__enter__.return_value.read.return_value=b'{"results":null}'
+        with patch('property_finder.discovery.build_opener') as opener:
+            opener.return_value.open.return_value=response
+            with self.assertRaises(ValueError):search('test','redfin.com','test-secret')
 
     def test_dedup_discards_content_and_replay_does_not_spend(self):
         self.prepare(); calls=[]

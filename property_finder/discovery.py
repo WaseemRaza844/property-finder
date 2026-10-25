@@ -1,4 +1,4 @@
-"""Tavily search discovery. Never fetches or scrapes property websites.
+"""Exa Lite search discovery. Never fetches or scrapes property websites.
 
 Only titles, canonical property URLs, query-market labels and observation dates
 are stored. Snippets, images, answers, prices and raw page content are discarded.
@@ -59,7 +59,7 @@ def queries(root):
             result.append({'market': market['id'], 'domain': domain,
                            'query': f'({places}) (multifamily OR "multi family" OR duplex OR triplex OR fourplex) homes for sale'})
     if not 1 <= len(result) <= 9:
-        raise ValueError('At most nine basic queries per run')
+        raise ValueError('At most nine Lite queries per run')
     return result
 
 
@@ -89,12 +89,11 @@ def reserve(root, run_id, now, has_key):
 
 
 def search(query, domain, key):
-    request = Request('https://api.tavily.com/search', method='POST',
-                      headers={'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json'},
-                      data=json.dumps({'query': query, 'include_domains': [domain],
-                                       'search_depth': 'basic', 'auto_parameters': False,
-                                       'max_results': 10, 'include_answer': False,
-                                       'include_raw_content': False, 'include_images': False}).encode())
+    request = Request('https://api.exa.ai/search', method='POST',
+                      headers={'x-api-key': key, 'Content-Type': 'application/json'},
+                      data=json.dumps({'query': query, 'includeDomains': [domain],
+                                       'type': 'lite', 'numResults': 10,
+                                       'contents': {'text': False, 'highlights': False}}).encode())
     # No retries or redirects: one authorized endpoint, bounded credit use.
     with build_opener(NoRedirect).open(request, timeout=35) as response:
         data = json.loads(response.read(2000000))
@@ -153,7 +152,7 @@ def refresh(root, run_id, now=None, key=None, requester=search):
         errors = sum(r['status'] == 'error' for r in reports)
         status = 'error' if errors == len(reports) else 'partial' if errors else 'ok'
     data = {'generated_at': now.isoformat(), 'last_success_at': now.isoformat() if status == 'ok' else prior.get('last_success_at'),
-            'provider': 'Tavily', 'status': status, 'reserved_credits': plan['reserved'], 'monthly_limit': CAP,
+            'provider': 'Exa', 'status': status, 'reserved_requests': plan['reserved'], 'monthly_limit': CAP,
             'retention_days': 4, 'queries': reports,
             'results': sorted(seen.values(), key=lambda r: r['first_seen'], reverse=True)}
     write_json(output, data)
@@ -169,7 +168,7 @@ if __name__ == '__main__':
     run_id = os.environ.get('GITHUB_RUN_ID')
     if not run_id:
         parser.error('Set GITHUB_RUN_ID to a unique local run identifier, or run through GitHub Actions')
-    key = os.environ.get('TAVILY_API_KEY')
+    key = os.environ.get('EXA_API_KEY')
     if args.action == 'reserve':
         report = reserve(root, run_id, datetime.now(timezone.utc), bool(key))
     else:

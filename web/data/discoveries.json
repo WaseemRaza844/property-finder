@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-10-25T05:41:57.462316+00:00",
   "last_success_at": null,
-  "provider": "Tavily",
+  "provider": "Exa",
   "status": "not_configured",
-  "reserved_credits": 0,
+  "reserved_requests": 0,
   "monthly_limit": 400,
   "retention_days": 4,
   "queries": [],
