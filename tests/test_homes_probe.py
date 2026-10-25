@@ -25,7 +25,7 @@ class HomesProbeTests(unittest.TestCase):
     def test_requests_only_homes_and_discards_raw_content(self):
         reserve(self.root,'one',NOW,True)
         def fake(query,domain,key):
-            self.assertEqual(domain,'homes.com')
+            self.assertEqual(domain,'homes.com/property')
             return [{'url':'https://www.homes.com/property/123-main-st-easton-pa/abc/','title':'123 Main St, Easton, PA 18042','text':'For Sale\nPRIVATE RAW TEXT\n$200,000\n4 beds\n2 units'},
                     {'url':'https://www.homes.com/easton-pa/multi-family-homes-for-sale/','title':'Market page'},
                     {'url':'https://www.redfin.com/PA/X/home/1','title':'Wrong source'}]
