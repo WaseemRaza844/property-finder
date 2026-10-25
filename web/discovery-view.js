@@ -14,7 +14,7 @@ export function uniqueProperties(rows,now=Date.now(),source=''){
  return [...groups.values()].flatMap(group=>{
   // Current contradictory closed evidence suppresses the entire matched property.
   if(group.some(r=>closed(r)&&fresh(r,now)))return [];
-  const choices=group.filter(r=>!source||r.source===source).sort((a,b)=>Number(b.listing_status==='active'&&fresh(b,now))-Number(a.listing_status==='active'&&fresh(a,now))||(rank[a.source]??9)-(rank[b.source]??9)||b.last_seen.localeCompare(a.last_seen));
+  const choices=group.filter(r=>!closed(r)&&(!source||r.source===source)).sort((a,b)=>Number(b.listing_status==='active'&&fresh(b,now))-Number(a.listing_status==='active'&&fresh(a,now))||(rank[a.source]??9)-(rank[b.source]??9)||b.last_seen.localeCompare(a.last_seen));
   if(!choices.length)return [];const chosen=choices[0];
   return [{...chosen,markets:[...new Set(group.flatMap(r=>r.markets))],alternates:group.filter(r=>r.url!==chosen.url).map(r=>({url:r.url,source:r.source,status:r.listing_status}))}];
  });

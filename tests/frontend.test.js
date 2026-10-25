@@ -46,6 +46,8 @@ test('exact cross-source addresses prefer active Homes.com without blending fact
  assert.notEqual(propertyIdentity({...homes,title:'123 Main St, Unit 2, Easton, PA 18042',url:'unit2'}),propertyIdentity(homes));
  assert.equal(uniqueProperties([red,{...homes,listing_status:'unknown'}],discoveryNow)[0].source,'redfin.com');
  assert.equal(uniqueProperties([red,{...homes,listing_status:'sold'}],discoveryNow).length,0);
+ const reviewable=uniqueProperties([{...red,listing_status:'unknown'},{...homes,listing_status:'sold',observed_this_run:false}],discoveryNow);
+ assert.equal(reviewable[0].source,'redfin.com');assert.equal(reviewable[0].alternates[0].status,'sold');
  assert.equal(uniqueProperties([red,homes],discoveryNow,'redfin.com')[0].source,'redfin.com');
 });
 test('region filters follow market catalog and regional grouping remains available',()=>{
