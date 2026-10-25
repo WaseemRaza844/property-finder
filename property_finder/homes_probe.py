@@ -9,6 +9,7 @@ import sys
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
 from pathlib import Path
+from urllib.parse import urlsplit,urlunsplit
 from .discovery import CAP, search, property_url, write_json
 from .listing_facts import extract_facts, current_section
 import re
@@ -25,7 +26,7 @@ def reserve(root, run_id, now, has_key):
     month=now.strftime('%Y-%m')
     if ledger['month'] != month:
         ledger={'month':month,'reserved':0,'runs':[]}
-    marker=month+':homes-probe-v1'
+    marker=month+':homes-probe-v2'
     status='not_configured' if not has_key else 'already_done' if marker in ledger['runs'] else 'budget_exhausted' if ledger['reserved']+len(PROBES)>CAP else 'ready'
     if status=='ready':
         ledger['reserved']+=len(PROBES)
@@ -48,14 +49,20 @@ def refresh(root, run_id, now, key, requester=search):
     write_json(plan_path,dict(plan,status='consumed'))
     reports=[]
     for market,query in PROBES:
-        report={'market':market,'query':query,'status':'ok','returned':0,'accepted':0,'results':[]}
+        report={'market':market,'query':query,'status':'ok','returned':0,'accepted':0,'results':[],'rejected_pages':[]}
         try:
-            rows=requester(query,'homes.com',key)
+            rows=requester(query.replace(' Homes.com',''),'homes.com/property',key)
             report['returned']=len(rows[:10])
             for row in rows[:10]:
                 if not isinstance(row,dict):continue
                 url=property_url(row.get('url'))
                 if not url or not url.startswith('https://www.homes.com/'):
+                    try:
+                        parsed=urlsplit(row.get('url',''))
+                        if parsed.scheme=='https' and parsed.hostname in ('homes.com','www.homes.com') and not parsed.username and not parsed.password and not parsed.port:
+                            report['rejected_pages'].append(urlunsplit(('https','www.homes.com',parsed.path,'','')))
+                    except ValueError:
+                        pass
                     continue
                 report['accepted']+=1
                 text=row.get('text') if isinstance(row.get('text'),str) else ''
