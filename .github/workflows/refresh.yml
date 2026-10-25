@@ -49,13 +49,29 @@ jobs:
         env:
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.discovery refresh
+      # Four extra requests at most once per month, within the same 400 cap.
+      - name: Reserve monthly Homes.com diagnostic
+        env:
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: python -m property_finder.homes_probe reserve
+      - name: Persist Homes.com diagnostic allowance before requests
+        run: |
+          git add .state/search-budget.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: reserve Homes.com diagnostic allowance'
+            git push
+          fi
+      - name: Run dedicated Homes.com index searches
+        env:
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: python -m property_finder.homes_probe refresh
       - name: Build static artifact including truthful source errors
         run: python scripts/build.py
       - name: Persist four-day observations and price history
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add web/data/listings.json web/data/discoveries.json
+          git add web/data/
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh authorized property observations'
             git push
