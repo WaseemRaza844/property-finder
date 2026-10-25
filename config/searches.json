@@ -1,0 +1,8 @@
+{
+  "markets": [
+    {"id":"bedminster","name":"Bedminster NJ","towns":["Bedminster NJ","Somerville NJ","Bridgewater NJ","Bernardsville NJ","Raritan NJ"]},
+    {"id":"easton","name":"Easton PA","towns":["Easton PA","Palmer Township PA","Wilson PA","Forks Township PA","Phillipsburg NJ"]},
+    {"id":"bethlehem","name":"Bethlehem PA","towns":["Bethlehem PA","Allentown PA","Fountain Hill PA","Freemansburg PA","Hellertown PA"]}
+  ],
+  "domains": ["realtor.com","redfin.com","homes.com"]
+}
