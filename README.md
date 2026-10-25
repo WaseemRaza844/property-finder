@@ -26,7 +26,7 @@ Copy an individual property URL into **Save listing link** with your own label a
 
 Saved links and search preferences use localStorage on the site's origin in this browser/device. They are not published to GitHub, synced to other devices, or checked by the daily workflow. Saved links remain until removed or browser data is cleared. Export/restore a JSON backup to move them to another device. Removing a link offers Undo. If storage is blocked/full, the page warns that the shortlist lasts only for the current visit. Backup restore accepts at most 500 valid links from a file under 2 MB.
 
-This version performs **no automated Google or property-portal requests**. It requires no account, API key, or billing details. Collecting search results into the site automatically remains a future integration requiring an authorized search service and suitable storage/display rights.
+The optional guided-search tools perform **no automated Google or property-portal requests** and need no account or API key. Automatic collection is provided separately by the Tavily integration above, which requires a free account and a private Actions secret.
 
 **Current data: no live listing feeds are connected.** Realtor.com, Homes.com, and Redfin are explicitly unconnected. There are no fabricated listing cards, hidden scraping adapters, paid APIs, or requests to property websites. The empty import is a valid, empty export, not a live connection.
 
