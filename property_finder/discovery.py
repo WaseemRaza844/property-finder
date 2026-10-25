@@ -52,14 +52,16 @@ def property_url(value):
 def queries(root):
     config = json.loads((root / 'config/searches.json').read_text(encoding='utf-8'))
     result = []
+    domain_sets = [config['domains']] if config.get('query_mode') == 'combined' else config['domains']
     for market in config['markets']:
-        for domain in config['domains']:
-            if domain not in DOMAINS:
+        for domain in domain_sets:
+            allowed = domain if isinstance(domain, list) else [domain]
+            if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
             result.append({'market': market['id'], 'domain': domain,
-                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Exclude sold, off-market, pending and rental listings.'})
-    if not 1 <= len(result) <= 9:
-        raise ValueError('At most nine Lite queries per run')
+                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
+    if not 1 <= len(result) <= 12:
+        raise ValueError('At most twelve Lite queries per run')
     return result
 
 
@@ -91,7 +93,7 @@ def reserve(root, run_id, now, has_key):
 def search(query, domain, key):
     request = Request('https://api.exa.ai/search', method='POST',
                       headers={'x-api-key': key, 'Content-Type': 'application/json'},
-                      data=json.dumps({'query': query, 'includeDomains': [domain],
+                      data=json.dumps({'query': query, 'includeDomains': domain if isinstance(domain, list) else [domain],
                                        'type': 'lite', 'numResults': 10,
                                        'contents': {'text': {'maxCharacters': 16000}, 'highlights': False}}).encode())
     # No retries or redirects: one authorized endpoint, bounded credit use.
@@ -119,7 +121,8 @@ def refresh(root, run_id, now=None, key=None, requester=search):
     if plan['status'] == 'ready':
         write_json(root / '.state/active-search.json', dict(plan, status='consumed', allowance=0))
         for task in tasks:
-            report = {'market': task['market'], 'domain': task['domain'], 'status': 'ok', 'accepted': 0}
+            allowed = task['domain'] if isinstance(task['domain'], list) else [task['domain']]
+            report = {'market': task['market'], 'domain': ', '.join(allowed), 'status': 'ok', 'accepted': 0}
             try:
                 rows = requester(task['query'], task['domain'], key)
                 if not isinstance(rows, list):
@@ -129,10 +132,10 @@ def refresh(root, run_id, now=None, key=None, requester=search):
                         continue
                     url = property_url(row.get('url'))
                     # Validate provider domain restrictions locally as well.
-                    if not url or urlsplit(url).hostname != 'www.' + task['domain']:
+                    if not url or urlsplit(url).hostname not in ['www.' + d for d in allowed]:
                         continue
                     if url not in seen:
-                        seen[url] = {'url': url, 'source': task['domain'],
+                        seen[url] = {'url': url, 'source': urlsplit(url).hostname.removeprefix('www.'),
                                      'title': str(row.get('title') or 'Property page')[:200],
                                      'markets': [], 'first_seen': old.get(url, {}).get('first_seen', now.isoformat()),
                                      'last_seen': now.isoformat(), 'observed_this_run': True,

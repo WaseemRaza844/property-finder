@@ -1,8 +1,10 @@
 import {markets,buildSearches,listingURL,readSaved} from './search.js';
+import {populateMarkets} from './market-controls.js';
 const $=id=>document.getElementById(id);
 const element=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
 const KEY='property-finder.saved-links.v1', SETTINGS='property-finder.search.v1';
 let saved=[], storageAvailable=true, undo=null;
+document.getElementById('search-region').onchange=()=>{populateMarkets($('search-market'),$('search-region').value);build();};
 function message(text){$('save-feedback').textContent=text;}
 try {saved=readSaved(localStorage.getItem(KEY));} catch {storageAvailable=false;message('Browser storage could not be read. Saved links will last only for this visit; export a backup before leaving.');}
 try {const settings=JSON.parse(localStorage.getItem(SETTINGS)||'null');if(settings && markets[settings.market]){ $('search-market').value=settings.market;if(['multifamily','duplex','triplex','fourplex','all'].includes(settings.type))$('search-type').value=settings.type;$('search-price').value=settings.price||'';$('search-nearby').checked=Boolean(settings.nearby);$('search-keywords').value=String(settings.keywords||'').slice(0,160);}}catch{/* Defaults remain usable if preferences are unavailable. */}
@@ -47,7 +49,7 @@ function render(){
   $('export-links').disabled=!saved.length;
 }
 $('search-form').addEventListener('submit',e=>{e.preventDefault();build();});
-$('search-form').addEventListener('reset',()=>setTimeout(build,0));
+$('search-form').addEventListener('reset',()=>setTimeout(()=>{populateMarkets($('search-market'));$('search-market').value='bedminster';build();},0));
 $('save-link-form').addEventListener('submit',async e=>{
   e.preventDefault();const valid=listingURL($('listing-url').value);
   if(!valid){message('Use an HTTPS property link from Realtor.com, Redfin, or Homes.com. Search pages and other domains are not supported.');return;}

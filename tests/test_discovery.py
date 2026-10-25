@@ -5,7 +5,7 @@ from unittest.mock import patch, MagicMock
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import URLError
-from property_finder.discovery import reserve, refresh, property_url, write_json, CAP, search
+from property_finder.discovery import reserve, refresh, property_url, write_json, CAP, search, queries
 
 NOW = datetime(2026, 10, 25, 12, tzinfo=timezone.utc)
 URL = 'https://www.redfin.com/PA/Example/home/123'
@@ -92,6 +92,37 @@ class DiscoveryTests(unittest.TestCase):
     def test_wrong_run_cannot_consume_another_reservation(self):
         self.prepare()
         with self.assertRaises(ValueError): refresh(self.root,'wrong',NOW,key='test')
+
+    def test_combined_sources_use_one_request_per_market_and_validate_domains(self):
+        config={'query_mode':'combined','markets':[{'id':f'm{i}','towns':['Example PA']} for i in range(12)],'domains':['homes.com','redfin.com','realtor.com']}
+        write_json(self.root / 'config/searches.json',config)
+        self.assertEqual(len(queries(self.root)),12)
+        self.assertEqual(self.prepare()['allowance'],12)
+        calls=[]
+        def fake(query,domains,key):
+            calls.append(domains)
+            return [{'url':URL,'title':'Test'}, {'url':'https://evil.example/property/x/1','title':'Wrong host'}]
+        result=refresh(self.root,'run-1',NOW,key='test',requester=fake)
+        self.assertEqual(len(calls),12)
+        self.assertEqual(result['results'][0]['source'],'redfin.com')
+        self.assertEqual(len(result['results'][0]['markets']),12)
+        config['markets'].append({'id':'extra','towns':['Example PA']})
+        write_json(self.root / 'config/searches.json',config)
+        with self.assertRaises(ValueError):queries(self.root)
+
+    def test_combined_request_sends_domain_array(self):
+        response=MagicMock()
+        response.__enter__.return_value.read.return_value=b'{"results":[]}'
+        with patch('property_finder.discovery.build_opener') as opener:
+            opener.return_value.open.return_value=response
+            search('test',['homes.com','redfin.com'],'test-key')
+        self.assertEqual(json.loads(opener.return_value.open.call_args.args[0].data)['includeDomains'],['homes.com','redfin.com'])
+
+    def test_committed_browser_catalog_matches_ingestion_config(self):
+        from scripts.sync_markets import catalog
+        root=Path(__file__).resolve().parents[1]
+        generated=(root / 'web/markets.js').read_text(encoding='utf-8').split('export const markets = ',1)[1].strip().removesuffix(';')
+        self.assertEqual(json.loads(generated),catalog(root))
 
     def test_rediscovered_expired_link_starts_new_history(self):
         self.prepare();fake=lambda *a:[{'url':URL,'title':'Test'}]

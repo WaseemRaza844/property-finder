@@ -1,8 +1,18 @@
 {
+  "query_mode": "combined",
   "markets": [
-    {"id":"bedminster","name":"Bedminster NJ","towns":["Bedminster NJ","Somerville NJ","Bridgewater NJ","Bernardsville NJ","Raritan NJ"]},
-    {"id":"easton","name":"Easton PA","towns":["Easton PA","Palmer Township PA","Wilson PA","Forks Township PA","Phillipsburg NJ"]},
-    {"id":"bethlehem","name":"Bethlehem PA","towns":["Bethlehem PA","Allentown PA","Fountain Hill PA","Freemansburg PA","Hellertown PA"]}
+    {"id":"bedminster","region":"Central New Jersey","name":"Bedminster & Somerset County, NJ","slug":"Bedminster_NJ","towns":["Bedminster NJ","Somerville NJ","Bridgewater NJ","Bernardsville NJ","Raritan NJ","Bound Brook NJ","Manville NJ"]},
+    {"id":"easton","region":"Lehigh Valley","name":"Easton & eastern Lehigh Valley, PA–NJ","slug":"Easton_PA","towns":["Easton PA","Palmer Township PA","Wilson PA","Forks Township PA","Phillipsburg NJ","Nazareth PA","Bangor PA","Pen Argyl PA"]},
+    {"id":"bethlehem","region":"Lehigh Valley","name":"Bethlehem, Allentown & western Lehigh Valley, PA","slug":"Bethlehem_PA","towns":["Bethlehem PA","Allentown PA","Fountain Hill PA","Freemansburg PA","Hellertown PA","Emmaus PA","Whitehall PA","Catasauqua PA","Northampton PA","Coplay PA","Macungie PA"]},
+    {"id":"pittsburgh","region":"Western Pennsylvania","name":"Pittsburgh metro, PA","slug":"Pittsburgh_PA","towns":["Pittsburgh PA","Wilkinsburg PA","Swissvale PA","Carnegie PA","McKeesport PA","Homestead PA","Bellevue PA","Dormont PA"]},
+    {"id":"johnstown","region":"Western Pennsylvania","name":"Johnstown & Cambria County, PA","slug":"Johnstown_PA","towns":["Johnstown PA","Westmont PA","Conemaugh PA","Richland Township PA","Ebensburg PA"]},
+    {"id":"youngstown","region":"Ohio","name":"Youngstown–Warren, OH","slug":"Youngstown_OH","towns":["Youngstown OH","Warren OH","Boardman OH","Austintown OH","Struthers OH","Niles OH","Girard OH"]},
+    {"id":"toledo","region":"Ohio","name":"Toledo metro, OH","slug":"Toledo_OH","towns":["Toledo OH","Maumee OH","Oregon OH","Sylvania OH","Rossford OH","Perrysburg OH"]},
+    {"id":"cleveland","region":"Ohio","name":"Cleveland metro, OH","slug":"Cleveland_OH","towns":["Cleveland OH","Lakewood OH","Cleveland Heights OH","Euclid OH","Parma OH","Garfield Heights OH","Shaker Heights OH"]},
+    {"id":"columbus","region":"Ohio","name":"Columbus & Central Ohio","slug":"Columbus_OH","towns":["Columbus OH","Newark OH","Lancaster OH","Delaware OH","Grove City OH","Reynoldsburg OH","Whitehall OH"]},
+    {"id":"cincinnati","region":"Ohio","name":"Cincinnati metro, OH","slug":"Cincinnati_OH","towns":["Cincinnati OH","Norwood OH","Hamilton OH","Middletown OH","Fairfield OH","Reading OH"]},
+    {"id":"charlotte","region":"North Carolina","name":"Charlotte metro, NC","slug":"Charlotte_NC","towns":["Charlotte NC","Gastonia NC","Concord NC","Kannapolis NC","Monroe NC","Mount Holly NC","Belmont NC"]},
+    {"id":"triangle","region":"North Carolina","name":"Raleigh–Durham & the Triangle, NC","slug":"Raleigh_NC","towns":["Raleigh NC","Durham NC","Cary NC","Garner NC","Wake Forest NC","Knightdale NC","Chapel Hill NC","Hillsborough NC"]}
   ],
-  "domains": ["realtor.com","redfin.com","homes.com"]
+  "domains": ["homes.com","redfin.com","realtor.com"]
 }
