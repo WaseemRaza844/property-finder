@@ -1,1 +1,11 @@
-{"provider":"Tavily","status":"not_configured","generated_at":null,"last_success_at":null,"reserved_credits":0,"monthly_limit":400,"queries":[],"results":[],"retention_days":4}
+{
+  "generated_at": "2026-10-25T05:41:57.462316+00:00",
+  "last_success_at": null,
+  "provider": "Tavily",
+  "status": "not_configured",
+  "reserved_credits": 0,
+  "monthly_limit": 400,
+  "retention_days": 4,
+  "queries": [],
+  "results": []
+}
