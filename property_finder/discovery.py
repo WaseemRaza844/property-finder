@@ -164,7 +164,9 @@ def refresh(root, run_id, now=None, key=None, requester=search):
             # Preserve a genuinely recent observation when its source was not
             # scheduled today; a searched-but-missing/failed source is excluded.
             searched = any(t['market'] in row['markets'] and row['source'] in (t['domain'] if isinstance(t['domain'],list) else [t['domain']]) for t in tasks)
-            seen[url] = dict(row, observed_this_run=False, not_searched_this_run=plan['status']=='ready' and not searched)
+            excluded = searched or row.get('search_excluded', not (row.get('observed_this_run') or row.get('not_searched_this_run')))
+            seen[url] = dict(row, observed_this_run=False, search_excluded=excluded,
+                             not_searched_this_run=plan['status']=='ready' and not searched and not excluded)
     status = plan['status']
     if status == 'ready':
         errors = sum(r['status'] == 'error' for r in reports)
