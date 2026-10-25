@@ -1,0 +1,1 @@
+{"name":"property-finder","private":true,"type":"module","scripts":{"test":"node --test tests/frontend.test.js","build":"python scripts/build.py"}}
