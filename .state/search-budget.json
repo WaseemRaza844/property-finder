@@ -1,8 +1,9 @@
 {
   "month": "2026-11",
-  "reserved": 16,
+  "reserved": 28,
   "runs": [
     "41334624668",
-    "2026-11:homes-probe-v2"
+    "2026-11:homes-probe-v2",
+    "41532379090"
   ]
 }
