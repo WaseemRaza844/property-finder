@@ -3,6 +3,9 @@ import { markets } from './markets.js';
 const KEY = 'property-finder.theme.v1';
 const allowed = new Set(['clear', 'ocean', 'forest', 'dark']);
 const select = document.getElementById('theme-select');
+const fontSelect = document.getElementById('font-select');
+const FONT_KEY = 'property-finder.font-size.v1';
+const fontSizes = new Set(['normal','large','extra']);
 let saved = 'clear';
 try { saved = localStorage.getItem(KEY) || 'clear'; } catch { /* Storage may be unavailable. */ }
 function applyTheme(theme) {
@@ -21,3 +24,14 @@ document.getElementById('browse-college').addEventListener('click', () => {
   region.dispatchEvent(new Event('change', { bubbles: true }));
   document.getElementById('automatic-workspace').scrollIntoView({ behavior: 'smooth' });
 });
+
+let currentFont = 'normal';
+try { currentFont = localStorage.getItem(FONT_KEY) || 'normal'; } catch {}
+function applyFont(value) {
+  const next = fontSizes.has(value) ? value : 'normal';
+  document.documentElement.dataset.fontSize = next;
+  fontSelect.value = next;
+  try { localStorage.setItem(FONT_KEY, next); } catch {}
+}
+applyFont(currentFont);
+fontSelect.addEventListener('change', () => applyFont(fontSelect.value));

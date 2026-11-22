@@ -71,3 +71,39 @@ label{font-size:12px}
 @media(max-width:900px){header{gap:14px;flex-wrap:wrap}.theme-switcher{margin-left:auto}}
 @media(max-width:600px){header nav{order:3;width:100%;justify-content:flex-start;flex-wrap:wrap}.theme-switcher select{max-width:146px}.hero-actions{align-items:stretch}.hero-actions .button{justify-content:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a,button,summary,input,select,textarea{transition:none}}
+
+
+/* Comfortable reading sizes. Explicit presets override previous tiny fixed-pixel declarations. */
+:root { --ui-font:14px; --ui-small:13px; --ui-label:13px; }
+html[data-font-size="large"] { --ui-font:16px; --ui-small:15px; --ui-label:15px; }
+html[data-font-size="extra"] { --ui-font:18px; --ui-small:17px; --ui-label:17px; }
+body{font-size:var(--ui-font)}
+:where(.muted,.source-intro,.intro,.source-label,.group-count,.result-location,.discovery-status,
+ .property-facts,.result-details p,.query-details>p,.search-card p,.source-card p,
+ .saved-card p,.saved-empty p,.results-heading>span,.saved-toolbar,.listing-location,
+ .listing-facts,.listing details p,.setup p,.morning p,.morning>div,.stats p,
+ .filter-bottom p,.search-options p,#feedback,#discovery-count,#discovery-source-coverage) {
+ font-size:var(--ui-small);
+}
+:where(label,.eyebrow,.status,.reset,.outline-badge,.group-toolbar button,
+ .text-link,.direct-link,.listing-links,.search-card .eyebrow,.pick-reason,
+ .beta,.checkbox-label,.brand+nav,.listing dt,.listing dd) {
+ font-size:var(--ui-label);
+}
+:where(input,select,textarea,.button,summary){font-size:var(--ui-font)}
+:where(.property-result .result-location,.property-result .property-facts,
+ .property-result .source-label,.property-result .result-details p,
+ .query-details>p,.saved-card>p,.search-card p,.source-card p,
+ .pick-item .property-facts,.pick-item .source-label,.pick-item h3) {
+ font-size:var(--ui-small);
+}
+:where(.stats span,.morning>p,.result-group .group-count,.result-details p,
+ .status,.saved-card>p,.source-intro,.muted) {line-height:1.65}
+.font-switcher{display:flex;flex-direction:row;align-items:center;gap:8px;white-space:nowrap;color:var(--ink);font-size:var(--ui-label)}
+.font-switcher select{min-height:36px;width:auto;max-width:140px;cursor:pointer;padding:6px 25px 6px 10px;font-weight:600}
+.theme-switcher{font-size:var(--ui-label)}
+.theme-switcher select{font-size:var(--ui-label)}
+/* Avoid hard-coded green accents leaking into slate dark or coastal blue. */
+[data-theme="dark"] .checkbox-label input{accent-color:#78c6ee}
+:where(.discovery-status,.query-details,.result-details){color:var(--ink)}
+@media(max-width:680px){.font-switcher{margin-left:0}header{gap:10px}header nav{order:4}.theme-switcher,.font-switcher{flex:1 0 auto}main{padding:0 18px}}
