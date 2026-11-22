@@ -28,7 +28,7 @@ for path in assets:
 version = digest.hexdigest()[:12]
 
 # Only rewrite relative JavaScript module specifiers, never external links.
-module_ref = re.compile(r'(?P<prefix>\\bfrom\\s*|\\bimport\\s*)(?P<quote>["\\\'])(?P<path>\\.?\\.?/[^"\\\']+\\.js)(?P=quote)')
+module_ref = re.compile(r"""(?P<prefix>\bfrom\s*|\bimport\s*)(?P<quote>['"])(?P<path>\.{1,2}/[^'"]+\.js)(?P=quote)""")
 for script in dist.rglob("*.js"):
     code = script.read_text(encoding="utf-8")
     code = module_ref.sub(lambda m: f'{m.group("prefix")}{m.group("quote")}{m.group("path")}?v={version}{m.group("quote")}', code)
