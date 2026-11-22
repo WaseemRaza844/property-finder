@@ -72,7 +72,7 @@ def queries(root, now=None):
     else:
         active_markets = all_markets
     for index, market in enumerate(active_markets):
-        selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 3 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
+        selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 2 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
         for domain in selected:
             allowed = domain if isinstance(domain, list) else [domain]
             if not allowed or any(d not in DOMAINS for d in allowed):
@@ -193,6 +193,14 @@ def refresh(root, run_id, now=None, key=None, requester=search):
             'retention_days': 4, 'queries': reports,
             'results': sorted(seen.values(), key=lambda r: r['first_seen'], reverse=True)}
     write_json(output, data)
+    # Last successful nonempty dataset remains available when scheduled queries
+    # fail, exhaust free credits, or retained four-day observations expire.
+    # This is explicitly historical, never a claim of current availability.
+    if status in ('ok', 'partial') and any(r.get('accepted', 0) for r in reports) and data['results']:
+        write_json(root / 'web/data/latest-successful.json', {
+            'generated_at': now.isoformat(),
+            'results': data['results']
+        })
     return data
 
 
