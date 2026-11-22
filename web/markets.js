@@ -977,23 +977,5 @@ export const markets = {
       "Westfield NY"
     ],
     "city": "Fredonia, NY"
-  },
-  "college-state-university": {
-    "id": "college-state-university",
-    "region": "College Towns",
-    "name": "University Park / State College area, PA — Penn State satellite market",
-    "slug": "State_College_PA",
-    "towns": [
-      "Boalsburg PA",
-      "Lemont PA",
-      "Bellefonte PA"
-    ],
-    "college_region": "Pennsylvania",
-    "university": "Pennsylvania State University",
-    "nearby": [
-      "Lemont PA",
-      "Bellefonte PA"
-    ],
-    "city": "Boalsburg, PA"
   }
 };
