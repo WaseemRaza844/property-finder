@@ -15,7 +15,7 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler
 from .listing_facts import extract_facts, clean_title
 
 CAP = 400
-RETENTION_DAYS = 14  # Catalog rotates beyond four days; label older observations clearly.
+RETENTION_DAYS = 21  # Preserve the catalog's multi-week market rotation; older data is unverified.
 DOMAINS = ('realtor.com', 'redfin.com', 'homes.com')
 
 
