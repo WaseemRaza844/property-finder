@@ -18,12 +18,7 @@ applyTheme(saved);
 select.addEventListener('change', () => applyTheme(select.value));
 document.getElementById('market-total').textContent = Object.keys(markets).length;
 document.getElementById('region-total').textContent = new Set(Object.values(markets).map(m => m.region)).size;
-document.getElementById('browse-college').addEventListener('click', () => {
-  const region = document.getElementById('discovery-region');
-  region.value = 'College Towns';
-  region.dispatchEvent(new Event('change', { bubbles: true }));
-  document.getElementById('automatic-workspace').scrollIntoView({ behavior: 'smooth' });
-});
+
 
 let currentFont = 'normal';
 try { currentFont = localStorage.getItem(FONT_KEY) || 'normal'; } catch {}
