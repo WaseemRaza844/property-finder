@@ -32,10 +32,12 @@ test('search queries encode shared criteria and nearby towns without claiming ra
   assert.throws(()=>buildSearches({market:'unknown'}));assert.throws(()=>buildSearches({price:'NaN'}));
 });
 test('catalog includes upstate New York and dedicated college-town choices',()=>{
- assert.equal(Object.keys(markets).length,33);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,7);
+ assert.equal(Object.keys(markets).length,49);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,7);
  assert.equal(markets.buffalo.region,'Upstate & Western New York');
  assert.equal(markets['college-ithaca'].region,'College Towns');
  assert.match(markets['college-ithaca'].university,/Cornell/);
+ assert.equal(Object.values(markets).filter(m=>m.region==='College Towns').length,31);
+ assert.match(markets['college-bethlehem'].university,/Lehigh/);
  for(const market of Object.keys(markets))assert.equal(buildSearches({market})[0].id,'homes');
 });
 const discoveryNow=Date.parse('2026-10-25T12:00:00Z');
@@ -101,4 +103,12 @@ test('numeric discovery sort places unknowns last and groups number consecutivel
  const groups=groupDiscoveries(sorted,'town');assert.deepEqual(groups.flatMap(g=>g.items.map(r=>r.number)),[1,2,3]);
  assert.equal(groupDiscoveries(sorted,'zip').length,2);
  assert.equal(selectDiscoveries(rows,{status:'review',price:'400000'}).length,1);
+});
+
+test('saved for-sale observations remain visible after 36 hours, but are not called fresh',()=>{
+ const old={...fact,source:'homes.com',url:'https://www.homes.com/property/test/abc',facts_observed_at:'2026-10-20T10:00:00Z'};
+ assert.equal(selectDiscoveries([old],{status:'active'},discoveryNow).length,0);
+ assert.equal(selectDiscoveries([old],{status:'latest'},discoveryNow).length,1);
+ assert.equal(selectDiscoveries([{...old,listing_status:'sold'}],{status:'latest'},discoveryNow).length,0);
+ assert.equal(topPicks([old],{status:'latest'},discoveryNow).length,1);
 });

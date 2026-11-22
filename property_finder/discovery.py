@@ -15,6 +15,7 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler
 from .listing_facts import extract_facts, clean_title
 
 CAP = 400
+RETENTION_DAYS = 14  # Catalog rotates beyond four days; label older observations clearly.
 DOMAINS = ('realtor.com', 'redfin.com', 'homes.com')
 
 
@@ -72,7 +73,7 @@ def queries(root, now=None):
     else:
         active_markets = all_markets
     for index, market in enumerate(active_markets):
-        selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 3 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
+        selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 2 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
         for domain in selected:
             allowed = domain if isinstance(domain, list) else [domain]
             if not allowed or any(d not in DOMAINS for d in allowed):
@@ -137,7 +138,7 @@ def refresh(root, run_id, now=None, key=None, requester=search):
     if plan['run_id'] != run_id:
         raise ValueError('Reservation belongs to another run')
     tasks = plan.get('tasks') or queries(root, now)
-    old = {r['url']: r for r in prior['results'] if datetime.fromisoformat(r['last_seen']) > now - timedelta(days=4)}
+    old = {r['url']: r for r in prior['results'] if datetime.fromisoformat(r['last_seen']) > now - timedelta(days=RETENTION_DAYS)}
     seen, reports = {}, []
     if plan['status'] == 'ready' and not key:
         raise ValueError('Reserved search key is missing')
@@ -190,9 +191,17 @@ def refresh(root, run_id, now=None, key=None, requester=search):
         status = 'error' if errors == len(reports) else 'partial' if errors else 'ok'
     data = {'generated_at': now.isoformat(), 'last_success_at': now.isoformat() if status == 'ok' else prior.get('last_success_at'),
             'provider': 'Exa', 'status': status, 'reserved_requests': plan['reserved'], 'monthly_limit': CAP,
-            'retention_days': 4, 'queries': reports,
+            'retention_days': RETENTION_DAYS, 'queries': reports,
             'results': sorted(seen.values(), key=lambda r: r['first_seen'], reverse=True)}
     write_json(output, data)
+    # Last successful nonempty dataset remains available when scheduled queries
+    # fail, exhaust free credits, or retained four-day observations expire.
+    # This is explicitly historical, never a claim of current availability.
+    if status in ('ok', 'partial') and any(r.get('accepted', 0) for r in reports) and data['results']:
+        write_json(root / 'web/data/latest-successful.json', {
+            'generated_at': now.isoformat(),
+            'results': data['results']
+        })
     return data
 
 

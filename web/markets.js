@@ -689,5 +689,293 @@ export const markets = {
       "Star City WV"
     ],
     "city": "Morgantown, WV"
+  },
+  "college-bethlehem": {
+    "id": "college-bethlehem",
+    "region": "College Towns",
+    "name": "Bethlehem, PA — Lehigh University",
+    "slug": "Bethlehem_PA",
+    "towns": [
+      "Bethlehem PA",
+      "Fountain Hill PA",
+      "Hellertown PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Lehigh University",
+    "nearby": [
+      "Fountain Hill PA",
+      "Hellertown PA"
+    ],
+    "city": "Bethlehem, PA"
+  },
+  "college-easton": {
+    "id": "college-easton",
+    "region": "College Towns",
+    "name": "Easton, PA — Lafayette College",
+    "slug": "Easton_PA",
+    "towns": [
+      "Easton PA",
+      "Wilson PA",
+      "Phillipsburg NJ"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Lafayette College",
+    "nearby": [
+      "Wilson PA",
+      "Phillipsburg NJ"
+    ],
+    "city": "Easton, PA"
+  },
+  "college-pittsburgh": {
+    "id": "college-pittsburgh",
+    "region": "College Towns",
+    "name": "Pittsburgh, PA — Pitt & Carnegie Mellon",
+    "slug": "Pittsburgh_PA",
+    "towns": [
+      "Pittsburgh PA",
+      "Oakland PA",
+      "Squirrel Hill PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "University of Pittsburgh; Carnegie Mellon University",
+    "nearby": [
+      "Oakland PA",
+      "Squirrel Hill PA"
+    ],
+    "city": "Pittsburgh, PA"
+  },
+  "college-indiana-pa": {
+    "id": "college-indiana-pa",
+    "region": "College Towns",
+    "name": "Indiana, PA — Indiana University of Pennsylvania",
+    "slug": "Indiana_PA",
+    "towns": [
+      "Indiana PA",
+      "White Township PA",
+      "Homer City PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Indiana University of Pennsylvania",
+    "nearby": [
+      "White Township PA",
+      "Homer City PA"
+    ],
+    "city": "Indiana, PA"
+  },
+  "college-bloomsburg": {
+    "id": "college-bloomsburg",
+    "region": "College Towns",
+    "name": "Bloomsburg, PA — Commonwealth University",
+    "slug": "Bloomsburg_PA",
+    "towns": [
+      "Bloomsburg PA",
+      "Berwick PA",
+      "Danville PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Commonwealth University of Pennsylvania (Bloomsburg)",
+    "nearby": [
+      "Berwick PA",
+      "Danville PA"
+    ],
+    "city": "Bloomsburg, PA"
+  },
+  "college-kutztown": {
+    "id": "college-kutztown",
+    "region": "College Towns",
+    "name": "Kutztown, PA — Kutztown University",
+    "slug": "Kutztown_PA",
+    "towns": [
+      "Kutztown PA",
+      "Fleetwood PA",
+      "Topton PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Kutztown University",
+    "nearby": [
+      "Fleetwood PA",
+      "Topton PA"
+    ],
+    "city": "Kutztown, PA"
+  },
+  "college-slippery-rock": {
+    "id": "college-slippery-rock",
+    "region": "College Towns",
+    "name": "Slippery Rock, PA — Slippery Rock University",
+    "slug": "Slippery_Rock_PA",
+    "towns": [
+      "Slippery Rock PA",
+      "Grove City PA",
+      "Butler PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Slippery Rock University",
+    "nearby": [
+      "Grove City PA",
+      "Butler PA"
+    ],
+    "city": "Slippery Rock, PA"
+  },
+  "college-shippensburg": {
+    "id": "college-shippensburg",
+    "region": "College Towns",
+    "name": "Shippensburg, PA — Shippensburg University",
+    "slug": "Shippensburg_PA",
+    "towns": [
+      "Shippensburg PA",
+      "Chambersburg PA",
+      "Newville PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Shippensburg University",
+    "nearby": [
+      "Chambersburg PA",
+      "Newville PA"
+    ],
+    "city": "Shippensburg, PA"
+  },
+  "college-lewisburg": {
+    "id": "college-lewisburg",
+    "region": "College Towns",
+    "name": "Lewisburg, PA — Bucknell University",
+    "slug": "Lewisburg_PA",
+    "towns": [
+      "Lewisburg PA",
+      "Milton PA",
+      "Sunbury PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Bucknell University",
+    "nearby": [
+      "Milton PA",
+      "Sunbury PA"
+    ],
+    "city": "Lewisburg, PA"
+  },
+  "college-cortland": {
+    "id": "college-cortland",
+    "region": "College Towns",
+    "name": "Cortland, NY — SUNY Cortland",
+    "slug": "Cortland_NY",
+    "towns": [
+      "Cortland NY",
+      "Homer NY",
+      "McGraw NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY Cortland",
+    "nearby": [
+      "Homer NY",
+      "McGraw NY"
+    ],
+    "city": "Cortland, NY"
+  },
+  "college-oneonta": {
+    "id": "college-oneonta",
+    "region": "College Towns",
+    "name": "Oneonta, NY — SUNY Oneonta & Hartwick",
+    "slug": "Oneonta_NY",
+    "towns": [
+      "Oneonta NY",
+      "Otego NY",
+      "Cooperstown NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY Oneonta; Hartwick College",
+    "nearby": [
+      "Otego NY",
+      "Cooperstown NY"
+    ],
+    "city": "Oneonta, NY"
+  },
+  "college-geneseo": {
+    "id": "college-geneseo",
+    "region": "College Towns",
+    "name": "Geneseo, NY — SUNY Geneseo",
+    "slug": "Geneseo_NY",
+    "towns": [
+      "Geneseo NY",
+      "Livonia NY",
+      "Mount Morris NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY Geneseo",
+    "nearby": [
+      "Livonia NY",
+      "Mount Morris NY"
+    ],
+    "city": "Geneseo, NY"
+  },
+  "college-potsdam": {
+    "id": "college-potsdam",
+    "region": "College Towns",
+    "name": "Potsdam, NY — Clarkson & SUNY Potsdam",
+    "slug": "Potsdam_NY",
+    "towns": [
+      "Potsdam NY",
+      "Canton NY",
+      "Norwood NY"
+    ],
+    "college_region": "New York",
+    "university": "Clarkson University; SUNY Potsdam",
+    "nearby": [
+      "Canton NY",
+      "Norwood NY"
+    ],
+    "city": "Potsdam, NY"
+  },
+  "college-oswego": {
+    "id": "college-oswego",
+    "region": "College Towns",
+    "name": "Oswego, NY — SUNY Oswego",
+    "slug": "Oswego_NY",
+    "towns": [
+      "Oswego NY",
+      "Fulton NY",
+      "Mexico NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY Oswego",
+    "nearby": [
+      "Fulton NY",
+      "Mexico NY"
+    ],
+    "city": "Oswego, NY"
+  },
+  "college-new-paltz": {
+    "id": "college-new-paltz",
+    "region": "College Towns",
+    "name": "New Paltz, NY — SUNY New Paltz",
+    "slug": "New_Paltz_NY",
+    "towns": [
+      "New Paltz NY",
+      "Highland NY",
+      "Kingston NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY New Paltz",
+    "nearby": [
+      "Highland NY",
+      "Kingston NY"
+    ],
+    "city": "New Paltz, NY"
+  },
+  "college-fredonia": {
+    "id": "college-fredonia",
+    "region": "College Towns",
+    "name": "Fredonia, NY — SUNY Fredonia",
+    "slug": "Fredonia_NY",
+    "towns": [
+      "Fredonia NY",
+      "Dunkirk NY",
+      "Westfield NY"
+    ],
+    "college_region": "New York",
+    "university": "SUNY Fredonia",
+    "nearby": [
+      "Dunkirk NY",
+      "Westfield NY"
+    ],
+    "city": "Fredonia, NY"
   }
 };
