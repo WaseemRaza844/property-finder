@@ -127,6 +127,23 @@ class DiscoveryTests(unittest.TestCase):
             self.assertTrue({'bedminster','easton','bethlehem','pittsburgh','columbus','triangle'}.issubset(
                 {task['market'] for task in plan}))
 
+    def test_real_catalog_reserves_six_regional_and_six_college_searches(self):
+        from collections import Counter
+        root=Path(__file__).resolve().parents[1]
+        plan=queries(root,NOW)
+        self.assertEqual(len(plan),12)
+        self.assertEqual(Counter(row['scope'] for row in plan), {'regional':6,'college':6})
+        self.assertTrue({'bedminster','easton','bethlehem'}.issubset(
+            {row['market'] for row in plan}))
+        self.assertTrue(all('near' in row['query'] for row in plan if row['scope']=='college'))
+        # Every market reaches its lane as the dates progress.
+        plans=[queries(root,NOW+timedelta(days=offset)) for offset in range(32)]
+        covered={row['market'] for plan in plans for row in plan}
+        catalog=json.loads((root/'config/searches.json').read_text())
+        self.assertEqual(covered,{market['id'] for market in catalog['markets']})
+        self.assertTrue(all(Counter(row['scope'] for row in plan)=={'regional':6,'college':6}
+                            for plan in plans))
+
     def test_combined_request_sends_domain_array(self):
         response=MagicMock()
         response.__enter__.return_value.read.return_value=b'{"results":[]}'
