@@ -1,15 +1,15 @@
 import {listingURL,markets} from './search.js';
-import {selectDiscoveries,groupDiscoveries,topPicks} from './discovery-view.js';
+import {selectDiscoveries,groupDiscoveries,topPicks,scopedDiscoveries} from './discovery-view.js';
 import {populateMarkets} from './market-controls.js';
 const $=id=>document.getElementById(id),el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
 const date=x=>x?new Date(x).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Not supplied';
 const money=n=>n==null?'Price not supplied':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const states={not_configured:'Setup needed: add EXA_API_KEY.',budget_exhausted:'Search allowance reached.',already_reserved:'This run has already reserved its searches.',consumed:'Search reservation already used.',error:'Searches failed; retained records are not treated as active.',partial:'Some searches failed; coverage is incomplete.',ok:'Search completed.'};
-const controls=['region','market','source','keyword','town','zip','status','sort','group','price','complete','compact'];let data;
+const controls=['region','market','source','keyword','town','zip','status','sort','group','price','complete','compact'];let data, scope='regional';
 const control=k=>$(k==='status'?'discovery-status-filter':'discovery-'+k);
 function filters(){return Object.fromEntries(controls.map(k=>[k,control(k).type==='checkbox'?control(k).checked:control(k).value]));}
 function localityOptions(){
- const f=filters(),rows=data.results.filter(r=>(!f.region||r.markets.some(m=>markets[m]?.region===f.region))&&(!f.market||r.markets.includes(f.market)));
+ const f=filters(),rows=scopedDiscoveries(data.results,scope).filter(r=>(!f.region||r.markets.some(m=>markets[m]?.region===f.region))&&(!f.market||r.markets.includes(f.market))&&(!$('discovery-college-state').value||r.markets.some(m=>markets[m]?.college_region===$('discovery-college-state').value)));
  for(const [key,values,label] of [['town',[...new Set(rows.filter(r=>r.town).map(r=>`${r.town}, ${r.state||''}`))].sort(),'All towns'],['zip',[...new Set(rows.map(r=>r.zip).filter(Boolean))].sort(),'All ZIP codes']]){const n=control(key),value=n.value;n.replaceChildren(new Option(label,''));for(const v of values)n.add(new Option(v,v));if(values.includes(value))n.value=value;}
 }
 function card(r){
@@ -23,30 +23,71 @@ function card(r){
  if(r.not_searched_this_run)details.append(el('p','This source was not scheduled for this market in the latest rotation. The displayed observation is less than 36 hours old; its retrieval date has not been advanced.'));
  body.append(details);article.append(el('span',String(r.number).padStart(2,'0'),'result-number'),body);return article;
 }
-function render(){if(!data)return;const f=filters(),rows=selectDiscoveries(data.results,f),groups=groupDiscoveries(rows,f.group),excluded=data.results.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
+function render(){if(!data)return;const f={...filters(),scope,collegeState:$('discovery-college-state').value},sourceRows=scopedDiscoveries(data.results,scope),rows=selectDiscoveries(data.results,f),groups=groupDiscoveries(rows,f.group),excluded=sourceRows.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
  const picks=topPicks(data.results,f);$('top-picks').replaceChildren(...picks.map(r=>{const item=el('div',null,'pick-item');item.append(el('p',r.pick_reason,'pick-reason'),card(r));return item;}));$('picks-empty').hidden=picks.length>0;$('picks-empty').textContent='No saved multifamily picks match these filters yet.';
- $('discovery-count').textContent=`${rows.length} matching properties · ${data.results.length} saved discoveries · ${excluded} closed/pending hidden`; $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || data.results.length === 0;
+ $('discovery-count').textContent=`${rows.length} matching properties · ${sourceRows.length} saved in ${scope==='regional'?'regional':'college-town'} search · ${excluded} closed/pending hidden`; $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || sourceRows.length === 0;
  $('discovery-results').className=f.compact?'organized-results compact-results':'organized-results';
  $('discovery-results').replaceChildren(...groups.map(g=>{const section=el('details',null,'result-group');section.open=true;const summary=el('summary');summary.append(el('strong',f.group==='market'?(markets[g.name]?.name||g.name):g.name));
-  if(f.region==='College Towns'||g.items.some(r=>r.markets?.some(id=>markets[id]?.region==='College Towns'))){
+  if(scope==='college'){
     const universities=[...new Set(g.items.flatMap(r=>r.markets||[]).filter(id=>markets[id]?.region==='College Towns').flatMap(id=>(markets[id].university||'').split(';').map(v=>v.trim()).filter(Boolean)))];
     if(universities.length){const names=el('span',universities.slice(0,3).join(' · '),'group-universities');names.title=universities.join(' · ')+' · Nearby university, not verified rental yield';summary.append(names);}
   }
   summary.append(el('span',`${g.items.length} properties`,'group-count'));const list=el('div',null,'result-group-items');list.append(...g.items.map(card));section.append(summary,list);return section;}));
  $('discovery-empty').hidden=rows.length>0;$('discovery-empty').textContent=f.status==='active'?'No fresh matches within 36 hours. Choose Latest saved results or Review unverified properties.':f.status==='latest'?'No stored for-sale matches. Change market, reset filters, or review unverified properties.':'No matches. Try Reset filters or another market.';
- try{localStorage.setItem('property-finder.discovery-view.v2',JSON.stringify(f));}catch{}
+ // Workspace scope is intentionally not restored from older saved filters.
 }
-for(const k of controls)control(k).addEventListener(['keyword','price'].includes(k)?'input':'change',()=>{if(k==='region'){populateMarkets(control('market'),control('region').value,'All markets');control('town').value='';control('zip').value='';}if(['region','market'].includes(k))localityOptions();render();});
+function refreshMarketOptions() {
+ const region=control('region');
+ region.replaceChildren(new Option('All regions',''));
+ for(const r of [...new Set(Object.values(markets).filter(m=>m.region!=='College Towns').map(m=>m.region))])region.add(new Option(r,r));
+ const states=[...new Set(Object.values(markets).filter(m=>m.region==='College Towns').map(m=>m.college_region).filter(Boolean))].sort();
+ const state=$('discovery-college-state');state.replaceChildren(new Option('All states',''));
+ for(const name of states)state.add(new Option(name,name));
+ refreshMarketSelect();
+}
+function refreshMarketSelect() {
+ const select=control('market'),previous=select.value;
+ select.replaceChildren(new Option('All markets',''));
+ const items=Object.values(markets).filter(m=>scope==='college'?m.region==='College Towns'&&(!$('discovery-college-state').value||m.college_region===$('discovery-college-state').value):m.region!=='College Towns'&&(!control('region').value||m.region===control('region').value));
+ for(const m of items)select.add(new Option(m.name,m.id));
+ if(items.some(m=>m.id===previous))select.value=previous;
+}
+function switchScope(next,scroll=false) {
+ scope=next==='college'?'college':'regional';
+ for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}
+ $('discovery-college-state').value='';
+ $('regional-region-label').hidden=scope==='college';
+ $('college-state-label').hidden=scope!=='college';
+ $('mode-regional').classList.toggle('is-active',scope==='regional');
+ $('mode-college').classList.toggle('is-active',scope==='college');
+ $('mode-regional').setAttribute('aria-pressed',String(scope==='regional'));
+ $('mode-college').setAttribute('aria-pressed',String(scope==='college'));
+ $('picks-heading').textContent=scope==='college'?'College-town picks, at a glance.':'Regional picks, at a glance.';
+ $('discovery-heading').textContent=scope==='college'?'College-town property listings':'Regional property listings';
+ $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':'Central NJ · Lehigh Valley · Pennsylvania · Ohio · North Carolina · Upstate and Western NY';
+ refreshMarketOptions();
+ if(data)localityOptions();
+ render();
+ if(scroll)$('automatic-workspace').scrollIntoView({behavior:'smooth'});
+}
+$('mode-regional').onclick=()=>switchScope('regional');
+$('mode-college').onclick=()=>switchScope('college');
+$('browse-regional').onclick=()=>switchScope('regional',true);
+$('browse-college').onclick=()=>switchScope('college',true);
+$('discovery-college-state').addEventListener('change',()=>{control('market').value='';refreshMarketSelect();localityOptions();render();});
+
+for(const k of controls)control(k).addEventListener(['keyword','price'].includes(k)?'input':'change',()=>{if(k==='region'){refreshMarketSelect();control('town').value='';control('zip').value='';}if(['region','market'].includes(k))localityOptions();render();});
 $('review-discovery').onclick=()=>{control('status').value='review';render();};
 $('collapse-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=false);$('expand-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=true);
-$('reset-discovery').onclick=()=>{populateMarkets(control('market'),'','All markets');for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}localityOptions();render();};
+$('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}localityOptions();render();};
 try{const response=await fetch('data/discoveries.json',{cache:'no-store'});if(!response.ok)throw Error();let raw=await response.json();if(!Array.isArray(raw.results)||!Array.isArray(raw.queries))throw Error();
  if(raw.results.length===0){try{const snapshot=await fetch('data/latest-successful.json',{cache:'no-store'});if(snapshot.ok){const saved=await snapshot.json();if(Array.isArray(saved.results)&&saved.results.length){raw={...raw,results:saved.results,showing_saved_snapshot:true,snapshot_at:saved.generated_at};}}}catch{ /* No snapshot yet. */ }}
  data={...raw,results:raw.results.filter(r=>r&&typeof r.title==='string'&&listingURL(r.url)&&Array.isArray(r.markets)&&Number.isFinite(Date.parse(r.first_seen))&&Number.isFinite(Date.parse(r.last_seen)))};
  for(const [key,values] of [['town',[...new Set(data.results.filter(r=>r.town).map(r=>`${r.town}, ${r.state||''}`))].sort()],['zip',[...new Set(data.results.map(r=>r.zip).filter(Boolean))].sort()]])for(const v of values){const o=el('option',v);o.value=v;$('discovery-'+key).append(o);}
- try{const saved=JSON.parse(localStorage.getItem('property-finder.discovery-view.v2')||'null');if(saved)for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=Boolean(saved[k]);else if(typeof saved[k]==='string'&& (n.tagName!=='SELECT'||[...n.options].some(o=>o.value===saved[k])))n.value=k==='status'&&saved[k]==='active'?'latest':saved[k];}}catch{}
- populateMarkets(control('market'),control('region').value,'All markets');
+ refreshMarketOptions();
+
  localityOptions();
+ switchScope('regional');
  $('discovery-status').textContent=`${data.showing_saved_snapshot?'Showing archived results · ':''}${states[data.status]||'Status unknown.'} ${data.results.length} saved indexed results · Last successful search: ${date(data.last_success_at||data.snapshot_at)} · Budget: ${data.reserved_requests}/${data.monthly_limit}. Verify status on the source.`;
  $('discovery-source-coverage').textContent=['homes.com','realtor.com','redfin.com'].map(source=>`${source}: ${data.queries.reduce((n,q)=>n+(q.source_counts?.[source]||0),0)} property-page matches this run; ${selectDiscoveries(data.results,{source,status:'active',price:''}).length} recent for-sale results`).join(' · ');
  $('discovery-reports').replaceChildren(...data.queries.map(q=>el('p',`${markets[q.market]?.name||q.market} · ${q.domain}: ${q.status==='ok'?`${q.accepted} property-page matches from ${q.returned??'unknown'} returned results (${Object.entries(q.source_counts||{}).map(([s,n])=>`${s}: ${n}`).join(', ')||'source breakdown unavailable'})`:q.note||q.status}`)));render();
