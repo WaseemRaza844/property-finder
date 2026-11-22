@@ -16,7 +16,7 @@ class SiteBuildTest(unittest.TestCase):
         app = (ROOT / "dist/app.js").read_text(encoding="utf-8")
         theme = (ROOT / "dist/theme.js").read_text(encoding="utf-8")
         markets = (ROOT / "dist/markets.js").read_text(encoding="utf-8")
-        match = re.search(r'src="app.js\\?v=([a-f0-9]{12})"', html)
+        match = re.search(r'src="app[.]js[?]v=([a-f0-9]{12})"', html)
         self.assertIsNotNone(match)
         version = match.group(1)
         self.assertIn(f'href="styles.css?v={version}"', html)
