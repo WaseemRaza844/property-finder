@@ -31,8 +31,11 @@ test('search queries encode shared criteria and nearby towns without claiming ra
   assert.equal(links.find(s=>s.id==='realtor').direct,'https://www.realtor.com/realestateandhomes-search/Easton_PA/type-multi-family-home/price-na-500000');
   assert.throws(()=>buildSearches({market:'unknown'}));assert.throws(()=>buildSearches({price:'NaN'}));
 });
-test('catalog supports twelve markets across five regions and every guided search',()=>{
- assert.equal(Object.keys(markets).length,12);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,5);
+test('catalog includes upstate New York and dedicated college-town choices',()=>{
+ assert.equal(Object.keys(markets).length,33);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,7);
+ assert.equal(markets.buffalo.region,'Upstate & Western New York');
+ assert.equal(markets['college-ithaca'].region,'College Towns');
+ assert.match(markets['college-ithaca'].university,/Cornell/);
  for(const market of Object.keys(markets))assert.equal(buildSearches({market})[0].id,'homes');
 });
 const discoveryNow=Date.parse('2026-10-25T12:00:00Z');
