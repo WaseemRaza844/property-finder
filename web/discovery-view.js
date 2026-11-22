@@ -43,7 +43,7 @@ export function groupDiscoveries(rows,by){
   return [...groups].map(([name,items])=>({name,items:items.map(r=>({...r,number:++number}))}));
 }
 export function topPicks(rows,f={},now=Date.now()){
- const eligible=selectDiscoveries(rows,{...f,status:f.status==='active'?'active':'latest'},now).filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+ const eligible=selectDiscoveries(rows,{...f,status:f.status==='latest'||f.status==='review'?'latest':'active'},now).filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
  const selected=[],used=new Set();
  for(const [key,label] of [['price','Lowest price'],['units','Most units']]){
   const ranked=eligible.filter(r=>Number.isFinite(r[key])&&r[key]>0&&(key!=='units'||r.units>=2)).sort((a,b)=>(key==='price'?a.price-b.price:b.units-a.units)||a.url.localeCompare(b.url));
