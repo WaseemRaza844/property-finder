@@ -1,18 +1,469 @@
 {
   "query_mode": "homes_priority",
   "markets": [
-    {"id":"bedminster","region":"Central New Jersey","name":"Bedminster & Somerset County, NJ","slug":"Bedminster_NJ","towns":["Bedminster NJ","Somerville NJ","Bridgewater NJ","Bernardsville NJ","Raritan NJ","Bound Brook NJ","Manville NJ"]},
-    {"id":"easton","region":"Lehigh Valley","name":"Easton & eastern Lehigh Valley, PA–NJ","slug":"Easton_PA","towns":["Easton PA","Palmer Township PA","Wilson PA","Forks Township PA","Phillipsburg NJ","Nazareth PA","Bangor PA","Pen Argyl PA"]},
-    {"id":"bethlehem","region":"Lehigh Valley","name":"Bethlehem, Allentown & western Lehigh Valley, PA","slug":"Bethlehem_PA","towns":["Bethlehem PA","Allentown PA","Fountain Hill PA","Freemansburg PA","Hellertown PA","Emmaus PA","Whitehall PA","Catasauqua PA","Northampton PA","Coplay PA","Macungie PA"]},
-    {"id":"pittsburgh","region":"Western Pennsylvania","name":"Pittsburgh metro, PA","slug":"Pittsburgh_PA","towns":["Pittsburgh PA","Wilkinsburg PA","Swissvale PA","Carnegie PA","McKeesport PA","Homestead PA","Bellevue PA","Dormont PA"]},
-    {"id":"johnstown","region":"Western Pennsylvania","name":"Johnstown & Cambria County, PA","slug":"Johnstown_PA","towns":["Johnstown PA","Westmont PA","Conemaugh PA","Richland Township PA","Ebensburg PA"]},
-    {"id":"youngstown","region":"Ohio","name":"Youngstown–Warren, OH","slug":"Youngstown_OH","towns":["Youngstown OH","Warren OH","Boardman OH","Austintown OH","Struthers OH","Niles OH","Girard OH"]},
-    {"id":"toledo","region":"Ohio","name":"Toledo metro, OH","slug":"Toledo_OH","towns":["Toledo OH","Maumee OH","Oregon OH","Sylvania OH","Rossford OH","Perrysburg OH"]},
-    {"id":"cleveland","region":"Ohio","name":"Cleveland metro, OH","slug":"Cleveland_OH","towns":["Cleveland OH","Lakewood OH","Cleveland Heights OH","Euclid OH","Parma OH","Garfield Heights OH","Shaker Heights OH"]},
-    {"id":"columbus","region":"Ohio","name":"Columbus & Central Ohio","slug":"Columbus_OH","towns":["Columbus OH","Newark OH","Lancaster OH","Delaware OH","Grove City OH","Reynoldsburg OH","Whitehall OH"]},
-    {"id":"cincinnati","region":"Ohio","name":"Cincinnati metro, OH","slug":"Cincinnati_OH","towns":["Cincinnati OH","Norwood OH","Hamilton OH","Middletown OH","Fairfield OH","Reading OH"]},
-    {"id":"charlotte","region":"North Carolina","name":"Charlotte metro, NC","slug":"Charlotte_NC","towns":["Charlotte NC","Gastonia NC","Concord NC","Kannapolis NC","Monroe NC","Mount Holly NC","Belmont NC"]},
-    {"id":"triangle","region":"North Carolina","name":"Raleigh–Durham & the Triangle, NC","slug":"Raleigh_NC","towns":["Raleigh NC","Durham NC","Cary NC","Garner NC","Wake Forest NC","Knightdale NC","Chapel Hill NC","Hillsborough NC"]}
+    {
+      "id": "bedminster",
+      "region": "Central New Jersey",
+      "name": "Bedminster & Somerset County, NJ",
+      "slug": "Bedminster_NJ",
+      "towns": [
+        "Bedminster NJ",
+        "Somerville NJ",
+        "Bridgewater NJ",
+        "Bernardsville NJ",
+        "Raritan NJ",
+        "Bound Brook NJ",
+        "Manville NJ"
+      ]
+    },
+    {
+      "id": "easton",
+      "region": "Lehigh Valley",
+      "name": "Easton & eastern Lehigh Valley, PA–NJ",
+      "slug": "Easton_PA",
+      "towns": [
+        "Easton PA",
+        "Palmer Township PA",
+        "Wilson PA",
+        "Forks Township PA",
+        "Phillipsburg NJ",
+        "Nazareth PA",
+        "Bangor PA",
+        "Pen Argyl PA"
+      ]
+    },
+    {
+      "id": "bethlehem",
+      "region": "Lehigh Valley",
+      "name": "Bethlehem, Allentown & western Lehigh Valley, PA",
+      "slug": "Bethlehem_PA",
+      "towns": [
+        "Bethlehem PA",
+        "Allentown PA",
+        "Fountain Hill PA",
+        "Freemansburg PA",
+        "Hellertown PA",
+        "Emmaus PA",
+        "Whitehall PA",
+        "Catasauqua PA",
+        "Northampton PA",
+        "Coplay PA",
+        "Macungie PA"
+      ]
+    },
+    {
+      "id": "pittsburgh",
+      "region": "Western Pennsylvania",
+      "name": "Pittsburgh metro, PA",
+      "slug": "Pittsburgh_PA",
+      "towns": [
+        "Pittsburgh PA",
+        "Wilkinsburg PA",
+        "Swissvale PA",
+        "Carnegie PA",
+        "McKeesport PA",
+        "Homestead PA",
+        "Bellevue PA",
+        "Dormont PA"
+      ]
+    },
+    {
+      "id": "johnstown",
+      "region": "Western Pennsylvania",
+      "name": "Johnstown & Cambria County, PA",
+      "slug": "Johnstown_PA",
+      "towns": [
+        "Johnstown PA",
+        "Westmont PA",
+        "Conemaugh PA",
+        "Richland Township PA",
+        "Ebensburg PA"
+      ]
+    },
+    {
+      "id": "youngstown",
+      "region": "Ohio",
+      "name": "Youngstown–Warren, OH",
+      "slug": "Youngstown_OH",
+      "towns": [
+        "Youngstown OH",
+        "Warren OH",
+        "Boardman OH",
+        "Austintown OH",
+        "Struthers OH",
+        "Niles OH",
+        "Girard OH"
+      ]
+    },
+    {
+      "id": "toledo",
+      "region": "Ohio",
+      "name": "Toledo metro, OH",
+      "slug": "Toledo_OH",
+      "towns": [
+        "Toledo OH",
+        "Maumee OH",
+        "Oregon OH",
+        "Sylvania OH",
+        "Rossford OH",
+        "Perrysburg OH"
+      ]
+    },
+    {
+      "id": "cleveland",
+      "region": "Ohio",
+      "name": "Cleveland metro, OH",
+      "slug": "Cleveland_OH",
+      "towns": [
+        "Cleveland OH",
+        "Lakewood OH",
+        "Cleveland Heights OH",
+        "Euclid OH",
+        "Parma OH",
+        "Garfield Heights OH",
+        "Shaker Heights OH"
+      ]
+    },
+    {
+      "id": "columbus",
+      "region": "Ohio",
+      "name": "Columbus & Central Ohio",
+      "slug": "Columbus_OH",
+      "towns": [
+        "Columbus OH",
+        "Newark OH",
+        "Lancaster OH",
+        "Delaware OH",
+        "Grove City OH",
+        "Reynoldsburg OH",
+        "Whitehall OH"
+      ]
+    },
+    {
+      "id": "cincinnati",
+      "region": "Ohio",
+      "name": "Cincinnati metro, OH",
+      "slug": "Cincinnati_OH",
+      "towns": [
+        "Cincinnati OH",
+        "Norwood OH",
+        "Hamilton OH",
+        "Middletown OH",
+        "Fairfield OH",
+        "Reading OH"
+      ]
+    },
+    {
+      "id": "charlotte",
+      "region": "North Carolina",
+      "name": "Charlotte metro, NC",
+      "slug": "Charlotte_NC",
+      "towns": [
+        "Charlotte NC",
+        "Gastonia NC",
+        "Concord NC",
+        "Kannapolis NC",
+        "Monroe NC",
+        "Mount Holly NC",
+        "Belmont NC"
+      ]
+    },
+    {
+      "id": "triangle",
+      "region": "North Carolina",
+      "name": "Raleigh–Durham & the Triangle, NC",
+      "slug": "Raleigh_NC",
+      "towns": [
+        "Raleigh NC",
+        "Durham NC",
+        "Cary NC",
+        "Garner NC",
+        "Wake Forest NC",
+        "Knightdale NC",
+        "Chapel Hill NC",
+        "Hillsborough NC"
+      ]
+    },
+    {
+      "id": "albany",
+      "region": "Upstate & Western New York",
+      "name": "Albany & Capital Region, NY",
+      "slug": "Albany_NY",
+      "towns": [
+        "Albany NY",
+        "Schenectady NY",
+        "Troy NY",
+        "Rensselaer NY",
+        "Colonie NY",
+        "Cohoes NY"
+      ]
+    },
+    {
+      "id": "utica",
+      "region": "Upstate & Western New York",
+      "name": "Utica, Rome & Mohawk Valley, NY",
+      "slug": "Utica_NY",
+      "towns": [
+        "Utica NY",
+        "Rome NY",
+        "New Hartford NY",
+        "Whitesboro NY"
+      ]
+    },
+    {
+      "id": "syracuse",
+      "region": "Upstate & Western New York",
+      "name": "Syracuse & Central New York",
+      "slug": "Syracuse_NY",
+      "towns": [
+        "Syracuse NY",
+        "Liverpool NY",
+        "North Syracuse NY",
+        "East Syracuse NY",
+        "Cicero NY",
+        "Camillus NY"
+      ]
+    },
+    {
+      "id": "rochester",
+      "region": "Upstate & Western New York",
+      "name": "Rochester & Finger Lakes, NY",
+      "slug": "Rochester_NY",
+      "towns": [
+        "Rochester NY",
+        "Greece NY",
+        "Irondequoit NY",
+        "Henrietta NY",
+        "Brighton NY",
+        "Canandaigua NY"
+      ]
+    },
+    {
+      "id": "buffalo",
+      "region": "Upstate & Western New York",
+      "name": "Buffalo & Western New York",
+      "slug": "Buffalo_NY",
+      "towns": [
+        "Buffalo NY",
+        "Amherst NY",
+        "Cheektowaga NY",
+        "Tonawanda NY",
+        "West Seneca NY",
+        "Niagara Falls NY"
+      ]
+    },
+    {
+      "id": "binghamton",
+      "region": "Upstate & Western New York",
+      "name": "Binghamton & Southern Tier, NY",
+      "slug": "Binghamton_NY",
+      "towns": [
+        "Binghamton NY",
+        "Johnson City NY",
+        "Endicott NY",
+        "Vestal NY",
+        "Owego NY"
+      ]
+    },
+    {
+      "id": "college-state-college",
+      "region": "College Towns",
+      "name": "State College, PA — Penn State",
+      "slug": "State_College_PA",
+      "towns": [
+        "State College PA",
+        "College Township PA",
+        "Bellefonte PA"
+      ],
+      "college_region": "Pennsylvania",
+      "university": "Pennsylvania State University"
+    },
+    {
+      "id": "college-ithaca",
+      "region": "College Towns",
+      "name": "Ithaca, NY — Cornell & Ithaca College",
+      "slug": "Ithaca_NY",
+      "towns": [
+        "Ithaca NY",
+        "Lansing NY",
+        "Dryden NY"
+      ],
+      "college_region": "New York",
+      "university": "Cornell University; Ithaca College"
+    },
+    {
+      "id": "college-binghamton",
+      "region": "College Towns",
+      "name": "Vestal / Binghamton, NY — Binghamton University",
+      "slug": "Vestal_NY",
+      "towns": [
+        "Vestal NY",
+        "Binghamton NY",
+        "Johnson City NY"
+      ],
+      "college_region": "New York",
+      "university": "Binghamton University"
+    },
+    {
+      "id": "college-buffalo",
+      "region": "College Towns",
+      "name": "Amherst / Buffalo, NY — University at Buffalo",
+      "slug": "Amherst_NY",
+      "towns": [
+        "Amherst NY",
+        "Buffalo NY",
+        "Tonawanda NY"
+      ],
+      "college_region": "New York",
+      "university": "University at Buffalo"
+    },
+    {
+      "id": "college-rochester",
+      "region": "College Towns",
+      "name": "Rochester / Henrietta, NY — RIT & UR",
+      "slug": "Rochester_NY",
+      "towns": [
+        "Rochester NY",
+        "Henrietta NY",
+        "Brighton NY"
+      ],
+      "college_region": "New York",
+      "university": "Rochester Institute of Technology; University of Rochester"
+    },
+    {
+      "id": "college-syracuse",
+      "region": "College Towns",
+      "name": "Syracuse, NY — Syracuse University",
+      "slug": "Syracuse_NY",
+      "towns": [
+        "Syracuse NY",
+        "East Syracuse NY",
+        "DeWitt NY"
+      ],
+      "college_region": "New York",
+      "university": "Syracuse University"
+    },
+    {
+      "id": "college-new-brunswick",
+      "region": "College Towns",
+      "name": "New Brunswick, NJ — Rutgers",
+      "slug": "New_Brunswick_NJ",
+      "towns": [
+        "New Brunswick NJ",
+        "Highland Park NJ",
+        "Piscataway NJ"
+      ],
+      "college_region": "New Jersey",
+      "university": "Rutgers University–New Brunswick"
+    },
+    {
+      "id": "college-west-chester",
+      "region": "College Towns",
+      "name": "West Chester, PA — West Chester University",
+      "slug": "West_Chester_PA",
+      "towns": [
+        "West Chester PA",
+        "West Goshen PA",
+        "Exton PA"
+      ],
+      "college_region": "Pennsylvania",
+      "university": "West Chester University"
+    },
+    {
+      "id": "college-athens",
+      "region": "College Towns",
+      "name": "Athens, OH — Ohio University",
+      "slug": "Athens_OH",
+      "towns": [
+        "Athens OH",
+        "The Plains OH",
+        "Nelsonville OH"
+      ],
+      "college_region": "Ohio",
+      "university": "Ohio University"
+    },
+    {
+      "id": "college-kent",
+      "region": "College Towns",
+      "name": "Kent, OH — Kent State University",
+      "slug": "Kent_OH",
+      "towns": [
+        "Kent OH",
+        "Stow OH",
+        "Ravenna OH"
+      ],
+      "college_region": "Ohio",
+      "university": "Kent State University"
+    },
+    {
+      "id": "college-bowling-green",
+      "region": "College Towns",
+      "name": "Bowling Green, OH — BGSU",
+      "slug": "Bowling_Green_OH",
+      "towns": [
+        "Bowling Green OH",
+        "Perrysburg OH",
+        "North Baltimore OH"
+      ],
+      "college_region": "Ohio",
+      "university": "Bowling Green State University"
+    },
+    {
+      "id": "college-chapel-hill",
+      "region": "College Towns",
+      "name": "Chapel Hill / Carrboro, NC — UNC",
+      "slug": "Chapel_Hill_NC",
+      "towns": [
+        "Chapel Hill NC",
+        "Carrboro NC",
+        "Hillsborough NC"
+      ],
+      "college_region": "North Carolina",
+      "university": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "id": "college-greensboro",
+      "region": "College Towns",
+      "name": "Greensboro, NC — UNCG & NC A&T",
+      "slug": "Greensboro_NC",
+      "towns": [
+        "Greensboro NC",
+        "Jamestown NC",
+        "High Point NC"
+      ],
+      "college_region": "North Carolina",
+      "university": "University of North Carolina at Greensboro; North Carolina A&T State University"
+    },
+    {
+      "id": "college-blacksburg",
+      "region": "College Towns",
+      "name": "Blacksburg, VA — Virginia Tech",
+      "slug": "Blacksburg_VA",
+      "towns": [
+        "Blacksburg VA",
+        "Christiansburg VA",
+        "Radford VA"
+      ],
+      "college_region": "Virginia",
+      "university": "Virginia Tech"
+    },
+    {
+      "id": "college-morgantown",
+      "region": "College Towns",
+      "name": "Morgantown, WV — West Virginia University",
+      "slug": "Morgantown_WV",
+      "towns": [
+        "Morgantown WV",
+        "Westover WV",
+        "Star City WV"
+      ],
+      "college_region": "West Virginia",
+      "university": "West Virginia University"
+    }
   ],
-  "domains": ["homes.com","realtor.com","redfin.com"]
+  "domains": [
+    "homes.com",
+    "realtor.com",
+    "redfin.com"
+  ]
 }

@@ -54,7 +54,24 @@ def queries(root, now=None):
     config = json.loads((root / 'config/searches.json').read_text(encoding='utf-8'))
     result = []
     domain_sets = [config['domains']] if config.get('query_mode') == 'combined' else config['domains']
-    for index, market in enumerate(config['markets']):
+    all_markets = config['markets']
+    # Preserve the twelve-search daily ceiling as the catalog grows.
+    # Six priority markets appear daily; the remaining six rotate in dated blocks.
+    if len(all_markets) > 12:
+        priority_ids = {'bedminster', 'easton', 'bethlehem', 'pittsburgh', 'columbus', 'triangle'}
+        priority = [m for m in all_markets if m['id'] in priority_ids][:6]
+        remaining = [m for m in all_markets if m['id'] not in {p['id'] for p in priority}]
+        slots = 12 - len(priority)
+        blocks = (len(remaining) + slots - 1) // slots
+        block = now.toordinal() % blocks
+        start = block * slots
+        selected = remaining[start:start + slots]
+        # The final block may be short: wrap to keep daily coverage at twelve.
+        selected += remaining[:slots - len(selected)]
+        active_markets = priority + selected
+    else:
+        active_markets = all_markets
+    for index, market in enumerate(active_markets):
         selected = ['homes.com'] if config.get('query_mode') == 'homes_priority' and (index + now.toordinal()) % 3 == 0 else [config['domains']] if config.get('query_mode') == 'homes_priority' else domain_sets
         for domain in selected:
             allowed = domain if isinstance(domain, list) else [domain]
