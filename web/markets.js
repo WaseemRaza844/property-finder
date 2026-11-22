@@ -293,5 +293,401 @@ export const markets = {
       "Hillsborough NC"
     ],
     "city": "Raleigh, NC"
+  },
+  "albany": {
+    "id": "albany",
+    "region": "Upstate & Western New York",
+    "name": "Albany & Capital Region, NY",
+    "slug": "Albany_NY",
+    "towns": [
+      "Albany NY",
+      "Schenectady NY",
+      "Troy NY",
+      "Rensselaer NY",
+      "Colonie NY",
+      "Cohoes NY"
+    ],
+    "nearby": [
+      "Schenectady NY",
+      "Troy NY",
+      "Rensselaer NY",
+      "Colonie NY",
+      "Cohoes NY"
+    ],
+    "city": "Albany, NY"
+  },
+  "utica": {
+    "id": "utica",
+    "region": "Upstate & Western New York",
+    "name": "Utica, Rome & Mohawk Valley, NY",
+    "slug": "Utica_NY",
+    "towns": [
+      "Utica NY",
+      "Rome NY",
+      "New Hartford NY",
+      "Whitesboro NY"
+    ],
+    "nearby": [
+      "Rome NY",
+      "New Hartford NY",
+      "Whitesboro NY"
+    ],
+    "city": "Utica, NY"
+  },
+  "syracuse": {
+    "id": "syracuse",
+    "region": "Upstate & Western New York",
+    "name": "Syracuse & Central New York",
+    "slug": "Syracuse_NY",
+    "towns": [
+      "Syracuse NY",
+      "Liverpool NY",
+      "North Syracuse NY",
+      "East Syracuse NY",
+      "Cicero NY",
+      "Camillus NY"
+    ],
+    "nearby": [
+      "Liverpool NY",
+      "North Syracuse NY",
+      "East Syracuse NY",
+      "Cicero NY",
+      "Camillus NY"
+    ],
+    "city": "Syracuse, NY"
+  },
+  "rochester": {
+    "id": "rochester",
+    "region": "Upstate & Western New York",
+    "name": "Rochester & Finger Lakes, NY",
+    "slug": "Rochester_NY",
+    "towns": [
+      "Rochester NY",
+      "Greece NY",
+      "Irondequoit NY",
+      "Henrietta NY",
+      "Brighton NY",
+      "Canandaigua NY"
+    ],
+    "nearby": [
+      "Greece NY",
+      "Irondequoit NY",
+      "Henrietta NY",
+      "Brighton NY",
+      "Canandaigua NY"
+    ],
+    "city": "Rochester, NY"
+  },
+  "buffalo": {
+    "id": "buffalo",
+    "region": "Upstate & Western New York",
+    "name": "Buffalo & Western New York",
+    "slug": "Buffalo_NY",
+    "towns": [
+      "Buffalo NY",
+      "Amherst NY",
+      "Cheektowaga NY",
+      "Tonawanda NY",
+      "West Seneca NY",
+      "Niagara Falls NY"
+    ],
+    "nearby": [
+      "Amherst NY",
+      "Cheektowaga NY",
+      "Tonawanda NY",
+      "West Seneca NY",
+      "Niagara Falls NY"
+    ],
+    "city": "Buffalo, NY"
+  },
+  "binghamton": {
+    "id": "binghamton",
+    "region": "Upstate & Western New York",
+    "name": "Binghamton & Southern Tier, NY",
+    "slug": "Binghamton_NY",
+    "towns": [
+      "Binghamton NY",
+      "Johnson City NY",
+      "Endicott NY",
+      "Vestal NY",
+      "Owego NY"
+    ],
+    "nearby": [
+      "Johnson City NY",
+      "Endicott NY",
+      "Vestal NY",
+      "Owego NY"
+    ],
+    "city": "Binghamton, NY"
+  },
+  "college-state-college": {
+    "id": "college-state-college",
+    "region": "College Towns",
+    "name": "State College, PA — Penn State",
+    "slug": "State_College_PA",
+    "towns": [
+      "State College PA",
+      "College Township PA",
+      "Bellefonte PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "Pennsylvania State University",
+    "nearby": [
+      "College Township PA",
+      "Bellefonte PA"
+    ],
+    "city": "State College, PA"
+  },
+  "college-ithaca": {
+    "id": "college-ithaca",
+    "region": "College Towns",
+    "name": "Ithaca, NY — Cornell & Ithaca College",
+    "slug": "Ithaca_NY",
+    "towns": [
+      "Ithaca NY",
+      "Lansing NY",
+      "Dryden NY"
+    ],
+    "college_region": "New York",
+    "university": "Cornell University; Ithaca College",
+    "nearby": [
+      "Lansing NY",
+      "Dryden NY"
+    ],
+    "city": "Ithaca, NY"
+  },
+  "college-binghamton": {
+    "id": "college-binghamton",
+    "region": "College Towns",
+    "name": "Vestal / Binghamton, NY — Binghamton University",
+    "slug": "Vestal_NY",
+    "towns": [
+      "Vestal NY",
+      "Binghamton NY",
+      "Johnson City NY"
+    ],
+    "college_region": "New York",
+    "university": "Binghamton University",
+    "nearby": [
+      "Binghamton NY",
+      "Johnson City NY"
+    ],
+    "city": "Vestal, NY"
+  },
+  "college-buffalo": {
+    "id": "college-buffalo",
+    "region": "College Towns",
+    "name": "Amherst / Buffalo, NY — University at Buffalo",
+    "slug": "Amherst_NY",
+    "towns": [
+      "Amherst NY",
+      "Buffalo NY",
+      "Tonawanda NY"
+    ],
+    "college_region": "New York",
+    "university": "University at Buffalo",
+    "nearby": [
+      "Buffalo NY",
+      "Tonawanda NY"
+    ],
+    "city": "Amherst, NY"
+  },
+  "college-rochester": {
+    "id": "college-rochester",
+    "region": "College Towns",
+    "name": "Rochester / Henrietta, NY — RIT & UR",
+    "slug": "Rochester_NY",
+    "towns": [
+      "Rochester NY",
+      "Henrietta NY",
+      "Brighton NY"
+    ],
+    "college_region": "New York",
+    "university": "Rochester Institute of Technology; University of Rochester",
+    "nearby": [
+      "Henrietta NY",
+      "Brighton NY"
+    ],
+    "city": "Rochester, NY"
+  },
+  "college-syracuse": {
+    "id": "college-syracuse",
+    "region": "College Towns",
+    "name": "Syracuse, NY — Syracuse University",
+    "slug": "Syracuse_NY",
+    "towns": [
+      "Syracuse NY",
+      "East Syracuse NY",
+      "DeWitt NY"
+    ],
+    "college_region": "New York",
+    "university": "Syracuse University",
+    "nearby": [
+      "East Syracuse NY",
+      "DeWitt NY"
+    ],
+    "city": "Syracuse, NY"
+  },
+  "college-new-brunswick": {
+    "id": "college-new-brunswick",
+    "region": "College Towns",
+    "name": "New Brunswick, NJ — Rutgers",
+    "slug": "New_Brunswick_NJ",
+    "towns": [
+      "New Brunswick NJ",
+      "Highland Park NJ",
+      "Piscataway NJ"
+    ],
+    "college_region": "New Jersey",
+    "university": "Rutgers University–New Brunswick",
+    "nearby": [
+      "Highland Park NJ",
+      "Piscataway NJ"
+    ],
+    "city": "New Brunswick, NJ"
+  },
+  "college-west-chester": {
+    "id": "college-west-chester",
+    "region": "College Towns",
+    "name": "West Chester, PA — West Chester University",
+    "slug": "West_Chester_PA",
+    "towns": [
+      "West Chester PA",
+      "West Goshen PA",
+      "Exton PA"
+    ],
+    "college_region": "Pennsylvania",
+    "university": "West Chester University",
+    "nearby": [
+      "West Goshen PA",
+      "Exton PA"
+    ],
+    "city": "West Chester, PA"
+  },
+  "college-athens": {
+    "id": "college-athens",
+    "region": "College Towns",
+    "name": "Athens, OH — Ohio University",
+    "slug": "Athens_OH",
+    "towns": [
+      "Athens OH",
+      "The Plains OH",
+      "Nelsonville OH"
+    ],
+    "college_region": "Ohio",
+    "university": "Ohio University",
+    "nearby": [
+      "The Plains OH",
+      "Nelsonville OH"
+    ],
+    "city": "Athens, OH"
+  },
+  "college-kent": {
+    "id": "college-kent",
+    "region": "College Towns",
+    "name": "Kent, OH — Kent State University",
+    "slug": "Kent_OH",
+    "towns": [
+      "Kent OH",
+      "Stow OH",
+      "Ravenna OH"
+    ],
+    "college_region": "Ohio",
+    "university": "Kent State University",
+    "nearby": [
+      "Stow OH",
+      "Ravenna OH"
+    ],
+    "city": "Kent, OH"
+  },
+  "college-bowling-green": {
+    "id": "college-bowling-green",
+    "region": "College Towns",
+    "name": "Bowling Green, OH — BGSU",
+    "slug": "Bowling_Green_OH",
+    "towns": [
+      "Bowling Green OH",
+      "Perrysburg OH",
+      "North Baltimore OH"
+    ],
+    "college_region": "Ohio",
+    "university": "Bowling Green State University",
+    "nearby": [
+      "Perrysburg OH",
+      "North Baltimore OH"
+    ],
+    "city": "Bowling Green, OH"
+  },
+  "college-chapel-hill": {
+    "id": "college-chapel-hill",
+    "region": "College Towns",
+    "name": "Chapel Hill / Carrboro, NC — UNC",
+    "slug": "Chapel_Hill_NC",
+    "towns": [
+      "Chapel Hill NC",
+      "Carrboro NC",
+      "Hillsborough NC"
+    ],
+    "college_region": "North Carolina",
+    "university": "University of North Carolina at Chapel Hill",
+    "nearby": [
+      "Carrboro NC",
+      "Hillsborough NC"
+    ],
+    "city": "Chapel Hill, NC"
+  },
+  "college-greensboro": {
+    "id": "college-greensboro",
+    "region": "College Towns",
+    "name": "Greensboro, NC — UNCG & NC A&T",
+    "slug": "Greensboro_NC",
+    "towns": [
+      "Greensboro NC",
+      "Jamestown NC",
+      "High Point NC"
+    ],
+    "college_region": "North Carolina",
+    "university": "University of North Carolina at Greensboro; North Carolina A&T State University",
+    "nearby": [
+      "Jamestown NC",
+      "High Point NC"
+    ],
+    "city": "Greensboro, NC"
+  },
+  "college-blacksburg": {
+    "id": "college-blacksburg",
+    "region": "College Towns",
+    "name": "Blacksburg, VA — Virginia Tech",
+    "slug": "Blacksburg_VA",
+    "towns": [
+      "Blacksburg VA",
+      "Christiansburg VA",
+      "Radford VA"
+    ],
+    "college_region": "Virginia",
+    "university": "Virginia Tech",
+    "nearby": [
+      "Christiansburg VA",
+      "Radford VA"
+    ],
+    "city": "Blacksburg, VA"
+  },
+  "college-morgantown": {
+    "id": "college-morgantown",
+    "region": "College Towns",
+    "name": "Morgantown, WV — West Virginia University",
+    "slug": "Morgantown_WV",
+    "towns": [
+      "Morgantown WV",
+      "Westover WV",
+      "Star City WV"
+    ],
+    "college_region": "West Virginia",
+    "university": "West Virginia University",
+    "nearby": [
+      "Westover WV",
+      "Star City WV"
+    ],
+    "city": "Morgantown, WV"
   }
 };
