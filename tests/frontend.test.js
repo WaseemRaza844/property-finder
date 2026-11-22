@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {filterListings,miles,safeURL} from '../web/filters.js';
 import {buildSearches,listingURL,readSaved} from '../web/search.js';
-import {selectDiscoveries,groupDiscoveries,uniqueProperties,topPicks,propertyIdentity} from '../web/discovery-view.js';
+import {selectDiscoveries,groupDiscoveries,uniqueProperties,topPicks,propertyIdentity,scopedDiscoveries} from '../web/discovery-view.js';
 import {markets} from '../web/markets.js';
 const rows=[
   {id:'a',market:'Central New Jersey',property_type:'duplex',price:400000,latitude:40.6807,longitude:-74.649,first_seen:'2026-10-25'},
@@ -111,4 +111,18 @@ test('saved for-sale observations remain visible after 36 hours, but are not cal
  assert.equal(selectDiscoveries([old],{status:'latest'},discoveryNow).length,1);
  assert.equal(selectDiscoveries([{...old,listing_status:'sold'}],{status:'latest'},discoveryNow).length,0);
  assert.equal(topPicks([old],{status:'latest'},discoveryNow).length,1);
+});
+
+test('regional and college workspaces never mix listings or top picks',()=>{
+ const common={...fact,price:225000,units:2,listing_status:'active'};
+ const regional={...common,url:'https://www.redfin.com/PA/Easton/example/home/444',markets:['easton'],title:'55 Regional St, Easton, PA 18042'};
+ const college={...common,url:'https://www.homes.com/property/ithaca/test',markets:['college-ithaca'],title:'22 Campus St, Ithaca, NY 14850',town:'Ithaca',state:'NY',zip:'14850'};
+ assert.deepEqual(scopedDiscoveries([regional,college],'regional').map(x=>x.url),[regional.url]);
+ assert.deepEqual(scopedDiscoveries([regional,college],'college').map(x=>x.url),[college.url]);
+ assert.deepEqual(selectDiscoveries([regional,college],{scope:'regional',status:'latest'}).map(x=>x.url),[regional.url]);
+ assert.deepEqual(selectDiscoveries([regional,college],{scope:'college',status:'latest'}).map(x=>x.url),[college.url]);
+ assert.deepEqual(topPicks([regional,college],{scope:'regional',status:'latest'},discoveryNow).map(x=>x.url),[regional.url]);
+ assert.deepEqual(topPicks([regional,college],{scope:'college',status:'latest'},discoveryNow).map(x=>x.url),[college.url]);
+ assert.equal(selectDiscoveries([regional,college],{scope:'college',collegeState:'New York',status:'latest'}).length,1);
+ assert.equal(selectDiscoveries([regional,college],{scope:'college',collegeState:'Ohio',status:'latest'}).length,0);
 });
