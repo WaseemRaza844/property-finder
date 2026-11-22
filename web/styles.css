@@ -107,3 +107,13 @@ body{font-size:var(--ui-font)}
 [data-theme="dark"] .checkbox-label input{accent-color:#78c6ee}
 :where(.discovery-status,.query-details,.result-details){color:var(--ink)}
 @media(max-width:680px){.font-switcher{margin-left:0}header{gap:10px}header nav{order:4}.theme-switcher,.font-switcher{flex:1 0 auto}main{padding:0 18px}}
+
+/* University context in college-town group headers. */
+.result-group>summary{display:flex;align-items:center;flex-wrap:wrap;column-gap:14px;row-gap:6px;list-style:none}
+.result-group>summary::-webkit-details-marker{display:none}
+.result-group>summary::before{content:"▸";font-size:15px;color:var(--accent-text)}
+.result-group[open]>summary::before{content:"▾"}
+.result-group>summary>strong{font-size:var(--ui-font);font-weight:700;min-width:140px}
+.group-universities{margin-left:auto;max-width:min(50%,550px);color:var(--accent-text);font-size:var(--ui-small);font-weight:600;text-align:right;line-height:1.5}
+.result-group .group-count{margin-left:0;float:none;white-space:nowrap;font-size:var(--ui-small);color:var(--muted)}
+@media(max-width:750px){.group-universities{order:3;flex-basis:100%;max-width:100%;margin-left:26px;text-align:left}}
