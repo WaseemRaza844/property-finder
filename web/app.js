@@ -1,3 +1,4 @@
+import './theme.js';
 import {filterListings, safeURL} from './filters.js';
 import './search-app.js';
 import './discovery-ui.js';
