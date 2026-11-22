@@ -108,7 +108,24 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len(result['results'][0]['markets']),12)
         config['markets'].append({'id':'extra','towns':['Example PA']})
         write_json(self.root / 'config/searches.json',config)
-        with self.assertRaises(ValueError):queries(self.root)
+        rotated=queries(self.root, NOW)
+        self.assertEqual(len(rotated), 12)
+        self.assertEqual(len({task['market'] for task in rotated}), 12)
+
+    def test_large_catalog_rotates_markets_without_exceeding_twelve_daily(self):
+        markets = [{'id': name, 'towns': [name + ' NY']} for name in
+                   ['bedminster', 'easton', 'bethlehem', 'pittsburgh', 'columbus', 'triangle'] +
+                   [f'college-{i}' for i in range(21)]]
+        write_json(self.root / 'config/searches.json',
+                   {'query_mode':'homes_priority', 'markets':markets,
+                    'domains':['homes.com','realtor.com','redfin.com']})
+        plans = [queries(self.root, NOW + timedelta(days=offset)) for offset in range(4)]
+        self.assertTrue(all(len(plan) == 12 for plan in plans))
+        covered = {task['market'] for plan in plans for task in plan}
+        self.assertEqual(covered, {market['id'] for market in markets})
+        for plan in plans:
+            self.assertTrue({'bedminster','easton','bethlehem','pittsburgh','columbus','triangle'}.issubset(
+                {task['market'] for task in plan}))
 
     def test_combined_request_sends_domain_array(self):
         response=MagicMock()
