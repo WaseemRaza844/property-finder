@@ -23,6 +23,7 @@ export function selectDiscoveries(rows,f,now=Date.now()){
   return uniqueProperties(rows,now,f.source).filter(r=>{
     if(['sold','off_market','pending'].includes(r.listing_status))return false;
     if(f.status==='active'&&(r.listing_status!=='active'||!fresh(r,now)))return false;
+    if(f.status==='latest'&&r.listing_status!=='active')return false;
     if(f.market&&!r.markets.includes(f.market)||f.source&&r.source!==f.source||f.town&&`${r.town||''}, ${r.state||''}`!==f.town||f.zip&&r.zip!==f.zip)return false;
     if(f.region&&!r.markets.some(m=>markets[m]?.region===f.region))return false;
     if(f.price!=null&&f.price!==''&&(r.price==null||r.price>Number(f.price)))return false;
@@ -42,7 +43,7 @@ export function groupDiscoveries(rows,by){
   return [...groups].map(([name,items])=>({name,items:items.map(r=>({...r,number:++number}))}));
 }
 export function topPicks(rows,f={},now=Date.now()){
- const eligible=selectDiscoveries(rows,{...f,status:'active'},now).filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+ const eligible=selectDiscoveries(rows,{...f,status:f.status==='active'?'active':'latest'},now).filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
  const selected=[],used=new Set();
  for(const [key,label] of [['price','Lowest price'],['units','Most units']]){
   const ranked=eligible.filter(r=>Number.isFinite(r[key])&&r[key]>0&&(key!=='units'||r.units>=2)).sort((a,b)=>(key==='price'?a.price-b.price:b.units-a.units)||a.url.localeCompare(b.url));
