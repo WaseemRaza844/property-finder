@@ -139,11 +139,11 @@ class DiscoveryTests(unittest.TestCase):
         config={'query_mode':'homes_priority','markets':[{'id':f'm{i}','towns':['Example PA']} for i in range(12)],'domains':['homes.com','realtor.com','redfin.com']}
         write_json(self.root / 'config/searches.json',config)
         dedicated=[]
-        for offset in range(3):
+        for offset in range(2):
             tasks=queries(self.root,NOW+timedelta(days=offset))
             self.assertEqual(len(tasks),12)
             homes={t['market'] for t in tasks if t['domain']=='homes.com'}
-            self.assertEqual(len(homes),4)
+            self.assertEqual(len(homes),6)
             dedicated.extend(homes)
         self.assertEqual(len(set(dedicated)),12)
         plan=self.prepare()
@@ -159,6 +159,18 @@ class DiscoveryTests(unittest.TestCase):
         data=refresh(self.root,'run-2',NOW+timedelta(hours=1),key='test',requester=lambda *a:[])
         self.assertTrue(data['results'][0]['not_searched_this_run'])
         self.assertEqual(data['results'][0]['last_seen'],NOW.isoformat())
+
+    def test_last_successful_snapshot_kept_on_failed_run(self):
+        self.prepare()
+        refresh(self.root,'run-1',NOW,key='test',requester=lambda *a:[{'url':URL,'title':'Test'}])
+        snapshot=self.root / 'web/data/latest-successful.json'
+        self.assertTrue(snapshot.exists())
+        self.assertEqual(len(json.loads(snapshot.read_text())['results']),1)
+        initial=snapshot.read_text()
+        self.prepare('run-2',NOW+timedelta(days=1))
+        refresh(self.root,'run-2',NOW+timedelta(days=1),key='test',
+                requester=lambda *a: (_ for _ in ()).throw(URLError('fail')))
+        self.assertEqual(snapshot.read_text(),initial)
 
     def test_missing_result_cannot_reappear_on_unscheduled_day(self):
         self.prepare()
