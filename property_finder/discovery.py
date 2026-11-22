@@ -56,20 +56,31 @@ def queries(root, now=None):
     result = []
     domain_sets = [config['domains']] if config.get('query_mode') == 'combined' else config['domains']
     all_markets = config['markets']
-    # Preserve the twelve-search daily ceiling as the catalog grows.
-    # Six priority markets appear daily; the remaining six rotate in dated blocks.
+    # Two independent six-query discovery lanes: regional + college towns.
+    # Three local priority regions get daily coverage; three additional regions
+    # and six college markets rotate. This preserves the free 12-query budget.
+    def rotate(pool, slots):
+        if not pool or slots <= 0:
+            return []
+        if len(pool) <= slots:
+            return list(pool)
+        start = (now.toordinal() * slots) % len(pool)
+        return [pool[(start + offset) % len(pool)] for offset in range(slots)]
+
     if len(all_markets) > 12:
-        priority_ids = {'bedminster', 'easton', 'bethlehem', 'pittsburgh', 'columbus', 'triangle'}
-        priority = [m for m in all_markets if m['id'] in priority_ids][:6]
-        remaining = [m for m in all_markets if m['id'] not in {p['id'] for p in priority}]
-        slots = 12 - len(priority)
-        blocks = (len(remaining) + slots - 1) // slots
-        block = now.toordinal() % blocks
-        start = block * slots
-        selected = remaining[start:start + slots]
-        # The final block may be short: wrap to keep daily coverage at twelve.
-        selected += remaining[:slots - len(selected)]
-        active_markets = priority + selected
+        regional = [m for m in all_markets if m.get('region') != 'College Towns']
+        college = [m for m in all_markets if m.get('region') == 'College Towns']
+        priority_ids = {'bedminster', 'easton', 'bethlehem'}
+        priority = [m for m in regional if m['id'] in priority_ids]
+        other_regions = [m for m in regional if m['id'] not in priority_ids]
+        if college:
+            regional_slots = 6
+            college_slots = 6
+            active_markets = (priority[:regional_slots]
+                              + rotate(other_regions, regional_slots - len(priority[:regional_slots]))
+                              + rotate(college, college_slots))
+        else:
+            active_markets = priority[:6] + rotate(other_regions, 12-len(priority[:6]))
     else:
         active_markets = all_markets
     for index, market in enumerate(active_markets):
@@ -78,10 +89,16 @@ def queries(root, now=None):
             allowed = domain if isinstance(domain, list) else [domain]
             if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
-            result.append({'market': market['id'], 'domain': domain,
+            result.append({'market': market['id'], 'scope': 'college' if market.get('region') == 'College Towns' else 'regional', 'domain': domain,
                            'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
             if domain == 'homes.com':
                 result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Exclude rentals, sold and off-market homes.'
+            if market.get('region') == 'College Towns':
+                college_name = market.get('university', '')
+                result[-1]['query'] = (f'Multifamily duplex triplex fourplex investment properties for sale '
+                                       f'in {market["towns"][0]} near {college_name}. '
+                                       'Find individual property listing pages, not campus buildings, university pages, '
+                                       'student dormitories, rental advertisements or sold properties.')
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
     return result

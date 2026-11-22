@@ -113,7 +113,7 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len({task['market'] for task in rotated}), 12)
 
     def test_large_catalog_rotates_markets_without_exceeding_twelve_daily(self):
-        markets = [{'id': name, 'towns': [name + ' NY']} for name in
+        markets = [{'id': name, 'towns': [name + ' NY'], 'region': 'College Towns' if name.startswith('college-') else 'Lehigh Valley'} for name in
                    ['bedminster', 'easton', 'bethlehem', 'pittsburgh', 'columbus', 'triangle'] +
                    [f'college-{i}' for i in range(21)]]
         write_json(self.root / 'config/searches.json',
@@ -124,8 +124,25 @@ class DiscoveryTests(unittest.TestCase):
         covered = {task['market'] for plan in plans for task in plan}
         self.assertEqual(covered, {market['id'] for market in markets})
         for plan in plans:
-            self.assertTrue({'bedminster','easton','bethlehem','pittsburgh','columbus','triangle'}.issubset(
+            self.assertTrue({'bedminster','easton','bethlehem'}.issubset(
                 {task['market'] for task in plan}))
+
+    def test_real_catalog_reserves_six_regional_and_six_college_searches(self):
+        from collections import Counter
+        root=Path(__file__).resolve().parents[1]
+        plan=queries(root,NOW)
+        self.assertEqual(len(plan),12)
+        self.assertEqual(Counter(row['scope'] for row in plan), {'regional':6,'college':6})
+        self.assertTrue({'bedminster','easton','bethlehem'}.issubset(
+            {row['market'] for row in plan}))
+        self.assertTrue(all('near' in row['query'] for row in plan if row['scope']=='college'))
+        # Every market reaches its lane as the dates progress.
+        plans=[queries(root,NOW+timedelta(days=offset)) for offset in range(32)]
+        covered={row['market'] for plan in plans for row in plan}
+        catalog=json.loads((root/'config/searches.json').read_text())
+        self.assertEqual(covered,{market['id'] for market in catalog['markets']})
+        self.assertTrue(all(Counter(row['scope'] for row in plan)=={'regional':6,'college':6}
+                            for plan in plans))
 
     def test_combined_request_sends_domain_array(self):
         response=MagicMock()
