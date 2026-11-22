@@ -64,7 +64,7 @@ function switchScope(next,scroll=false) {
  $('mode-college').setAttribute('aria-pressed',String(scope==='college'));
  $('picks-heading').textContent=scope==='college'?'College-town picks, at a glance.':'Regional picks, at a glance.';
  $('discovery-heading').textContent=scope==='college'?'College-town property listings':'Regional property listings';
- $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':'Central NJ · Lehigh Valley · Pennsylvania · Ohio · North Carolina · Upstate and Western NY';
+ $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
  refreshMarketOptions();
  if(data)localityOptions();
  render();

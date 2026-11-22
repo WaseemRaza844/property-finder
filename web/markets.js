@@ -977,5 +977,1275 @@ export const markets = {
       "Westfield NY"
     ],
     "city": "Fredonia, NY"
+  },
+  "south-jersey-camden": {
+    "id": "south-jersey-camden",
+    "region": "Southern New Jersey",
+    "name": "Camden, Cherry Hill & Pennsauken, NJ",
+    "slug": "Camden_NJ",
+    "towns": [
+      "Camden NJ",
+      "Cherry Hill NJ",
+      "Pennsauken NJ",
+      "Collingswood NJ",
+      "Haddon Township NJ"
+    ],
+    "nearby": [
+      "Cherry Hill NJ",
+      "Pennsauken NJ",
+      "Collingswood NJ",
+      "Haddon Township NJ"
+    ],
+    "city": "Camden, NJ"
+  },
+  "south-jersey-gloucester": {
+    "id": "south-jersey-gloucester",
+    "region": "Southern New Jersey",
+    "name": "Glassboro, Washington Township & Gloucester County, NJ",
+    "slug": "Glassboro_NJ",
+    "towns": [
+      "Glassboro NJ",
+      "Washington Township NJ",
+      "Woodbury NJ",
+      "Deptford NJ",
+      "Pitman NJ"
+    ],
+    "nearby": [
+      "Washington Township NJ",
+      "Woodbury NJ",
+      "Deptford NJ",
+      "Pitman NJ"
+    ],
+    "city": "Glassboro, NJ"
+  },
+  "south-jersey-burlington": {
+    "id": "south-jersey-burlington",
+    "region": "Southern New Jersey",
+    "name": "Burlington County, NJ",
+    "slug": "Mount_Holly_NJ",
+    "towns": [
+      "Mount Holly NJ",
+      "Burlington NJ",
+      "Willingboro NJ",
+      "Pemberton NJ",
+      "Mount Laurel NJ"
+    ],
+    "nearby": [
+      "Burlington NJ",
+      "Willingboro NJ",
+      "Pemberton NJ",
+      "Mount Laurel NJ"
+    ],
+    "city": "Mount Holly, NJ"
+  },
+  "south-jersey-atlantic": {
+    "id": "south-jersey-atlantic",
+    "region": "Southern New Jersey",
+    "name": "Atlantic City, Pleasantville & Atlantic County, NJ",
+    "slug": "Atlantic_City_NJ",
+    "towns": [
+      "Atlantic City NJ",
+      "Pleasantville NJ",
+      "Hammonton NJ",
+      "Egg Harbor Township NJ"
+    ],
+    "nearby": [
+      "Pleasantville NJ",
+      "Hammonton NJ",
+      "Egg Harbor Township NJ"
+    ],
+    "city": "Atlantic City, NJ"
+  },
+  "south-jersey-cumberland": {
+    "id": "south-jersey-cumberland",
+    "region": "Southern New Jersey",
+    "name": "Vineland, Millville & Cumberland County, NJ",
+    "slug": "Vineland_NJ",
+    "towns": [
+      "Vineland NJ",
+      "Millville NJ",
+      "Bridgeton NJ"
+    ],
+    "nearby": [
+      "Millville NJ",
+      "Bridgeton NJ"
+    ],
+    "city": "Vineland, NJ"
+  },
+  "delaware-wilmington": {
+    "id": "delaware-wilmington",
+    "region": "Delaware",
+    "name": "Wilmington & New Castle County, DE",
+    "slug": "Wilmington_DE",
+    "towns": [
+      "Wilmington DE",
+      "New Castle DE",
+      "Claymont DE",
+      "Elsmere DE",
+      "Newark DE"
+    ],
+    "nearby": [
+      "New Castle DE",
+      "Claymont DE",
+      "Elsmere DE",
+      "Newark DE"
+    ],
+    "city": "Wilmington, DE"
+  },
+  "delaware-dover": {
+    "id": "delaware-dover",
+    "region": "Delaware",
+    "name": "Dover, Smyrna & Central Delaware",
+    "slug": "Dover_DE",
+    "towns": [
+      "Dover DE",
+      "Smyrna DE",
+      "Camden DE",
+      "Harrington DE"
+    ],
+    "nearby": [
+      "Smyrna DE",
+      "Camden DE",
+      "Harrington DE"
+    ],
+    "city": "Dover, DE"
+  },
+  "delaware-sussex": {
+    "id": "delaware-sussex",
+    "region": "Delaware",
+    "name": "Georgetown, Milford & Sussex County, DE",
+    "slug": "Georgetown_DE",
+    "towns": [
+      "Georgetown DE",
+      "Milford DE",
+      "Seaford DE",
+      "Laurel DE"
+    ],
+    "nearby": [
+      "Milford DE",
+      "Seaford DE",
+      "Laurel DE"
+    ],
+    "city": "Georgetown, DE"
+  },
+  "maryland-cecil": {
+    "id": "maryland-cecil",
+    "region": "Maryland",
+    "name": "Elkton, North East & Cecil County, MD",
+    "slug": "Elkton_MD",
+    "towns": [
+      "Elkton MD",
+      "North East MD",
+      "Perryville MD",
+      "Rising Sun MD"
+    ],
+    "nearby": [
+      "North East MD",
+      "Perryville MD",
+      "Rising Sun MD"
+    ],
+    "city": "Elkton, MD"
+  },
+  "maryland-harford": {
+    "id": "maryland-harford",
+    "region": "Maryland",
+    "name": "Aberdeen, Havre de Grace & Harford County, MD",
+    "slug": "Aberdeen_MD",
+    "towns": [
+      "Aberdeen MD",
+      "Havre de Grace MD",
+      "Bel Air MD",
+      "Edgewood MD"
+    ],
+    "nearby": [
+      "Havre de Grace MD",
+      "Bel Air MD",
+      "Edgewood MD"
+    ],
+    "city": "Aberdeen, MD"
+  },
+  "maryland-baltimore": {
+    "id": "maryland-baltimore",
+    "region": "Maryland",
+    "name": "Baltimore, Towson & County Suburbs, MD",
+    "slug": "Baltimore_MD",
+    "towns": [
+      "Baltimore MD",
+      "Towson MD",
+      "Catonsville MD",
+      "Dundalk MD",
+      "Pikesville MD"
+    ],
+    "nearby": [
+      "Towson MD",
+      "Catonsville MD",
+      "Dundalk MD",
+      "Pikesville MD"
+    ],
+    "city": "Baltimore, MD"
+  },
+  "maryland-western": {
+    "id": "maryland-western",
+    "region": "Maryland",
+    "name": "Frederick, Hagerstown & Western Maryland",
+    "slug": "Frederick_MD",
+    "towns": [
+      "Frederick MD",
+      "Hagerstown MD",
+      "Boonsboro MD",
+      "Brunswick MD"
+    ],
+    "nearby": [
+      "Hagerstown MD",
+      "Boonsboro MD",
+      "Brunswick MD"
+    ],
+    "city": "Frederick, MD"
+  },
+  "maryland-eastern-shore": {
+    "id": "maryland-eastern-shore",
+    "region": "Maryland",
+    "name": "Salisbury & Maryland Eastern Shore",
+    "slug": "Salisbury_MD",
+    "towns": [
+      "Salisbury MD",
+      "Fruitland MD",
+      "Cambridge MD",
+      "Easton MD"
+    ],
+    "nearby": [
+      "Fruitland MD",
+      "Cambridge MD",
+      "Easton MD"
+    ],
+    "city": "Salisbury, MD"
+  },
+  "central-pa-harrisburg": {
+    "id": "central-pa-harrisburg",
+    "region": "Central Pennsylvania",
+    "name": "Harrisburg, Carlisle & Mechanicsburg, PA",
+    "slug": "Harrisburg_PA",
+    "towns": [
+      "Harrisburg PA",
+      "Carlisle PA",
+      "Mechanicsburg PA",
+      "Camp Hill PA"
+    ],
+    "nearby": [
+      "Carlisle PA",
+      "Mechanicsburg PA",
+      "Camp Hill PA"
+    ],
+    "city": "Harrisburg, PA"
+  },
+  "central-pa-lancaster": {
+    "id": "central-pa-lancaster",
+    "region": "Central Pennsylvania",
+    "name": "Lancaster & Lebanon Counties, PA",
+    "slug": "Lancaster_PA",
+    "towns": [
+      "Lancaster PA",
+      "Lebanon PA",
+      "Ephrata PA",
+      "Lititz PA"
+    ],
+    "nearby": [
+      "Lebanon PA",
+      "Ephrata PA",
+      "Lititz PA"
+    ],
+    "city": "Lancaster, PA"
+  },
+  "central-pa-york": {
+    "id": "central-pa-york",
+    "region": "Central Pennsylvania",
+    "name": "York & Gettysburg, PA",
+    "slug": "York_PA",
+    "towns": [
+      "York PA",
+      "Gettysburg PA",
+      "Hanover PA",
+      "Dover PA"
+    ],
+    "nearby": [
+      "Gettysburg PA",
+      "Hanover PA",
+      "Dover PA"
+    ],
+    "city": "York, PA"
+  },
+  "central-pa-reading": {
+    "id": "central-pa-reading",
+    "region": "Central Pennsylvania",
+    "name": "Reading, Pottstown & Berks County, PA",
+    "slug": "Reading_PA",
+    "towns": [
+      "Reading PA",
+      "Pottstown PA",
+      "Kutztown PA",
+      "Shillington PA"
+    ],
+    "nearby": [
+      "Pottstown PA",
+      "Kutztown PA",
+      "Shillington PA"
+    ],
+    "city": "Reading, PA"
+  },
+  "north-carolina-triad": {
+    "id": "north-carolina-triad",
+    "region": "North Carolina",
+    "name": "Greensboro, Winston-Salem & High Point, NC",
+    "slug": "Greensboro_NC",
+    "towns": [
+      "Greensboro NC",
+      "Winston-Salem NC",
+      "High Point NC",
+      "Burlington NC"
+    ],
+    "nearby": [
+      "Winston-Salem NC",
+      "High Point NC",
+      "Burlington NC"
+    ],
+    "city": "Greensboro, NC"
+  },
+  "north-carolina-coast": {
+    "id": "north-carolina-coast",
+    "region": "North Carolina",
+    "name": "Wilmington & Southeastern North Carolina",
+    "slug": "Wilmington_NC",
+    "towns": [
+      "Wilmington NC",
+      "Leland NC",
+      "Jacksonville NC",
+      "Hampstead NC"
+    ],
+    "nearby": [
+      "Leland NC",
+      "Jacksonville NC",
+      "Hampstead NC"
+    ],
+    "city": "Wilmington, NC"
+  },
+  "north-carolina-west": {
+    "id": "north-carolina-west",
+    "region": "North Carolina",
+    "name": "Asheville, Hickory & Western North Carolina",
+    "slug": "Asheville_NC",
+    "towns": [
+      "Asheville NC",
+      "Hickory NC",
+      "Morganton NC",
+      "Hendersonville NC"
+    ],
+    "nearby": [
+      "Hickory NC",
+      "Morganton NC",
+      "Hendersonville NC"
+    ],
+    "city": "Asheville, NC"
+  },
+  "south-carolina-upstate": {
+    "id": "south-carolina-upstate",
+    "region": "South Carolina",
+    "name": "Greenville, Spartanburg & Upstate SC",
+    "slug": "Greenville_SC",
+    "towns": [
+      "Greenville SC",
+      "Spartanburg SC",
+      "Greer SC",
+      "Anderson SC"
+    ],
+    "nearby": [
+      "Spartanburg SC",
+      "Greer SC",
+      "Anderson SC"
+    ],
+    "city": "Greenville, SC"
+  },
+  "south-carolina-midlands": {
+    "id": "south-carolina-midlands",
+    "region": "South Carolina",
+    "name": "Columbia, Lexington & Midlands SC",
+    "slug": "Columbia_SC",
+    "towns": [
+      "Columbia SC",
+      "Lexington SC",
+      "Cayce SC",
+      "West Columbia SC"
+    ],
+    "nearby": [
+      "Lexington SC",
+      "Cayce SC",
+      "West Columbia SC"
+    ],
+    "city": "Columbia, SC"
+  },
+  "south-carolina-charlotte": {
+    "id": "south-carolina-charlotte",
+    "region": "South Carolina",
+    "name": "Rock Hill, Fort Mill & SC Charlotte Corridor",
+    "slug": "Rock_Hill_SC",
+    "towns": [
+      "Rock Hill SC",
+      "Fort Mill SC",
+      "Lancaster SC",
+      "York SC"
+    ],
+    "nearby": [
+      "Fort Mill SC",
+      "Lancaster SC",
+      "York SC"
+    ],
+    "city": "Rock Hill, SC"
+  },
+  "south-carolina-coast": {
+    "id": "south-carolina-coast",
+    "region": "South Carolina",
+    "name": "Charleston, Summerville & Coastal SC",
+    "slug": "Charleston_SC",
+    "towns": [
+      "Charleston SC",
+      "Summerville SC",
+      "North Charleston SC",
+      "Goose Creek SC"
+    ],
+    "nearby": [
+      "Summerville SC",
+      "North Charleston SC",
+      "Goose Creek SC"
+    ],
+    "city": "Charleston, SC"
+  },
+  "georgia-atlanta": {
+    "id": "georgia-atlanta",
+    "region": "Georgia",
+    "name": "Atlanta & Inner Metro, GA",
+    "slug": "Atlanta_GA",
+    "towns": [
+      "Atlanta GA",
+      "Decatur GA",
+      "Smyrna GA",
+      "Marietta GA"
+    ],
+    "nearby": [
+      "Decatur GA",
+      "Smyrna GA",
+      "Marietta GA"
+    ],
+    "city": "Atlanta, GA"
+  },
+  "georgia-north": {
+    "id": "georgia-north",
+    "region": "Georgia",
+    "name": "Gainesville, Cumming & North Georgia",
+    "slug": "Gainesville_GA",
+    "towns": [
+      "Gainesville GA",
+      "Cumming GA",
+      "Dawsonville GA",
+      "Buford GA"
+    ],
+    "nearby": [
+      "Cumming GA",
+      "Dawsonville GA",
+      "Buford GA"
+    ],
+    "city": "Gainesville, GA"
+  },
+  "georgia-athens": {
+    "id": "georgia-athens",
+    "region": "Georgia",
+    "name": "Athens & Northeast Georgia",
+    "slug": "Athens_GA",
+    "towns": [
+      "Athens GA",
+      "Watkinsville GA",
+      "Winder GA",
+      "Commerce GA"
+    ],
+    "nearby": [
+      "Watkinsville GA",
+      "Winder GA",
+      "Commerce GA"
+    ],
+    "city": "Athens, GA"
+  },
+  "georgia-augusta": {
+    "id": "georgia-augusta",
+    "region": "Georgia",
+    "name": "Augusta & East Georgia",
+    "slug": "Augusta_GA",
+    "towns": [
+      "Augusta GA",
+      "Evans GA",
+      "Grovetown GA",
+      "Thomson GA"
+    ],
+    "nearby": [
+      "Evans GA",
+      "Grovetown GA",
+      "Thomson GA"
+    ],
+    "city": "Augusta, GA"
+  },
+  "georgia-macon": {
+    "id": "georgia-macon",
+    "region": "Georgia",
+    "name": "Macon, Warner Robins & Central Georgia",
+    "slug": "Macon_GA",
+    "towns": [
+      "Macon GA",
+      "Warner Robins GA",
+      "Centerville GA",
+      "Forsyth GA"
+    ],
+    "nearby": [
+      "Warner Robins GA",
+      "Centerville GA",
+      "Forsyth GA"
+    ],
+    "city": "Macon, GA"
+  },
+  "georgia-savannah": {
+    "id": "georgia-savannah",
+    "region": "Georgia",
+    "name": "Savannah & Southeast Georgia",
+    "slug": "Savannah_GA",
+    "towns": [
+      "Savannah GA",
+      "Pooler GA",
+      "Richmond Hill GA",
+      "Statesboro GA"
+    ],
+    "nearby": [
+      "Pooler GA",
+      "Richmond Hill GA",
+      "Statesboro GA"
+    ],
+    "city": "Savannah, GA"
+  },
+  "college-college-station": {
+    "id": "college-college-station",
+    "region": "College Towns",
+    "name": "College Station, TX — Texas A&M",
+    "slug": "College_Station_TX",
+    "towns": [
+      "College Station TX",
+      "Bryan TX"
+    ],
+    "college_region": "Texas",
+    "university": "Texas A&M University",
+    "nearby": [
+      "Bryan TX"
+    ],
+    "city": "College Station, TX"
+  },
+  "college-austin": {
+    "id": "college-austin",
+    "region": "College Towns",
+    "name": "Austin, TX — UT Austin",
+    "slug": "Austin_TX",
+    "towns": [
+      "Austin TX",
+      "West Lake Hills TX"
+    ],
+    "college_region": "Texas",
+    "university": "University of Texas at Austin",
+    "nearby": [
+      "West Lake Hills TX"
+    ],
+    "city": "Austin, TX"
+  },
+  "college-lubbock": {
+    "id": "college-lubbock",
+    "region": "College Towns",
+    "name": "Lubbock, TX — Texas Tech",
+    "slug": "Lubbock_TX",
+    "towns": [
+      "Lubbock TX",
+      "Wolfforth TX"
+    ],
+    "college_region": "Texas",
+    "university": "Texas Tech University",
+    "nearby": [
+      "Wolfforth TX"
+    ],
+    "city": "Lubbock, TX"
+  },
+  "college-waco": {
+    "id": "college-waco",
+    "region": "College Towns",
+    "name": "Waco, TX — Baylor",
+    "slug": "Waco_TX",
+    "towns": [
+      "Waco TX",
+      "Woodway TX"
+    ],
+    "college_region": "Texas",
+    "university": "Baylor University",
+    "nearby": [
+      "Woodway TX"
+    ],
+    "city": "Waco, TX"
+  },
+  "college-san-marcos": {
+    "id": "college-san-marcos",
+    "region": "College Towns",
+    "name": "San Marcos, TX — Texas State",
+    "slug": "San_Marcos_TX",
+    "towns": [
+      "San Marcos TX",
+      "Kyle TX"
+    ],
+    "college_region": "Texas",
+    "university": "Texas State University",
+    "nearby": [
+      "Kyle TX"
+    ],
+    "city": "San Marcos, TX"
+  },
+  "college-denton": {
+    "id": "college-denton",
+    "region": "College Towns",
+    "name": "Denton, TX — UNT & TWU",
+    "slug": "Denton_TX",
+    "towns": [
+      "Denton TX",
+      "Corinth TX"
+    ],
+    "college_region": "Texas",
+    "university": "University of North Texas; Texas Woman's University",
+    "nearby": [
+      "Corinth TX"
+    ],
+    "city": "Denton, TX"
+  },
+  "college-huntsville-tx": {
+    "id": "college-huntsville-tx",
+    "region": "College Towns",
+    "name": "Huntsville, TX — Sam Houston State",
+    "slug": "Huntsville_TX",
+    "towns": [
+      "Huntsville TX",
+      "New Waverly TX"
+    ],
+    "college_region": "Texas",
+    "university": "Sam Houston State University",
+    "nearby": [
+      "New Waverly TX"
+    ],
+    "city": "Huntsville, TX"
+  },
+  "college-nacogdoches": {
+    "id": "college-nacogdoches",
+    "region": "College Towns",
+    "name": "Nacogdoches, TX — Stephen F. Austin State",
+    "slug": "Nacogdoches_TX",
+    "towns": [
+      "Nacogdoches TX",
+      "Lufkin TX"
+    ],
+    "college_region": "Texas",
+    "university": "Stephen F. Austin State University",
+    "nearby": [
+      "Lufkin TX"
+    ],
+    "city": "Nacogdoches, TX"
+  },
+  "college-fort-worth": {
+    "id": "college-fort-worth",
+    "region": "College Towns",
+    "name": "Fort Worth, TX — TCU",
+    "slug": "Fort_Worth_TX",
+    "towns": [
+      "Fort Worth TX",
+      "Benbrook TX"
+    ],
+    "college_region": "Texas",
+    "university": "Texas Christian University",
+    "nearby": [
+      "Benbrook TX"
+    ],
+    "city": "Fort Worth, TX"
+  },
+  "college-norman": {
+    "id": "college-norman",
+    "region": "College Towns",
+    "name": "Norman, OK — University of Oklahoma",
+    "slug": "Norman_OK",
+    "towns": [
+      "Norman OK",
+      "Noble OK",
+      "Moore OK"
+    ],
+    "college_region": "Oklahoma",
+    "university": "University of Oklahoma",
+    "nearby": [
+      "Noble OK",
+      "Moore OK"
+    ],
+    "city": "Norman, OK"
+  },
+  "college-stillwater": {
+    "id": "college-stillwater",
+    "region": "College Towns",
+    "name": "Stillwater, OK — Oklahoma State",
+    "slug": "Stillwater_OK",
+    "towns": [
+      "Stillwater OK",
+      "Perkins OK"
+    ],
+    "college_region": "Oklahoma",
+    "university": "Oklahoma State University",
+    "nearby": [
+      "Perkins OK"
+    ],
+    "city": "Stillwater, OK"
+  },
+  "college-edmond": {
+    "id": "college-edmond",
+    "region": "College Towns",
+    "name": "Edmond, OK — UCO",
+    "slug": "Edmond_OK",
+    "towns": [
+      "Edmond OK",
+      "Guthrie OK"
+    ],
+    "college_region": "Oklahoma",
+    "university": "University of Central Oklahoma",
+    "nearby": [
+      "Guthrie OK"
+    ],
+    "city": "Edmond, OK"
+  },
+  "college-tulsa": {
+    "id": "college-tulsa",
+    "region": "College Towns",
+    "name": "Tulsa, OK — University of Tulsa",
+    "slug": "Tulsa_OK",
+    "towns": [
+      "Tulsa OK",
+      "Broken Arrow OK"
+    ],
+    "college_region": "Oklahoma",
+    "university": "University of Tulsa",
+    "nearby": [
+      "Broken Arrow OK"
+    ],
+    "city": "Tulsa, OK"
+  },
+  "college-tahlequah": {
+    "id": "college-tahlequah",
+    "region": "College Towns",
+    "name": "Tahlequah, OK — Northeastern State",
+    "slug": "Tahlequah_OK",
+    "towns": [
+      "Tahlequah OK",
+      "Park Hill OK"
+    ],
+    "college_region": "Oklahoma",
+    "university": "Northeastern State University",
+    "nearby": [
+      "Park Hill OK"
+    ],
+    "city": "Tahlequah, OK"
+  },
+  "college-tempe": {
+    "id": "college-tempe",
+    "region": "College Towns",
+    "name": "Tempe, AZ — Arizona State",
+    "slug": "Tempe_AZ",
+    "towns": [
+      "Tempe AZ",
+      "Mesa AZ"
+    ],
+    "college_region": "Arizona",
+    "university": "Arizona State University",
+    "nearby": [
+      "Mesa AZ"
+    ],
+    "city": "Tempe, AZ"
+  },
+  "college-tucson": {
+    "id": "college-tucson",
+    "region": "College Towns",
+    "name": "Tucson, AZ — University of Arizona",
+    "slug": "Tucson_AZ",
+    "towns": [
+      "Tucson AZ",
+      "South Tucson AZ"
+    ],
+    "college_region": "Arizona",
+    "university": "University of Arizona",
+    "nearby": [
+      "South Tucson AZ"
+    ],
+    "city": "Tucson, AZ"
+  },
+  "college-flagstaff": {
+    "id": "college-flagstaff",
+    "region": "College Towns",
+    "name": "Flagstaff, AZ — Northern Arizona",
+    "slug": "Flagstaff_AZ",
+    "towns": [
+      "Flagstaff AZ",
+      "Bellemont AZ"
+    ],
+    "college_region": "Arizona",
+    "university": "Northern Arizona University",
+    "nearby": [
+      "Bellemont AZ"
+    ],
+    "city": "Flagstaff, AZ"
+  },
+  "college-prescott": {
+    "id": "college-prescott",
+    "region": "College Towns",
+    "name": "Prescott, AZ — Embry-Riddle",
+    "slug": "Prescott_AZ",
+    "towns": [
+      "Prescott AZ",
+      "Prescott Valley AZ"
+    ],
+    "college_region": "Arizona",
+    "university": "Embry-Riddle Aeronautical University (Prescott)",
+    "nearby": [
+      "Prescott Valley AZ"
+    ],
+    "city": "Prescott, AZ"
+  },
+  "college-athens-ga": {
+    "id": "college-athens-ga",
+    "region": "College Towns",
+    "name": "Athens, GA — University of Georgia",
+    "slug": "Athens_GA",
+    "towns": [
+      "Athens GA",
+      "Watkinsville GA"
+    ],
+    "college_region": "Georgia",
+    "university": "University of Georgia",
+    "nearby": [
+      "Watkinsville GA"
+    ],
+    "city": "Athens, GA"
+  },
+  "college-statesboro": {
+    "id": "college-statesboro",
+    "region": "College Towns",
+    "name": "Statesboro, GA — Georgia Southern",
+    "slug": "Statesboro_GA",
+    "towns": [
+      "Statesboro GA",
+      "Brooklet GA"
+    ],
+    "college_region": "Georgia",
+    "university": "Georgia Southern University",
+    "nearby": [
+      "Brooklet GA"
+    ],
+    "city": "Statesboro, GA"
+  },
+  "college-kennesaw": {
+    "id": "college-kennesaw",
+    "region": "College Towns",
+    "name": "Kennesaw, GA — Kennesaw State",
+    "slug": "Kennesaw_GA",
+    "towns": [
+      "Kennesaw GA",
+      "Acworth GA"
+    ],
+    "college_region": "Georgia",
+    "university": "Kennesaw State University",
+    "nearby": [
+      "Acworth GA"
+    ],
+    "city": "Kennesaw, GA"
+  },
+  "college-clemson": {
+    "id": "college-clemson",
+    "region": "College Towns",
+    "name": "Clemson, SC — Clemson University",
+    "slug": "Clemson_SC",
+    "towns": [
+      "Clemson SC",
+      "Central SC"
+    ],
+    "college_region": "South Carolina",
+    "university": "Clemson University",
+    "nearby": [
+      "Central SC"
+    ],
+    "city": "Clemson, SC"
+  },
+  "college-columbia-sc": {
+    "id": "college-columbia-sc",
+    "region": "College Towns",
+    "name": "Columbia, SC — University of South Carolina",
+    "slug": "Columbia_SC",
+    "towns": [
+      "Columbia SC",
+      "Cayce SC"
+    ],
+    "college_region": "South Carolina",
+    "university": "University of South Carolina",
+    "nearby": [
+      "Cayce SC"
+    ],
+    "city": "Columbia, SC"
+  },
+  "college-conway-sc": {
+    "id": "college-conway-sc",
+    "region": "College Towns",
+    "name": "Conway, SC — Coastal Carolina",
+    "slug": "Conway_SC",
+    "towns": [
+      "Conway SC",
+      "Myrtle Beach SC"
+    ],
+    "college_region": "South Carolina",
+    "university": "Coastal Carolina University",
+    "nearby": [
+      "Myrtle Beach SC"
+    ],
+    "city": "Conway, SC"
+  },
+  "college-auburn": {
+    "id": "college-auburn",
+    "region": "College Towns",
+    "name": "Auburn, AL — Auburn University",
+    "slug": "Auburn_AL",
+    "towns": [
+      "Auburn AL",
+      "Opelika AL"
+    ],
+    "college_region": "Alabama",
+    "university": "Auburn University",
+    "nearby": [
+      "Opelika AL"
+    ],
+    "city": "Auburn, AL"
+  },
+  "college-tuscaloosa": {
+    "id": "college-tuscaloosa",
+    "region": "College Towns",
+    "name": "Tuscaloosa, AL — University of Alabama",
+    "slug": "Tuscaloosa_AL",
+    "towns": [
+      "Tuscaloosa AL",
+      "Northport AL"
+    ],
+    "college_region": "Alabama",
+    "university": "University of Alabama",
+    "nearby": [
+      "Northport AL"
+    ],
+    "city": "Tuscaloosa, AL"
+  },
+  "college-oxford-ms": {
+    "id": "college-oxford-ms",
+    "region": "College Towns",
+    "name": "Oxford, MS — Ole Miss",
+    "slug": "Oxford_MS",
+    "towns": [
+      "Oxford MS",
+      "Water Valley MS"
+    ],
+    "college_region": "Mississippi",
+    "university": "University of Mississippi",
+    "nearby": [
+      "Water Valley MS"
+    ],
+    "city": "Oxford, MS"
+  },
+  "college-starkville": {
+    "id": "college-starkville",
+    "region": "College Towns",
+    "name": "Starkville, MS — Mississippi State",
+    "slug": "Starkville_MS",
+    "towns": [
+      "Starkville MS",
+      "Columbus MS"
+    ],
+    "college_region": "Mississippi",
+    "university": "Mississippi State University",
+    "nearby": [
+      "Columbus MS"
+    ],
+    "city": "Starkville, MS"
+  },
+  "college-fayetteville-ar": {
+    "id": "college-fayetteville-ar",
+    "region": "College Towns",
+    "name": "Fayetteville, AR — University of Arkansas",
+    "slug": "Fayetteville_AR",
+    "towns": [
+      "Fayetteville AR",
+      "Springdale AR"
+    ],
+    "college_region": "Arkansas",
+    "university": "University of Arkansas",
+    "nearby": [
+      "Springdale AR"
+    ],
+    "city": "Fayetteville, AR"
+  },
+  "college-lawrence-ks": {
+    "id": "college-lawrence-ks",
+    "region": "College Towns",
+    "name": "Lawrence, KS — University of Kansas",
+    "slug": "Lawrence_KS",
+    "towns": [
+      "Lawrence KS",
+      "Eudora KS"
+    ],
+    "college_region": "Kansas",
+    "university": "University of Kansas",
+    "nearby": [
+      "Eudora KS"
+    ],
+    "city": "Lawrence, KS"
+  },
+  "college-manhattan-ks": {
+    "id": "college-manhattan-ks",
+    "region": "College Towns",
+    "name": "Manhattan, KS — Kansas State",
+    "slug": "Manhattan_KS",
+    "towns": [
+      "Manhattan KS",
+      "Wamego KS"
+    ],
+    "college_region": "Kansas",
+    "university": "Kansas State University",
+    "nearby": [
+      "Wamego KS"
+    ],
+    "city": "Manhattan, KS"
+  },
+  "college-ames": {
+    "id": "college-ames",
+    "region": "College Towns",
+    "name": "Ames, IA — Iowa State",
+    "slug": "Ames_IA",
+    "towns": [
+      "Ames IA",
+      "Nevada IA"
+    ],
+    "college_region": "Iowa",
+    "university": "Iowa State University",
+    "nearby": [
+      "Nevada IA"
+    ],
+    "city": "Ames, IA"
+  },
+  "college-iowa-city": {
+    "id": "college-iowa-city",
+    "region": "College Towns",
+    "name": "Iowa City, IA — University of Iowa",
+    "slug": "Iowa_City_IA",
+    "towns": [
+      "Iowa City IA",
+      "Coralville IA"
+    ],
+    "college_region": "Iowa",
+    "university": "University of Iowa",
+    "nearby": [
+      "Coralville IA"
+    ],
+    "city": "Iowa City, IA"
+  },
+  "college-bloomington-in": {
+    "id": "college-bloomington-in",
+    "region": "College Towns",
+    "name": "Bloomington, IN — Indiana University",
+    "slug": "Bloomington_IN",
+    "towns": [
+      "Bloomington IN",
+      "Ellettsville IN"
+    ],
+    "college_region": "Indiana",
+    "university": "Indiana University Bloomington",
+    "nearby": [
+      "Ellettsville IN"
+    ],
+    "city": "Bloomington, IN"
+  },
+  "college-west-lafayette": {
+    "id": "college-west-lafayette",
+    "region": "College Towns",
+    "name": "West Lafayette, IN — Purdue",
+    "slug": "West_Lafayette_IN",
+    "towns": [
+      "West Lafayette IN",
+      "Lafayette IN"
+    ],
+    "college_region": "Indiana",
+    "university": "Purdue University",
+    "nearby": [
+      "Lafayette IN"
+    ],
+    "city": "West Lafayette, IN"
+  },
+  "college-madison-wi": {
+    "id": "college-madison-wi",
+    "region": "College Towns",
+    "name": "Madison, WI — University of Wisconsin",
+    "slug": "Madison_WI",
+    "towns": [
+      "Madison WI",
+      "Middleton WI"
+    ],
+    "college_region": "Wisconsin",
+    "university": "University of Wisconsin–Madison",
+    "nearby": [
+      "Middleton WI"
+    ],
+    "city": "Madison, WI"
+  },
+  "college-east-lansing": {
+    "id": "college-east-lansing",
+    "region": "College Towns",
+    "name": "East Lansing, MI — Michigan State",
+    "slug": "East_Lansing_MI",
+    "towns": [
+      "East Lansing MI",
+      "Lansing MI"
+    ],
+    "college_region": "Michigan",
+    "university": "Michigan State University",
+    "nearby": [
+      "Lansing MI"
+    ],
+    "city": "East Lansing, MI"
+  },
+  "college-ann-arbor": {
+    "id": "college-ann-arbor",
+    "region": "College Towns",
+    "name": "Ann Arbor, MI — University of Michigan",
+    "slug": "Ann_Arbor_MI",
+    "towns": [
+      "Ann Arbor MI",
+      "Ypsilanti MI"
+    ],
+    "college_region": "Michigan",
+    "university": "University of Michigan",
+    "nearby": [
+      "Ypsilanti MI"
+    ],
+    "city": "Ann Arbor, MI"
+  },
+  "college-boulder": {
+    "id": "college-boulder",
+    "region": "College Towns",
+    "name": "Boulder, CO — University of Colorado",
+    "slug": "Boulder_CO",
+    "towns": [
+      "Boulder CO",
+      "Louisville CO"
+    ],
+    "college_region": "Colorado",
+    "university": "University of Colorado Boulder",
+    "nearby": [
+      "Louisville CO"
+    ],
+    "city": "Boulder, CO"
+  },
+  "college-fort-collins": {
+    "id": "college-fort-collins",
+    "region": "College Towns",
+    "name": "Fort Collins, CO — Colorado State",
+    "slug": "Fort_Collins_CO",
+    "towns": [
+      "Fort Collins CO",
+      "Loveland CO"
+    ],
+    "college_region": "Colorado",
+    "university": "Colorado State University",
+    "nearby": [
+      "Loveland CO"
+    ],
+    "city": "Fort Collins, CO"
+  },
+  "college-gainesville-fl": {
+    "id": "college-gainesville-fl",
+    "region": "College Towns",
+    "name": "Gainesville, FL — University of Florida",
+    "slug": "Gainesville_FL",
+    "towns": [
+      "Gainesville FL",
+      "Newberry FL"
+    ],
+    "college_region": "Florida",
+    "university": "University of Florida",
+    "nearby": [
+      "Newberry FL"
+    ],
+    "city": "Gainesville, FL"
+  },
+  "college-tallahassee": {
+    "id": "college-tallahassee",
+    "region": "College Towns",
+    "name": "Tallahassee, FL — FSU & FAMU",
+    "slug": "Tallahassee_FL",
+    "towns": [
+      "Tallahassee FL",
+      "Havana FL"
+    ],
+    "college_region": "Florida",
+    "university": "Florida State University; Florida A&M University",
+    "nearby": [
+      "Havana FL"
+    ],
+    "city": "Tallahassee, FL"
+  },
+  "college-orlando": {
+    "id": "college-orlando",
+    "region": "College Towns",
+    "name": "Orlando, FL — UCF",
+    "slug": "Orlando_FL",
+    "towns": [
+      "Orlando FL",
+      "Oviedo FL"
+    ],
+    "college_region": "Florida",
+    "university": "University of Central Florida",
+    "nearby": [
+      "Oviedo FL"
+    ],
+    "city": "Orlando, FL"
+  },
+  "college-boone": {
+    "id": "college-boone",
+    "region": "College Towns",
+    "name": "Boone, NC — Appalachian State",
+    "slug": "Boone_NC",
+    "towns": [
+      "Boone NC",
+      "Blowing Rock NC"
+    ],
+    "college_region": "North Carolina",
+    "university": "Appalachian State University",
+    "nearby": [
+      "Blowing Rock NC"
+    ],
+    "city": "Boone, NC"
+  },
+  "college-greenville-nc": {
+    "id": "college-greenville-nc",
+    "region": "College Towns",
+    "name": "Greenville, NC — East Carolina",
+    "slug": "Greenville_NC",
+    "towns": [
+      "Greenville NC",
+      "Winterville NC"
+    ],
+    "college_region": "North Carolina",
+    "university": "East Carolina University",
+    "nearby": [
+      "Winterville NC"
+    ],
+    "city": "Greenville, NC"
   }
 };

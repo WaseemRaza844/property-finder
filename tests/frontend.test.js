@@ -32,12 +32,21 @@ test('search queries encode shared criteria and nearby towns without claiming ra
   assert.throws(()=>buildSearches({market:'unknown'}));assert.throws(()=>buildSearches({price:'NaN'}));
 });
 test('catalog includes upstate New York and dedicated college-town choices',()=>{
- assert.equal(Object.keys(markets).length,49);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,7);
+ assert.equal(Object.keys(markets).length,124);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,13);
  assert.equal(markets.buffalo.region,'Upstate & Western New York');
  assert.equal(markets['college-ithaca'].region,'College Towns');
  assert.match(markets['college-ithaca'].university,/Cornell/);
- assert.equal(Object.values(markets).filter(m=>m.region==='College Towns').length,31);
+ assert.equal(Object.values(markets).filter(m=>m.region==='College Towns').length,76);
  assert.match(markets['college-bethlehem'].university,/Lehigh/);
+ assert.equal(markets['south-jersey-camden'].region,'Southern New Jersey');
+ assert.equal(markets['delaware-wilmington'].region,'Delaware');
+ assert.equal(markets['maryland-harford'].region,'Maryland');
+ assert.equal(markets['georgia-atlanta'].region,'Georgia');
+ assert.equal(markets['south-carolina-upstate'].region,'South Carolina');
+ assert.equal(markets['central-pa-harrisburg'].region,'Central Pennsylvania');
+ assert.match(markets['college-college-station'].university,/Texas A&M/);
+ assert.match(markets['college-norman'].university,/University of Oklahoma/);
+ assert.match(markets['college-tempe'].university,/Arizona State/);
  for(const market of Object.keys(markets))assert.equal(buildSearches({market})[0].id,'homes');
 });
 const discoveryNow=Date.parse('2026-10-25T12:00:00Z');

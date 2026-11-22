@@ -30,3 +30,14 @@ function applyFont(value) {
 }
 applyFont(currentFont);
 fontSelect.addEventListener('change', () => applyFont(fontSelect.value));
+
+
+// Keep in-page anchor targets visible below the responsive sticky header.
+const stickyHeader = document.getElementById('site-header');
+if (stickyHeader) {
+ const updateHeaderOffset = () => document.documentElement.style.setProperty(
+   '--sticky-header-height', `${Math.ceil(stickyHeader.getBoundingClientRect().height + 14)}px`);
+ updateHeaderOffset();
+ if (typeof ResizeObserver !== 'undefined') new ResizeObserver(updateHeaderOffset).observe(stickyHeader);
+ else window.addEventListener('resize', updateHeaderOffset);
+}

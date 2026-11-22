@@ -128,3 +128,38 @@ body{font-size:var(--ui-font)}
 .mode-tab:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .mode-workspace #mode-description{margin:12px 0 0;font-size:var(--ui-small)}
 @media(max-width:600px){.mode-workspace{padding:14px}.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mode-tab{padding:12px 8px;font-size:var(--ui-small)}}
+
+
+/* Persistent, keyboard-accessible navigation on all scroll positions. */
+:root { --sticky-header-height: 112px; }
+html { scroll-padding-top: var(--sticky-header-height); }
+header#site-header {
+ position: sticky; top: 0; z-index: 1000; max-width: none; width: 100%;
+ padding: 10px max(20px,calc((100vw - 1224px)/2 + 40px));
+ background: var(--surface); color: var(--ink);
+ border-bottom: 1px solid var(--line);
+ box-shadow: 0 3px 16px rgba(9,29,41,.10);
+ backdrop-filter: none;
+ gap: 14px;
+}
+header#site-header .brand{white-space:nowrap;flex-shrink:0;font-size:18px}
+header#site-header .brand-icon{font-size:25px}
+header#site-header nav{gap:16px;align-items:center}
+header#site-header nav a{font-size:var(--ui-label);font-weight:650;white-space:nowrap;padding:6px 3px}
+header#site-header nav a:hover,header#site-header nav a:focus-visible{color:var(--accent-text);text-decoration:underline;text-underline-offset:5px}
+header#site-header nav a:first-child{font-weight:800}
+#home,#top-picks-workspace,#automatic-workspace,#saved-workspace,#search-workspace{scroll-margin-top:var(--sticky-header-height)}
+@media(max-width:1100px){
+ header#site-header{padding:10px 20px;flex-wrap:wrap;row-gap:8px}
+ header#site-header nav{order:4;flex-basis:100%;width:100%;overflow-x:auto;gap:22px;scrollbar-width:thin;padding-bottom:3px}
+ header#site-header .theme-switcher{margin-left:auto}
+}
+@media(max-width:600px){
+ header#site-header{padding:8px 12px;column-gap:12px}
+ header#site-header .brand{font-size:16px}
+ header#site-header .theme-switcher,header#site-header .font-switcher{margin-left:0;flex:0 1 auto}
+ header#site-header nav{order:5;flex-basis:100%;width:100%;gap:19px}
+ header#site-header nav a{font-size:var(--ui-label)}
+ header#site-header .theme-switcher select,header#site-header .font-switcher select{max-width:125px}
+}
+@media(prefers-reduced-motion: reduce){html{scroll-behavior:auto}}

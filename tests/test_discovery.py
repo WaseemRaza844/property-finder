@@ -215,7 +215,7 @@ class DiscoveryTests(unittest.TestCase):
     def test_rediscovered_expired_link_starts_new_history(self):
         self.prepare();fake=lambda *a:[{'url':URL,'title':'Test'}]
         refresh(self.root,'run-1',NOW,key='test',requester=fake)
-        later=NOW+timedelta(days=15)
+        later=NOW+timedelta(days=22)
         self.prepare('run-2',later)
         report=refresh(self.root,'run-2',later,key='test',requester=fake)
         self.assertEqual(report['results'][0]['first_seen'],later.isoformat())
