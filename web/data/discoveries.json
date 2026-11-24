@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T19:55:38.749238+00:00",
-  "last_success_at": "2026-11-22T19:55:38.749238+00:00",
+  "generated_at": "2026-11-24T00:15:34.075649+00:00",
+  "last_success_at": "2026-11-24T00:15:34.075649+00:00",
   "provider": "Exa",
   "status": "ok",
-  "reserved_requests": 340,
+  "reserved_requests": 352,
   "monthly_limit": 400,
   "retention_days": 21,
   "queries": [
@@ -24,8 +24,8 @@
       "returned": 10,
       "accepted": 10,
       "source_counts": {
-        "realtor.com": 1,
-        "redfin.com": 9
+        "redfin.com": 9,
+        "realtor.com": 1
       }
     },
     {
@@ -39,17 +39,17 @@
       }
     },
     {
-      "market": "delaware-dover",
+      "market": "maryland-eastern-shore",
       "domain": "homes.com, realtor.com, redfin.com",
       "status": "ok",
       "returned": 10,
-      "accepted": 6,
+      "accepted": 7,
       "source_counts": {
-        "redfin.com": 6
+        "redfin.com": 7
       }
     },
     {
-      "market": "delaware-sussex",
+      "market": "central-pa-harrisburg",
       "domain": "homes.com",
       "status": "ok",
       "returned": 10,
@@ -59,27 +59,7 @@
       }
     },
     {
-      "market": "maryland-cecil",
-      "domain": "homes.com, realtor.com, redfin.com",
-      "status": "ok",
-      "returned": 10,
-      "accepted": 10,
-      "source_counts": {
-        "redfin.com": 10
-      }
-    },
-    {
-      "market": "college-denton",
-      "domain": "homes.com",
-      "status": "ok",
-      "returned": 10,
-      "accepted": 10,
-      "source_counts": {
-        "homes.com": 10
-      }
-    },
-    {
-      "market": "college-huntsville-tx",
+      "market": "central-pa-lancaster",
       "domain": "homes.com, realtor.com, redfin.com",
       "status": "ok",
       "returned": 10,
@@ -90,7 +70,7 @@
       }
     },
     {
-      "market": "college-nacogdoches",
+      "market": "college-prescott",
       "domain": "homes.com",
       "status": "ok",
       "returned": 10,
@@ -100,7 +80,7 @@
       }
     },
     {
-      "market": "college-fort-worth",
+      "market": "college-athens-ga",
       "domain": "homes.com, realtor.com, redfin.com",
       "status": "ok",
       "returned": 10,
@@ -110,7 +90,7 @@
       }
     },
     {
-      "market": "college-norman",
+      "market": "college-statesboro",
       "domain": "homes.com",
       "status": "ok",
       "returned": 10,
@@ -120,17 +100,1838 @@
       }
     },
     {
-      "market": "college-stillwater",
+      "market": "college-kennesaw",
       "domain": "homes.com, realtor.com, redfin.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 9,
+      "source_counts": {
+        "redfin.com": 8,
+        "realtor.com": 1
+      }
+    },
+    {
+      "market": "college-clemson",
+      "domain": "homes.com",
       "status": "ok",
       "returned": 10,
       "accepted": 10,
       "source_counts": {
-        "redfin.com": 10
+        "homes.com": 10
+      }
+    },
+    {
+      "market": "college-columbia-sc",
+      "domain": "homes.com, realtor.com, redfin.com",
+      "status": "ok",
+      "returned": 10,
+      "accepted": 9,
+      "source_counts": {
+        "redfin.com": 9
       }
     }
   ],
   "results": [
+    {
+      "url": "https://www.redfin.com/MD/Salisbury/323-New-York-Ave-21801/home/15410107",
+      "source": "redfin.com",
+      "title": "323 New York Ave, Salisbury, MD 21801 | MLS# MDWC2024850 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 479000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2500,
+      "units": null,
+      "property_type": null,
+      "town": "Salisbury",
+      "state": "MD",
+      "zip": "21801"
+    },
+    {
+      "url": "https://www.redfin.com/MD/Salisbury/2302-Allen-Dr-21801/home/17438511",
+      "source": "redfin.com",
+      "title": "2302 Allen Dr, Salisbury, MD 21801 | MLS# MDWC2023282 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 215000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1142,
+      "units": null,
+      "property_type": null,
+      "town": "Salisbury",
+      "state": "MD",
+      "zip": "21801"
+    },
+    {
+      "url": "https://www.redfin.com/MD/Dundalk/3111-Liberty-Pkwy-21222/home/9349170",
+      "source": "redfin.com",
+      "title": "3111 Liberty Pkwy, Dundalk, MD 21222 | MLS# MDBC2176422 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 474900,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1738,
+      "units": 3,
+      "property_type": "triplex",
+      "town": "Dundalk",
+      "state": "MD",
+      "zip": "21222"
+    },
+    {
+      "url": "https://www.redfin.com/MD/Frostburg/154-E-Main-St-21532/home/14725728",
+      "source": "redfin.com",
+      "title": "154 E Main St, Frostburg, MD 21532 | MLS# MDAL2015378 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 274000,
+      "beds": 5,
+      "baths": null,
+      "sqft": 2684,
+      "units": null,
+      "property_type": null,
+      "town": "Frostburg",
+      "state": "MD",
+      "zip": "21532"
+    },
+    {
+      "url": "https://www.redfin.com/MD/Salisbury/215-W-Philadelphia-Ave-21801/home/15410096",
+      "source": "redfin.com",
+      "title": "215 W Philadelphia Ave, Salisbury, MD 21801 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market nov 2020 for $130K",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 140000,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 1646,
+      "units": null,
+      "property_type": null,
+      "town": "Salisbury",
+      "state": "MD",
+      "zip": "21801"
+    },
+    {
+      "url": "https://www.redfin.com/MD/Salisbury/923-Preston-St-21804/home/15422376",
+      "source": "redfin.com",
+      "title": "923 Preston St, Salisbury, MD 21804 | MLS# MDWC2019172 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 259900,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1369,
+      "units": null,
+      "property_type": null,
+      "town": "Salisbury",
+      "state": "MD",
+      "zip": "21804"
+    },
+    {
+      "url": "https://www.homes.com/property/494-old-york-rd-new-cumberland-pa/851xy6mzglkl5",
+      "source": "homes.com",
+      "title": "494 Old York Rd, New Cumberland, PA 17070",
+      "markets": [
+        "central-pa-harrisburg"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 359900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1930,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "New Cumberland",
+      "state": "PA",
+      "zip": "17070"
+    },
+    {
+      "url": "https://www.homes.com/property/the-village-of-laurel-ridge-and-the-encore-apartments-and-townhomes-harrisburg-pa/nnqy1yjfxyzbv",
+      "source": "homes.com",
+      "title": "The Village of Laurel Ridge and The Encore Apartments and Townhomes - 399 Ring Neck Dr, Harrisburg, PA | Homes.com",
+      "markets": [
+        "central-pa-harrisburg"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 750,
+      "units": null,
+      "property_type": null,
+      "town": null,
+      "state": null,
+      "zip": null
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/459-Pershing-Ave-17602/home/130228267",
+      "source": "redfin.com",
+      "title": "459 Pershing Ave, Lancaster, PA 17602 | MLS# PALA2095258 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 500000,
+      "beds": 5,
+      "baths": null,
+      "sqft": 2603,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17602"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/318-S-Queen-St-17603/home/130215086",
+      "source": "redfin.com",
+      "title": "318 S Queen St, Lancaster, PA 17603 | MLS# PALA2096870 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 339900,
+      "beds": 4,
+      "baths": 4,
+      "sqft": null,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/320-S-Queen-St-17603/home/130153221",
+      "source": "redfin.com",
+      "title": "320 S Queen St, Lancaster, PA 17603 | MLS# PALA2096882 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 219900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2382,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/420-N-Duke-St-17602/home/146767165",
+      "source": "redfin.com",
+      "title": "420 N Duke St, Lancaster, PA 17602 | MLS# PALA2094816 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 598500,
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": null,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17602"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/701-N-Duke-St-17602/home/200156010",
+      "source": "redfin.com",
+      "title": "701-703 N Duke St, Lancaster, PA 17602 | MLS# PALA2090062 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 5,
+      "baths": 4,
+      "sqft": 4792,
+      "units": 3,
+      "property_type": "triplex",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17602"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/429-W-Lemon-St-17603/home/205541973",
+      "source": "redfin.com",
+      "title": "429 W Lemon St, Lancaster, PA 17603 | MLS# PALA2095478 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 779000,
+      "beds": 3,
+      "baths": 4,
+      "sqft": 3841,
+      "units": null,
+      "property_type": null,
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/449-W-King-St-17603/home/130110573",
+      "source": "redfin.com",
+      "title": "449 W King St, Lancaster, PA 17603 | MLS# PALA2095078 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1225500,
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": 4878,
+      "units": 5,
+      "property_type": "multifamily",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Lancaster/138-N-Mulberry-St-17603/home/131875493",
+      "source": "redfin.com",
+      "title": "138 N Mulberry St, Lancaster, PA 17603 | MLS# PALA2092796 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1150000,
+      "beds": 7,
+      "baths": 3.5,
+      "sqft": 5000,
+      "units": null,
+      "property_type": null,
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603"
+    },
+    {
+      "url": "https://www.redfin.com/PA/Elizabethtown/114-W-Harrisburg-Ave-17022/home/199143483",
+      "source": "redfin.com",
+      "title": "112-114 W Harrisburg Ave, Elizabethtown, PA 17022 | MLS# PALA2091366 | Redfin",
+      "markets": [
+        "central-pa-lancaster"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 500000,
+      "beds": 6,
+      "baths": 4,
+      "sqft": 3904,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Elizabethtown",
+      "state": "PA",
+      "zip": "17022"
+    },
+    {
+      "url": "https://www.homes.com/property/980-n-hunter-ridge-rd-prescott-az/4xxcjeswecpf7",
+      "source": "homes.com",
+      "title": "980 N Hunter Ridge Rd, Prescott, AZ 86303 | Homes.com",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 735000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 2143,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86303"
+    },
+    {
+      "url": "https://www.homes.com/property/2362-river-trail-rd-prescott-az/l3n78sbm1jclm",
+      "source": "homes.com",
+      "title": "2362 River Trail Rd, Prescott, AZ 86301",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "SOLD JUN 6, 2024",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 149900,
+      "beds": 1,
+      "baths": 1,
+      "sqft": 603,
+      "units": null,
+      "property_type": null,
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86301"
+    },
+    {
+      "url": "https://www.homes.com/property/10580-n-patina-rd-prescott-az/3x9tlbnyhgegw",
+      "source": "homes.com",
+      "title": "10580 N Patina Rd, Prescott, AZ 86305 | Homes.com",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1375000,
+      "beds": 5,
+      "baths": 5,
+      "sqft": 4608,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86305"
+    },
+    {
+      "url": "https://www.homes.com/property/2375-hillside-loop-rd-prescott-az/79zkq0zv4zm3n",
+      "source": "homes.com",
+      "title": "2375 Hillside Loop Rd, Prescott, AZ 86301",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 1,
+      "baths": 1,
+      "sqft": 650,
+      "units": null,
+      "property_type": null,
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86301"
+    },
+    {
+      "url": "https://www.homes.com/property/12265-n-petra-lot-240-cir-prescott-az/yl44h3vebmn89",
+      "source": "homes.com",
+      "title": "12265 N Petra (Lot 240) Cir, Prescott, AZ 86305 | Homes.com",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1023900,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 2486,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86305"
+    },
+    {
+      "url": "https://www.homes.com/property/2001-w-thumb-butte-rd-prescott-az/cfy2rnr62sf2v",
+      "source": "homes.com",
+      "title": "2001 W Thumb Butte Rd, Prescott, AZ 86305",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 149000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1387,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86305"
+    },
+    {
+      "url": "https://www.homes.com/property/7250-magic-mountain-rd-prescott-az/rjf79175npt84",
+      "source": "homes.com",
+      "title": "7250 Magic Mountain Rd, Prescott, AZ 86303",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Recently Sold",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 519000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 2206,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86303"
+    },
+    {
+      "url": "https://www.homes.com/property/2289-lichen-ridge-ln-prescott-az/r9eypn755vcp8",
+      "source": "homes.com",
+      "title": "2289 Lichen Ridge Ln, Prescott, AZ 86303",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 139000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Prescott",
+      "state": "AZ",
+      "zip": "86303"
+    },
+    {
+      "url": "https://www.homes.com/property/9125-e-pronghorn-ln-prescott-valley-az/fz3fxrjls0vk9",
+      "source": "homes.com",
+      "title": "9125 E Pronghorn Ln, Prescott Valley, AZ 86315",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 695000,
+      "beds": 5,
+      "baths": 4,
+      "sqft": 3590,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott Valley",
+      "state": "AZ",
+      "zip": "86315"
+    },
+    {
+      "url": "https://www.homes.com/property/6064-aranda-ln-prescott-valley-az/cqd8kxeqz0gxz",
+      "source": "homes.com",
+      "title": "6064 Aranda Ln, Prescott Valley, AZ 86314",
+      "markets": [
+        "college-prescott"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 545000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1661,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Prescott Valley",
+      "state": "AZ",
+      "zip": "86314"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/122-Parkridge-Ct-30605/home/124664465",
+      "source": "redfin.com",
+      "title": "122 Park Ridge Ct, Athens, GA 30605 | MLS# CL366156 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 298000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1768,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/160-Ashmore-Dr-30601/home/124431585",
+      "source": "redfin.com",
+      "title": "160 Ashmore Dr, Athens, GA 30601 | MLS# 7801833 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 335000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30601"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/121-Live-Oak-Dr-30606/unit-125/home/176673459",
+      "source": "redfin.com",
+      "title": "121 Live Oak Dr #125, Athens, GA 30606 | MLS# 10773847 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 250000,
+      "beds": 4,
+      "baths": 1,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30606"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/210-Laurie-Dr-30605/home/124537407",
+      "source": "redfin.com",
+      "title": "210 - 212 Laurie Dr, Athens, GA 30605 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market jan 2022 for $208K",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 340000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1769,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/485-Meigs-St-30601/home/124574206",
+      "source": "redfin.com",
+      "title": "485 Meigs St, Athens, GA 30601 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market aug 2025 for $575K",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 175000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1536,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30601"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/1455-E-Broad-St-30601/home/124706798",
+      "source": "redfin.com",
+      "title": "1455 E Broad St, Athens, GA 30601 | MLS# CL358685 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 304000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2722,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30601"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/2815-Riverbend-Rd-30605/home/124532169",
+      "source": "redfin.com",
+      "title": "2815 Riverbend Rd, Athens, GA 30605 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Sold on aug 2026",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 2400000,
+      "beds": 26,
+      "baths": 23.5,
+      "sqft": 11996,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/125-Saint-Andrews-Ct-30605/home/124716567",
+      "source": "redfin.com",
+      "title": "125 St Andrews Ct, Athens, GA 30605 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market jan 2026 for $285K",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 4,
+      "baths": 2,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/213-Highland-Park-Dr-30605/home/124665069",
+      "source": "redfin.com",
+      "title": "213 Highland Park Dr, Athens, GA 30605 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Sold on apr 2026",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 475300,
+      "beds": 2,
+      "baths": 1,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Athens/131-S-Milledge-Ave-30605/home/162315387",
+      "source": "redfin.com",
+      "title": "131 S Milledge Ave, Athens, GA 30605 | MLS# CL363762 | Redfin",
+      "markets": [
+        "college-athens-ga"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1395000,
+      "beds": 9,
+      "baths": 4,
+      "sqft": 3747,
+      "units": null,
+      "property_type": null,
+      "town": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "url": "https://www.homes.com/property/400-donnie-simmons-way-statesboro-ga/jt45g26r8b13q",
+      "source": "homes.com",
+      "title": "400 Donnie Simmons Way, Statesboro, GA 30458",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 2,
+      "baths": null,
+      "sqft": 865,
+      "units": null,
+      "property_type": null,
+      "town": "Statesboro",
+      "state": "GA",
+      "zip": "30458"
+    },
+    {
+      "url": "https://www.homes.com/property/3524-highway-115-w-cleveland-ga/w581vd9n84j08",
+      "source": "homes.com",
+      "title": "3524 Highway 115 W, Cleveland, GA 30528",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "PENDING $90K PRICE DROP",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 1250000,
+      "beds": 4,
+      "baths": 4,
+      "sqft": 3444,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Cleveland",
+      "state": "GA",
+      "zip": "30528"
+    },
+    {
+      "url": "https://www.homes.com/property/4020-n-cooper-lake-rd-se-smyrna-ga/61x8vptjmn777",
+      "source": "homes.com",
+      "title": "4020 N Cooper Lake Rd SE, Smyrna, GA 30082",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Recently Sold",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 575000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 1458,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Smyrna",
+      "state": "GA",
+      "zip": "30082"
+    },
+    {
+      "url": "https://www.homes.com/property/1048-highway-54-w-fayetteville-ga/f7hy22jcl9ved",
+      "source": "homes.com",
+      "title": "1048 Highway 54 W, Fayetteville, GA 30214 | Homes.com",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 600000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 2111,
+      "units": null,
+      "property_type": null,
+      "town": "Fayetteville",
+      "state": "GA",
+      "zip": "30214"
+    },
+    {
+      "url": "https://www.homes.com/property/771-raines-station-rd-cordele-ga/vdkkd38e2ns0x",
+      "source": "homes.com",
+      "title": "771 Raines Station Rd, Cordele, GA 31015",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Not Available",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 140000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 2199,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Cordele",
+      "state": "GA",
+      "zip": "31015"
+    },
+    {
+      "url": "https://www.homes.com/property/313-n-main-st-hinesville-ga/7gbwjy4gywwtj",
+      "source": "homes.com",
+      "title": "313 N Main St, Hinesville, GA 31313",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 235000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1820,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Hinesville",
+      "state": "GA",
+      "zip": "31313"
+    },
+    {
+      "url": "https://www.homes.com/property/8175-main-st-woodstock-ga/hm6ksjc1wr6c6",
+      "source": "homes.com",
+      "title": "8175 Main St, Woodstock, GA 30188",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 2999960,
+      "beds": 6,
+      "baths": 4.5,
+      "sqft": null,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Woodstock",
+      "state": "GA",
+      "zip": "30188"
+    },
+    {
+      "url": "https://www.homes.com/property/36-strozier-st-mc-rae-ga/3c1phl9gqx60q?t=sold%2F",
+      "source": "homes.com",
+      "title": "36 Strozier St, Mc Rae, GA 31055",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Recently Sold",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 55000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1050,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Mc Rae",
+      "state": "GA",
+      "zip": "31055"
+    },
+    {
+      "url": "https://www.homes.com/property/3000-mill-creek-rd-hiawassee-ga/eqb1chksh7nqy",
+      "source": "homes.com",
+      "title": "3000 Mill Creek Rd, Hiawassee, GA 30546",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 499000,
+      "beds": 1,
+      "baths": 1,
+      "sqft": null,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Hiawassee",
+      "state": "GA",
+      "zip": "30546"
+    },
+    {
+      "url": "https://www.homes.com/property/11767-georgia-151-trion-ga/5rcq8xs781s2k",
+      "source": "homes.com",
+      "title": "11767 Georgia 151, Trion, GA 30753 [Lot/Land] | Homes.com",
+      "markets": [
+        "college-statesboro"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 40900,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Trion",
+      "state": "GA",
+      "zip": "30753"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/3025-Butler-Creek-Rd-NW-30152/home/25352849",
+      "source": "redfin.com",
+      "title": "3025 Butler Creek Rd NW, Kennesaw, GA 30152 | MLS# 7841459 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 380000,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 2174,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30152"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/3490-Lee-Ct-NW-30144/home/25445118",
+      "source": "redfin.com",
+      "title": "3490 Lee Ct NW, Kennesaw, GA 30144 | MLS# 7837098 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 285000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1408,
+      "units": 60,
+      "property_type": "multifamily",
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30144"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Marietta/871-Ventnor-Pl-SW-30008/home/180115197",
+      "source": "redfin.com",
+      "title": "871 Ventnor Pl SW, Marietta, GA 30008 | MLS# 7842182 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 439900,
+      "beds": 5,
+      "baths": 5,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Marietta",
+      "state": "GA",
+      "zip": "30008"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/4370-Laurian-Dr-NW-30144/home/25379940",
+      "source": "redfin.com",
+      "title": "4370 Laurian Dr, Kennesaw, GA 30144 | MLS# 7830017 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 399000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 3083,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30144"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/2251-Briarcreek-Bnd-NW-30152/home/25457090",
+      "source": "redfin.com",
+      "title": "2251 Briarcreek Bnd NW, Kennesaw, GA 30152 | MLS# 7810859 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 499000,
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 3414,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30152"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Lawrenceville/373-Sprucewood-Ct-30046/home/24925840",
+      "source": "redfin.com",
+      "title": "373 Sprucewood Ct, Lawrenceville, GA 30046 | MLS# 7822600 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 430000,
+      "beds": 4,
+      "baths": 4,
+      "sqft": null,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Lawrenceville",
+      "state": "GA",
+      "zip": "30046"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/408-Heritage-Park-Trce-NW-30144/unit-22/home/25468890",
+      "source": "redfin.com",
+      "title": "408 Heritage Park Trce NW #22, Kennesaw, GA 30144 | MLS# 10768634 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 1780,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30144"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/3601-Silver-Brooke-Ln-NW_Kennesaw_GA_30144_M54080-85310",
+      "source": "realtor.com",
+      "title": "3601 Silver Brooke Ln NW, Kennesaw, GA 30144 [Updated 5/4]",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 335000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1677,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30144"
+    },
+    {
+      "url": "https://www.redfin.com/GA/Kennesaw/1671-Leyland-Dr-NW-30152/home/25446540",
+      "source": "redfin.com",
+      "title": "1671 Leyland Dr NW, Kennesaw, GA 30152 | MLS# 7834701 | Redfin",
+      "markets": [
+        "college-kennesaw"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 326700,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1436,
+      "units": null,
+      "property_type": null,
+      "town": "Kennesaw",
+      "state": "GA",
+      "zip": "30152"
+    },
+    {
+      "url": "https://www.homes.com/property/121-ole-mill-shoals-central-sc/d9jbsj6x8e857",
+      "source": "homes.com",
+      "title": "121 Ole Mill Shoals, Central, SC 29630",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 579900,
+      "beds": 4,
+      "baths": 3,
+      "sqft": null,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Central",
+      "state": "SC",
+      "zip": "29630"
+    },
+    {
+      "url": "https://www.homes.com/property/221-collins-valley-rd-walhalla-sc/jkvf74xye9ksp",
+      "source": "homes.com",
+      "title": "221 Collins Valley Rd, Walhalla, SC 29691",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 550000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 3092,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Walhalla",
+      "state": "SC",
+      "zip": "29691"
+    },
+    {
+      "url": "https://www.homes.com/property/148-angie-dr-anderson-sc/xqnzl4vqls58x",
+      "source": "homes.com",
+      "title": "148 Angie Dr, Anderson, SC 29624",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 490000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1938,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Anderson",
+      "state": "SC",
+      "zip": "29624"
+    },
+    {
+      "url": "https://www.homes.com/property/482-hester-store-rd-easley-sc/0jm0xerg3zpr2",
+      "source": "homes.com",
+      "title": "482 Hester Store Rd, Easley, SC 29640",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 175000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1399,
+      "units": null,
+      "property_type": null,
+      "town": "Easley",
+      "state": "SC",
+      "zip": "29640"
+    },
+    {
+      "url": "https://www.homes.com/property/5358-carolina-hwy-denmark-sc/ypb09fmpyvsz1",
+      "source": "homes.com",
+      "title": "5358 Carolina Hwy, Denmark, SC 29042",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 260000,
+      "beds": 7,
+      "baths": 9,
+      "sqft": 4187,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Denmark",
+      "state": "SC",
+      "zip": "29042"
+    },
+    {
+      "url": "https://www.homes.com/property/1145-deas-st-rock-hill-sc/vrdshzsdys9zx",
+      "source": "homes.com",
+      "title": "1145 Deas St, Rock Hill, SC 29732",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 160000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 894,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Rock Hill",
+      "state": "SC",
+      "zip": "29732"
+    },
+    {
+      "url": "https://www.homes.com/property/1201-n-university-dr-ladson-sc-unit-b/jnxy31vgqs1ns",
+      "source": "homes.com",
+      "title": "1201 N University Dr Unit B, Ladson, SC 29456 | Homes.com",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1234,
+      "units": null,
+      "property_type": null,
+      "town": "Ladson",
+      "state": "SC",
+      "zip": "29456"
+    },
+    {
+      "url": "https://www.homes.com/property/117-daylily-easley-sc/b5z7pjyc0ze97",
+      "source": "homes.com",
+      "title": "117 Daylily, Easley, SC 29642",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 262538,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 2919,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Easley",
+      "state": "SC",
+      "zip": "29642"
+    },
+    {
+      "url": "https://www.homes.com/property/1304-amicks-ferry-rd-chapin-sc/bc2zgtrzwmhz3",
+      "source": "homes.com",
+      "title": "1304 Amicks Ferry Rd, Chapin, SC 29036",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Not Available",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 775000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Chapin",
+      "state": "SC",
+      "zip": "29036"
+    },
+    {
+      "url": "https://www.homes.com/property/114-w-ashley-ave-folly-beach-sc-unit-b301/3sqfvw9xvsdbs",
+      "source": "homes.com",
+      "title": "114 W Ashley Ave Unit B301, Folly Beach, SC 29439",
+      "markets": [
+        "college-clemson"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": null,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1378,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Folly Beach",
+      "state": "SC",
+      "zip": "29439"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/3132-Lakewood-Ave-29201/home/86959908",
+      "source": "redfin.com",
+      "title": "3132 Lakewood Ave, Columbia, SC 29201 | MLS# 633766 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 555000,
+      "beds": 5,
+      "baths": 3,
+      "sqft": 2943,
+      "units": null,
+      "property_type": null,
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29201"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/1544-Caroline-Rd-29209/home/87004395",
+      "source": "redfin.com",
+      "title": "1544 Caroline Rd, Columbia, SC 29209 | MLS# 640966 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 398100,
+      "beds": 8,
+      "baths": 4,
+      "sqft": 5350,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29209"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/4625-Oxford-Rd-29209/home/86995047",
+      "source": "redfin.com",
+      "title": "4625 Oxford Rd, Columbia, SC 29209 | MLS# 631767 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 318900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1869,
+      "units": null,
+      "property_type": null,
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29209"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/103-Elwyn-Ln-29210/home/86958399",
+      "source": "redfin.com",
+      "title": "103 Elwyn Ln, Columbia, SC 29210 | MLS# 639079 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 485000,
+      "beds": 8,
+      "baths": 4,
+      "sqft": 4590,
+      "units": 4,
+      "property_type": "fourplex",
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29210"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/7519-Pell-St-29209/home/87004108",
+      "source": "redfin.com",
+      "title": "7519 Pell St, Columbia, SC 29209 | MLS# 642797 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 224100,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1800,
+      "units": null,
+      "property_type": null,
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29209"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/2603-Kiawah-Ave-29205/home/86967437",
+      "source": "redfin.com",
+      "title": "2603 Kiawah Ave, Columbia, SC 29205 | MLS# 630316 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 423000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1599,
+      "units": null,
+      "property_type": null,
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29205"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/2005-Apple-Valley-Rd-29210/home/86956960",
+      "source": "redfin.com",
+      "title": "2005 Apple Valley Rd, Columbia, SC 29210 | MLS# 633657 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 164900,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 2006,
+      "units": null,
+      "property_type": null,
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29210"
+    },
+    {
+      "url": "https://www.redfin.com/SC/Columbia/1026-Oakland-Ave-29203/home/86974934",
+      "source": "redfin.com",
+      "title": "1026 Oakland Ave, Columbia, SC 29203 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 409000,
+      "beds": 5,
+      "baths": 3,
+      "sqft": 1846,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Columbia",
+      "state": "SC",
+      "zip": "29203"
+    },
+    {
+      "url": "https://www.redfin.com/SC/West-Columbia/137-Villa-Ct-29170/home/86842245",
+      "source": "redfin.com",
+      "title": "137 Villa Ct, West Columbia, SC 29170 | MLS# 633135 | Redfin",
+      "markets": [
+        "college-columbia-sc"
+      ],
+      "first_seen": "2026-11-24T00:15:34.075649+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 175000,
+      "beds": 4,
+      "baths": 4,
+      "sqft": 1918,
+      "units": null,
+      "property_type": null,
+      "town": "West Columbia",
+      "state": "SC",
+      "zip": "29170"
+    },
     {
       "url": "https://www.homes.com/property/1013-w-college-ave-clarksville-tx/qybt82w242z3k?t=sold",
       "source": "homes.com",
@@ -140,7 +1941,7 @@
       ],
       "first_seen": "2026-11-22T19:55:38.749238+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -153,7 +1954,9 @@
       "property_type": null,
       "town": "Clarksville",
       "state": "TX",
-      "zip": "75426"
+      "zip": "75426",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Waco/105-Faye-St-76705/unit-A/home/139286915",
@@ -164,7 +1967,7 @@
       ],
       "first_seen": "2026-11-22T19:55:38.749238+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -177,7 +1980,9 @@
       "property_type": null,
       "town": "Waco",
       "state": "TX",
-      "zip": "76705"
+      "zip": "76705",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/4516-Anchor-Ct-76135/home/32350202",
@@ -188,7 +1993,7 @@
       ],
       "first_seen": "2026-11-22T19:55:38.749238+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Contingent",
@@ -201,7 +2006,33 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76135"
+      "zip": "76135",
+      "search_excluded": false,
+      "not_searched_this_run": true
+    },
+    {
+      "url": "https://www.redfin.com/MD/Crisfield/2899-Byrdtown-Rd-21817/home/15334474",
+      "source": "redfin.com",
+      "title": "2899 Byrdtown Rd, Crisfield, MD 21817 | MLS# MDSO2007530 | Redfin",
+      "markets": [
+        "maryland-eastern-shore"
+      ],
+      "first_seen": "2026-11-22T15:02:07.864626+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 164900,
+      "beds": 6,
+      "baths": 2,
+      "sqft": 1600,
+      "units": null,
+      "property_type": null,
+      "town": "Crisfield",
+      "state": "MD",
+      "zip": "21817"
     },
     {
       "url": "https://www.redfin.com/DE/Leipsic/394-Denny-St-19901/home/44688078",
@@ -212,7 +2043,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -225,7 +2056,9 @@
       "property_type": null,
       "town": "Leipsic",
       "state": "DE",
-      "zip": "19901"
+      "zip": "19901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Harrington/116-Dorman-St-19952/home/44695526",
@@ -236,7 +2069,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market mar 2025 for $277K",
@@ -249,7 +2082,9 @@
       "property_type": null,
       "town": "Harrington",
       "state": "DE",
-      "zip": "19952"
+      "zip": "19952",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Wilmington/1220-W-4th-St-19805/home/45039877",
@@ -260,7 +2095,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -273,7 +2108,9 @@
       "property_type": null,
       "town": "Wilmington",
       "state": "DE",
-      "zip": "19805"
+      "zip": "19805",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Wilmington/412-W-30th-St-19802/home/45021878",
@@ -284,7 +2121,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -297,7 +2134,9 @@
       "property_type": null,
       "town": "Wilmington",
       "state": "DE",
-      "zip": "19802"
+      "zip": "19802",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Dover/12-S-Governors-Ave-19904/home/44708555",
@@ -308,7 +2147,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on sep 2026",
@@ -321,7 +2160,9 @@
       "property_type": null,
       "town": "Dover",
       "state": "DE",
-      "zip": "19904"
+      "zip": "19904",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Smyrna/312-Hayley-Way-19977/home/44678162",
@@ -332,7 +2173,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -345,7 +2186,9 @@
       "property_type": null,
       "town": "Smyrna",
       "state": "DE",
-      "zip": "19977"
+      "zip": "19977",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1061-s-little-creek-rd-dover-de-unit-143/p0p0zj66zs8z9",
@@ -356,7 +2199,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -369,7 +2212,9 @@
       "property_type": null,
       "town": "Dover",
       "state": "DE",
-      "zip": "19901"
+      "zip": "19901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/6-fairplay-blvd-newark-de/xsnem3vf3sbpw",
@@ -380,7 +2225,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -393,7 +2238,9 @@
       "property_type": null,
       "town": "Newark",
       "state": "DE",
-      "zip": "19713"
+      "zip": "19713",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/9-s-townview-ln-newark-de/me713k3y4vxj8",
@@ -404,7 +2251,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
@@ -417,7 +2264,9 @@
       "property_type": "single-family",
       "town": "Newark",
       "state": "DE",
-      "zip": "19711"
+      "zip": "19711",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1513-hopkins-ave-dover-de/vy5gwl6nbbrjs",
@@ -428,7 +2277,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -441,7 +2290,9 @@
       "property_type": "single-family",
       "town": "Dover",
       "state": "DE",
-      "zip": "19901"
+      "zip": "19901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/408-moore-place-dover-de/yr118yy3zl5r0",
@@ -452,7 +2303,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -465,7 +2316,9 @@
       "property_type": "single-family",
       "town": "Dover",
       "state": "DE",
-      "zip": "19901"
+      "zip": "19901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/7-unit-rockford-rd-wilmington-de-unit-j027/rrs4v7dt8tpn3",
@@ -476,7 +2329,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -489,7 +2342,9 @@
       "property_type": "multifamily",
       "town": "Wilmington",
       "state": "DE",
-      "zip": "19806"
+      "zip": "19806",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/11636-lynch-rd-worton-md/l3cmnncbqhtgt",
@@ -500,7 +2355,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -513,7 +2368,9 @@
       "property_type": "single-family",
       "town": "Worton",
       "state": "MD",
-      "zip": "21678"
+      "zip": "21678",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/19-constitution-blvd-new-castle-de/vhjr0hphp06cn",
@@ -524,7 +2381,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -537,7 +2394,9 @@
       "property_type": "single-family",
       "town": "New Castle",
       "state": "DE",
-      "zip": "19720"
+      "zip": "19720",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/203-W-Main-St-21921/home/17402982",
@@ -548,7 +2407,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -561,7 +2420,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/19-Hollingsworth-Mnr-21921/home/15144930",
@@ -572,7 +2433,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -585,7 +2446,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/North-East/322-E-Cecil-Ave-21901/home/40371177",
@@ -596,7 +2459,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "UNDER CONTRACT",
@@ -609,31 +2472,9 @@
       "property_type": null,
       "town": "North East",
       "state": "MD",
-      "zip": "21901"
-    },
-    {
-      "url": "https://www.redfin.com/MD/Crisfield/2899-Byrdtown-Rd-21817/home/15334474",
-      "source": "redfin.com",
-      "title": "2899 Byrdtown Rd, Crisfield, MD 21817 | MLS# MDSO2007530 | Redfin",
-      "markets": [
-        "maryland-cecil"
-      ],
-      "first_seen": "2026-11-22T15:02:07.864626+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
-      "listing_status": "active",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
-      "price": 164900,
-      "beds": 6,
-      "baths": 2,
-      "sqft": 1600,
-      "units": null,
-      "property_type": null,
-      "town": "Crisfield",
-      "state": "MD",
-      "zip": "21817"
+      "zip": "21901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/35-Teatree-Ln-21921/home/184681289",
@@ -644,7 +2485,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -657,7 +2498,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/1653-Dixie-Line-Rd-21921/home/15145795",
@@ -668,7 +2511,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -681,7 +2524,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/368-Appleton-Rd-21921/home/15145078",
@@ -692,7 +2537,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -705,7 +2550,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/North-East/5-Brandywine-Pl-21901/home/15133589",
@@ -716,7 +2563,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -729,7 +2576,9 @@
       "property_type": null,
       "town": "North East",
       "state": "MD",
-      "zip": "21901"
+      "zip": "21901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/422-Buttonwoods-Rd-21921/home/15141910",
@@ -740,7 +2589,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -753,7 +2602,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Elkton/1623-W-Pulaski-Hwy-21921/home/15135121",
@@ -764,7 +2615,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -777,7 +2628,9 @@
       "property_type": null,
       "town": "Elkton",
       "state": "MD",
-      "zip": "21921"
+      "zip": "21921",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/3608-granada-trail-denton-tx/xgbe3qbv69lct",
@@ -788,7 +2641,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -801,7 +2654,9 @@
       "property_type": "single-family",
       "town": "Denton",
       "state": "TX",
-      "zip": "76205"
+      "zip": "76205",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1203-whitecreek-dr-glenn-heights-tx/smylpdjh4myms",
@@ -812,7 +2667,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -825,7 +2680,9 @@
       "property_type": "single-family",
       "town": "Glenn Heights",
       "state": "TX",
-      "zip": "75154"
+      "zip": "75154",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/760-orchid-hill-ln-argyle-tx/g7rts3sm6qens",
@@ -836,7 +2693,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING $350K PRICE DROP",
@@ -849,7 +2706,9 @@
       "property_type": "single-family",
       "town": "Argyle",
       "state": "TX",
-      "zip": "76226"
+      "zip": "76226",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/180-farm-to-market-1696-huntsville-tx/n9p8r4n4rrq2k",
@@ -862,7 +2721,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -875,7 +2734,9 @@
       "property_type": "multifamily",
       "town": "Huntsville",
       "state": "TX",
-      "zip": "77320"
+      "zip": "77320",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/570-s-point-ct-aledo-tx/1rvy97vmvxqyq",
@@ -886,7 +2747,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -899,7 +2760,9 @@
       "property_type": "single-family",
       "town": "Aledo",
       "state": "TX",
-      "zip": "76008"
+      "zip": "76008",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/11447-texas-149-longview-tx/gsv1gs1kx3k7m",
@@ -911,7 +2774,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -924,7 +2787,9 @@
       "property_type": null,
       "town": "Longview",
       "state": "TX",
-      "zip": "75603"
+      "zip": "75603",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/6102-madison-ave-rowlett-tx/lqxgdljgsp3zq",
@@ -935,7 +2800,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -948,7 +2813,9 @@
       "property_type": "single-family",
       "town": "Rowlett",
       "state": "TX",
-      "zip": "75089"
+      "zip": "75089",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/616-jennie-marie-cir-ferris-tx/4efty5gkd6qc2",
@@ -959,7 +2826,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -972,7 +2839,9 @@
       "property_type": "single-family",
       "town": "Ferris",
       "state": "TX",
-      "zip": "75125"
+      "zip": "75125",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2787-farm-to-market-road-517-san-leon-tx/nvnf1r32pqnjj?l=kl0w9frg06w8e",
@@ -983,7 +2852,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -996,7 +2865,9 @@
       "property_type": "multifamily",
       "town": "San Leon",
       "state": "TX",
-      "zip": "77539"
+      "zip": "77539",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Huntsville/1207-21st-St-77340/home/68158210",
@@ -1007,7 +2878,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1020,7 +2891,9 @@
       "property_type": null,
       "town": "Huntsville",
       "state": "TX",
-      "zip": "77340"
+      "zip": "77340",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Huntsville/3102-Montgomery-Rd-77340/home/68145625",
@@ -1031,7 +2904,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1044,7 +2917,9 @@
       "property_type": null,
       "town": "Huntsville",
       "state": "TX",
-      "zip": "77340"
+      "zip": "77340",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Huntsville/5020-Sam-Houston-Ave-77340/home/147113224",
@@ -1055,7 +2930,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market",
@@ -1068,7 +2943,9 @@
       "property_type": null,
       "town": "Huntsville",
       "state": "TX",
-      "zip": "77340"
+      "zip": "77340",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Huntsville/2739-Old-Houston-Rd-77340/home/68153612",
@@ -1079,7 +2956,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1092,7 +2969,9 @@
       "property_type": null,
       "town": "Huntsville",
       "state": "TX",
-      "zip": "77340"
+      "zip": "77340",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Pharr/1402-W-Kiwi-Ave-78577/home/69501342",
@@ -1103,7 +2982,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1116,7 +2995,9 @@
       "property_type": null,
       "town": "Pharr",
       "state": "TX",
-      "zip": "78577"
+      "zip": "78577",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Bryan/404-Hill-St-77803/home/120506409",
@@ -1127,7 +3008,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1140,7 +3021,9 @@
       "property_type": "multifamily",
       "town": "Bryan",
       "state": "TX",
-      "zip": "77803"
+      "zip": "77803",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Houston/7446-Weyburn-St-77028/home/29995662",
@@ -1151,7 +3034,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1164,7 +3047,9 @@
       "property_type": null,
       "town": "Houston",
       "state": "TX",
-      "zip": "77028"
+      "zip": "77028",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/San-Juan/4800-Maya-Dr-78589/home/69559199",
@@ -1175,7 +3060,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1188,7 +3073,9 @@
       "property_type": "triplex",
       "town": "San Juan",
       "state": "TX",
-      "zip": "78589"
+      "zip": "78589",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/632-park-place-nacogdoches-tx/lb72pwpfn6b1s",
@@ -1199,7 +3086,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1212,7 +3099,9 @@
       "property_type": "multifamily",
       "town": "Nacogdoches",
       "state": "TX",
-      "zip": "75961"
+      "zip": "75961",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/210-county-road-8161-nacogdoches-tx/ff1pb8315zy98",
@@ -1223,7 +3112,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1236,7 +3125,9 @@
       "property_type": "single-family",
       "town": "Nacogdoches",
       "state": "TX",
-      "zip": "75964"
+      "zip": "75964",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1301-county-road-755-nacogdoches-tx/kx1d9h3v6klxc",
@@ -1247,7 +3138,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1260,7 +3151,9 @@
       "property_type": null,
       "town": "Nacogdoches",
       "state": "TX",
-      "zip": "75964"
+      "zip": "75964",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/605-nino-aguilera-st-el-paso-tx/27x4gmpb6c7b7",
@@ -1271,7 +3164,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1284,7 +3177,9 @@
       "property_type": "multifamily",
       "town": "El Paso",
       "state": "TX",
-      "zip": "79901"
+      "zip": "79901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/121-los-indios-gatesville-tx/tjp38f23mcyj8",
@@ -1295,7 +3190,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1308,7 +3203,9 @@
       "property_type": null,
       "town": "Gatesville",
       "state": "TX",
-      "zip": "76528"
+      "zip": "76528",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1402-chips-killeen-tx-unit-a/p1pgjvpn84nxd",
@@ -1319,7 +3216,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1332,7 +3229,9 @@
       "property_type": "multifamily",
       "town": "Killeen",
       "state": "TX",
-      "zip": "76549"
+      "zip": "76549",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/7732-farm-to-market-road-697-whitewright-tx/thvdpdnd7pmg2",
@@ -1343,7 +3242,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD JAN 6, 2025",
@@ -1356,7 +3255,9 @@
       "property_type": "single-family",
       "town": "Whitewright",
       "state": "TX",
-      "zip": "75491"
+      "zip": "75491",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1205-escondido-ln-e-harlingen-tx/rwj5zc79zc0l2",
@@ -1367,7 +3268,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1380,7 +3281,9 @@
       "property_type": null,
       "town": "Harlingen",
       "state": "TX",
-      "zip": "78550"
+      "zip": "78550",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/2840-Travis-Ave-76110/home/32063127",
@@ -1391,7 +3294,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1404,7 +3307,9 @@
       "property_type": "duplex",
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76110"
+      "zip": "76110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/1425-Evans-Ave-76104/home/31626494",
@@ -1415,7 +3320,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1428,7 +3333,9 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76104"
+      "zip": "76104",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/3100-Hale-Ave-76106/unit-101-102/home/206009444",
@@ -1439,7 +3346,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1452,7 +3359,9 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76106"
+      "zip": "76106",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/3732-Bonnie-Dr-76116/home/32328842",
@@ -1463,7 +3372,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Contingent",
@@ -1476,7 +3385,9 @@
       "property_type": "fourplex",
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76116"
+      "zip": "76116",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/4704-Pershing-Ave-76107/home/31752759",
@@ -1487,7 +3398,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1500,7 +3411,9 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76107"
+      "zip": "76107",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/3858-Wonder-Ct-76133/home/32381631",
@@ -1511,7 +3424,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Contingent",
@@ -1524,7 +3437,9 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76133"
+      "zip": "76133",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/7809-Laver-Ct-76112/unit-7809-7811/home/201814576",
@@ -1535,7 +3450,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1548,7 +3463,9 @@
       "property_type": "duplex",
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76112"
+      "zip": "76112",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/2115-Hurley-Ave-76110/home/31567764",
@@ -1559,7 +3476,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
@@ -1572,7 +3489,9 @@
       "property_type": "duplex",
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76110"
+      "zip": "76110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/TX/Fort-Worth/2500-W-Cantey-St-76109/home/31596091",
@@ -1583,7 +3502,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1596,7 +3515,9 @@
       "property_type": null,
       "town": "Fort Worth",
       "state": "TX",
-      "zip": "76109"
+      "zip": "76109",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/3921-glisten-ct-norman-ok/eqszsh14etr1q",
@@ -1607,7 +3528,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1620,7 +3541,9 @@
       "property_type": "single-family",
       "town": "Norman",
       "state": "OK",
-      "zip": "73072"
+      "zip": "73072",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1013-rambling-oaks-dr-norman-ok/yprewx3nd4x53",
@@ -1631,7 +3554,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1644,7 +3567,9 @@
       "property_type": null,
       "town": "Norman",
       "state": "OK",
-      "zip": "73072"
+      "zip": "73072",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/8908-park-hills-dr-arcadia-ok/228kx7ft576m8",
@@ -1655,7 +3580,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1668,7 +3593,9 @@
       "property_type": "single-family",
       "town": "Arcadia",
       "state": "OK",
-      "zip": "73007"
+      "zip": "73007",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1012-sunnybrook-dr-stillwater-ok/xpt0d0qywphzv",
@@ -1679,7 +3606,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1692,7 +3619,9 @@
       "property_type": "single-family",
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74075"
+      "zip": "74075",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/4116-palmetto-trail-oklahoma-city-ok/3cy61c853pmxs",
@@ -1703,7 +3632,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1716,7 +3645,9 @@
       "property_type": "single-family",
       "town": "Oklahoma City",
       "state": "OK",
-      "zip": "73179"
+      "zip": "73179",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/310-n-7th-st-ponca-city-ok-unit-660/rb0yvglg737q1",
@@ -1727,7 +3658,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -1740,7 +3671,9 @@
       "property_type": "single-family",
       "town": "Ponca City",
       "state": "OK",
-      "zip": "74601"
+      "zip": "74601",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1700-crossfield-dr-edmond-ok/4xjdmg4tbjd8b",
@@ -1751,7 +3684,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1764,7 +3697,9 @@
       "property_type": "single-family",
       "town": "Edmond",
       "state": "OK",
-      "zip": "73025"
+      "zip": "73025",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/14811-parkway-center-ave-oklahoma-city-ok/8kyngl3thp0j1",
@@ -1775,7 +3710,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1788,7 +3723,9 @@
       "property_type": "single-family",
       "town": "Oklahoma City",
       "state": "OK",
-      "zip": "73134"
+      "zip": "73134",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/39529-s-510-rd-eucha-ok/klqsxzr1px2b2",
@@ -1799,7 +3736,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1812,7 +3749,9 @@
       "property_type": "single-family",
       "town": "Eucha",
       "state": "OK",
-      "zip": "74342"
+      "zip": "74342",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2400-vlasta-dr-oklahoma-city-ok/0vrrjdqy47c46",
@@ -1823,7 +3762,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1836,7 +3775,9 @@
       "property_type": "single-family",
       "town": "Oklahoma City",
       "state": "OK",
-      "zip": "73128"
+      "zip": "73128",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/221-S-Cstar-74074/home/199131833",
@@ -1847,7 +3788,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1860,7 +3801,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/3026-E-4th-Ave-74074/home/172811685",
@@ -1871,7 +3814,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1884,7 +3827,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/3022-E-4th-Ave-74074/home/172811686",
@@ -1895,7 +3840,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1908,7 +3853,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/416-Britton-Ct-74075/home/135985750",
@@ -1919,7 +3866,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1932,7 +3879,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74075"
+      "zip": "74075",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/311-S-Lewis-St-74074/home/185162754",
@@ -1943,7 +3892,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1956,7 +3905,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/2416-2418-S-Teal-Unknown/home/191233224",
@@ -1967,7 +3918,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market mar 2019 for $231K",
@@ -1980,7 +3931,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": null
+      "zip": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/807-W-7th-Ave-74074/home/201930137",
@@ -1991,7 +3944,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
@@ -2004,7 +3957,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/2531-W-22nd-Ave-74074/home/201906158",
@@ -2015,7 +3970,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market jan 2026 for $322K",
@@ -2028,7 +3983,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/3720-N-Monroe-St-74075/home/135970907",
@@ -2039,7 +3996,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on jun 2026",
@@ -2052,7 +4009,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74075"
+      "zip": "74075",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OK/Stillwater/3613-W-15th-Ave-74074/home/201768622",
@@ -2063,7 +4022,7 @@
       ],
       "first_seen": "2026-11-22T15:02:07.864626+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Sold on jun 2026",
@@ -2076,7 +4035,9 @@
       "property_type": null,
       "town": "Stillwater",
       "state": "OK",
-      "zip": "74074"
+      "zip": "74074",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/DE/Dover/707-W-North-St-19904/home/189811600",
@@ -2233,6 +4194,30 @@
       "zip": "76108",
       "search_excluded": true,
       "not_searched_this_run": false
+    },
+    {
+      "url": "https://www.homes.com/property/255-red-haven-rd-new-cumberland-pa/29706hw2hmkm0",
+      "source": "homes.com",
+      "title": "255 Red Haven Rd, New Cumberland, PA 17070 | Homes.com",
+      "markets": [
+        "central-pa-harrisburg"
+      ],
+      "first_seen": "2026-11-22T11:10:13.622490+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 251600,
+      "beds": null,
+      "baths": 2,
+      "sqft": 1490,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": "New Cumberland",
+      "state": "PA",
+      "zip": "17070"
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/5211-Montgomery-Rd-45212/home/101048601",
@@ -2857,32 +4842,6 @@
       "town": "Fayetteville",
       "state": "PA",
       "zip": "17222",
-      "search_excluded": false,
-      "not_searched_this_run": true
-    },
-    {
-      "url": "https://www.homes.com/property/255-red-haven-rd-new-cumberland-pa/29706hw2hmkm0",
-      "source": "homes.com",
-      "title": "255 Red Haven Rd, New Cumberland, PA 17070 | Homes.com",
-      "markets": [
-        "college-shippensburg"
-      ],
-      "first_seen": "2026-11-22T11:10:13.622490+00:00",
-      "last_seen": "2026-11-22T11:10:13.622490+00:00",
-      "observed_this_run": false,
-      "listing_status": "off_market",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T11:10:13.622490+00:00",
-      "price": 251600,
-      "beds": null,
-      "baths": 2,
-      "sqft": 1490,
-      "units": 4,
-      "property_type": "multifamily",
-      "town": "New Cumberland",
-      "state": "PA",
-      "zip": "17070",
       "search_excluded": false,
       "not_searched_this_run": true
     },
@@ -4143,7 +6102,7 @@
       ],
       "first_seen": "2026-11-22T10:21:19.011861+00:00",
       "last_seen": "2026-11-22T19:55:38.749238+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -4156,7 +6115,9 @@
       "property_type": "multifamily",
       "town": "Jamaica",
       "state": "NY",
-      "zip": "11416"
+      "zip": "11416",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pittsburgh/1522-Brighton-Pl-15212/home/74542764",
@@ -5501,12 +7462,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-21T19:42:16.026454+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 549900,
       "beds": 2,
       "baths": 2,
@@ -5525,12 +7486,12 @@
         "easton"
       ],
       "first_seen": "2026-11-21T19:42:16.026454+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": null,
       "beds": 4,
       "baths": 2,
@@ -5880,6 +7841,30 @@
       "not_searched_this_run": true
     },
     {
+      "url": "https://www.homes.com/property/905-w-king-st-york-pa/nm8d6n3dw953l",
+      "source": "homes.com",
+      "title": "905 W King St, York, PA 17401",
+      "markets": [
+        "central-pa-harrisburg"
+      ],
+      "first_seen": "2026-11-20T20:40:00.505541+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
+      "price": 185000,
+      "beds": 4,
+      "baths": 1,
+      "sqft": 1439,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "York",
+      "state": "PA",
+      "zip": "17401"
+    },
+    {
       "url": "https://www.redfin.com/OH/Cincinnati/2345-Losantiville-Ave-45237/home/78975533",
       "source": "redfin.com",
       "title": "2345 Losantiville Ave, Cincinnati, OH 45237 | MLS# 1879862 | Redfin",
@@ -6032,34 +8017,6 @@
       "town": "Charlotte",
       "state": "NC",
       "zip": "28270",
-      "search_excluded": false,
-      "not_searched_this_run": true
-    },
-    {
-      "url": "https://www.homes.com/property/905-w-king-st-york-pa/nm8d6n3dw953l",
-      "source": "homes.com",
-      "title": "905 W King St, York, PA 17401",
-      "markets": [
-        "college-indiana-pa",
-        "college-kutztown",
-        "college-shippensburg"
-      ],
-      "first_seen": "2026-11-20T20:40:00.505541+00:00",
-      "last_seen": "2026-11-22T11:10:13.622490+00:00",
-      "observed_this_run": false,
-      "listing_status": "off_market",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T11:10:13.622490+00:00",
-      "price": 185000,
-      "beds": 4,
-      "baths": 1,
-      "sqft": 1439,
-      "units": 1,
-      "property_type": "single-family",
-      "town": "York",
-      "state": "PA",
-      "zip": "17401",
       "search_excluded": false,
       "not_searched_this_run": true
     },
@@ -6747,12 +8704,12 @@
         "easton"
       ],
       "first_seen": "2026-11-18T20:51:07.082130+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 245000,
       "beds": 4,
       "baths": 2,
@@ -7109,12 +9066,12 @@
         "easton"
       ],
       "first_seen": "2026-11-16T22:27:27.290014+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 339000,
       "beds": 3,
       "baths": 2,
@@ -7315,12 +9272,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 500000,
       "beds": 4,
       "baths": 2,
@@ -7339,12 +9296,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 550000,
       "beds": 3,
       "baths": 1,
@@ -7363,12 +9320,12 @@
         "easton"
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 310000,
       "beds": 3,
       "baths": 2,
@@ -7387,12 +9344,12 @@
         "easton"
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 299900,
       "beds": 3,
       "baths": 2,
@@ -7723,12 +9680,12 @@
         "easton"
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 499900,
       "beds": 4,
       "baths": 2.5,
@@ -7744,15 +9701,16 @@
       "source": "homes.com",
       "title": "600, 650, 656 Airport Dr, Mifflintown, PA 17059",
       "markets": [
-        "bethlehem"
+        "bethlehem",
+        "central-pa-harrisburg"
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 3750000,
       "beds": 3,
       "baths": 3,
@@ -8473,12 +10431,12 @@
         "easton"
       ],
       "first_seen": "2026-11-10T19:57:07.816252+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 497000,
       "beds": 4,
       "baths": 2,
@@ -8653,12 +10611,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-11-04T19:58:45.687175+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 755000,
       "beds": 3,
       "baths": 3,
@@ -8963,12 +10921,12 @@
         "easton"
       ],
       "first_seen": "2026-11-01T18:03:50.702055+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 315000,
       "beds": 3,
       "baths": 2,
@@ -9013,12 +10971,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": null,
       "beds": 6,
       "baths": 2,
@@ -9034,15 +10992,17 @@
       "source": "homes.com",
       "title": "502 E Cumberland St, Lebanon, PA 17042 | Homes.com",
       "markets": [
-        "bethlehem"
+        "bethlehem",
+        "central-pa-harrisburg",
+        "central-pa-lancaster"
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 259000,
       "beds": null,
       "baths": 2,
@@ -9323,12 +11283,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": null,
       "beds": 3,
       "baths": null,
@@ -9347,12 +11307,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": null,
       "beds": 3,
       "baths": 3,
@@ -9368,15 +11328,16 @@
       "source": "homes.com",
       "title": "546 Emmett St, Scranton, PA 18505",
       "markets": [
-        "bethlehem"
+        "bethlehem",
+        "central-pa-harrisburg"
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 235000,
       "beds": 4,
       "baths": 2,
@@ -9395,12 +11356,12 @@
         "bethlehem"
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 850000,
       "beds": 3,
       "baths": 2.5,
@@ -9416,15 +11377,15 @@
       "source": "homes.com",
       "title": "429 Rohrerstown Rd, Lancaster, PA 17603",
       "markets": [
-        "college-indiana-pa"
+        "central-pa-harrisburg"
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-22T11:10:13.622490+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
+      "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T11:10:13.622490+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 399900,
       "beds": 4,
       "baths": 2,
@@ -9433,9 +11394,7 @@
       "property_type": "multifamily",
       "town": "Lancaster",
       "state": "PA",
-      "zip": "17603",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "zip": "17603"
     },
     {
       "url": "https://www.redfin.com/PA/McKeesport/2518-Walnut-St-15132/home/74643337",
@@ -9861,12 +11820,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 1540000,
       "beds": 4,
       "baths": 5,
@@ -9885,12 +11844,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 10367,
       "beds": 6,
       "baths": 4,
@@ -9909,12 +11868,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 739000,
       "beds": 4,
       "baths": 2,
@@ -9932,15 +11891,15 @@
       "markets": [
         "bedminster",
         "bethlehem",
-        "delaware-sussex"
+        "central-pa-harrisburg"
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 699900,
       "beds": 2,
       "baths": 1,
@@ -11649,12 +13608,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 859000,
       "beds": 4,
       "baths": 4,
@@ -11673,12 +13632,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 259900,
       "beds": 3,
       "baths": 2,
@@ -11723,12 +13682,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 550000,
       "beds": 7,
       "baths": 4,
@@ -11745,15 +13704,16 @@
       "title": "491 Prospect Rd, Warminster, PA 18974",
       "markets": [
         "bedminster",
-        "bethlehem"
+        "bethlehem",
+        "central-pa-harrisburg"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 1150000,
       "beds": 2,
       "baths": 1,
@@ -11772,12 +13732,12 @@
         "easton"
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-11-22T19:55:38.749238+00:00",
+      "last_seen": "2026-11-24T00:15:34.075649+00:00",
       "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-22T19:55:38.749238+00:00",
+      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
       "price": 530000,
       "beds": 6,
       "baths": 3.5,
