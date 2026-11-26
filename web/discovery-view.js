@@ -20,7 +20,7 @@ export function uniqueProperties(rows,now=Date.now(),source=''){
   if(group.some(r=>closed(r)&&fresh(r,now)))return [];
   const choices=group.filter(r=>!closed(r)&&(!source||r.source===source)).sort((a,b)=>Number(b.listing_status==='active'&&fresh(b,now))-Number(a.listing_status==='active'&&fresh(a,now))||(rank[a.source]??9)-(rank[b.source]??9)||b.last_seen.localeCompare(a.last_seen));
   if(!choices.length)return [];const chosen=choices[0];
-  return [{...chosen,markets:[...new Set(group.flatMap(r=>r.markets))],alternates:group.filter(r=>r.url!==chosen.url).map(r=>({url:r.url,source:r.source,status:r.listing_status}))}];
+  return [{...chosen,first_seen:group.map(r=>r.first_seen).filter(x=>Number.isFinite(Date.parse(x))).sort()[0]||chosen.first_seen,markets:[...new Set(group.flatMap(r=>r.markets))],alternates:group.filter(r=>r.url!==chosen.url).map(r=>({url:r.url,source:r.source,status:r.listing_status}))}];
  });
 }
 export function marketScope(market) {
