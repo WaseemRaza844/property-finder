@@ -4,6 +4,7 @@ Structured facts and a short current-status evidence line are extracted from
 Exa's cached index text. Raw text, descriptions, images and answers are discarded.
 """
 import argparse
+import calendar
 import json
 import os
 import re
@@ -90,14 +91,14 @@ def queries(root, now=None):
             if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
             result.append({'market': market['id'], 'scope': 'college' if market.get('region') == 'College Towns' else 'regional', 'domain': domain,
-                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
+                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer newly listed or recently updated individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
             if domain == 'homes.com':
-                result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Exclude rentals, sold and off-market homes.'
+                result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Prefer newly listed or recently updated for-sale listings. Exclude rentals, sold and off-market homes.'
             if market.get('region') == 'College Towns':
                 college_name = market.get('university', '')
                 result[-1]['query'] = (f'Multifamily duplex triplex fourplex investment properties for sale '
                                        f'in {market["towns"][0]} near {college_name}. '
-                                       'Find individual property listing pages, not campus buildings, university pages, '
+                                       'Prioritize recently listed and updated individual property sale pages, not campus buildings, university pages, '
                                        'student dormitories, rental advertisements or sold properties.')
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
@@ -112,10 +113,33 @@ def reserve(root, run_id, now, has_key):
     if ledger['month'] != month:
         ledger = {'month': month, 'reserved': 0, 'runs': []}
     tasks = queries(root, now)
+    remaining = max(0, CAP - ledger['reserved'])
+    days_left = calendar.monthrange(now.year, now.month)[1] - now.day + 1
+    # Keep at least some searches available on every remaining scheduled day,
+    # rather than spending twelve per run and going dark at month end.
+    # When enough monthly quota remains, the usual twelve-query split is used.
+    target = min(len(tasks), remaining // max(days_left, 1))
+    if remaining and target == 0:
+        target = 1
+    if 0 < target < len(tasks):
+        regional = [t for t in tasks if t.get('scope') != 'college']
+        college = [t for t in tasks if t.get('scope') == 'college']
+        if regional and college:
+            n_college = min(len(college), target // 2)
+            n_regional = min(len(regional), target - n_college)
+            n_college = min(len(college), target - n_regional)
+            def subset(pool, n):
+                start = (now.toordinal() * max(n, 1)) % len(pool)
+                return [pool[(start + i) % len(pool)] for i in range(n)]
+            tasks = subset(regional, n_regional) + subset(college, n_college)
+        else:
+            tasks = tasks[:target]
     count = len(tasks)
     status = 'ready'
     if not has_key:
         status = 'not_configured'
+    elif count == 0:
+        status = 'budget_exhausted'
     elif run_id in ledger['runs']:
         status = 'already_reserved'
     elif ledger['reserved'] + count > CAP:

@@ -144,6 +144,23 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(all(Counter(row['scope'] for row in plan)=={'regional':6,'college':6}
                             for plan in plans))
 
+    def test_end_of_month_budget_pacing_preserves_daily_college_and_regional_searches(self):
+        root=Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)
+            write_json(path/'config/searches.json',json.loads((root/'config/searches.json').read_text()))
+            write_json(path/'.state/search-budget.json',
+                       {'month':'2026-11','reserved':376,'runs':[]})
+            plan=reserve(path,'nov-26',datetime(2026,11,26,12,tzinfo=timezone.utc),True)
+            self.assertEqual(plan['status'],'ready')
+            self.assertEqual(plan['allowance'],4)
+            self.assertEqual({task['scope'] for task in plan['tasks']},{'regional','college'})
+            self.assertEqual(len({task['market'] for task in plan['tasks']}),4)
+            self.assertEqual(plan['reserved'],380)
+            last=reserve(path,'nov-27',datetime(2026,11,27,12,tzinfo=timezone.utc),True)
+            self.assertEqual(last['allowance'],5)
+            self.assertEqual(last['reserved'],385)
+
     def test_combined_request_sends_domain_array(self):
         response=MagicMock()
         response.__enter__.return_value.read.return_value=b'{"results":[]}'

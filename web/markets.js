@@ -2247,5 +2247,199 @@ export const markets = {
       "Winterville NC"
     ],
     "city": "Greenville, NC"
+  },
+  "college-columbia-mo": {
+    "id": "college-columbia-mo",
+    "region": "College Towns",
+    "name": "Columbia, MO — University of Missouri",
+    "slug": "Columbia_MO",
+    "college_region": "Missouri",
+    "university": "University of Missouri",
+    "towns": [
+      "Columbia MO",
+      "Ashland MO"
+    ],
+    "nearby": [
+      "Ashland MO"
+    ],
+    "city": "Columbia, MO"
+  },
+  "college-lincoln-ne": {
+    "id": "college-lincoln-ne",
+    "region": "College Towns",
+    "name": "Lincoln, NE — University of Nebraska",
+    "slug": "Lincoln_NE",
+    "college_region": "Nebraska",
+    "university": "University of Nebraska–Lincoln",
+    "towns": [
+      "Lincoln NE",
+      "Waverly NE"
+    ],
+    "nearby": [
+      "Waverly NE"
+    ],
+    "city": "Lincoln, NE"
+  },
+  "college-urbana": {
+    "id": "college-urbana",
+    "region": "College Towns",
+    "name": "Champaign–Urbana, IL — University of Illinois",
+    "slug": "Champaign_IL",
+    "college_region": "Illinois",
+    "university": "University of Illinois Urbana-Champaign",
+    "towns": [
+      "Champaign IL",
+      "Urbana IL",
+      "Savoy IL"
+    ],
+    "nearby": [
+      "Urbana IL",
+      "Savoy IL"
+    ],
+    "city": "Champaign, IL"
+  },
+  "college-charlottesville": {
+    "id": "college-charlottesville",
+    "region": "College Towns",
+    "name": "Charlottesville, VA — University of Virginia",
+    "slug": "Charlottesville_VA",
+    "college_region": "Virginia",
+    "university": "University of Virginia",
+    "towns": [
+      "Charlottesville VA",
+      "Crozet VA"
+    ],
+    "nearby": [
+      "Crozet VA"
+    ],
+    "city": "Charlottesville, VA"
+  },
+  "college-knoxville": {
+    "id": "college-knoxville",
+    "region": "College Towns",
+    "name": "Knoxville, TN — University of Tennessee",
+    "slug": "Knoxville_TN",
+    "college_region": "Tennessee",
+    "university": "University of Tennessee",
+    "towns": [
+      "Knoxville TN",
+      "Farragut TN"
+    ],
+    "nearby": [
+      "Farragut TN"
+    ],
+    "city": "Knoxville, TN"
+  },
+  "college-baton-rouge": {
+    "id": "college-baton-rouge",
+    "region": "College Towns",
+    "name": "Baton Rouge, LA — LSU",
+    "slug": "Baton_Rouge_LA",
+    "college_region": "Louisiana",
+    "university": "Louisiana State University",
+    "towns": [
+      "Baton Rouge LA",
+      "Denham Springs LA"
+    ],
+    "nearby": [
+      "Denham Springs LA"
+    ],
+    "city": "Baton Rouge, LA"
+  },
+  "college-lexington-ky": {
+    "id": "college-lexington-ky",
+    "region": "College Towns",
+    "name": "Lexington, KY — University of Kentucky",
+    "slug": "Lexington_KY",
+    "college_region": "Kentucky",
+    "university": "University of Kentucky",
+    "towns": [
+      "Lexington KY",
+      "Nicholasville KY"
+    ],
+    "nearby": [
+      "Nicholasville KY"
+    ],
+    "city": "Lexington, KY"
+  },
+  "college-eugene": {
+    "id": "college-eugene",
+    "region": "College Towns",
+    "name": "Eugene, OR — University of Oregon",
+    "slug": "Eugene_OR",
+    "college_region": "Oregon",
+    "university": "University of Oregon",
+    "towns": [
+      "Eugene OR",
+      "Springfield OR"
+    ],
+    "nearby": [
+      "Springfield OR"
+    ],
+    "city": "Eugene, OR"
+  },
+  "college-corvallis": {
+    "id": "college-corvallis",
+    "region": "College Towns",
+    "name": "Corvallis, OR — Oregon State",
+    "slug": "Corvallis_OR",
+    "college_region": "Oregon",
+    "university": "Oregon State University",
+    "towns": [
+      "Corvallis OR",
+      "Philomath OR"
+    ],
+    "nearby": [
+      "Philomath OR"
+    ],
+    "city": "Corvallis, OR"
+  },
+  "college-pullman": {
+    "id": "college-pullman",
+    "region": "College Towns",
+    "name": "Pullman, WA — Washington State",
+    "slug": "Pullman_WA",
+    "college_region": "Washington",
+    "university": "Washington State University",
+    "towns": [
+      "Pullman WA",
+      "Colfax WA"
+    ],
+    "nearby": [
+      "Colfax WA"
+    ],
+    "city": "Pullman, WA"
+  },
+  "college-moscow-id": {
+    "id": "college-moscow-id",
+    "region": "College Towns",
+    "name": "Moscow, ID — University of Idaho",
+    "slug": "Moscow_ID",
+    "college_region": "Idaho",
+    "university": "University of Idaho",
+    "towns": [
+      "Moscow ID",
+      "Troy ID"
+    ],
+    "nearby": [
+      "Troy ID"
+    ],
+    "city": "Moscow, ID"
+  },
+  "college-logan": {
+    "id": "college-logan",
+    "region": "College Towns",
+    "name": "Logan, UT — Utah State",
+    "slug": "Logan_UT",
+    "college_region": "Utah",
+    "university": "Utah State University",
+    "towns": [
+      "Logan UT",
+      "North Logan UT"
+    ],
+    "nearby": [
+      "North Logan UT"
+    ],
+    "city": "Logan, UT"
   }
 };

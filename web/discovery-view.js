@@ -1,5 +1,9 @@
 import {markets} from './markets.js';
 const closed=r=>['sold','off_market','pending'].includes(r.listing_status);
+export const DISCOVERY_WINDOW_HOURS = 72;
+export const isNewDiscovery = (r,now=Date.now(),hours=DISCOVERY_WINDOW_HOURS) =>
+ Number.isFinite(Date.parse(r.first_seen)) && Date.parse(r.first_seen) <= now &&
+ now-Date.parse(r.first_seen) <= hours*3600000;
 const fresh=(r,now)=>(r.observed_this_run||r.not_searched_this_run)&&Number.isFinite(Date.parse(r.facts_observed_at))&&now-Date.parse(r.facts_observed_at)<=36*3600000;
 const norm=s=>s.toLowerCase().replace(/[.]/g,'').replace(/\b(street|avenue|road|drive|boulevard|lane|court|place|apartment|suite)\b/g,w=>({street:'st',avenue:'ave',road:'rd',drive:'dr',boulevard:'blvd',lane:'ln',court:'ct',place:'pl',apartment:'unit',suite:'unit'}[w])).replace(/\s+/g,' ').trim();
 export function propertyIdentity(r){
@@ -16,7 +20,7 @@ export function uniqueProperties(rows,now=Date.now(),source=''){
   if(group.some(r=>closed(r)&&fresh(r,now)))return [];
   const choices=group.filter(r=>!closed(r)&&(!source||r.source===source)).sort((a,b)=>Number(b.listing_status==='active'&&fresh(b,now))-Number(a.listing_status==='active'&&fresh(a,now))||(rank[a.source]??9)-(rank[b.source]??9)||b.last_seen.localeCompare(a.last_seen));
   if(!choices.length)return [];const chosen=choices[0];
-  return [{...chosen,markets:[...new Set(group.flatMap(r=>r.markets))],alternates:group.filter(r=>r.url!==chosen.url).map(r=>({url:r.url,source:r.source,status:r.listing_status}))}];
+  return [{...chosen,first_seen:group.map(r=>r.first_seen).filter(x=>Number.isFinite(Date.parse(x))).sort()[0]||chosen.first_seen,markets:[...new Set(group.flatMap(r=>r.markets))],alternates:group.filter(r=>r.url!==chosen.url).map(r=>({url:r.url,source:r.source,status:r.listing_status}))}];
  });
 }
 export function marketScope(market) {
@@ -40,6 +44,7 @@ export function selectDiscoveries(rows,f,now=Date.now()){
   }).sort((a,b)=>{
     const sorts={price:['price',1],price_desc:['price',-1],beds:['beds',-1],sqft:['sqft',-1],units:['units',-1]};
     if(sorts[f.sort]){const [k,d]=sorts[f.sort];if(a[k]==null&&b[k]!=null)return 1;if(b[k]==null&&a[k]!=null)return -1;if(a[k]!=null&&b[k]!=null&&a[k]!==b[k])return d*(a[k]-b[k]);}
+    if(f.sort==='newest'||!f.sort){const order=Date.parse(b.first_seen)-Date.parse(a.first_seen);if(order)return order;}
     if(f.sort==='town'){const d=(a.town||'~').localeCompare(b.town||'~');if(d)return d;}
     if(f.sort==='market'){const d=(a.markets[0]||'~').localeCompare(b.markets[0]||'~');if(d)return d;}
     return b.first_seen.localeCompare(a.first_seen)||a.url.localeCompare(b.url);
@@ -51,11 +56,25 @@ export function groupDiscoveries(rows,by){
   return [...groups].map(([name,items])=>({name,items:items.map(r=>({...r,number:++number}))}));
 }
 export function topPicks(rows,f={},now=Date.now()){
- const eligible=selectDiscoveries(rows,{...f,status:f.status==='latest'||f.status==='review'?'latest':'active'},now).filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+ // Quick Look exists to expose changed opportunities, not repeat the four
+ // cheapest / largest historical records indefinitely.
+ const eligible=selectDiscoveries(rows,{...f,status:f.status==='latest'||f.status==='review'?'latest':'active'},now)
+   .filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+ const newest=[...eligible].sort((a,b)=>Date.parse(b.first_seen)-Date.parse(a.first_seen)||a.url.localeCompare(b.url));
+ const recent=newest.filter(r=>isNewDiscovery(r,now));
  const selected=[],used=new Set();
- for(const [key,label] of [['price','Lowest price'],['units','Most units']]){
-  const ranked=eligible.filter(r=>Number.isFinite(r[key])&&r[key]>0&&(key!=='units'||r.units>=2)).sort((a,b)=>(key==='price'?a.price-b.price:b.units-a.units)||a.url.localeCompare(b.url));
-  let count=0;for(const r of ranked){if(used.has(r.url))continue;selected.push({...r,pick_reason:`${label} · ${++count}`,number:selected.length+1});used.add(r.url);if(count===2)break;}
+ const add=(r,reason)=>{if(used.has(propertyIdentity(r)))return false;used.add(propertyIdentity(r));selected.push({...r,pick_reason:reason,number:selected.length+1});return true;};
+ // Include up to four newly found indexed multifamily properties. If none
+ // are recent, honestly label the most recently discovered historical ones.
+ for(const r of (recent.length?recent:newest).slice(0,4)){
+   add(r,isNewDiscovery(r,now)?'New discovery':'Latest saved · verify');
+ }
+ // Retain two useful established comparisons when there is capacity.
+ for(const [key,reason] of [['price','Lower asking price'],['units','More units']]){
+   const ranked=[...eligible].filter(r=>Number.isFinite(r[key])&&r[key]>0&&(key!=='units'||r.units>=2))
+     .sort((a,b)=>key==='price'?a.price-b.price:b.units-a.units);
+   const candidate=ranked.find(r=>!used.has(propertyIdentity(r)));
+   if(candidate)add(candidate,reason);
  }
  return selected;
 }

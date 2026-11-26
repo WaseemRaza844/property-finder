@@ -163,3 +163,10 @@ header#site-header nav a:first-child{font-weight:800}
  header#site-header .theme-switcher select,header#site-header .font-switcher select{max-width:125px}
 }
 @media(prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+
+/* Visible provenance and discovery-age cues. NEW means newly indexed by
+   Property Finder, never a claim about the underlying MLS listing date. */
+.discovery-new-badge{background:var(--green);color:var(--button-text);font-size:var(--ui-label);font-weight:800;letter-spacing:.01em;padding:6px 9px;border-radius:5px}
+.discovery-dates{font-size:var(--ui-small);font-weight:600;color:var(--muted);margin:0 0 12px;line-height:1.55}
+.pick-reason{font-size:var(--ui-label)}

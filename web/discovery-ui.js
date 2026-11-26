@@ -1,8 +1,12 @@
 import {listingURL,markets} from './search.js';
-import {selectDiscoveries,groupDiscoveries,topPicks,scopedDiscoveries} from './discovery-view.js';
+import {selectDiscoveries,groupDiscoveries,topPicks,scopedDiscoveries,isNewDiscovery} from './discovery-view.js';
 import {populateMarkets} from './market-controls.js';
 const $=id=>document.getElementById(id),el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
 const date=x=>x?new Date(x).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Not supplied';
+const ageLabel=x=>{
+ const t=Date.parse(x);if(!Number.isFinite(t))return 'First discovered: unknown';
+ return 'First discovered '+new Date(t).toLocaleDateString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',year:'numeric'});
+};
 const money=n=>n==null?'Price not supplied':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const states={not_configured:'Setup needed: add EXA_API_KEY.',budget_exhausted:'Search allowance reached.',already_reserved:'This run has already reserved its searches.',consumed:'Search reservation already used.',error:'Searches failed; retained records are not treated as active.',partial:'Some searches failed; coverage is incomplete.',ok:'Search completed.'};
 const controls=['region','market','source','keyword','town','zip','status','sort','group','price','complete','compact'];let data, scope='regional';
@@ -14,18 +18,21 @@ function localityOptions(){
 }
 function card(r){
  const article=el('article',null,'property-result'),body=el('div',null,'result-body'),top=el('div',null,'result-top');
+ if(isNewDiscovery(r))top.append(el('span','NEW · first found recently','discovery-new-badge'));
  top.append(el('strong',money(r.price),'result-price'),el('span',r.listing_status==='active'?(Date.now()-Date.parse(r.facts_observed_at)>36*3600000?'Previously listed · verify':'Indexed as for sale'):'Status unverified',r.listing_status==='active'?'status ok':'status'),el('span',r.source==='homes.com'?'Homes.com · preferred':r.source,'source-label'));
  const title=el('h3'),a=el('a',r.title+' ↗');a.href=listingURL(r.url).url;a.target='_blank';a.rel='noopener noreferrer';title.append(a);
  const facts=el('div',null,'property-facts');for(const [v,label] of [[r.units,'units'],[r.beds,'beds'],[r.baths,'baths'],[r.sqft,'sq ft']]){const fact=el('span');fact.append(el('b',v==null?'—':Number(v).toLocaleString('en-US')),document.createTextNode(' '+label));facts.append(fact);}
- body.append(top,title,el('p',`${r.town||'Town not supplied'}${r.state?', '+r.state:''} · ZIP ${r.zip||'not supplied'} · ${r.property_type||'Type not supplied'}`,'result-location'),facts);
+ body.append(top,title,el('p',`${r.town||'Town not supplied'}${r.state?', '+r.state:''} · ZIP ${r.zip||'not supplied'} · ${r.property_type||'Type not supplied'}`,'result-location'),el('p',ageLabel(r.first_seen)+' · Last indexed '+date(r.facts_observed_at),'discovery-dates'),facts);
  const details=el('details',null,'result-details');details.append(el('summary','Source & observation details'),el('p',`${r.source} · Search market: ${r.markets.map(m=>markets[m]?.name||m).join(', ')}`),el('p',`Facts retrieved ${date(r.facts_observed_at)} · First found ${date(r.first_seen)} · Last found ${date(r.last_seen)}`),el('p',r.status_evidence?`Indexed status evidence: “${r.status_evidence}”`:'No explicit current-status evidence supplied.'),el('p','Facts come from Exa’s indexed snapshot, not a live listing feed. Confirm them on the source. Missing values stay unknown. Historical sales and comparable-home sections are excluded from extraction.'));
  if(r.alternates?.length){const links=el('p','Also discovered on: ');for(const other of r.alternates){const link=el('a',`${other.source} (${other.status||'unverified'}) ↗ `);link.href=listingURL(other.url).url;link.target='_blank';link.rel='noopener noreferrer';links.append(link);}details.append(links);}
  if(r.not_searched_this_run)details.append(el('p','This source was not scheduled for this market in the latest rotation. The displayed observation is less than 36 hours old; its retrieval date has not been advanced.'));
  body.append(details);article.append(el('span',String(r.number).padStart(2,'0'),'result-number'),body);return article;
 }
 function render(){if(!data)return;const f={...filters(),scope,collegeState:$('discovery-college-state').value},sourceRows=scopedDiscoveries(data.results,scope),rows=selectDiscoveries(data.results,f),groups=groupDiscoveries(rows,f.group),excluded=sourceRows.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
- const picks=topPicks(data.results,f);$('top-picks').replaceChildren(...picks.map(r=>{const item=el('div',null,'pick-item');item.append(el('p',r.pick_reason,'pick-reason'),card(r));return item;}));$('picks-empty').hidden=picks.length>0;$('picks-empty').textContent='No saved multifamily picks match these filters yet.';
- $('discovery-count').textContent=`${rows.length} matching properties · ${sourceRows.length} saved in ${scope==='regional'?'regional':'college-town'} search · ${excluded} closed/pending hidden`; $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || sourceRows.length === 0;
+ const picks=topPicks(data.results,f);$('top-picks').replaceChildren(...picks.map(r=>{const item=el('div',null,'pick-item');item.append(el('p',r.pick_reason,'pick-reason'),card(r));return item;}));$('picks-empty').hidden=picks.length>0;$('picks-empty').textContent='No indexed for-sale multifamily matches yet. Check the full list or review unverified results.';
+ const newest=rows.filter(r=>isNewDiscovery(r));
+ $('discovery-count').textContent=`${newest.length} first discovered in last 72 hours · ${rows.length} matches · ${sourceRows.length} saved in ${scope==='regional'?'regional':'college-town'} workspace · ${excluded} closed/pending hidden`;
+ $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || sourceRows.length === 0;
  $('discovery-results').className=f.compact?'organized-results compact-results':'organized-results';
  $('discovery-results').replaceChildren(...groups.map(g=>{const section=el('details',null,'result-group');section.open=true;const summary=el('summary');summary.append(el('strong',f.group==='market'?(markets[g.name]?.name||g.name):g.name));
   if(scope==='college'){
@@ -54,7 +61,7 @@ function refreshMarketSelect() {
 }
 function switchScope(next,scroll=false) {
  scope=next==='college'?'college':'regional';
- for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}
+ for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'newest':k==='group'?'town':'';}
  $('discovery-college-state').value='';
  $('regional-region-label').hidden=scope==='college';
  $('college-state-label').hidden=scope!=='college';
@@ -62,7 +69,7 @@ function switchScope(next,scroll=false) {
  $('mode-college').classList.toggle('is-active',scope==='college');
  $('mode-regional').setAttribute('aria-pressed',String(scope==='regional'));
  $('mode-college').setAttribute('aria-pressed',String(scope==='college'));
- $('picks-heading').textContent=scope==='college'?'College-town picks, at a glance.':'Regional picks, at a glance.';
+ $('picks-heading').textContent=scope==='college'?'New college-town discoveries':'New regional discoveries';
  $('discovery-heading').textContent=scope==='college'?'College-town property listings':'Regional property listings';
  $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
  refreshMarketOptions();
