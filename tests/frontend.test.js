@@ -166,11 +166,11 @@ test('affordable workspace isolates verified 2+ bed sub-100k houses',()=>{
  const common={...fact,source:'homes.com',listing_status:'active',price:89000,beds:3,units:1,
    property_type:'single-family',condition_evidence:'move-in ready',markets:['affordable-canton']};
  const home={...common,url:'https://www.homes.com/property/canton/a',title:'12 Bright St, Canton, OH 44702'};
- const expensive={...home,url:'https://www.homes.com/property/canton/b',price:101000};
- const oneBed={...home,url:'https://www.homes.com/property/canton/c',beds:1};
- const unknown={...home,url:'https://www.homes.com/property/canton/d',condition_evidence:null};
- const multifamily={...home,url:'https://www.homes.com/property/canton/e',property_type:'duplex'};
- const closed={...home,url:'https://www.homes.com/property/canton/f',listing_status:'sold'};
+ const expensive={...home,url:'https://www.homes.com/property/canton/b',title:'14 Bright St, Canton, OH 44702',price:101000};
+ const oneBed={...home,url:'https://www.homes.com/property/canton/c',title:'16 Bright St, Canton, OH 44702',beds:1};
+ const unknown={...home,url:'https://www.homes.com/property/canton/d',title:'18 Bright St, Canton, OH 44702',condition_evidence:null};
+ const multifamily={...home,url:'https://www.homes.com/property/canton/e',title:'20 Bright St, Canton, OH 44702',property_type:'duplex'};
+ const closed={...home,url:'https://www.homes.com/property/canton/f',title:'22 Bright St, Canton, OH 44702',listing_status:'sold'};
  const rows=[home,expensive,oneBed,unknown,multifamily,closed];
  const selected=selectDiscoveries(rows,{scope:'affordable',status:'latest',sort:'newest'},discoveryNow);
  assert.deepEqual(selected.map(r=>r.url),[home.url]);
