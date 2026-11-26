@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {filterListings,miles,safeURL} from '../web/filters.js';
 import {buildSearches,listingURL,readSaved} from '../web/search.js';
-import {selectDiscoveries,groupDiscoveries,uniqueProperties,topPicks,propertyIdentity,scopedDiscoveries} from '../web/discovery-view.js';
+import {selectDiscoveries,groupDiscoveries,uniqueProperties,topPicks,propertyIdentity,scopedDiscoveries,isNewDiscovery} from '../web/discovery-view.js';
 import {markets} from '../web/markets.js';
 const rows=[
   {id:'a',market:'Central New Jersey',property_type:'duplex',price:400000,latitude:40.6807,longitude:-74.649,first_seen:'2026-10-25'},
@@ -32,11 +32,11 @@ test('search queries encode shared criteria and nearby towns without claiming ra
   assert.throws(()=>buildSearches({market:'unknown'}));assert.throws(()=>buildSearches({price:'NaN'}));
 });
 test('catalog includes upstate New York and dedicated college-town choices',()=>{
- assert.equal(Object.keys(markets).length,124);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,13);
+ assert.equal(Object.keys(markets).length,136);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,13);
  assert.equal(markets.buffalo.region,'Upstate & Western New York');
  assert.equal(markets['college-ithaca'].region,'College Towns');
  assert.match(markets['college-ithaca'].university,/Cornell/);
- assert.equal(Object.values(markets).filter(m=>m.region==='College Towns').length,76);
+ assert.equal(Object.values(markets).filter(m=>m.region==='College Towns').length,88);
  assert.match(markets['college-bethlehem'].university,/Lehigh/);
  assert.equal(markets['south-jersey-camden'].region,'Southern New Jersey');
  assert.equal(markets['delaware-wilmington'].region,'Delaware');
@@ -47,6 +47,9 @@ test('catalog includes upstate New York and dedicated college-town choices',()=>
  assert.match(markets['college-college-station'].university,/Texas A&M/);
  assert.match(markets['college-norman'].university,/University of Oklahoma/);
  assert.match(markets['college-tempe'].university,/Arizona State/);
+ assert.match(markets['college-columbia-mo'].university,/Missouri/);
+ assert.match(markets['college-lincoln-ne'].university,/Nebraska/);
+ assert.match(markets['college-charlottesville'].university,/Virginia/);
  for(const market of Object.keys(markets))assert.equal(buildSearches({market})[0].id,'homes');
 });
 const discoveryNow=Date.parse('2026-10-25T12:00:00Z');
@@ -71,11 +74,11 @@ test('region filters follow market catalog and regional grouping remains availab
  const found=selectDiscoveries([ohio,pa],{region:'Ohio',status:'active',price:''},discoveryNow);
  assert.deepEqual(found.map(r=>r.url),['oh']);assert.equal(groupDiscoveries(found,'region')[0].name,'Ohio');
 });
-test('top picks select two cheapest and two other highest-unit multifamily properties only',()=>{
+test('top picks elevate recent indexed multifamily listings, not perpetually lowest prices',()=>{
  const input=[2,3,8,10,1].map((units,i)=>({...fact,title:`${i+1} Main St, Easton, PA 18042`,url:String(i),source:'homes.com',units,price:(i+1)*100000}));
  input.push({...fact,title:'99 Main St, Easton, PA 18042',url:'sold',source:'homes.com',price:1,units:99,listing_status:'sold'});
  input.push({...fact,title:'98 Main St, Easton, PA 18042',url:'stale',source:'homes.com',price:1,units:98,facts_observed_at:'2026-10-01'});
- const picks=topPicks(input,{},discoveryNow);assert.deepEqual(picks.map(r=>r.url),['0','1','3','2']);assert.equal(new Set(picks.map(r=>r.url)).size,4);assert.equal(picks[2].pick_reason,'Most units · 1');
+ const picks=topPicks(input,{},discoveryNow);assert.deepEqual(picks.map(r=>r.url),['0','1','2','3']);assert.equal(new Set(picks.map(r=>r.url)).size,4);assert.equal(picks[2].pick_reason,'New discovery');
  assert.deepEqual(topPicks(input,{region:'Ohio'},discoveryNow),[]);
 });
 test('saved links validate domains, remove tracking, and retain identifying queries',()=>{
@@ -134,4 +137,15 @@ test('regional and college workspaces never mix listings or top picks',()=>{
  assert.deepEqual(topPicks([regional,college],{scope:'college',status:'latest'},discoveryNow).map(x=>x.url),[college.url]);
  assert.equal(selectDiscoveries([regional,college],{scope:'college',collegeState:'New York',status:'latest'}).length,1);
  assert.equal(selectDiscoveries([regional,college],{scope:'college',collegeState:'Ohio',status:'latest'}).length,0);
+});
+
+test('new-first picks do not label rediscovered old links as new MLS listings',()=>{
+ const older={...fact,source:'homes.com',url:'https://www.homes.com/property/older/aaa',title:'1 Older St, Easton, PA 18042',first_seen:'2026-10-01T08:00:00Z',last_seen:'2026-10-25T11:00:00Z',price:100000};
+ const today={...fact,source:'homes.com',url:'https://www.homes.com/property/new/bbb',title:'3 Newer St, Easton, PA 18042',first_seen:'2026-10-25T10:00:00Z',price:450000};
+ assert.equal(isNewDiscovery(older,discoveryNow),false);
+ assert.equal(isNewDiscovery(today,discoveryNow),true);
+ assert.deepEqual(topPicks([older,today],{status:'latest'},discoveryNow).map(x=>x.url),[today.url,older.url]);
+ assert.equal(topPicks([older,today],{status:'latest'},discoveryNow)[0].pick_reason,'New discovery');
+ assert.deepEqual(selectDiscoveries([older,today],{status:'latest',sort:'newest'},discoveryNow).map(x=>x.url),[today.url,older.url]);
+ assert.deepEqual(selectDiscoveries([older,today],{status:'latest',sort:'price'},discoveryNow).map(x=>x.url),[older.url,today.url]);
 });
