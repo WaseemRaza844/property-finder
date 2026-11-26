@@ -23,7 +23,9 @@ function card(r){
  const title=el('h3'),a=el('a',r.title+' ↗');a.href=listingURL(r.url).url;a.target='_blank';a.rel='noopener noreferrer';title.append(a);
  const facts=el('div',null,'property-facts');for(const [v,label] of [[r.units,'units'],[r.beds,'beds'],[r.baths,'baths'],[r.sqft,'sq ft']]){const fact=el('span');fact.append(el('b',v==null?'—':Number(v).toLocaleString('en-US')),document.createTextNode(' '+label));facts.append(fact);}
  if(r.markets?.some(id=>markets[id]?.region==='Move-in Ready Under $100K')){
-   body.append(el('p',r.condition_evidence?`Indexed condition wording: ${r.condition_evidence} · Inspect before purchase`:'Move-in condition unverified · Inspection required','discovery-dates'));
+   const condition=r.condition_evidence?`Source says: ${r.condition_evidence} (unverified)`:'Move-in condition not confirmed';
+   const house=r.property_type==='single-family'?'Single-family type indexed':'House type not confirmed';
+   body.append(el('p',`${condition} · ${house} · Inspect before purchase`,'discovery-dates'));
  }
  body.append(top,title,el('p',`${r.town||'Town not supplied'}${r.state?', '+r.state:''} · ZIP ${r.zip||'not supplied'} · ${r.property_type||'Type not supplied'}`,'result-location'),el('p',ageLabel(r.first_seen)+' · Last indexed '+date(r.facts_observed_at),'discovery-dates'),facts);
  const details=el('details',null,'result-details');details.append(el('summary','Source & observation details'),el('p',`${r.source} · Search market: ${r.markets.map(m=>markets[m]?.name||m).join(', ')}`),el('p',`Facts retrieved ${date(r.facts_observed_at)} · First found ${date(r.first_seen)} · Last found ${date(r.last_seen)}`),el('p',r.status_evidence?`Indexed status evidence: “${r.status_evidence}”`:'No explicit current-status evidence supplied.'),el('p','Facts come from Exa’s indexed snapshot, not a live listing feed. Confirm them on the source. Missing values stay unknown. Historical sales and comparable-home sections are excluded from extraction.'));
@@ -76,11 +78,11 @@ function switchScope(next,scroll=false) {
  for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'newest':k==='group'?'town':'';}
  $('discovery-college-state').value='';
  $('discovery-affordable-state').value='';
- $('affordable-unverified').checked=false;
+ $('affordable-unverified').checked=scope==='affordable';
  $('affordable-unverified-label').hidden=scope!=='affordable';
  $('affordable-state-label').hidden=scope!=='affordable';
  $('affordable-finances').hidden=scope!=='affordable';
- $('review-discovery').textContent=scope==='affordable'?'Review condition-unverified candidates':'Review unverified properties';
+ $('review-discovery').textContent=scope==='affordable'?'Show condition-unverified candidates':'Review unverified properties';
  $('discovery-complete-label').hidden=scope==='affordable';
  control('price').value=scope==='affordable'?'100000':'';
  control('price').readOnly=scope==='affordable';
@@ -94,7 +96,7 @@ function switchScope(next,scroll=false) {
  $('mode-affordable').setAttribute('aria-pressed',String(scope==='affordable'));
  $('picks-heading').textContent=scope==='college'?'New college-town discoveries':scope==='affordable'?'Move-in ready · Under $100K':'New regional discoveries';
  $('discovery-heading').textContent=scope==='college'?'College-town property listings':scope==='affordable'?'Affordable rental house candidates':'Regional property listings';
- $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':scope==='affordable'?'City populations approximately 50,000+ · 2+ bedrooms · asking price at most $100K · condition explicitly stated unless review enabled. Cash flow is not verified.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
+ $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':scope==='affordable'?'2+ beds · Asking price under $100K · For-sale indexed candidates · Condition and house type must be checked. Uncheck review to require explicit evidence.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
  refreshMarketOptions();
  if(data)localityOptions();
  render();
@@ -113,7 +115,7 @@ $('affordable-unverified').addEventListener('change',render);
 for(const k of controls)control(k).addEventListener(['keyword','price'].includes(k)?'input':'change',()=>{if(k==='region'){refreshMarketSelect();control('town').value='';control('zip').value='';}if(['region','market'].includes(k))localityOptions();render();});
 $('review-discovery').onclick=()=>{if(scope==='affordable'){$('affordable-unverified').checked=true;}else{control('status').value='review';}render();};
 $('collapse-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=false);$('expand-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=true);
-$('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}if(scope==='affordable'){control('price').value='100000';control('price').readOnly=true; $('affordable-unverified').checked=false;}localityOptions();render();};
+$('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}if(scope==='affordable'){control('price').value='100000';control('price').readOnly=true; $('affordable-unverified').checked=true;}localityOptions();render();};
 // Local-only cash-flow scenario: refuse to produce a number until key inputs exist.
 const financialInputs=['price','down','rate','rent','tax','insurance','repairs','vacancy','management'].map(id=>$('aff-'+id));
 function computeCashflow(){
