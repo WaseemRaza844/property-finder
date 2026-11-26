@@ -32,7 +32,7 @@ test('search queries encode shared criteria and nearby towns without claiming ra
   assert.throws(()=>buildSearches({market:'unknown'}));assert.throws(()=>buildSearches({price:'NaN'}));
 });
 test('catalog includes upstate New York and dedicated college-town choices',()=>{
- assert.equal(Object.keys(markets).length,136);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,13);
+ assert.equal(Object.keys(markets).length,169);assert.equal(new Set(Object.values(markets).map(m=>m.region)).size,14);
  assert.equal(markets.buffalo.region,'Upstate & Western New York');
  assert.equal(markets['college-ithaca'].region,'College Towns');
  assert.match(markets['college-ithaca'].university,/Cornell/);
@@ -50,6 +50,8 @@ test('catalog includes upstate New York and dedicated college-town choices',()=>
  assert.match(markets['college-columbia-mo'].university,/Missouri/);
  assert.match(markets['college-lincoln-ne'].university,/Nebraska/);
  assert.match(markets['college-charlottesville'].university,/Virginia/);
+ assert.equal(Object.values(markets).filter(m=>m.region==='Move-in Ready Under $100K').length,33);
+ assert.equal(markets['affordable-canton'].scope,'affordable');
  for(const market of Object.keys(markets))assert.equal(buildSearches({market})[0].id,'homes');
 });
 const discoveryNow=Date.parse('2026-10-25T12:00:00Z');
@@ -158,4 +160,24 @@ test('same property from a newly discovered source retains original first-seen d
  assert.equal(matches[0].source,'homes.com');
  assert.equal(matches[0].first_seen,earlier.first_seen);
  assert.equal(isNewDiscovery(matches[0],discoveryNow),false);
+});
+
+test('affordable workspace isolates verified 2+ bed sub-100k houses',()=>{
+ const common={...fact,source:'homes.com',listing_status:'active',price:89000,beds:3,units:1,
+   property_type:'single-family',condition_evidence:'move-in ready',markets:['affordable-canton']};
+ const home={...common,url:'https://www.homes.com/property/canton/a',title:'12 Bright St, Canton, OH 44702'};
+ const expensive={...home,url:'https://www.homes.com/property/canton/b',title:'14 Bright St, Canton, OH 44702',price:101000};
+ const oneBed={...home,url:'https://www.homes.com/property/canton/c',title:'16 Bright St, Canton, OH 44702',beds:1};
+ const unknown={...home,url:'https://www.homes.com/property/canton/d',title:'18 Bright St, Canton, OH 44702',condition_evidence:null};
+ const multifamily={...home,url:'https://www.homes.com/property/canton/e',title:'20 Bright St, Canton, OH 44702',property_type:'duplex'};
+ const closed={...home,url:'https://www.homes.com/property/canton/f',title:'22 Bright St, Canton, OH 44702',listing_status:'sold'};
+ const rows=[home,expensive,oneBed,unknown,multifamily,closed];
+ const selected=selectDiscoveries(rows,{scope:'affordable',status:'latest',sort:'newest'},discoveryNow);
+ assert.deepEqual(selected.map(r=>r.url),[home.url]);
+ assert.equal(scopedDiscoveries(rows,'regional').length,0);
+ assert.equal(scopedDiscoveries(rows,'college').length,0);
+ assert.deepEqual(selectDiscoveries(rows,{scope:'affordable',status:'latest',affordableUnverified:true},discoveryNow).map(r=>r.url).sort(),[home.url,unknown.url].sort());
+ assert.deepEqual(topPicks(rows,{scope:'affordable',status:'latest'},discoveryNow).map(r=>r.url),[home.url]);
+ assert.deepEqual(selectDiscoveries(rows,{scope:'affordable',status:'latest',affordableState:'OH'},discoveryNow).map(r=>r.url),[home.url]);
+ assert.equal(selectDiscoveries(rows,{scope:'affordable',status:'latest',affordableState:'PA'},discoveryNow).length,0);
 });

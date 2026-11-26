@@ -63,3 +63,14 @@ class FactsTests(unittest.TestCase):
 
     def test_estimated_value_is_not_an_asking_price(self):
         self.assertIsNone(self.facts('For sale\nRedfin Estimate:\n$500,000')['price'])
+
+    def test_move_in_readiness_only_when_source_explicitly_says_so(self):
+        ready=self.facts('For sale\n$89,000\n3 beds\nHome type: Single family\nMove-in ready with updated flooring')
+        self.assertEqual(ready['condition_evidence'].lower(),'move-in ready')
+        self.assertEqual((ready['price'],ready['beds'],ready['listing_status']),(89000,3,'active'))
+        unknown=self.facts('For sale\n$85,000\n2 beds\nHome type: Single family')
+        self.assertIsNone(unknown['condition_evidence'])
+        repairs=self.facts('For sale\n$75,000\n3 beds\nMove-in ready? No, needs major renovation')
+        self.assertIsNone(repairs['condition_evidence'])
+        historical=self.facts('For sale\n$83,000\n2 beds\nSale history\nMove-in ready sold record')
+        self.assertIsNone(historical['condition_evidence'])

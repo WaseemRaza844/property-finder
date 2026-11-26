@@ -2441,5 +2441,519 @@ export const markets = {
       "North Logan UT"
     ],
     "city": "Logan, UT"
+  },
+  "affordable-youngstown": {
+    "id": "affordable-youngstown",
+    "region": "Move-in Ready Under $100K",
+    "name": "Youngstown, OH",
+    "slug": "Youngstown_OH",
+    "towns": [
+      "Youngstown OH",
+      "Boardman OH",
+      "Austintown OH"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Boardman OH",
+      "Austintown OH"
+    ],
+    "city": "Youngstown, OH"
+  },
+  "affordable-canton": {
+    "id": "affordable-canton",
+    "region": "Move-in Ready Under $100K",
+    "name": "Canton, OH",
+    "slug": "Canton_OH",
+    "towns": [
+      "Canton OH",
+      "North Canton OH",
+      "Massillon OH"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "North Canton OH",
+      "Massillon OH"
+    ],
+    "city": "Canton, OH"
+  },
+  "affordable-dayton": {
+    "id": "affordable-dayton",
+    "region": "Move-in Ready Under $100K",
+    "name": "Dayton, OH",
+    "slug": "Dayton_OH",
+    "towns": [
+      "Dayton OH",
+      "Kettering OH",
+      "Trotwood OH"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Kettering OH",
+      "Trotwood OH"
+    ],
+    "city": "Dayton, OH"
+  },
+  "affordable-toledo": {
+    "id": "affordable-toledo",
+    "region": "Move-in Ready Under $100K",
+    "name": "Toledo, OH",
+    "slug": "Toledo_OH",
+    "towns": [
+      "Toledo OH",
+      "Oregon OH",
+      "Maumee OH"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Oregon OH",
+      "Maumee OH"
+    ],
+    "city": "Toledo, OH"
+  },
+  "affordable-akron": {
+    "id": "affordable-akron",
+    "region": "Move-in Ready Under $100K",
+    "name": "Akron, OH",
+    "slug": "Akron_OH",
+    "towns": [
+      "Akron OH",
+      "Cuyahoga Falls OH",
+      "Barberton OH"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Cuyahoga Falls OH",
+      "Barberton OH"
+    ],
+    "city": "Akron, OH"
+  },
+  "affordable-erie": {
+    "id": "affordable-erie",
+    "region": "Move-in Ready Under $100K",
+    "name": "Erie, PA",
+    "slug": "Erie_PA",
+    "towns": [
+      "Erie PA",
+      "Millcreek Township PA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Millcreek Township PA"
+    ],
+    "city": "Erie, PA"
+  },
+  "affordable-scranton": {
+    "id": "affordable-scranton",
+    "region": "Move-in Ready Under $100K",
+    "name": "Scranton, PA",
+    "slug": "Scranton_PA",
+    "towns": [
+      "Scranton PA",
+      "Dunmore PA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Dunmore PA"
+    ],
+    "city": "Scranton, PA"
+  },
+  "affordable-reading": {
+    "id": "affordable-reading",
+    "region": "Move-in Ready Under $100K",
+    "name": "Reading, PA",
+    "slug": "Reading_PA",
+    "towns": [
+      "Reading PA",
+      "Shillington PA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Shillington PA"
+    ],
+    "city": "Reading, PA"
+  },
+  "affordable-buffalo": {
+    "id": "affordable-buffalo",
+    "region": "Move-in Ready Under $100K",
+    "name": "Buffalo, NY",
+    "slug": "Buffalo_NY",
+    "towns": [
+      "Buffalo NY",
+      "Cheektowaga NY"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Cheektowaga NY"
+    ],
+    "city": "Buffalo, NY"
+  },
+  "affordable-rochester": {
+    "id": "affordable-rochester",
+    "region": "Move-in Ready Under $100K",
+    "name": "Rochester, NY",
+    "slug": "Rochester_NY",
+    "towns": [
+      "Rochester NY",
+      "Greece NY"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Greece NY"
+    ],
+    "city": "Rochester, NY"
+  },
+  "affordable-syracuse": {
+    "id": "affordable-syracuse",
+    "region": "Move-in Ready Under $100K",
+    "name": "Syracuse, NY",
+    "slug": "Syracuse_NY",
+    "towns": [
+      "Syracuse NY",
+      "North Syracuse NY"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "North Syracuse NY"
+    ],
+    "city": "Syracuse, NY"
+  },
+  "affordable-flint": {
+    "id": "affordable-flint",
+    "region": "Move-in Ready Under $100K",
+    "name": "Flint, MI",
+    "slug": "Flint_MI",
+    "towns": [
+      "Flint MI",
+      "Burton MI"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Burton MI"
+    ],
+    "city": "Flint, MI"
+  },
+  "affordable-lansing": {
+    "id": "affordable-lansing",
+    "region": "Move-in Ready Under $100K",
+    "name": "Lansing, MI",
+    "slug": "Lansing_MI",
+    "towns": [
+      "Lansing MI",
+      "East Lansing MI"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "East Lansing MI"
+    ],
+    "city": "Lansing, MI"
+  },
+  "affordable-battle-creek": {
+    "id": "affordable-battle-creek",
+    "region": "Move-in Ready Under $100K",
+    "name": "Battle Creek, MI",
+    "slug": "Battle_Creek_MI",
+    "towns": [
+      "Battle Creek MI",
+      "Springfield MI"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Springfield MI"
+    ],
+    "city": "Battle Creek, MI"
+  },
+  "affordable-south-bend": {
+    "id": "affordable-south-bend",
+    "region": "Move-in Ready Under $100K",
+    "name": "South Bend, IN",
+    "slug": "South_Bend_IN",
+    "towns": [
+      "South Bend IN",
+      "Mishawaka IN"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Mishawaka IN"
+    ],
+    "city": "South Bend, IN"
+  },
+  "affordable-muncie": {
+    "id": "affordable-muncie",
+    "region": "Move-in Ready Under $100K",
+    "name": "Muncie, IN",
+    "slug": "Muncie_IN",
+    "towns": [
+      "Muncie IN",
+      "Yorktown IN"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Yorktown IN"
+    ],
+    "city": "Muncie, IN"
+  },
+  "affordable-terre-haute": {
+    "id": "affordable-terre-haute",
+    "region": "Move-in Ready Under $100K",
+    "name": "Terre Haute, IN",
+    "slug": "Terre_Haute_IN",
+    "towns": [
+      "Terre Haute IN"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Terre Haute, IN"
+  },
+  "affordable-topeka": {
+    "id": "affordable-topeka",
+    "region": "Move-in Ready Under $100K",
+    "name": "Topeka, KS",
+    "slug": "Topeka_KS",
+    "towns": [
+      "Topeka KS"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Topeka, KS"
+  },
+  "affordable-wichita": {
+    "id": "affordable-wichita",
+    "region": "Move-in Ready Under $100K",
+    "name": "Wichita, KS",
+    "slug": "Wichita_KS",
+    "towns": [
+      "Wichita KS",
+      "Derby KS"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Derby KS"
+    ],
+    "city": "Wichita, KS"
+  },
+  "affordable-st-joseph": {
+    "id": "affordable-st-joseph",
+    "region": "Move-in Ready Under $100K",
+    "name": "St. Joseph, MO",
+    "slug": "Saint_Joseph_MO",
+    "towns": [
+      "Saint Joseph MO"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Saint Joseph, MO"
+  },
+  "affordable-springfield": {
+    "id": "affordable-springfield",
+    "region": "Move-in Ready Under $100K",
+    "name": "Springfield, MO",
+    "slug": "Springfield_MO",
+    "towns": [
+      "Springfield MO",
+      "Republic MO"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Republic MO"
+    ],
+    "city": "Springfield, MO"
+  },
+  "affordable-lawton": {
+    "id": "affordable-lawton",
+    "region": "Move-in Ready Under $100K",
+    "name": "Lawton, OK",
+    "slug": "Lawton_OK",
+    "towns": [
+      "Lawton OK"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Lawton, OK"
+  },
+  "affordable-tulsa": {
+    "id": "affordable-tulsa",
+    "region": "Move-in Ready Under $100K",
+    "name": "Tulsa, OK",
+    "slug": "Tulsa_OK",
+    "towns": [
+      "Tulsa OK",
+      "Broken Arrow OK"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Broken Arrow OK"
+    ],
+    "city": "Tulsa, OK"
+  },
+  "affordable-shreveport": {
+    "id": "affordable-shreveport",
+    "region": "Move-in Ready Under $100K",
+    "name": "Shreveport, LA",
+    "slug": "Shreveport_LA",
+    "towns": [
+      "Shreveport LA",
+      "Bossier City LA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Bossier City LA"
+    ],
+    "city": "Shreveport, LA"
+  },
+  "affordable-jackson": {
+    "id": "affordable-jackson",
+    "region": "Move-in Ready Under $100K",
+    "name": "Jackson, MS",
+    "slug": "Jackson_MS",
+    "towns": [
+      "Jackson MS",
+      "Clinton MS"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Clinton MS"
+    ],
+    "city": "Jackson, MS"
+  },
+  "affordable-montgomery": {
+    "id": "affordable-montgomery",
+    "region": "Move-in Ready Under $100K",
+    "name": "Montgomery, AL",
+    "slug": "Montgomery_AL",
+    "towns": [
+      "Montgomery AL"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Montgomery, AL"
+  },
+  "affordable-birmingham": {
+    "id": "affordable-birmingham",
+    "region": "Move-in Ready Under $100K",
+    "name": "Birmingham, AL",
+    "slug": "Birmingham_AL",
+    "towns": [
+      "Birmingham AL",
+      "Bessemer AL"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Bessemer AL"
+    ],
+    "city": "Birmingham, AL"
+  },
+  "affordable-mobile": {
+    "id": "affordable-mobile",
+    "region": "Move-in Ready Under $100K",
+    "name": "Mobile, AL",
+    "slug": "Mobile_AL",
+    "towns": [
+      "Mobile AL",
+      "Prichard AL"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Prichard AL"
+    ],
+    "city": "Mobile, AL"
+  },
+  "affordable-macon": {
+    "id": "affordable-macon",
+    "region": "Move-in Ready Under $100K",
+    "name": "Macon, GA",
+    "slug": "Macon_GA",
+    "towns": [
+      "Macon GA",
+      "Warner Robins GA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Warner Robins GA"
+    ],
+    "city": "Macon, GA"
+  },
+  "affordable-augusta": {
+    "id": "affordable-augusta",
+    "region": "Move-in Ready Under $100K",
+    "name": "Augusta, GA",
+    "slug": "Augusta_GA",
+    "towns": [
+      "Augusta GA",
+      "Grovetown GA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [
+      "Grovetown GA"
+    ],
+    "city": "Augusta, GA"
+  },
+  "affordable-albany-ga": {
+    "id": "affordable-albany-ga",
+    "region": "Move-in Ready Under $100K",
+    "name": "Albany, GA",
+    "slug": "Albany_GA",
+    "towns": [
+      "Albany GA"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Albany, GA"
+  },
+  "affordable-pueblo": {
+    "id": "affordable-pueblo",
+    "region": "Move-in Ready Under $100K",
+    "name": "Pueblo, CO",
+    "slug": "Pueblo_CO",
+    "towns": [
+      "Pueblo CO"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Pueblo, CO"
+  },
+  "affordable-grand-junction": {
+    "id": "affordable-grand-junction",
+    "region": "Move-in Ready Under $100K",
+    "name": "Grand Junction, CO",
+    "slug": "Grand_Junction_CO",
+    "towns": [
+      "Grand Junction CO"
+    ],
+    "scope": "affordable",
+    "population_screen": "City population approximately 50,000+ (2020 US Census); verify current neighborhood and metro context",
+    "nearby": [],
+    "city": "Grand Junction, CO"
   }
 };
