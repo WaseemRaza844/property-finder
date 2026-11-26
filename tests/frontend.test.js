@@ -149,3 +149,13 @@ test('new-first picks do not label rediscovered old links as new MLS listings',(
  assert.deepEqual(selectDiscoveries([older,today],{status:'latest',sort:'newest'},discoveryNow).map(x=>x.url),[today.url,older.url]);
  assert.deepEqual(selectDiscoveries([older,today],{status:'latest',sort:'price'},discoveryNow).map(x=>x.url),[older.url,today.url]);
 });
+
+test('same property from a newly discovered source retains original first-seen date',()=>{
+ const earlier={...fact,source:'redfin.com',url:'https://www.redfin.com/PA/example/home/202',first_seen:'2026-10-01T12:00:00Z'};
+ const later={...fact,source:'homes.com',url:'https://www.homes.com/property/new-source/abc',first_seen:'2026-10-25T10:00:00Z'};
+ const matches=uniqueProperties([earlier,later],discoveryNow);
+ assert.equal(matches.length,1);
+ assert.equal(matches[0].source,'homes.com');
+ assert.equal(matches[0].first_seen,earlier.first_seen);
+ assert.equal(isNewDiscovery(matches[0],discoveryNow),false);
+});
