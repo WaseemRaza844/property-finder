@@ -46,3 +46,5 @@ class SiteBuildTest(unittest.TestCase):
         self.assertIn("switchScope('college'", controller)
         self.assertIn("switchScope('affordable'", controller)
         self.assertIn('computeCashflow', controller)
+        self.assertIn("$('affordable-unverified').checked=scope==='affordable'", controller)
+        self.assertIn('House type not confirmed', controller)
