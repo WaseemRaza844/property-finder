@@ -1,6 +1,862 @@
 {
-  "generated_at": "2026-11-25T21:56:24.112454+00:00",
+  "generated_at": "2026-11-26T21:09:24.451646+00:00",
   "results": [
+    {
+      "url": "https://www.homes.com/property/1917-marine-st-south-bend-in/fp6ezn7y9mxqg",
+      "source": "homes.com",
+      "title": "1917 Marine St, South Bend, IN 46613 | Homes.com",
+      "markets": [
+        "affordable-south-bend"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": null,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1402,
+      "units": null,
+      "property_type": null,
+      "town": "South Bend",
+      "state": "IN",
+      "zip": "46613",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/2811-fenwood-ave-terre-haute-in/mxts0hkqyx869",
+      "source": "homes.com",
+      "title": "2811 Fenwood Ave, Terre Haute, IN 47803",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 90000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1000,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Terre Haute",
+      "state": "IN",
+      "zip": "47803",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/104-e-branson-st-la-fontaine-in/kjetvv66b31bc",
+      "source": "homes.com",
+      "title": "104 E Branson St, La Fontaine, IN 46940",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 79900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1008,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "La Fontaine",
+      "state": "IN",
+      "zip": "46940",
+      "condition_evidence": "Move in ready"
+    },
+    {
+      "url": "https://www.homes.com/property/60685-locust-rd-south-bend-in/6t732qvcdwh23?l=nc4feslpmww4t",
+      "source": "homes.com",
+      "title": "60685 Locust Rd, South Bend, IN 46614",
+      "markets": [
+        "affordable-south-bend"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Recently Sold",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 155000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2145,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "South Bend",
+      "state": "IN",
+      "zip": "46614",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/1035-cherry-st-hammond-in/fd77p8j6p32r9",
+      "source": "homes.com",
+      "title": "1035 Cherry St, Hammond, IN 46324",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 121000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 858,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Hammond",
+      "state": "IN",
+      "zip": "46324",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/2417-s-center-st-terre-haute-in/w67lbz5prfvr6",
+      "source": "homes.com",
+      "title": "2417 S Center St, Terre Haute, IN 47802 | Homes.com",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 79900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1080,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Terre Haute",
+      "state": "IN",
+      "zip": "47802",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/2504-winfield-ave-indianapolis-in/n1jnlhrk3t6fh",
+      "source": "homes.com",
+      "title": "2504 Winfield Ave, Indianapolis, IN 46222 | Homes.com",
+      "markets": [
+        "affordable-south-bend"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 79000,
+      "beds": 3,
+      "baths": 1.5,
+      "sqft": 1977,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Indianapolis",
+      "state": "IN",
+      "zip": "46222",
+      "condition_evidence": "move in ready"
+    },
+    {
+      "url": "https://www.homes.com/property/308-s-main-st-bicknell-in/rgd2gzrznktxg",
+      "source": "homes.com",
+      "title": "308 S Main St, Bicknell, IN 47512",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "sold",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Recently Sold",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 105000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1364,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Bicknell",
+      "state": "IN",
+      "zip": "47512",
+      "condition_evidence": "move-in ready"
+    },
+    {
+      "url": "https://www.homes.com/property/4926-kickapoo-dr-kokomo-in/s80b3c7d3kzhs",
+      "source": "homes.com",
+      "title": "4926 Kickapoo Dr, Kokomo, IN 46902",
+      "markets": [
+        "affordable-south-bend"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 82400,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 960,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Kokomo",
+      "state": "IN",
+      "zip": "46902",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/803-n-18th-st-west-memphis-ar/kxkmx2tr9cxb9",
+      "source": "homes.com",
+      "title": "803 N 18th St, West Memphis, AR 72301 | Homes.com",
+      "markets": [
+        "affordable-south-bend",
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 99500,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 816,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "West Memphis",
+      "state": "AR",
+      "zip": "72301",
+      "condition_evidence": "move-in ready"
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/2309-S-Mulberry-St-47302/home/121945928",
+      "source": "redfin.com",
+      "title": "2309 S Mulberry St, Muncie, IN 47302 | MLS# 202640970 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 85000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 884,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47302",
+      "condition_evidence": "move-in ready"
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/1601-E-Harvard-Ave-47303/home/121530020",
+      "source": "redfin.com",
+      "title": "1601 E Harvard Ave, Muncie, IN 47303 | MLS# 202638442 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 58000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 576,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47303",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/308-E-Berkley-Ave_Muncie_IN_47303_M38268-94217",
+      "source": "realtor.com",
+      "title": "308 E Berkley Ave, Muncie, IN 47303 [Updated 5/3]",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 94900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 624,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47303",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/1303-S-Shipley-St-47302/home/121537682",
+      "source": "redfin.com",
+      "title": "1303 S Shipley St, Muncie, IN 47302 | MLS# 22115696 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 69900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1338,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47302",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/3718-N-Miami-Ave-47303/home/121691956",
+      "source": "redfin.com",
+      "title": "3718 N Miami Ave, Muncie, IN 47303 | MLS# 22113902 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 94400,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1158,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47303",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/616-E-Pine-St-47303/home/121190686",
+      "source": "redfin.com",
+      "title": "616 E Pine St, Muncie, IN 47303 | MLS# 202640775 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 120000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1077,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47303",
+      "condition_evidence": "move-in ready"
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/2200-S-Eaton-Ave-47302/home/121864684",
+      "source": "redfin.com",
+      "title": "2200 S Eaton Ave, Muncie, IN 47302 | MLS# 22120231 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 78900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1510,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47302",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/222-N-Vine-St-47305/home/121821102",
+      "source": "redfin.com",
+      "title": "222 N Vine St, Muncie, IN 47305 | MLS# 202627637 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 69000,
+      "beds": 3,
+      "baths": 1.5,
+      "sqft": 1632,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47305",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/2024-S-Jefferson-St-47302/home/121850541",
+      "source": "redfin.com",
+      "title": "2024 S Jefferson St, Muncie, IN 47302 | MLS# 22129495 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 39900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1672,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47302",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/IN/Muncie/2208-S-Waldemere-Ave-47302/home/121597356",
+      "source": "redfin.com",
+      "title": "2208 S Waldemere Ave, Muncie, IN 47302 | MLS# 22115400 | Redfin",
+      "markets": [
+        "affordable-muncie"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 59999,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 864,
+      "units": null,
+      "property_type": null,
+      "town": "Muncie",
+      "state": "IN",
+      "zip": "47302",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/711-s-34th-st-terre-haute-in/cf64cx5d5gssk",
+      "source": "homes.com",
+      "title": "Cf64cx5d5gssk",
+      "markets": [
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": null,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": null,
+      "state": null,
+      "zip": null,
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/1739-garfield-ave-terre-haute-in/ckm4e4cc0xp8v",
+      "source": "homes.com",
+      "title": "1739 Garfield Ave, Terre Haute, IN 47804",
+      "markets": [
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 39500,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1966,
+      "units": null,
+      "property_type": null,
+      "town": "Terre Haute",
+      "state": "IN",
+      "zip": "47804",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/3340-n-sherman-dr-indianapolis-in/qzepd14cwweph",
+      "source": "homes.com",
+      "title": "3340 N Sherman Dr, Indianapolis, IN 46218",
+      "markets": [
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 79900,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1456,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Indianapolis",
+      "state": "IN",
+      "zip": "46218",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/915-s-topeka-ave-wichita-ks/r5eg7fhwbll1e",
+      "source": "homes.com",
+      "title": "915 S Topeka Ave, Wichita, KS 67211",
+      "markets": [
+        "affordable-terre-haute"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Not Available",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 110000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1232,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67211",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/1431-SW-Tyler-St-66612/home/124493653",
+      "source": "redfin.com",
+      "title": "1431 SW Tyler St, Topeka, KS 66612 | MLS# 246431 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 109900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1044,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66612",
+      "condition_evidence": "Recently renovated"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/1235-NE-Madison-St-66608/home/124496588",
+      "source": "redfin.com",
+      "title": "1235 NE Madison St, Topeka, KS 66608 | MLS# 244824 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 119900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1120,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66608",
+      "condition_evidence": "Move-in ready"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/227-SE-33rd-Ter-66605/home/124443231",
+      "source": "redfin.com",
+      "title": "227 SE 33rd Ter, Topeka, KS 66605 | MLS# 246228 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 118000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 816,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66605",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/1156-SW-Garfield-Ave-66604/home/124423056",
+      "source": "redfin.com",
+      "title": "1156 SW Garfield Ave, Topeka, KS 66604 | MLS# 2623367 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 74500,
+      "beds": 2,
+      "baths": 1.5,
+      "sqft": 1148,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66604",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/2501-SW-Clay-St-66611/home/125090600",
+      "source": "redfin.com",
+      "title": "2501 SW Clay St, Topeka, KS 66611 | MLS# 246691 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 99950,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 824,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66611",
+      "condition_evidence": "move in ready"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/922-SW-Cambridge-Ave-66606/home/124814370",
+      "source": "redfin.com",
+      "title": "922 SW Cambridge Ave, Topeka, KS 66606 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market aug 2015 for $36K",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 122512,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 869,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66606",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/2000-SE-Adams-St-66607/home/124500207",
+      "source": "redfin.com",
+      "title": "2000 SE Adams St, Topeka, KS 66607 | MLS# 245765 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 85000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 850,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66607",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/1321-SW-Wayne-Ave-66604/home/124429746",
+      "source": "redfin.com",
+      "title": "1321 SW Wayne Ave, Topeka, KS 66604 | MLS# 246549 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 88500,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 864,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66604",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/1113-SW-Hampton-St_Topeka_KS_66604_M84350-70699",
+      "source": "realtor.com",
+      "title": "1113 SW Hampton St, Topeka, KS 66604 [Updated 5/21]",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 134900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 674,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66604",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Topeka/3542-SW-Kerry-Ave-66611/home/124762897",
+      "source": "redfin.com",
+      "title": "3542 SW Kerry Ave, Topeka, KS 66611 | MLS# 246765 | Redfin",
+      "markets": [
+        "affordable-topeka"
+      ],
+      "first_seen": "2026-11-26T21:09:24.451646+00:00",
+      "last_seen": "2026-11-26T21:09:24.451646+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-26T21:09:24.451646+00:00",
+      "price": 129999,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 816,
+      "units": null,
+      "property_type": null,
+      "town": "Topeka",
+      "state": "KS",
+      "zip": "66611",
+      "condition_evidence": null
+    },
     {
       "url": "https://www.homes.com/property/355-bruaw-dr-york-pa-unit-16/9eebstcx8q5sr",
       "source": "homes.com",
@@ -10,7 +866,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -23,7 +879,9 @@
       "property_type": null,
       "town": "York",
       "state": "PA",
-      "zip": "17406"
+      "zip": "17406",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/860-sunlight-dr-york-pa/yk5b6l54zh31f",
@@ -34,7 +892,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -47,7 +905,9 @@
       "property_type": "single-family",
       "town": "York",
       "state": "PA",
-      "zip": "17402"
+      "zip": "17402",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/300-s-pershing-ave-york-pa/ycx64b3v6bdy9",
@@ -58,7 +918,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -71,7 +931,9 @@
       "property_type": null,
       "town": "York",
       "state": "PA",
-      "zip": "17401"
+      "zip": "17401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/4237-peach-orchard-hollow-york-pa/nvf2dzsmpvccs",
@@ -82,7 +944,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -95,7 +957,9 @@
       "property_type": "single-family",
       "town": "York",
       "state": "PA",
-      "zip": "17402"
+      "zip": "17402",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pottstown/162-N-Charlotte-St-19464/home/38131246",
@@ -106,7 +970,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -119,7 +983,9 @@
       "property_type": null,
       "town": "Pottstown",
       "state": "PA",
-      "zip": "19464"
+      "zip": "19464",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Reading/109-Hollywood-Ave-19606/home/38611242",
@@ -130,7 +996,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -143,7 +1009,9 @@
       "property_type": "fourplex",
       "town": "Reading",
       "state": "PA",
-      "zip": "19606"
+      "zip": "19606",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Reading/1016-N-11th-St-19604/home/38221069",
@@ -154,7 +1022,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -167,7 +1035,9 @@
       "property_type": null,
       "town": "Reading",
       "state": "PA",
-      "zip": "19604"
+      "zip": "19604",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pottstown/870-E-High-St-19464/home/38142703",
@@ -178,7 +1048,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -191,7 +1061,9 @@
       "property_type": null,
       "town": "Pottstown",
       "state": "PA",
-      "zip": "19464"
+      "zip": "19464",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pottstown/401-Chestnut-St-19464/home/38135719",
@@ -202,7 +1074,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -215,7 +1087,9 @@
       "property_type": null,
       "town": "Pottstown",
       "state": "PA",
-      "zip": "19464"
+      "zip": "19464",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pottstown/413-Lincoln-Ave-19464/home/38145153",
@@ -226,7 +1100,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -239,7 +1113,9 @@
       "property_type": null,
       "town": "Pottstown",
       "state": "PA",
-      "zip": "19464"
+      "zip": "19464",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Pottstown/539-Chestnut-St-19464/home/38135892",
@@ -250,7 +1126,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -263,7 +1139,9 @@
       "property_type": "single-family",
       "town": "Pottstown",
       "state": "PA",
-      "zip": "19464"
+      "zip": "19464",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Norristown/618-W-Lafayette-St-19401/home/38108769",
@@ -274,7 +1152,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -287,7 +1165,9 @@
       "property_type": null,
       "town": "Norristown",
       "state": "PA",
-      "zip": "19401"
+      "zip": "19401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/802-800-sunset-dr-greensboro-nc/5rmhlzf56e8ks",
@@ -298,7 +1178,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -311,7 +1191,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27408"
+      "zip": "27408",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/3911-williams-dairy-rd-greensboro-nc/83fqsm17zshb6",
@@ -322,7 +1204,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -335,7 +1217,9 @@
       "property_type": "single-family",
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27406"
+      "zip": "27406",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/3-carissa-ct-greensboro-nc/41hnmdmc3e5xg",
@@ -346,7 +1230,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -359,7 +1243,9 @@
       "property_type": "single-family",
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27407"
+      "zip": "27407",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/606-bellemeade-st-greensboro-nc-unit-13/br327s86ezhdc",
@@ -370,7 +1256,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -383,7 +1269,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27401"
+      "zip": "27401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1721-brighton-st-greensboro-nc/1dt7d6f14st0z",
@@ -394,7 +1282,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -407,7 +1295,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27405"
+      "zip": "27405",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2402-n-elm-st-greensboro-nc/ce5pt60pgf1st",
@@ -418,7 +1308,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -431,7 +1321,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27405"
+      "zip": "27405",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/235-bridford-downs-dr-greensboro-nc/4shppfr4cbl99",
@@ -442,7 +1334,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -455,7 +1347,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27407"
+      "zip": "27407",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1113-birch-tree-way-greensboro-nc/k5b8505k7twve",
@@ -466,7 +1360,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -479,7 +1373,9 @@
       "property_type": null,
       "town": "Greensboro",
       "state": "NC",
-      "zip": "27410"
+      "zip": "27410",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/1674-Destiny-Ln-29526/home/170773941",
@@ -490,7 +1386,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market nov 2023 for $395K",
@@ -503,7 +1399,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/1670-Destiny-Ln-29526/home/170773940",
@@ -514,7 +1412,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market sep 2023 for $305K",
@@ -527,7 +1425,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/2708-Mercer-Dr-29526/unit-2708/home/178617151",
@@ -538,7 +1438,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -551,7 +1451,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/North-Charleston/7424-Rock-St-29420/unit-1-4/home/200817322",
@@ -562,7 +1464,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Contingent",
@@ -575,7 +1477,9 @@
       "property_type": "fourplex",
       "town": "North Charleston",
       "state": "SC",
-      "zip": "29420"
+      "zip": "29420",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/1502-Stilley-Cir-29526/home/170731825",
@@ -586,7 +1490,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -599,7 +1503,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/North-Charleston/5116-Twitty-St-29406/unit-2/home/68846617",
@@ -610,7 +1516,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -623,7 +1529,9 @@
       "property_type": null,
       "town": "North Charleston",
       "state": "SC",
-      "zip": "29406"
+      "zip": "29406",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/544-Courtridge-Loop-29526/home/181215867",
@@ -634,7 +1542,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -647,7 +1555,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/North-Charleston/4345-Leslie-St-29418/home/108103132",
@@ -658,7 +1568,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -671,7 +1581,9 @@
       "property_type": "multifamily",
       "town": "North Charleston",
       "state": "SC",
-      "zip": "29418"
+      "zip": "29418",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/308-Kiskadee-Loop-29526/unit-E/home/144903780",
@@ -682,7 +1594,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market oct 2025 for $120K",
@@ -695,7 +1607,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/SC/Conway/15-Admiral-St-29526/home/203245339",
@@ -706,7 +1620,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "Pending",
@@ -719,7 +1633,9 @@
       "property_type": null,
       "town": "Conway",
       "state": "SC",
-      "zip": "29526"
+      "zip": "29526",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1083-sterling-ct-auburn-al/bdymnqbeenqp9",
@@ -730,7 +1646,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -743,7 +1659,9 @@
       "property_type": "single-family",
       "town": "Auburn",
       "state": "AL",
-      "zip": "36830"
+      "zip": "36830",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1580-club-creek-dr-auburn-al/nyjht39cmv8fl",
@@ -754,7 +1672,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -767,7 +1685,9 @@
       "property_type": "single-family",
       "town": "Auburn",
       "state": "AL",
-      "zip": "36830"
+      "zip": "36830",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/640-lee-road-156-opelika-al/nz3rbnmmkvvqz",
@@ -778,7 +1698,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -791,7 +1711,9 @@
       "property_type": null,
       "town": "Opelika",
       "state": "AL",
-      "zip": "36804"
+      "zip": "36804",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/905-greentree-dr-west-blocton-al/368ymt417bqcl",
@@ -802,7 +1724,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -815,7 +1737,9 @@
       "property_type": "single-family",
       "town": "West Blocton",
       "state": "AL",
-      "zip": "35184"
+      "zip": "35184",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/917-austin-st-sw-decatur-al/7qqxp2d07c40x",
@@ -826,7 +1750,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -839,7 +1763,9 @@
       "property_type": "single-family",
       "town": "Decatur",
       "state": "AL",
-      "zip": "35601"
+      "zip": "35601",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/14750-timber-ridge-dr-loxley-al/lskp771hbep7l",
@@ -850,7 +1776,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -863,7 +1789,9 @@
       "property_type": "single-family",
       "town": "Loxley",
       "state": "AL",
-      "zip": "36551"
+      "zip": "36551",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/117-holly-fern-dr-harvest-al/cc5sjwcxs0q0q",
@@ -874,7 +1802,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -887,7 +1815,9 @@
       "property_type": null,
       "town": "Harvest",
       "state": "AL",
-      "zip": "35749"
+      "zip": "35749",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1747-jack-warner-pkwy-tuscaloosa-al-unit-105a/t9yp0x22rqz12",
@@ -898,7 +1828,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
@@ -911,7 +1841,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1940-day-gap-rd-cullman-al/teb0drl2zeyr7",
@@ -922,7 +1854,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -935,7 +1867,9 @@
       "property_type": "single-family",
       "town": "Cullman",
       "state": "AL",
-      "zip": "35057"
+      "zip": "35057",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/23-litton-ave-centreville-al/yk1rdrwn796t4",
@@ -946,7 +1880,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -959,7 +1893,9 @@
       "property_type": "single-family",
       "town": "Centreville",
       "state": "AL",
-      "zip": "35042"
+      "zip": "35042",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/435-30th-Pl_Tuscaloosa_AL_35401_M76904-68738",
@@ -970,7 +1906,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -983,7 +1919,9 @@
       "property_type": "multifamily",
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/2805-25th-St-35401/home/136236155",
@@ -994,7 +1932,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1007,7 +1945,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/1626-17th-Ave-E-35404/home/136230568",
@@ -1018,7 +1958,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1031,7 +1971,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35404"
+      "zip": "35404",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/4346-31st-Ave-E-35405/home/136317267",
@@ -1042,7 +1984,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1055,7 +1997,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35405"
+      "zip": "35405",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/1901-5th-Ave-E-35401/unit-3128/home/136155644",
@@ -1066,7 +2010,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1079,7 +2023,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/1506-8th-St-35401/home/136064139",
@@ -1090,7 +2036,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Off market feb 2026 for $4.6M",
@@ -1103,7 +2049,9 @@
       "property_type": "multifamily",
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/2226-Prince-Ave-35401/home/136202457",
@@ -1114,7 +2062,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1127,7 +2075,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35401"
+      "zip": "35401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/540-Crescent-Ln-E-35404/home/135993712",
@@ -1138,7 +2088,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1151,7 +2101,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35404"
+      "zip": "35404",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Northport/2215-22nd-St-35476/home/135664097",
@@ -1162,7 +2114,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1175,7 +2127,9 @@
       "property_type": null,
       "town": "Northport",
       "state": "AL",
-      "zip": "35476"
+      "zip": "35476",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/AL/Tuscaloosa/4311-Vassie-Dr-35404/home/136060463",
@@ -1186,7 +2140,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -1199,7 +2153,9 @@
       "property_type": null,
       "town": "Tuscaloosa",
       "state": "AL",
-      "zip": "35404"
+      "zip": "35404",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/35-s-town-ln-purvis-ms/6stcede0tt868",
@@ -1210,7 +2166,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
@@ -1223,7 +2179,9 @@
       "property_type": "single-family",
       "town": "Purvis",
       "state": "MS",
-      "zip": "39475"
+      "zip": "39475",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/112-e-sunset-dr-brandon-ms/rds5mnjxt7lqd",
@@ -1234,7 +2192,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1247,7 +2205,9 @@
       "property_type": "single-family",
       "town": "Brandon",
       "state": "MS",
-      "zip": "39042"
+      "zip": "39042",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/336-pebble-creek-dr-madison-ms/7ppzjcvnn88sk",
@@ -1258,7 +2218,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1271,7 +2231,9 @@
       "property_type": null,
       "town": "Madison",
       "state": "MS",
-      "zip": "39110"
+      "zip": "39110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/99-st-croix-ln-madison-ms/jz6kwe6z23xhy",
@@ -1282,7 +2244,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1295,7 +2257,9 @@
       "property_type": "single-family",
       "town": "Madison",
       "state": "MS",
-      "zip": "39110"
+      "zip": "39110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2553-highway-583-se-bogue-chitto-ms/zk94q3rk4j26h",
@@ -1306,7 +2270,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1319,7 +2283,9 @@
       "property_type": "single-family",
       "town": "Bogue Chitto",
       "state": "MS",
-      "zip": "39629"
+      "zip": "39629",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/163-twin-oaks-dr-madison-ms/8jj2xqbbypv99",
@@ -1330,7 +2296,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1343,7 +2309,9 @@
       "property_type": "single-family",
       "town": "Madison",
       "state": "MS",
-      "zip": "39110"
+      "zip": "39110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/178-bobo-rd-lorman-ms/w735d3k7xjtyb",
@@ -1354,7 +2322,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -1367,7 +2335,9 @@
       "property_type": "single-family",
       "town": "Lorman",
       "state": "MS",
-      "zip": "39096"
+      "zip": "39096",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/107-edgewood-dr-madison-ms/tl6vgp2g5qy4d",
@@ -1378,7 +2348,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1391,7 +2361,9 @@
       "property_type": "single-family",
       "town": "Madison",
       "state": "MS",
-      "zip": "39110"
+      "zip": "39110",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/384-battle-rd-byhalia-ms/1wsp9ddwc974j",
@@ -1402,7 +2374,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1415,7 +2387,9 @@
       "property_type": "single-family",
       "town": "Byhalia",
       "state": "MS",
-      "zip": "38611"
+      "zip": "38611",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/1921-Inverness-Rd_Starkville_MS_39759_M98263-39902",
@@ -1426,7 +2400,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1439,7 +2413,9 @@
       "property_type": "duplex",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/715-Roundhouse-Rd_Starkville_MS_39759_M83389-11270",
@@ -1450,7 +2426,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1463,7 +2439,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/15126-MS-Highway-182_Starkville_MS_39759_M72017-95602",
@@ -1474,7 +2452,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1487,7 +2465,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/102-W-Williamsburg-Dr_Starkville_MS_39759_M88612-47379",
@@ -1498,7 +2478,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1511,7 +2491,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/172-Densbrook-Ln_Starkville_MS_39759_M91429-12378",
@@ -1522,7 +2504,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1535,7 +2517,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/484-Southgate-Dr_Starkville_MS_39759_M71078-73412",
@@ -1546,7 +2530,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1559,7 +2543,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/216-E-Briar-Lake-Dr_Starkville_MS_39759_M92459-22386",
@@ -1570,7 +2556,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1583,7 +2569,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/5412-Oktoc-Rd_Starkville_MS_39759_M93680-93251",
@@ -1594,7 +2582,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1607,7 +2595,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2105-Douglas-McArthur-Dr_Starkville_MS_39759_M77860-83087",
@@ -1618,7 +2608,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1631,7 +2621,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/105-Tomlinson-Dr_Starkville_MS_39759_M80522-75825",
@@ -1642,7 +2634,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1655,7 +2647,9 @@
       "property_type": "single-family",
       "town": "Starkville",
       "state": "MS",
-      "zip": "39759"
+      "zip": "39759",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2396-n-berkleigh-dr-fayetteville-ar/5t3mm4tndt6ht",
@@ -1666,7 +2660,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1679,7 +2673,9 @@
       "property_type": "single-family",
       "town": "Fayetteville",
       "state": "AR",
-      "zip": "72704"
+      "zip": "72704",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1675-n-jeanfay-ln-fayetteville-ar/j3dgbx4l07x7w",
@@ -1690,7 +2686,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1703,7 +2699,9 @@
       "property_type": null,
       "town": "Fayetteville",
       "state": "AR",
-      "zip": "72704"
+      "zip": "72704",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/11363-mountain-spring-dr-fayetteville-ar/fmj7rpbcmj0p8",
@@ -1714,7 +2712,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -1727,7 +2725,9 @@
       "property_type": "single-family",
       "town": "Fayetteville",
       "state": "AR",
-      "zip": "72701"
+      "zip": "72701",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/16993-olive-rd-fayetteville-ar/tm8e3hyt3xgh3",
@@ -1738,7 +2738,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1751,7 +2751,9 @@
       "property_type": "single-family",
       "town": "Fayetteville",
       "state": "AR",
-      "zip": "72701"
+      "zip": "72701",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/vantage-center-north-fayetteville-ar/7hsc3sb0rlr6z",
@@ -1762,7 +2764,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -1775,7 +2777,9 @@
       "property_type": null,
       "town": null,
       "state": null,
-      "zip": null
+      "zip": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/831-833-highway-290-hot-springs-ar/z1emklgrygcbz",
@@ -1786,7 +2790,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1799,7 +2803,9 @@
       "property_type": "single-family",
       "town": "Hot Springs",
       "state": "AR",
-      "zip": "71913"
+      "zip": "71913",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/3720-macintosh-way-centerton-ar/rv5cgsb8j1dx0",
@@ -1810,7 +2816,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -1823,7 +2829,9 @@
       "property_type": "single-family",
       "town": "Centerton",
       "state": "AR",
-      "zip": "72719"
+      "zip": "72719",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2802-w-turtle-creek-cir-rogers-ar/52khctezvcjzy",
@@ -1834,7 +2842,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -1847,7 +2855,9 @@
       "property_type": "single-family",
       "town": "Rogers",
       "state": "AR",
-      "zip": "72756"
+      "zip": "72756",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/10810-w-highway-156-west-fork-ar/4mgn4yl9zgnfg",
@@ -1858,7 +2868,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -1871,7 +2881,9 @@
       "property_type": null,
       "town": "West Fork",
       "state": "AR",
-      "zip": "72774"
+      "zip": "72774",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1210-snow-ln-alexander-ar/ky0k6qm35pxdf",
@@ -1882,7 +2894,7 @@
       ],
       "first_seen": "2026-11-25T21:56:24.112454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -1895,7 +2907,9 @@
       "property_type": "multifamily",
       "town": "Alexander",
       "state": "AR",
-      "zip": "72002"
+      "zip": "72002",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/MD/Salisbury/301-N-Park-Dr-21804/home/15420853",
@@ -6225,7 +7239,7 @@
       ],
       "first_seen": "2026-11-22T11:10:13.622490+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -6238,7 +7252,9 @@
       "property_type": null,
       "town": "Pottsville",
       "state": "PA",
-      "zip": "17901"
+      "zip": "17901",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Norristown/208-Stanbridge-St-19401/home/38118293",
@@ -6249,7 +7265,7 @@
       ],
       "first_seen": "2026-11-22T11:10:13.622490+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -6262,7 +7278,9 @@
       "property_type": "multifamily",
       "town": "Norristown",
       "state": "PA",
-      "zip": "19401"
+      "zip": "19401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/255-red-haven-rd-new-cumberland-pa/29706hw2hmkm0",
@@ -8121,7 +9139,7 @@
       ],
       "first_seen": "2026-11-22T10:21:19.011861+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -8134,7 +9152,9 @@
       "property_type": null,
       "town": "Williamstown",
       "state": "NJ",
-      "zip": "08094"
+      "zip": "08094",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/95-10-104th-st-jamaica-ny/mhr6sxy8hptee",
@@ -9480,7 +10500,7 @@
       ],
       "first_seen": "2026-11-21T19:42:16.026454+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -9493,7 +10513,9 @@
       "property_type": null,
       "town": "Lehighton",
       "state": "PA",
-      "zip": "18235"
+      "zip": "18235",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1005-meadow-brook-ct-whippany-nj-unit-1005/qm7fj7g66ytex",
@@ -9868,7 +10890,7 @@
       ],
       "first_seen": "2026-11-20T20:40:00.505541+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -9881,7 +10903,9 @@
       "property_type": null,
       "town": "Millville",
       "state": "NJ",
-      "zip": "08332"
+      "zip": "08332",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/537-Liberty-St-18102/unit-3/home/194217830",
@@ -9892,7 +10916,7 @@
       ],
       "first_seen": "2026-11-20T20:40:00.505541+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -9905,7 +10929,9 @@
       "property_type": "triplex",
       "town": "Allentown",
       "state": "PA",
-      "zip": "18102"
+      "zip": "18102",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/512-E-4th-St-18015/home/144863815",
@@ -9916,7 +10942,7 @@
       ],
       "first_seen": "2026-11-20T20:40:00.505541+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -9929,7 +10955,9 @@
       "property_type": null,
       "town": "Bethlehem",
       "state": "PA",
-      "zip": "18015"
+      "zip": "18015",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/905-w-king-st-york-pa/nm8d6n3dw953l",
@@ -9940,7 +10968,7 @@
       ],
       "first_seen": "2026-11-20T20:40:00.505541+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -9953,7 +10981,9 @@
       "property_type": "single-family",
       "town": "York",
       "state": "PA",
-      "zip": "17401"
+      "zip": "17401",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/2345-Losantiville-Ave-45237/home/78975533",
@@ -10484,7 +11514,7 @@
       ],
       "first_seen": "2026-11-19T20:55:07.236351+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -10497,7 +11527,9 @@
       "property_type": null,
       "town": "Bridgewater",
       "state": "NJ",
-      "zip": "08807"
+      "zip": "08807",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/1118-Seton-Ave-45205/home/76098622",
@@ -10716,7 +11748,7 @@
       ],
       "first_seen": "2026-11-18T20:51:07.082130+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -10729,7 +11761,9 @@
       "property_type": "triplex",
       "town": "Allentown",
       "state": "PA",
-      "zip": "18102"
+      "zip": "18102",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/127-S-13th-St-18042/home/59171410",
@@ -11078,7 +12112,7 @@
       ],
       "first_seen": "2026-11-16T22:27:27.290014+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -11091,7 +12125,9 @@
       "property_type": null,
       "town": "Bridgeton",
       "state": "NJ",
-      "zip": "08302"
+      "zip": "08302",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/263-W-Lincoln-St-18042/home/76747936",
@@ -11700,7 +12736,7 @@
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -11713,7 +12749,9 @@
       "property_type": "single-family",
       "town": "Clifford Township",
       "state": "PA",
-      "zip": "18470"
+      "zip": "18470",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/600-650-656-airport-dr-mifflintown-pa/ddwclw7f08fgg?l=9qzfce6yhdl1q",
@@ -11725,7 +12763,7 @@
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -11738,7 +12776,9 @@
       "property_type": "single-family",
       "town": "Mifflintown",
       "state": "PA",
-      "zip": "17059"
+      "zip": "17059",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/1401-W-Pennsylvania-St-18102/home/59197471",
@@ -11749,7 +12789,7 @@
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -11762,7 +12802,9 @@
       "property_type": null,
       "town": "Allentown",
       "state": "PA",
-      "zip": "18102"
+      "zip": "18102",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.realtor.com/realestateandhomes-detail/2844-Norton-Ave_Easton_PA_18045_M95376-07639",
@@ -12527,7 +13569,7 @@
       ],
       "first_seen": "2026-11-08T18:02:25.586500+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -12540,7 +13582,9 @@
       "property_type": "multifamily",
       "town": "Bethlehem",
       "state": "PA",
-      "zip": "18020"
+      "zip": "18020",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Bethlehem/1335-Center-St-18018/home/59177439",
@@ -12551,7 +13595,7 @@
       ],
       "first_seen": "2026-11-08T18:02:25.586500+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -12564,7 +13608,9 @@
       "property_type": null,
       "town": "Bethlehem",
       "state": "PA",
-      "zip": "18018"
+      "zip": "18018",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/1827-Tilden-Ave-45212/home/101049622",
@@ -12991,7 +14037,7 @@
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -13004,7 +14050,9 @@
       "property_type": null,
       "town": "Easton",
       "state": "PA",
-      "zip": "18042"
+      "zip": "18042",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/722-northampton-st-easton-pa/11hl121d4j5tp",
@@ -13015,7 +14063,7 @@
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD MAR 5, 2025",
@@ -13028,7 +14076,9 @@
       "property_type": null,
       "town": "Easton",
       "state": "PA",
-      "zip": "18042"
+      "zip": "18042",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2-n-2nd-st-coplay-pa/v3dbjmmw5w35y",
@@ -13039,7 +14089,7 @@
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -13052,7 +14102,9 @@
       "property_type": "multifamily",
       "town": "Coplay",
       "state": "PA",
-      "zip": "18037"
+      "zip": "18037",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/4150-marion-place-emmaus-pa/ptb78cwxsys7g",
@@ -13063,7 +14115,7 @@
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -13076,7 +14128,9 @@
       "property_type": "single-family",
       "town": "Emmaus",
       "state": "PA",
-      "zip": "18049"
+      "zip": "18049",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/502-e-cumberland-st-lebanon-pa/qbejzy1mctq3p",
@@ -13088,7 +14142,7 @@
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -13101,7 +14155,9 @@
       "property_type": "multifamily",
       "town": "Lebanon",
       "state": "PA",
-      "zip": "17042"
+      "zip": "17042",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/6430-farmingdale-dr-charlotte-nc/g1q960vsrentn",
@@ -13296,7 +14352,7 @@
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "UNDER CONTRACT",
@@ -13309,7 +14365,9 @@
       "property_type": "duplex",
       "town": "Bound Brook",
       "state": "NJ",
-      "zip": "08805"
+      "zip": "08805",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/546-emmett-st-scranton-pa/3zs8hldl4nt0s",
@@ -13321,7 +14379,7 @@
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -13334,7 +14392,9 @@
       "property_type": "multifamily",
       "town": "Scranton",
       "state": "PA",
-      "zip": "18505"
+      "zip": "18505",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/0-greenville-blvd-sw-greenville-nc/twgtpfb8hkjy5",
@@ -13345,7 +14405,7 @@
       ],
       "first_seen": "2026-10-26T17:34:55.665527+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -13358,7 +14418,9 @@
       "property_type": null,
       "town": "Greenville",
       "state": "NC",
-      "zip": "27834"
+      "zip": "27834",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/201-e-goepp-st-bethlehem-pa-unit-first-floor/em1c9w66khl7p",
@@ -13838,7 +14900,7 @@
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
@@ -13851,7 +14913,9 @@
       "property_type": "multifamily",
       "town": "Southampton",
       "state": "PA",
-      "zip": "18966"
+      "zip": "18966",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/105-107-109-111-highfill-ave-liberty-nc/dltfe2ysp5zr6",
@@ -13862,7 +14926,7 @@
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -13875,7 +14939,9 @@
       "property_type": "multifamily",
       "town": "Liberty",
       "state": "NC",
-      "zip": "27298"
+      "zip": "27298",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/9-old-farm-rd-bedminster-nj/qztbbf3fh9x9v",
@@ -14562,7 +15628,7 @@
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -14575,7 +15641,9 @@
       "property_type": null,
       "town": "South Bound Brook",
       "state": "NJ",
-      "zip": "08880"
+      "zip": "08880",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/NJ/Bound-Brook/437-Talmadge-Ave-08805/home/37721661",
@@ -14586,7 +15654,7 @@
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -14599,7 +15667,9 @@
       "property_type": "duplex",
       "town": "Bound Brook",
       "state": "NJ",
-      "zip": "08805"
+      "zip": "08805",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/NJ/South-Bound-Brook/240-Cedar-St-08880/home/37981354",
@@ -14610,7 +15680,7 @@
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -14623,7 +15693,9 @@
       "property_type": null,
       "town": "South Bound Brook",
       "state": "NJ",
-      "zip": "08880"
+      "zip": "08880",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Emmaus/342-Main-St-18049/home/202235467",
@@ -14634,7 +15706,7 @@
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -14647,7 +15719,9 @@
       "property_type": null,
       "town": "Emmaus",
       "state": "PA",
-      "zip": "18049"
+      "zip": "18049",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/5013-Stewart-Park-45212/home/101048728",
@@ -15620,7 +16694,7 @@
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -15633,7 +16707,9 @@
       "property_type": null,
       "town": "Allentown",
       "state": "PA",
-      "zip": "18102"
+      "zip": "18102",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/607-lake-ave-lyndhurst-nj/j0rdz61jbkwzq",
@@ -15696,7 +16772,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -15709,7 +16785,9 @@
       "property_type": null,
       "town": "Raritan",
       "state": "NJ",
-      "zip": "08869"
+      "zip": "08869",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
@@ -15722,7 +16800,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -15735,7 +16813,9 @@
       "property_type": "multifamily",
       "town": "Warminster",
       "state": "PA",
-      "zip": "18974"
+      "zip": "18974",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/726-W-Turner-St-18102/home/59198598",
@@ -15746,7 +16826,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -15759,7 +16839,9 @@
       "property_type": null,
       "town": "Allentown",
       "state": "PA",
-      "zip": "18102"
+      "zip": "18102",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/400-prospect-ave-asbury-park-nj/k4xdjv83tmy83",
