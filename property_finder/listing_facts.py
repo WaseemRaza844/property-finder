@@ -106,4 +106,20 @@ def extract_facts(row, url, at):
         facts['units'] = {'duplex': 2, 'triplex': 3, 'fourplex': 4, 'single-family': 1}.get(facts['property_type'])
     if facts['property_type'] is None and facts['units'] and facts['units'] > 1:
         facts['property_type'] = {2:'duplex',3:'triplex',4:'fourplex'}.get(facts['units'], 'multifamily')
+    # Condition is asserted only when the current property description explicitly
+    # says move-in ready, turnkey, or recently renovated. Search prompts and
+    # recommendation/comparable sections NEVER establish property condition.
+    condition_context = title + '\\n' + section[:1400]
+    negative_condition = re.search(
+        r'(?i)\\b(?:needs? (?:major )?(?:repairs?|work|renovation|rehab|tlc)|'
+        r'fixer[ -]upper|as[ -]is|investor special|not move[ -]in ready|'
+        r'cash only|uninhabitable|fire damage|foundation issues?)\\b',
+        condition_context)
+    positive_condition = re.search(
+        r'(?i)\\b(?:move[ -]in ready|turn[ -]?key|fully renovated|'
+        r'completely remodeled|recently renovated)\\b',
+        condition_context)
+    facts['condition_evidence'] = (
+        positive_condition.group(0)[:80] if positive_condition and not negative_condition else None
+    )
     return facts
