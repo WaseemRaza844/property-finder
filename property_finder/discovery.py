@@ -124,6 +124,13 @@ def reserve(root, run_id, now, has_key):
     if ledger['month'] != month:
         ledger = {'month': month, 'reserved': 0, 'runs': []}
     tasks = queries(root, now)
+    # Authorized targeted refresh: spend only the affordable-market lane,
+    # with an upper bound of four queries. No additional provider endpoints.
+    requested_scope = os.environ.get('PROPERTY_FINDER_SCOPE', '')
+    if requested_scope:
+        if requested_scope != 'affordable':
+            raise ValueError('Unsupported targeted discovery scope')
+        tasks = [task for task in tasks if task.get('scope') == requested_scope]
     remaining = max(0, CAP - ledger['reserved'])
     days_left = calendar.monthrange(now.year, now.month)[1] - now.day + 1
     # Keep at least some searches available on every remaining scheduled day,
