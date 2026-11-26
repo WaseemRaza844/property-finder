@@ -127,21 +127,22 @@ class DiscoveryTests(unittest.TestCase):
             self.assertTrue({'bedminster','easton','bethlehem'}.issubset(
                 {task['market'] for task in plan}))
 
-    def test_real_catalog_reserves_six_regional_and_six_college_searches(self):
+    def test_real_catalog_reserves_four_queries_per_independent_lane(self):
         from collections import Counter
         root=Path(__file__).resolve().parents[1]
         plan=queries(root,NOW)
         self.assertEqual(len(plan),12)
-        self.assertEqual(Counter(row['scope'] for row in plan), {'regional':6,'college':6})
-        self.assertTrue({'bedminster','easton','bethlehem'}.issubset(
+        self.assertEqual(Counter(row['scope'] for row in plan), {'regional':4,'college':4,'affordable':4})
+        self.assertTrue({'bedminster','easton'}.issubset(
             {row['market'] for row in plan}))
         self.assertTrue(all('near' in row['query'] for row in plan if row['scope']=='college'))
+        self.assertTrue(all('under $100,000' in row['query'] and 'at least 2 bedrooms' in row['query'] for row in plan if row['scope']=='affordable'))
         # Every market reaches its lane as the dates progress.
         plans=[queries(root,NOW+timedelta(days=offset)) for offset in range(32)]
         covered={row['market'] for plan in plans for row in plan}
         catalog=json.loads((root/'config/searches.json').read_text())
         self.assertEqual(covered,{market['id'] for market in catalog['markets']})
-        self.assertTrue(all(Counter(row['scope'] for row in plan)=={'regional':6,'college':6}
+        self.assertTrue(all(Counter(row['scope'] for row in plan)=={'regional':4,'college':4,'affordable':4}
                             for plan in plans))
 
     def test_end_of_month_budget_pacing_preserves_daily_college_and_regional_searches(self):
@@ -154,7 +155,7 @@ class DiscoveryTests(unittest.TestCase):
             plan=reserve(path,'nov-26',datetime(2026,11,26,12,tzinfo=timezone.utc),True)
             self.assertEqual(plan['status'],'ready')
             self.assertEqual(plan['allowance'],4)
-            self.assertEqual({task['scope'] for task in plan['tasks']},{'regional','college'})
+            self.assertEqual({task['scope'] for task in plan['tasks']},{'regional','college','affordable'})
             self.assertEqual(len({task['market'] for task in plan['tasks']}),4)
             self.assertEqual(plan['reserved'],380)
             last=reserve(path,'nov-27',datetime(2026,11,27,12,tzinfo=timezone.utc),True)
