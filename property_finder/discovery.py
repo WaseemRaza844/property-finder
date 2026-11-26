@@ -90,14 +90,14 @@ def queries(root, now=None):
             if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
             result.append({'market': market['id'], 'scope': 'college' if market.get('region') == 'College Towns' else 'regional', 'domain': domain,
-                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
+                           'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer newly listed or recently updated individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
             if domain == 'homes.com':
-                result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Exclude rentals, sold and off-market homes.'
+                result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Prefer newly listed or recently updated for-sale listings. Exclude rentals, sold and off-market homes.'
             if market.get('region') == 'College Towns':
                 college_name = market.get('university', '')
                 result[-1]['query'] = (f'Multifamily duplex triplex fourplex investment properties for sale '
                                        f'in {market["towns"][0]} near {college_name}. '
-                                       'Find individual property listing pages, not campus buildings, university pages, '
+                                       'Prioritize recently listed and updated individual property sale pages, not campus buildings, university pages, '
                                        'student dormitories, rental advertisements or sold properties.')
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
