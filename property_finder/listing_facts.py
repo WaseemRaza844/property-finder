@@ -109,15 +109,15 @@ def extract_facts(row, url, at):
     # Condition is asserted only when the current property description explicitly
     # says move-in ready, turnkey, or recently renovated. Search prompts and
     # recommendation/comparable sections NEVER establish property condition.
-    condition_context = title + '\\n' + section[:1400]
+    condition_context = title + '\n' + section[:1400]
     negative_condition = re.search(
-        r'(?i)\\b(?:needs? (?:major )?(?:repairs?|work|renovation|rehab|tlc)|'
+        r'(?i)\b(?:needs? (?:major )?(?:repairs?|work|renovation|rehab|tlc)|'
         r'fixer[ -]upper|as[ -]is|investor special|not move[ -]in ready|'
-        r'cash only|uninhabitable|fire damage|foundation issues?)\\b',
+        r'cash only|uninhabitable|fire damage|foundation issues?)\b',
         condition_context)
     positive_condition = re.search(
-        r'(?i)\\b(?:move[ -]in ready|turn[ -]?key|fully renovated|'
-        r'completely remodeled|recently renovated)\\b',
+        r'(?i)\b(?:move[ -]in ready|turn[ -]?key|fully renovated|'
+        r'completely remodeled|recently renovated)\b',
         condition_context)
     facts['condition_evidence'] = (
         positive_condition.group(0)[:80] if positive_condition and not negative_condition else None
