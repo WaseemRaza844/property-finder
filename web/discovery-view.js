@@ -45,6 +45,7 @@ export function selectDiscoveries(rows,f,now=Date.now()){
       // unless the user opts into clearly unverified candidates.
       if(r.listing_status!=='active'||r.price==null||r.price<=0||r.price>100000||r.beds==null||r.beds<2)return false;
       if(r.property_type&&r.property_type!=='single-family')return false;
+      if(!r.property_type&&!f.affordableUnverified)return false;
       if(/\b(?:mobile home|manufactured|vacant land|land only|lot for sale|auction|foreclosure)\b/i.test(r.title))return false;
       if(!r.condition_evidence&&!f.affordableUnverified)return false;
     }
