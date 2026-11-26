@@ -4,6 +4,7 @@ Structured facts and a short current-status evidence line are extracted from
 Exa's cached index text. Raw text, descriptions, images and answers are discarded.
 """
 import argparse
+import calendar
 import json
 import os
 import re
@@ -112,10 +113,33 @@ def reserve(root, run_id, now, has_key):
     if ledger['month'] != month:
         ledger = {'month': month, 'reserved': 0, 'runs': []}
     tasks = queries(root, now)
+    remaining = max(0, CAP - ledger['reserved'])
+    days_left = calendar.monthrange(now.year, now.month)[1] - now.day + 1
+    # Keep at least some searches available on every remaining scheduled day,
+    # rather than spending twelve per run and going dark at month end.
+    # When enough monthly quota remains, the usual twelve-query split is used.
+    target = min(len(tasks), remaining // max(days_left, 1))
+    if remaining and target == 0:
+        target = 1
+    if 0 < target < len(tasks):
+        regional = [t for t in tasks if t.get('scope') != 'college']
+        college = [t for t in tasks if t.get('scope') == 'college']
+        if regional and college:
+            n_college = min(len(college), target // 2)
+            n_regional = min(len(regional), target - n_college)
+            n_college = min(len(college), target - n_regional)
+            def subset(pool, n):
+                start = (now.toordinal() * max(n, 1)) % len(pool)
+                return [pool[(start + i) % len(pool)] for i in range(n)]
+            tasks = subset(regional, n_regional) + subset(college, n_college)
+        else:
+            tasks = tasks[:target]
     count = len(tasks)
     status = 'ready'
     if not has_key:
         status = 'not_configured'
+    elif count == 0:
+        status = 'budget_exhausted'
     elif run_id in ledger['runs']:
         status = 'already_reserved'
     elif ledger['reserved'] + count > CAP:
