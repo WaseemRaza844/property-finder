@@ -29,6 +29,12 @@ function card(r){
  const details=el('details',null,'result-details');details.append(el('summary','Source & observation details'),el('p',`${r.source} · Search market: ${r.markets.map(m=>markets[m]?.name||m).join(', ')}`),el('p',`Facts retrieved ${date(r.facts_observed_at)} · First found ${date(r.first_seen)} · Last found ${date(r.last_seen)}`),el('p',r.status_evidence?`Indexed status evidence: “${r.status_evidence}”`:'No explicit current-status evidence supplied.'),el('p','Facts come from Exa’s indexed snapshot, not a live listing feed. Confirm them on the source. Missing values stay unknown. Historical sales and comparable-home sections are excluded from extraction.'));
  if(r.alternates?.length){const links=el('p','Also discovered on: ');for(const other of r.alternates){const link=el('a',`${other.source} (${other.status||'unverified'}) ↗ `);link.href=listingURL(other.url).url;link.target='_blank';link.rel='noopener noreferrer';links.append(link);}details.append(links);}
  if(r.not_searched_this_run)details.append(el('p','This source was not scheduled for this market in the latest rotation. The displayed observation is less than 36 hours old; its retrieval date has not been advanced.'));
+ if(r.markets?.some(id=>markets[id]?.region==='Move-in Ready Under $100K')&&Number.isFinite(r.price)&&r.price<=100000){
+   const scenario=el('button','Use asking price in rental scenario','button secondary');
+   scenario.type='button';
+   scenario.addEventListener('click',()=>{$('aff-price').value=String(r.price);computeCashflow();$('affordable-finances').scrollIntoView({behavior:'smooth'});});
+   body.append(scenario);
+ }
  body.append(details);article.append(el('span',String(r.number).padStart(2,'0'),'result-number'),body);return article;
 }
 function render(){if(!data)return;const f={...filters(),scope,collegeState:$('discovery-college-state').value,affordableState:$('discovery-affordable-state').value,affordableUnverified:$('affordable-unverified').checked},sourceRows=scopedDiscoveries(data.results,scope),rows=selectDiscoveries(data.results,f),groups=groupDiscoveries(rows,f.group),excluded=sourceRows.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
@@ -74,6 +80,7 @@ function switchScope(next,scroll=false) {
  $('affordable-unverified-label').hidden=scope!=='affordable';
  $('affordable-state-label').hidden=scope!=='affordable';
  $('affordable-finances').hidden=scope!=='affordable';
+ $('review-discovery').textContent=scope==='affordable'?'Review condition-unverified candidates':'Review unverified properties';
  $('discovery-complete-label').hidden=scope==='affordable';
  control('price').value=scope==='affordable'?'100000':'';
  control('price').readOnly=scope==='affordable';
@@ -104,7 +111,7 @@ $('discovery-affordable-state').addEventListener('change',()=>{control('market')
 $('affordable-unverified').addEventListener('change',render);
 
 for(const k of controls)control(k).addEventListener(['keyword','price'].includes(k)?'input':'change',()=>{if(k==='region'){refreshMarketSelect();control('town').value='';control('zip').value='';}if(['region','market'].includes(k))localityOptions();render();});
-$('review-discovery').onclick=()=>{control('status').value='review';render();};
+$('review-discovery').onclick=()=>{if(scope==='affordable'){$('affordable-unverified').checked=true;}else{control('status').value='review';}render();};
 $('collapse-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=false);$('expand-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=true);
 $('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}if(scope==='affordable'){control('price').value='100000';control('price').readOnly=true; $('affordable-unverified').checked=false;}localityOptions();render();};
 // Local-only cash-flow scenario: refuse to produce a number until key inputs exist.
