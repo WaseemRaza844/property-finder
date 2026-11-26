@@ -162,6 +162,27 @@ class DiscoveryTests(unittest.TestCase):
             self.assertEqual(last['allowance'],5)
             self.assertEqual(last['reserved'],385)
 
+    def test_affordable_only_targeted_refresh_never_spends_other_lanes(self):
+        root=Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)
+            write_json(path/'config/searches.json',
+                       json.loads((root/'config/searches.json').read_text()))
+            write_json(path/'.state/search-budget.json',
+                       {'month':'2026-11','reserved':376,'runs':[]})
+            with patch.dict('os.environ', {'PROPERTY_FINDER_SCOPE':'affordable'}):
+                plan=reserve(path,'targeted-affordable',
+                             datetime(2026,11,26,20,tzinfo=timezone.utc),True)
+            self.assertEqual(plan['status'],'ready')
+            self.assertEqual(plan['allowance'],4)
+            self.assertTrue(all(t['scope']=='affordable' for t in plan['tasks']))
+            self.assertEqual(len({t['market'] for t in plan['tasks']}),4)
+            self.assertEqual(plan['reserved'],380)
+            with patch.dict('os.environ', {'PROPERTY_FINDER_SCOPE':'invalid'}):
+                with self.assertRaises(ValueError):
+                    reserve(path,'bad-scope',
+                            datetime(2026,11,26,20,tzinfo=timezone.utc),True)
+
     def test_combined_request_sends_domain_array(self):
         response=MagicMock()
         response.__enter__.return_value.read.return_value=b'{"results":[]}'
