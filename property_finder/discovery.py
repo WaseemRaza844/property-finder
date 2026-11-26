@@ -69,17 +69,20 @@ def queries(root, now=None):
         return [pool[(start + offset) % len(pool)] for offset in range(slots)]
 
     if len(all_markets) > 12:
-        regional = [m for m in all_markets if m.get('region') != 'College Towns']
+        regional = [m for m in all_markets if m.get('region') not in ('College Towns', 'Move-in Ready Under $100K')]
         college = [m for m in all_markets if m.get('region') == 'College Towns']
-        priority_ids = {'bedminster', 'easton', 'bethlehem'}
+        affordable = [m for m in all_markets if m.get('region') == 'Move-in Ready Under $100K']
+        priority_ids = {'bedminster', 'easton'} if affordable else {'bedminster', 'easton', 'bethlehem'}
         priority = [m for m in regional if m['id'] in priority_ids]
         other_regions = [m for m in regional if m['id'] not in priority_ids]
-        if college:
-            regional_slots = 6
-            college_slots = 6
-            active_markets = (priority[:regional_slots]
-                              + rotate(other_regions, regional_slots - len(priority[:regional_slots]))
-                              + rotate(college, college_slots))
+        if affordable and college:
+            # Three independent lanes and one shared free-tier twelve-request cap.
+            # Every day includes rotating affordable towns, not just registered UI options.
+            active_markets = (priority[:4] + rotate(other_regions, 4-len(priority[:4]))
+                              + rotate(college, 4) + rotate(affordable, 4))
+        elif college:
+            active_markets = (priority[:6] + rotate(other_regions, 6-len(priority[:6]))
+                              + rotate(college, 6))
         else:
             active_markets = priority[:6] + rotate(other_regions, 12-len(priority[:6]))
     else:
@@ -90,7 +93,7 @@ def queries(root, now=None):
             allowed = domain if isinstance(domain, list) else [domain]
             if not allowed or any(d not in DOMAINS for d in allowed):
                 raise ValueError('Unsupported search domain')
-            result.append({'market': market['id'], 'scope': 'college' if market.get('region') == 'College Towns' else 'regional', 'domain': domain,
+            result.append({'market': market['id'], 'scope': 'affordable' if market.get('region') == 'Move-in Ready Under $100K' else 'college' if market.get('region') == 'College Towns' else 'regional', 'domain': domain,
                            'query': f'Active multifamily duplex triplex fourplex properties currently for sale near {market["name"] if "name" in market else market["towns"][0]}. Nearby towns: {", ".join(market["towns"])}. Prefer newly listed or recently updated individual Homes.com property pages where available. Exclude sold, off-market, pending and rental listings.'})
             if domain == 'homes.com':
                 result[-1]['query'] = f'Multifamily duplex triplex properties for sale in {market["towns"][0]}. Prefer newly listed or recently updated for-sale listings. Exclude rentals, sold and off-market homes.'
@@ -100,6 +103,14 @@ def queries(root, now=None):
                                        f'in {market["towns"][0]} near {college_name}. '
                                        'Prioritize recently listed and updated individual property sale pages, not campus buildings, university pages, '
                                        'student dormitories, rental advertisements or sold properties.')
+            if market.get('region') == 'Move-in Ready Under $100K':
+                result[-1]['query'] = (
+                    f'Single family house for sale under $100,000 at least 2 bedrooms in {market["towns"][0]}, '
+                    'move in ready turnkey recently renovated, suitable as a long term rental. '
+                    'Find individual current for-sale property pages with asking price, bedrooms and condition. '
+                    'Avoid vacant land, manufactured homes, mobile homes, auctions, foreclosures, '
+                    'investor specials, fixer uppers, major repairs, rural farmland, rented properties, '
+                    'pending sales and sold houses. Do not assume rental profitability.')
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
     return result
@@ -122,18 +133,22 @@ def reserve(root, run_id, now, has_key):
     if remaining and target == 0:
         target = 1
     if 0 < target < len(tasks):
-        regional = [t for t in tasks if t.get('scope') != 'college']
-        college = [t for t in tasks if t.get('scope') == 'college']
-        if regional and college:
-            n_college = min(len(college), target // 2)
-            n_regional = min(len(regional), target - n_college)
-            n_college = min(len(college), target - n_regional)
-            def subset(pool, n):
-                start = (now.toordinal() * max(n, 1)) % len(pool)
-                return [pool[(start + i) % len(pool)] for i in range(n)]
-            tasks = subset(regional, n_regional) + subset(college, n_college)
-        else:
-            tasks = tasks[:target]
+        # Round robin across scheduled lanes, respecting each lane's daily
+        # reserved tasks and avoiding duplicates on budget-constrained days.
+        lanes = {}
+        for task in tasks:
+            lanes.setdefault(task.get('scope','regional'), []).append(task)
+        order = ['regional', 'college', 'affordable']
+        chosen = []
+        while len(chosen) < target:
+            before = len(chosen)
+            for name in order:
+                pool = lanes.get(name, [])
+                if pool and len(chosen) < target:
+                    chosen.append(pool.pop(0))
+            if len(chosen) == before:
+                break
+        tasks = chosen
     count = len(tasks)
     status = 'ready'
     if not has_key:
