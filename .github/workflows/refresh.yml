@@ -4,6 +4,15 @@ on:
     - cron: '30 7 * * *'
       timezone: America/New_York
   workflow_dispatch:
+    inputs:
+      search_scope:
+        description: 'Choose full daily rotation or just move-in-ready under $100K'
+        required: true
+        type: choice
+        options:
+          - all
+          - affordable
+        default: all
   push:
     branches: [main]
 permissions:
@@ -33,12 +42,13 @@ jobs:
       - name: Refresh authorized imports
         run: python -m property_finder.refresh
       - name: Reserve search allowance
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[affordable-refresh]')
         env:
+          PROPERTY_FINDER_SCOPE: ${{ (github.event_name == 'push' && contains(github.event.head_commit.message, '[affordable-refresh]')) && 'affordable' || (inputs.search_scope == 'affordable' && 'affordable' || '') }}
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.discovery reserve
       - name: Persist allowance before making search requests
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[affordable-refresh]')
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -48,18 +58,18 @@ jobs:
             git push
           fi
       - name: Collect and save property search links
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[affordable-refresh]')
         env:
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.discovery refresh
       # Four extra requests at most once per month, within the same 400 cap.
       - name: Reserve monthly Homes.com diagnostic
-        if: github.event_name != 'push'
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.search_scope != 'affordable')
         env:
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.homes_probe reserve
       - name: Persist Homes.com diagnostic allowance before requests
-        if: github.event_name != 'push'
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.search_scope != 'affordable')
         run: |
           git add .state/search-budget.json
           if ! git diff --cached --quiet; then
@@ -67,7 +77,7 @@ jobs:
             git push
           fi
       - name: Run dedicated Homes.com index searches
-        if: github.event_name != 'push'
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.search_scope != 'affordable')
         env:
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         run: python -m property_finder.homes_probe refresh
