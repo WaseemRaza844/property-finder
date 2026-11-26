@@ -24,10 +24,10 @@ export function uniqueProperties(rows,now=Date.now(),source=''){
  });
 }
 export function marketScope(market) {
- return markets[market]?.region === 'College Towns' ? 'college' : 'regional';
+ return markets[market]?.region === 'College Towns' ? 'college' : markets[market]?.region === 'Move-in Ready Under $100K' ? 'affordable' : 'regional';
 }
 export function scopedDiscoveries(rows,scope='regional') {
- if(scope !== 'regional' && scope !== 'college') return rows;
+ if(!['regional','college','affordable'].includes(scope)) return rows;
  return rows.filter(r=>Array.isArray(r.markets) && r.markets.some(id=>markets[id] && marketScope(id) === scope));
 }
 export function selectDiscoveries(rows,f,now=Date.now()){
@@ -38,6 +38,16 @@ export function selectDiscoveries(rows,f,now=Date.now()){
     if(f.market&&!r.markets.includes(f.market)||f.source&&r.source!==f.source||f.town&&`${r.town||''}, ${r.state||''}`!==f.town||f.zip&&r.zip!==f.zip)return false;
     if(f.region&&!r.markets.some(m=>markets[m]?.region===f.region))return false;
     if(f.collegeState&&!r.markets.some(m=>markets[m]?.region==='College Towns'&&markets[m]?.college_region===f.collegeState))return false;
+    if(f.affordableState&&!r.markets.some(m=>markets[m]?.region==='Move-in Ready Under $100K'&&markets[m]?.towns?.[0].endsWith(' '+f.affordableState)))return false;
+    if(f.scope==='affordable'){
+      // Strict nationwide rental-candidate screen. Unknown affordability or beds
+      // is never converted to a guess. Explicit condition evidence is mandatory
+      // unless the user opts into clearly unverified candidates.
+      if(r.listing_status!=='active'||r.price==null||r.price<=0||r.price>100000||r.beds==null||r.beds<2)return false;
+      if(r.property_type&&r.property_type!=='single-family')return false;
+      if(/\b(?:mobile home|manufactured|vacant land|land only|lot for sale|auction|foreclosure)\b/i.test(r.title))return false;
+      if(!r.condition_evidence&&!f.affordableUnverified)return false;
+    }
     if(f.price!=null&&f.price!==''&&(r.price==null||r.price>Number(f.price)))return false;
     if(f.complete&&['price','beds','sqft','units'].some(k=>r[k]==null))return false;
     return !f.keyword||`${r.title} ${r.town||''} ${r.zip||''} ${r.property_type||''}`.toLowerCase().includes(f.keyword.toLowerCase());
@@ -59,7 +69,7 @@ export function topPicks(rows,f={},now=Date.now()){
  // Quick Look exists to expose changed opportunities, not repeat the four
  // cheapest / largest historical records indefinitely.
  const eligible=selectDiscoveries(rows,{...f,status:f.status==='latest'||f.status==='review'?'latest':'active'},now)
-   .filter(r=>r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+   .filter(r=>f.scope==='affordable'||r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
  const newest=[...eligible].sort((a,b)=>Date.parse(b.first_seen)-Date.parse(a.first_seen)||a.url.localeCompare(b.url));
  const recent=newest.filter(r=>isNewDiscovery(r,now));
  const selected=[],used=new Set();
