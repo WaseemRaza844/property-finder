@@ -170,3 +170,15 @@ header#site-header nav a:first-child{font-weight:800}
 .discovery-new-badge{background:var(--green);color:var(--button-text);font-size:var(--ui-label);font-weight:800;letter-spacing:.01em;padding:6px 9px;border-radius:5px}
 .discovery-dates{font-size:var(--ui-small);font-weight:600;color:var(--muted);margin:0 0 12px;line-height:1.55}
 .pick-reason{font-size:var(--ui-label)}
+
+
+/* Third independent affordable-rental workspace and cautious cash-flow panel. */
+.mode-tabs{display:flex;flex-wrap:wrap;gap:9px}
+.mode-tab{flex:1 1 205px}
+.affordable-finances{margin:18px 0 24px;padding:20px;border:1px solid var(--line);background:var(--surface);border-radius:12px}
+.affordable-finances h3{margin:0 0 12px;color:var(--ink)}
+.affordable-finances .filter-grid{margin:16px 0}
+#aff-cashflow{font-size:var(--ui-font);font-weight:700;line-height:1.6}
+#affordable-unverified-label{font-size:var(--ui-label);max-width:380px}
+input[readonly]{background:var(--surface-soft);font-weight:700}
+@media(max-width:700px){.mode-tabs{display:flex;flex-direction:column}.mode-tab{flex:0 0 auto;width:100%;text-align:center}}
