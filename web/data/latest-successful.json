@@ -1,6 +1,531 @@
 {
-  "generated_at": "2026-11-26T21:51:27.504701+00:00",
+  "generated_at": "2026-11-27T21:34:42.152912+00:00",
   "results": [
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/815-NE-Woodcrest-Ave-97330/home/25901117",
+      "source": "redfin.com",
+      "title": "815 NE Woodcrest (-825) Ave, Corvallis, OR 97330 | MLS# 845631 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": null,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1752,
+      "units": 2,
+      "property_type": "duplex",
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97330",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/1020-SW-E-Ave-97333/home/25922942",
+      "source": "redfin.com",
+      "title": "1020 SW E Ave, Corvallis, OR 97333 | MLS# 663095652 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 499000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1628,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/620-NW-19th-St-97330/home/25920175",
+      "source": "redfin.com",
+      "title": "620 NW 19th St, Corvallis, OR 97330 | MLS# 589846674 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": null,
+      "beds": 5,
+      "baths": 2,
+      "sqft": 1734,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97330",
+      "condition_evidence": "turnkey"
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/1072-SW-E-Ave-97333/home/25904724",
+      "source": "redfin.com",
+      "title": "1072 SW E Ave, Corvallis, OR 97333 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Off market jun 2018 for $452K",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 672000,
+      "beds": 5,
+      "baths": 3.5,
+      "sqft": 2280,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/1174-SW-Sylvia-St-97333/home/144335353",
+      "source": "redfin.com",
+      "title": "1174 SW Sylvia St, Corvallis, OR 97333 | MLS# 753711269 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 510000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1794,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/4475-SE-3rd-St-97333/home/25922232",
+      "source": "redfin.com",
+      "title": "4475 SE 3rd St, Corvallis, OR 97333 | MLS# 842481 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": null,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1080,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/204-NW-27th-St-97330/home/25894915",
+      "source": "redfin.com",
+      "title": "204 NW 27th St, Corvallis, OR 97330 | MLS# 147561124 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 669000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 4384,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97330",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/4850-SW-West-Hills-Rd-97333/home/25904073",
+      "source": "redfin.com",
+      "title": "4850 SW West Hls, Corvallis, OR 97333 | MLS# 831443 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 563000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2338,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/811-SW-Jefferson-Ave-97333/home/203177161",
+      "source": "redfin.com",
+      "title": "811 SW Jefferson Ave, Corvallis, OR 97333 | MLS# 843994 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 740000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 8686,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/OR/Corvallis/404-SW-9th-St-97333/home/25903938",
+      "source": "redfin.com",
+      "title": "404 SW 9th St, Corvallis, OR 97333 | Redfin",
+      "markets": [
+        "college-corvallis"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 350000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1075,
+      "units": null,
+      "property_type": null,
+      "town": "Corvallis",
+      "state": "OR",
+      "zip": "97333",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/1127-S-Minnesota-Dr-67211/home/121730600",
+      "source": "redfin.com",
+      "title": "1127 S Minnesota, Wichita, KS 67211 | MLS# 678434 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 95000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 965,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67211",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/3128-S-Davidson-St-67210/home/120086092",
+      "source": "redfin.com",
+      "title": "3128 S Davidson St, Wichita, KS 67210 | MLS# 678312 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 67500,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 768,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67210",
+      "condition_evidence": "MOVE-IN READY"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/2726-N-Spruce-St-67219/home/121011150",
+      "source": "redfin.com",
+      "title": "2726 N Spruce St, Wichita, KS 67219 | MLS# 676436 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 130000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 974,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67219",
+      "condition_evidence": "move in ready"
+    },
+    {
+      "url": "https://www.realtor.com/realestateandhomes-detail/1131-S-Apache-Dr_Wichita_KS_67207_M80127-21527",
+      "source": "realtor.com",
+      "title": "1131 S Apache Dr, Wichita, KS 67207 [Updated 5/19]",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 85000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1904,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67207",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/1652-S-Ellis-St-67211/home/120547371",
+      "source": "redfin.com",
+      "title": "1652 S Ellis St, Wichita, KS 67211 | MLS# 670305 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": null,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 816,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67211",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/1413-S-Ellis-St-67211/home/120703785",
+      "source": "redfin.com",
+      "title": "1413 S Ellis, Wichita, KS 67211 | MLS# 678400 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 69900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 690,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67211",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/4575-S-Walnut-Ave-67217/home/120175596",
+      "source": "redfin.com",
+      "title": "4575 S Walnut Ave, Wichita, KS 67217 | MLS# 671133 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Contingent",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 146000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 884,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67217",
+      "condition_evidence": "Move In Ready"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/1517-S-Greenwood-Ave-67211/home/121422291",
+      "source": "redfin.com",
+      "title": "1517 S Greenwood Ave, Wichita, KS 67211 | MLS# 669053 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 137500,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 975,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67211",
+      "condition_evidence": "fully renovated"
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/2522-E-Audrey-St-67219/home/122340308",
+      "source": "redfin.com",
+      "title": "2522 E Audrey St, Wichita, KS 67219 | MLS# 679369 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 137000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1024,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67219",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/KS/Wichita/1755-S-Wichita-St-67213/home/121409398",
+      "source": "redfin.com",
+      "title": "1755 S Wichita St, Wichita, KS 67213 | MLS# 678659 | Redfin",
+      "markets": [
+        "affordable-wichita"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Pending",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 87500,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1161,
+      "units": null,
+      "property_type": null,
+      "town": "Wichita",
+      "state": "KS",
+      "zip": "67213",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/223-brink-rd-saylorsburg-pa/v0f1w10le30nq?l=0v6c5tz0tywtd%2F",
+      "source": "homes.com",
+      "title": "223 Brink Rd, Saylorsburg, PA 18353",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-11-27T21:34:42.152912+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "Not Available",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 160000,
+      "beds": null,
+      "baths": 2,
+      "sqft": null,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Saylorsburg",
+      "state": "PA",
+      "zip": "18353",
+      "condition_evidence": null
+    },
     {
       "url": "https://www.homes.com/property/122-royal-dr-park-ridge-nj/93r9j39hn1zmq",
       "source": "homes.com",
@@ -10,7 +535,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -24,7 +549,9 @@
       "town": "Park Ridge",
       "state": "NJ",
       "zip": "07656",
-      "condition_evidence": "move-in ready"
+      "condition_evidence": "move-in ready",
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/7-tamari-ct-randolph-nj/838m3v97y3ms4",
@@ -35,7 +562,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
@@ -49,7 +576,9 @@
       "town": "Randolph",
       "state": "NJ",
       "zip": "07869",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/856-858-degraw-ave-newark-nj/3qeyb6nhjz7yw",
@@ -60,7 +589,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -74,7 +603,9 @@
       "town": "Newark",
       "state": "NJ",
       "zip": "07104",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/1139-summit-ln-mountainside-nj/ktr062ge00kq1",
@@ -85,7 +616,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -99,7 +630,9 @@
       "town": "Mountainside",
       "state": "NJ",
       "zip": "07092",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/2410-water-valley-way-knoxville-tn/9h3fdeq9dw1fv",
@@ -110,7 +643,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING $33K PRICE DROP",
@@ -124,7 +657,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37932",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/481-broome-rd-knoxville-tn/xpmjr1eqjzwqs",
@@ -135,7 +670,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -149,7 +684,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37909",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/4112-apex-dr-nw-knoxville-tn/qb6886cv7pbkw",
@@ -160,7 +697,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -174,7 +711,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37919",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1216-westland-bay-dr-knoxville-tn/gw2hffn585m9z",
@@ -185,7 +724,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -199,7 +738,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37922",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/704-bridgewater-rd-knoxville-tn/q5mtbwqp9f4sh",
@@ -210,7 +751,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -224,7 +765,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37923",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/11823-n-monticello-dr-knoxville-tn/kv92g5sx5px5b",
@@ -235,7 +778,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -249,7 +792,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37934",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/9510-daybreak-dr-knoxville-tn/2c9q977s84wj8",
@@ -260,7 +805,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD JUN 4, 2025",
@@ -274,7 +819,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37931",
-      "condition_evidence": "move-in ready"
+      "condition_evidence": "move-in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2590-day-rd-strawberry-plains-tn/d70def6qdw13b",
@@ -285,7 +832,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -299,7 +846,9 @@
       "town": "Strawberry Plains",
       "state": "TN",
       "zip": "37871",
-      "condition_evidence": "turnkey"
+      "condition_evidence": "turnkey",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/423-anderson-st-gallatin-tn/tsvk8wg4dp6k6",
@@ -310,7 +859,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -324,7 +873,9 @@
       "town": "Gallatin",
       "state": "TN",
       "zip": "37066",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/121-peterson-rd-knoxville-tn/zk1lb63d38v3p",
@@ -335,7 +886,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -349,7 +900,9 @@
       "town": "Knoxville",
       "state": "TN",
       "zip": "37934",
-      "condition_evidence": "Move in ready"
+      "condition_evidence": "Move in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/506-W-Berwick-St-18042/home/76756500",
@@ -360,7 +913,7 @@
       ],
       "first_seen": "2026-11-26T21:51:27.504701+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -374,7 +927,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": "fully renovated"
+      "condition_evidence": "fully renovated",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1917-marine-st-south-bend-in/fp6ezn7y9mxqg",
@@ -385,7 +940,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -399,7 +954,9 @@
       "town": "South Bend",
       "state": "IN",
       "zip": "46613",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2811-fenwood-ave-terre-haute-in/mxts0hkqyx869",
@@ -410,7 +967,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -424,7 +981,9 @@
       "town": "Terre Haute",
       "state": "IN",
       "zip": "47803",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/104-e-branson-st-la-fontaine-in/kjetvv66b31bc",
@@ -435,7 +994,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -449,7 +1008,9 @@
       "town": "La Fontaine",
       "state": "IN",
       "zip": "46940",
-      "condition_evidence": "Move in ready"
+      "condition_evidence": "Move in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/60685-locust-rd-south-bend-in/6t732qvcdwh23?l=nc4feslpmww4t",
@@ -460,7 +1021,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -474,7 +1035,9 @@
       "town": "South Bend",
       "state": "IN",
       "zip": "46614",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/1035-cherry-st-hammond-in/fd77p8j6p32r9",
@@ -485,7 +1048,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -499,7 +1062,9 @@
       "town": "Hammond",
       "state": "IN",
       "zip": "46324",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2417-s-center-st-terre-haute-in/w67lbz5prfvr6",
@@ -510,7 +1075,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -524,7 +1089,9 @@
       "town": "Terre Haute",
       "state": "IN",
       "zip": "47802",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/2504-winfield-ave-indianapolis-in/n1jnlhrk3t6fh",
@@ -535,7 +1102,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -549,7 +1116,9 @@
       "town": "Indianapolis",
       "state": "IN",
       "zip": "46222",
-      "condition_evidence": "move in ready"
+      "condition_evidence": "move in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/308-s-main-st-bicknell-in/rgd2gzrznktxg",
@@ -560,7 +1129,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "Recently Sold",
@@ -574,7 +1143,9 @@
       "town": "Bicknell",
       "state": "IN",
       "zip": "47512",
-      "condition_evidence": "move-in ready"
+      "condition_evidence": "move-in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/4926-kickapoo-dr-kokomo-in/s80b3c7d3kzhs",
@@ -585,7 +1156,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -599,7 +1170,9 @@
       "town": "Kokomo",
       "state": "IN",
       "zip": "46902",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/803-n-18th-st-west-memphis-ar/kxkmx2tr9cxb9",
@@ -610,7 +1183,7 @@
       ],
       "first_seen": "2026-11-26T21:09:24.451646+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -624,7 +1197,9 @@
       "town": "West Memphis",
       "state": "AR",
       "zip": "72301",
-      "condition_evidence": "move-in ready"
+      "condition_evidence": "move-in ready",
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/IN/Muncie/2309-S-Mulberry-St-47302/home/121945928",
@@ -9555,12 +10130,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-22T10:21:19.011861+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 525000,
       "beds": 10,
       "baths": 4,
@@ -9570,8 +10145,7 @@
       "town": "Williamstown",
       "state": "NJ",
       "zip": "08094",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.homes.com/property/95-10-104th-st-jamaica-ny/mhr6sxy8hptee",
@@ -10917,7 +11491,7 @@
       ],
       "first_seen": "2026-11-21T19:42:16.026454+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -10931,7 +11505,9 @@
       "town": "Whippany",
       "state": "NJ",
       "zip": "07981",
-      "condition_evidence": "Turnkey"
+      "condition_evidence": "Turnkey",
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/2155-Morgan-Hill-Rd-18042/home/76761739",
@@ -10942,7 +11518,7 @@
       ],
       "first_seen": "2026-11-21T19:42:16.026454+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -10956,7 +11532,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Lehighton/320-N-1st-St-18235/home/119110975",
@@ -11319,8 +11897,8 @@
       "town": "Millville",
       "state": "NJ",
       "zip": "08332",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/537-Liberty-St-18102/unit-3/home/194217830",
@@ -11928,12 +12506,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-19T20:55:07.236351+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 710000,
       "beds": 3,
       "baths": 1.5,
@@ -11943,8 +12521,7 @@
       "town": "Bridgewater",
       "state": "NJ",
       "zip": "08807",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.redfin.com/OH/Cincinnati/1118-Seton-Ave-45205/home/76098622",
@@ -12163,7 +12740,7 @@
       ],
       "first_seen": "2026-11-18T20:51:07.082130+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -12177,7 +12754,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/1334-W-Turner-St-18102/home/69115447",
@@ -12525,12 +13104,12 @@
         "bedminster"
       ],
       "first_seen": "2026-11-16T22:27:27.290014+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 225000,
       "beds": 6,
       "baths": null,
@@ -12540,8 +13119,7 @@
       "town": "Bridgeton",
       "state": "NJ",
       "zip": "08302",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.redfin.com/PA/Easton/263-W-Lincoln-St-18042/home/76747936",
@@ -12652,15 +13230,15 @@
       "source": "homes.com",
       "title": "6115 Timberknoll Dr, MacUngie, PA 18062",
       "markets": [
-        "college-kutztown"
+        "easton"
       ],
       "first_seen": "2026-11-13T19:58:08.488646+00:00",
-      "last_seen": "2026-11-22T11:10:13.622490+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "pending",
       "status_basis": "Exa indexed text",
       "status_evidence": "PENDING",
-      "facts_observed_at": "2026-11-22T11:10:13.622490+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 549900,
       "beds": 3,
       "baths": 2.5,
@@ -12670,8 +13248,7 @@
       "town": "MacUngie",
       "state": "PA",
       "zip": "18062",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.homes.com/property/2845-e-6th-ave-columbus-oh/nw1rnjve11nts",
@@ -12734,7 +13311,7 @@
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -12748,7 +13325,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Easton/1434-Butler-St-18042/home/59197220",
@@ -12759,7 +13338,7 @@
       ],
       "first_seen": "2026-11-12T20:20:04.454730+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -12773,7 +13352,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.homes.com/property/26-mount-washington-dr-clifton-nj/x6hrfbj08ywvt",
@@ -13140,6 +13721,106 @@
       "not_searched_this_run": false
     },
     {
+      "url": "https://www.redfin.com/NJ/Palisades-Park/441-Hillcrest-Pl-07650/home/35817569",
+      "source": "redfin.com",
+      "title": "441 Hillcrest Pl, Palisades Park, NJ 07650 | MLS# 26002031 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-11-11T19:49:13.508525+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 1999000,
+      "beds": 6,
+      "baths": 7,
+      "sqft": null,
+      "units": null,
+      "property_type": null,
+      "town": "Palisades Park",
+      "state": "NJ",
+      "zip": "07650",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.redfin.com/NJ/Bedminster/20-Preston-Ter-07921/home/37683933",
+      "source": "redfin.com",
+      "title": "20 Preston Ter, Bedminster, NJ 07921 | MLS# 4050896 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-11-11T19:49:13.508525+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 949900,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2500,
+      "units": null,
+      "property_type": null,
+      "town": "Bedminster",
+      "state": "NJ",
+      "zip": "07921",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/600-650-656-airport-dr-mifflintown-pa/ddwclw7f08fgg?l=9qzfce6yhdl1q",
+      "source": "homes.com",
+      "title": "600, 650, 656 Airport Dr, Mifflintown, PA 17059",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-11-11T19:49:13.508525+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 3750000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 11340,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Mifflintown",
+      "state": "PA",
+      "zip": "17059",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/660-wildenberg-rd-union-dale-pa/0k0em5jkj3kz9",
+      "source": "homes.com",
+      "title": "660 Wildenberg Rd, Clifford Township, PA 18470",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-11-11T19:49:13.508525+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 650000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1456,
+      "units": 1,
+      "property_type": "single-family",
+      "town": "Clifford Township",
+      "state": "PA",
+      "zip": "18470",
+      "condition_evidence": null
+    },
+    {
       "url": "https://www.realtor.com/realestateandhomes-detail/2844-Norton-Ave_Easton_PA_18045_M95376-07639",
       "source": "realtor.com",
       "title": "2844 Norton Ave, Easton, PA 18045 | Realtor.com\u00ae",
@@ -13148,7 +13829,7 @@
       ],
       "first_seen": "2026-11-11T19:49:13.508525+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "unknown",
       "status_basis": "No explicit current status found",
       "status_evidence": null,
@@ -13162,60 +13843,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18045",
-      "condition_evidence": null
-    },
-    {
-      "url": "https://www.homes.com/property/660-wildenberg-rd-union-dale-pa/0k0em5jkj3kz9",
-      "source": "homes.com",
-      "title": "660 Wildenberg Rd, Clifford Township, PA 18470",
-      "markets": [
-        "easton"
-      ],
-      "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
-      "listing_status": "unknown",
-      "status_basis": "No explicit current status found",
-      "status_evidence": null,
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
-      "price": 650000,
-      "beds": 3,
-      "baths": 2,
-      "sqft": 1456,
-      "units": 1,
-      "property_type": "single-family",
-      "town": "Clifford Township",
-      "state": "PA",
-      "zip": "18470",
-      "search_excluded": true,
-      "not_searched_this_run": false
-    },
-    {
-      "url": "https://www.homes.com/property/600-650-656-airport-dr-mifflintown-pa/ddwclw7f08fgg?l=9qzfce6yhdl1q",
-      "source": "homes.com",
-      "title": "600, 650, 656 Airport Dr, Mifflintown, PA 17059",
-      "markets": [
-        "easton",
-        "central-pa-york"
-      ],
-      "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
-      "listing_status": "unknown",
-      "status_basis": "No explicit current status found",
-      "status_evidence": null,
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
-      "price": 3750000,
-      "beds": 3,
-      "baths": 3,
-      "sqft": 11340,
-      "units": 1,
-      "property_type": "single-family",
-      "town": "Mifflintown",
-      "state": "PA",
-      "zip": "17059",
-      "search_excluded": true,
-      "not_searched_this_run": false
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/1401-W-Pennsylvania-St-18102/home/59197471",
@@ -13582,32 +14212,6 @@
       "not_searched_this_run": true
     },
     {
-      "url": "https://www.redfin.com/NJ/Bedminster/20-Preston-Ter-07921/home/37683933",
-      "source": "redfin.com",
-      "title": "20 Preston Ter, Bedminster, NJ 07921 | MLS# 4050896 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-20T20:40:00.505541+00:00",
-      "observed_this_run": false,
-      "listing_status": "active",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-20T20:40:00.505541+00:00",
-      "price": 949900,
-      "beds": 4,
-      "baths": 2.5,
-      "sqft": 2500,
-      "units": null,
-      "property_type": null,
-      "town": "Bedminster",
-      "state": "NJ",
-      "zip": "07921",
-      "search_excluded": true,
-      "not_searched_this_run": false
-    },
-    {
       "url": "https://www.redfin.com/OH/Toledo/645-White-St-43605/home/122217771",
       "source": "redfin.com",
       "title": "645 White St, Toledo, OH 43605 | MLS# 10014839 | Redfin",
@@ -13734,32 +14338,6 @@
       "town": "Cincinnati",
       "state": "OH",
       "zip": "45205",
-      "search_excluded": true,
-      "not_searched_this_run": false
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Palisades-Park/441-Hillcrest-Pl-07650/home/35817569",
-      "source": "redfin.com",
-      "title": "441 Hillcrest Pl, Palisades Park, NJ 07650 | MLS# 26002031 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-11-11T19:49:13.508525+00:00",
-      "last_seen": "2026-11-19T20:55:07.236351+00:00",
-      "observed_this_run": false,
-      "listing_status": "active",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-19T20:55:07.236351+00:00",
-      "price": 1999000,
-      "beds": 6,
-      "baths": 7,
-      "sqft": null,
-      "units": null,
-      "property_type": null,
-      "town": "Palisades Park",
-      "state": "NJ",
-      "zip": "07650",
       "search_excluded": true,
       "not_searched_this_run": false
     },
@@ -13902,7 +14480,7 @@
       ],
       "first_seen": "2026-11-10T19:57:07.816252+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -13916,7 +14494,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/NC/Charlotte/8051-S-Way-Rd-28215/home/43939584",
@@ -14446,12 +15026,12 @@
         "easton"
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 89900,
       "beds": 5,
       "baths": 2,
@@ -14461,8 +15041,7 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "search_excluded": true,
-      "not_searched_this_run": false
+      "condition_evidence": null
     },
     {
       "url": "https://www.homes.com/property/722-northampton-st-easton-pa/11hl121d4j5tp",
@@ -14472,12 +15051,12 @@
         "easton"
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "sold",
       "status_basis": "Exa indexed text",
       "status_evidence": "SOLD MAR 5, 2025",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 229000,
       "beds": 5,
       "baths": 1.5,
@@ -14487,8 +15066,7 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "search_excluded": true,
-      "not_searched_this_run": false
+      "condition_evidence": null
     },
     {
       "url": "https://www.homes.com/property/2-n-2nd-st-coplay-pa/v3dbjmmw5w35y",
@@ -14498,12 +15076,12 @@
         "easton"
       ],
       "first_seen": "2026-10-27T16:49:40.150973+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": null,
       "beds": 6,
       "baths": 2,
@@ -14513,8 +15091,7 @@
       "town": "Coplay",
       "state": "PA",
       "zip": "18037",
-      "search_excluded": true,
-      "not_searched_this_run": false
+      "condition_evidence": null
     },
     {
       "url": "https://www.homes.com/property/4150-marion-place-emmaus-pa/ptb78cwxsys7g",
@@ -14754,6 +15331,31 @@
       "not_searched_this_run": false
     },
     {
+      "url": "https://www.homes.com/property/429-rohrerstown-rd-lancaster-pa/4pnh80x14sfwg",
+      "source": "homes.com",
+      "title": "429 Rohrerstown Rd, Lancaster, PA 17603",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-26T17:34:55.665527+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "off_market",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "NOT LISTED FOR SALE",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 399900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 4400,
+      "units": 2,
+      "property_type": "multifamily",
+      "town": "Lancaster",
+      "state": "PA",
+      "zip": "17603",
+      "condition_evidence": null
+    },
+    {
       "url": "https://www.redfin.com/NJ/Bound-Brook/51-W-2nd-St-08805/home/37720096",
       "source": "redfin.com",
       "title": "51 W 2nd St, Bound Brook, NJ 08805 | MLS# 4051728 | Redfin",
@@ -14776,8 +15378,8 @@
       "town": "Bound Brook",
       "state": "NJ",
       "zip": "08805",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/546-emmett-st-scranton-pa/3zs8hldl4nt0s",
@@ -14907,32 +15509,6 @@
       "town": "Bethlehem",
       "state": "PA",
       "zip": "18017",
-      "search_excluded": true,
-      "not_searched_this_run": false
-    },
-    {
-      "url": "https://www.homes.com/property/429-rohrerstown-rd-lancaster-pa/4pnh80x14sfwg",
-      "source": "homes.com",
-      "title": "429 Rohrerstown Rd, Lancaster, PA 17603",
-      "markets": [
-        "central-pa-harrisburg"
-      ],
-      "first_seen": "2026-10-26T17:34:55.665527+00:00",
-      "last_seen": "2026-11-24T00:15:34.075649+00:00",
-      "observed_this_run": false,
-      "listing_status": "off_market",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "NOT LISTED FOR SALE",
-      "facts_observed_at": "2026-11-24T00:15:34.075649+00:00",
-      "price": 399900,
-      "beds": 4,
-      "baths": 2,
-      "sqft": 4400,
-      "units": 2,
-      "property_type": "multifamily",
-      "town": "Lancaster",
-      "state": "PA",
-      "zip": "17603",
       "search_excluded": true,
       "not_searched_this_run": false
     },
@@ -15301,6 +15877,31 @@
       "not_searched_this_run": false
     },
     {
+      "url": "https://www.homes.com/property/922-2nd-street-pike-southampton-pa/p5dcgyz6hgr98",
+      "source": "homes.com",
+      "title": "922 2nd Street Pike, Southampton, PA 18966",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T07:29:00.256983+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "pending",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "PENDING",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 699900,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 3515,
+      "units": 3,
+      "property_type": "multifamily",
+      "town": "Southampton",
+      "state": "PA",
+      "zip": "18966",
+      "condition_evidence": null
+    },
+    {
       "url": "https://www.homes.com/property/9-old-farm-rd-bedminster-nj/qztbbf3fh9x9v",
       "source": "homes.com",
       "title": "9 Old Farm Rd, Bedminster, NJ 07921",
@@ -15309,7 +15910,7 @@
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -15323,7 +15924,9 @@
       "town": "Bedminster",
       "state": "NJ",
       "zip": "07921",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/6-william-st-montclair-nj/sd9x6v4brhjdx",
@@ -15334,7 +15937,7 @@
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -15348,7 +15951,9 @@
       "town": "Montclair",
       "state": "NJ",
       "zip": "07042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.homes.com/property/17-lincoln-ave-dover-nj-unit-19/0nw7pd5t7tsgb",
@@ -15359,7 +15964,7 @@
       ],
       "first_seen": "2026-10-25T07:29:00.256983+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -15373,32 +15978,7 @@
       "town": "Dover",
       "state": "NJ",
       "zip": "07801",
-      "condition_evidence": null
-    },
-    {
-      "url": "https://www.homes.com/property/922-2nd-street-pike-southampton-pa/p5dcgyz6hgr98",
-      "source": "homes.com",
-      "title": "922 2nd Street Pike, Southampton, PA 18966",
-      "markets": [
-        "easton",
-        "central-pa-york"
-      ],
-      "first_seen": "2026-10-25T07:29:00.256983+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
-      "listing_status": "pending",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "PENDING",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
-      "price": 699900,
-      "beds": 2,
-      "baths": 1,
-      "sqft": 3515,
-      "units": 3,
-      "property_type": "multifamily",
-      "town": "Southampton",
-      "state": "PA",
-      "zip": "18966",
+      "condition_evidence": null,
       "search_excluded": true,
       "not_searched_this_run": false
     },
@@ -16034,12 +16614,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 609900,
       "beds": 8,
       "baths": 3,
@@ -16049,8 +16629,7 @@
       "town": "South Bound Brook",
       "state": "NJ",
       "zip": "08880",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": "recently renovated"
     },
     {
       "url": "https://www.redfin.com/NJ/Bound-Brook/437-Talmadge-Ave-08805/home/37721661",
@@ -16060,12 +16639,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 649000,
       "beds": 4,
       "baths": 2.5,
@@ -16075,8 +16654,7 @@
       "town": "Bound Brook",
       "state": "NJ",
       "zip": "08805",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.redfin.com/NJ/South-Bound-Brook/240-Cedar-St-08880/home/37981354",
@@ -16086,12 +16664,12 @@
         "bedminster"
       ],
       "first_seen": "2026-10-25T07:06:26.885578+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
       "price": 649900,
       "beds": 4,
       "baths": 2,
@@ -16101,8 +16679,7 @@
       "town": "South Bound Brook",
       "state": "NJ",
       "zip": "08880",
-      "search_excluded": false,
-      "not_searched_this_run": true
+      "condition_evidence": null
     },
     {
       "url": "https://www.redfin.com/PA/Emmaus/342-Main-St-18049/home/202235467",
@@ -17101,7 +17678,7 @@
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "Not Available",
@@ -17115,7 +17692,9 @@
       "town": "Lyndhurst",
       "state": "NJ",
       "zip": "07071",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/833-Walnut-Ave-18042/home/59195540",
@@ -17126,7 +17705,7 @@
       ],
       "first_seen": "2026-10-25T06:33:44.355056+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -17140,7 +17719,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": null
+      "condition_evidence": null,
+      "search_excluded": false,
+      "not_searched_this_run": true
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/146-N-11th-St-18102/home/59196518",
@@ -17169,6 +17750,56 @@
       "not_searched_this_run": true
     },
     {
+      "url": "https://www.redfin.com/NJ/Raritan/89-W-Somerset-St-08869/home/37967661",
+      "source": "redfin.com",
+      "title": "87-89 W Somerset St, Raritan, NJ 08869 | MLS# 4046263 | Redfin",
+      "markets": [
+        "bedminster"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "active",
+      "status_basis": "Exa indexed text",
+      "status_evidence": "For sale",
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 550000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 2084,
+      "units": null,
+      "property_type": null,
+      "town": "Raritan",
+      "state": "NJ",
+      "zip": "08869",
+      "condition_evidence": null
+    },
+    {
+      "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
+      "source": "homes.com",
+      "title": "491 Prospect Rd, Warminster, PA 18974",
+      "markets": [
+        "easton"
+      ],
+      "first_seen": "2026-10-25T06:07:06.000135+00:00",
+      "last_seen": "2026-11-27T21:34:42.152912+00:00",
+      "observed_this_run": true,
+      "listing_status": "unknown",
+      "status_basis": "No explicit current status found",
+      "status_evidence": null,
+      "facts_observed_at": "2026-11-27T21:34:42.152912+00:00",
+      "price": 1150000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 2184,
+      "units": 4,
+      "property_type": "multifamily",
+      "town": "Warminster",
+      "state": "PA",
+      "zip": "18974",
+      "condition_evidence": null
+    },
+    {
       "url": "https://www.homes.com/property/400-prospect-ave-asbury-park-nj/k4xdjv83tmy83",
       "source": "homes.com",
       "title": "400 Prospect Ave, Asbury Park, NJ 07712 | Homes.com",
@@ -17177,7 +17808,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "off_market",
       "status_basis": "Exa indexed text",
       "status_evidence": "NOT LISTED FOR SALE",
@@ -17191,7 +17822,9 @@
       "town": "Asbury Park",
       "state": "NJ",
       "zip": "07712",
-      "condition_evidence": "Recently renovated"
+      "condition_evidence": "Recently renovated",
+      "search_excluded": true,
+      "not_searched_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Easton/1337-Washington-St-18042/home/73691347",
@@ -17202,7 +17835,7 @@
       ],
       "first_seen": "2026-10-25T06:07:06.000135+00:00",
       "last_seen": "2026-11-26T21:51:27.504701+00:00",
-      "observed_this_run": true,
+      "observed_this_run": false,
       "listing_status": "active",
       "status_basis": "Exa indexed text",
       "status_evidence": "For sale",
@@ -17216,61 +17849,9 @@
       "town": "Easton",
       "state": "PA",
       "zip": "18042",
-      "condition_evidence": "Turnkey"
-    },
-    {
-      "url": "https://www.redfin.com/NJ/Raritan/89-W-Somerset-St-08869/home/37967661",
-      "source": "redfin.com",
-      "title": "87-89 W Somerset St, Raritan, NJ 08869 | MLS# 4046263 | Redfin",
-      "markets": [
-        "bedminster"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
-      "listing_status": "active",
-      "status_basis": "Exa indexed text",
-      "status_evidence": "For sale",
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
-      "price": 550000,
-      "beds": 4,
-      "baths": 2,
-      "sqft": 2084,
-      "units": null,
-      "property_type": null,
-      "town": "Raritan",
-      "state": "NJ",
-      "zip": "08869",
+      "condition_evidence": "Turnkey",
       "search_excluded": false,
       "not_searched_this_run": true
-    },
-    {
-      "url": "https://www.homes.com/property/491-prospect-rd-warminster-pa/wdykehl7648b2",
-      "source": "homes.com",
-      "title": "491 Prospect Rd, Warminster, PA 18974",
-      "markets": [
-        "easton",
-        "central-pa-york",
-        "college-oxford-ms"
-      ],
-      "first_seen": "2026-10-25T06:07:06.000135+00:00",
-      "last_seen": "2026-11-25T21:56:24.112454+00:00",
-      "observed_this_run": false,
-      "listing_status": "unknown",
-      "status_basis": "No explicit current status found",
-      "status_evidence": null,
-      "facts_observed_at": "2026-11-25T21:56:24.112454+00:00",
-      "price": 1150000,
-      "beds": 2,
-      "baths": 1,
-      "sqft": 2184,
-      "units": 4,
-      "property_type": "multifamily",
-      "town": "Warminster",
-      "state": "PA",
-      "zip": "18974",
-      "search_excluded": true,
-      "not_searched_this_run": false
     },
     {
       "url": "https://www.redfin.com/PA/Allentown/726-W-Turner-St-18102/home/59198598",
