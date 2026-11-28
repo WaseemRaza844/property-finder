@@ -196,3 +196,54 @@ input[readonly]{background:var(--surface-soft);font-weight:700}
 #investment-controls .filter-grid{margin:18px 0 12px}
 @media(max-width:900px){.inv-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:450px){.inv-metrics{grid-template-columns:1fr 1fr}.inv-metric{padding:8px}.inv-metric strong{font-size:var(--ui-small)}}
+
+
+/* FIX: Investment metrics were squeezed into four narrow vertical strips in
+   the four-across Quick Look cards, especially with Extra Large text.
+   Favor two broad property cards per row, with a readable 2-by-2 metric grid. */
+#top-picks-workspace.investment-mode .top-picks{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));
+ gap:18px;
+}
+#top-picks-workspace.investment-mode .pick-item{min-width:0;max-width:none}
+#top-picks-workspace.investment-mode .pick-item .property-result{padding:20px}
+#top-picks-workspace.investment-mode .pick-item .result-body{min-width:0}
+.inv-deal{box-sizing:border-box;width:100%;min-width:0;padding:14px}
+.inv-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.inv-metric{box-sizing:border-box;min-width:0;min-height:76px;gap:7px;justify-content:center}
+.inv-metric small{
+ font-size:var(--ui-small);
+ line-height:1.35;
+ overflow-wrap:normal;
+ word-break:normal;
+ hyphens:none;
+}
+.inv-metric strong{
+ display:block;
+ font-size:clamp(15px,1.35vw,21px);
+ line-height:1.28;
+ font-weight:800;
+ font-variant-numeric:tabular-nums;
+ white-space:nowrap;
+ overflow-wrap:normal;
+ word-break:normal;
+}
+[data-font-size="extra"] .inv-metric strong,
+[data-font-size="large"] .inv-metric strong{font-size:clamp(16px,1.35vw,22px)}
+.inv-evidence{margin-top:12px;overflow-wrap:break-word}
+.inv-breakdown{margin:10px 0;border-top:1px solid var(--line);padding-top:10px;min-width:0}
+.inv-breakdown summary{cursor:pointer;font-size:var(--ui-small);font-weight:700;line-height:1.45}
+.inv-breakdown[open] summary{margin-bottom:10px}
+.inv-detail{overflow-wrap:break-word}
+.inv-rent-entry{margin-top:12px}
+.inv-rent-entry input{max-width:100%;min-width:0;box-sizing:border-box}
+.investment-results .inv-deal{width:100%}
+@media(max-width:600px){
+ #top-picks-workspace.investment-mode .top-picks{grid-template-columns:minmax(0,1fr)}
+ #top-picks-workspace.investment-mode .pick-item .property-result{padding:14px}
+ .inv-deal{padding:10px}
+ .inv-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .inv-metric{padding:10px;min-height:72px}
+ .inv-metric strong,[data-font-size="extra"] .inv-metric strong{font-size:clamp(15px,3.8vw,19px)}
+}
