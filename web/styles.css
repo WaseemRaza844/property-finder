@@ -182,3 +182,17 @@ header#site-header nav a:first-child{font-weight:800}
 #affordable-unverified-label{font-size:var(--ui-label);max-width:380px}
 input[readonly]{background:var(--surface-soft);font-weight:700}
 @media(max-width:700px){.mode-tabs{display:flex;flex-direction:column}.mode-tab{flex:0 0 auto;width:100%;text-align:center}}
+
+/* Section 8 / seller-finance deal analysis: visible metrics on every card. */
+.inv-deal{grid-column:1/-1;min-width:0;margin:14px 0;padding:14px;border:1px solid var(--line);border-radius:9px;background:var(--surface-soft);color:var(--ink)}
+.inv-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.inv-metric{display:flex;flex-direction:column;gap:5px;min-width:0;padding:10px;background:var(--surface);border:1px solid var(--line);border-radius:7px}
+.inv-metric small{font-size:var(--ui-small);color:var(--muted);line-height:1.4}
+.inv-metric strong{font-size:var(--ui-font);font-weight:800;overflow-wrap:anywhere}
+.inv-evidence{margin:12px 0 5px;font-size:var(--ui-small);font-weight:750}
+.inv-detail{margin:6px 0 10px;font-size:var(--ui-small);line-height:1.6;color:var(--muted)}
+.inv-rent-entry{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:var(--ui-small);font-weight:600}
+.inv-rent-entry input{width:155px;padding:8px;border:1px solid var(--line);border-radius:6px}
+#investment-controls .filter-grid{margin:18px 0 12px}
+@media(max-width:900px){.inv-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:450px){.inv-metrics{grid-template-columns:1fr 1fr}.inv-metric{padding:8px}.inv-metric strong{font-size:var(--ui-small)}}
