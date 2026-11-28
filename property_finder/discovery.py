@@ -111,6 +111,19 @@ def queries(root, now=None):
                     'Avoid vacant land, manufactured homes, mobile homes, auctions, foreclosures, '
                     'investor specials, fixer uppers, major repairs, rural farmland, rented properties, '
                     'pending sales and sold houses. Do not assume rental profitability.')
+    # One existing affordable slot occasionally requests owner-carry listings,
+    # without raising the monthly Exa cap or inventing availability/terms.
+    affordable_positions = [i for i,t in enumerate(result) if t.get('scope')=='affordable']
+    if affordable_positions and now.toordinal() % 2 == 0:
+        i = affordable_positions[-1]
+        q = result[i]
+        city = next(m['towns'][0] for m in all_markets if m['id']==q['market'])
+        q['query'] = (
+            f'Owner financing seller financing seller carry land contract single family '
+            f'houses for sale in {city} under $100,000 at least two bedrooms. '
+            'Prefer explicit advertised seller terms and currently active individual listing pages. '
+            'Exclude sold, pending, mobile/manufactured homes, auctions, vacant land and major rehabilitation. '
+            'Do not assume seller financing unless listing text explicitly supports it.')
     if not 1 <= len(result) <= 12:
         raise ValueError('At most twelve Lite queries per run')
     return result
