@@ -50,9 +50,9 @@ export function dealBox(r){
  if(!deal){el.textContent='Insufficient property price evidence';return el;}
  const metrics=document.createElement('div');metrics.className='inv-metrics';
  metrics.append(metric('Asking price',money(deal.price)),
-  metric('HUD benchmark / rent entered',deal.rentGross===null?'Unavailable':money(deal.rentGross)+'/mo'),
-  metric('Modeled cash flow',deal.cashFlow===null?'Rent needed':money(deal.cashFlow)+'/mo'),
-  metric('Total cash to close',money(deal.cashToClose)));
+  metric('Gross rent / HUD FMR',deal.rentGross===null?'Unknown':money(deal.rentGross)+'/mo'),
+  metric('Cash flow / month',deal.cashFlow===null?'Unknown':money(deal.cashFlow)+'/mo'),
+  metric('Total cash needed',money(deal.cashToClose)));
  el.append(metrics);
  const status=document.createElement('p');status.className='inv-evidence';
  const verdict=dealEligibility(deal,{budget:dealSettings().cashBudget,target:dealSettings().targetCashFlow});
@@ -61,12 +61,21 @@ export function dealBox(r){
  verdict==='below-target'?'Below target under current assumptions':
  verdict==='rent-unavailable'?'Rent benchmark unavailable — enter locally verified rent':'Needs verification';
  el.append(status);
+ const details=document.createElement('details');details.className='inv-breakdown';
+ const summary=document.createElement('summary');summary.textContent='View expense breakdown & rent assumptions';details.append(summary);
  const needed=document.createElement('p');needed.className='inv-detail';
  needed.textContent=(deal.rentGross===null?'Gross monthly rent needed for target: '+money(deal.rentNeeded)+'. ':'')+
-  (deal.benchmark?deal.benchmark.source+' (gross FMR, not approved voucher rent). ':'')+
+  (deal.benchmark?deal.benchmark.source+' (gross FMR; not approved voucher rent). ':'')+
   (deal.sellerEvidence?'Source mentions "'+deal.sellerEvidence+'"; terms unverified. ':'No verified seller-finance terms. ')+
   'Financing, local PHA rent, utility allowance, taxes and repairs require confirmation.';
- el.append(needed);
+ details.append(needed);
+ const breakdown=document.createElement('p');breakdown.className='inv-detail';
+ breakdown.textContent='Down payment '+money(deal.down)+' · Closing '+money(deal.closing)+
+  ' · Mortgage P&I '+money(deal.monthlyDebt)+'/mo · Tax '+money(deal.monthlyTax)+
+  '/mo · Other monthly fixed costs '+money(deal.nonRentCosts-deal.monthlyDebt-deal.monthlyTax)+
+  ' · Variable vacancy/management '+(deal.variableCosts===null?'unknown':money(deal.variableCosts))+
+  '. These are modeled assumptions, not verified bills.';
+ details.append(breakdown);el.append(details);
  const wrap=document.createElement('label');wrap.className='inv-rent-entry';
  wrap.textContent='Override gross monthly rent ($): ';
  const input=document.createElement('input');input.type='number';input.min='1';input.placeholder='Enter verified rent estimate';

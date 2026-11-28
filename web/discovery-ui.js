@@ -47,7 +47,8 @@ function render(){if(!data)return;const f={...filters(),scope,collegeState:$('di
  const newest=rows.filter(r=>isNewDiscovery(r));
  $('discovery-count').textContent=`${newest.length} first discovered in last 72 hours · ${rows.length} matches · ${sourceRows.length} saved in ${scope==='regional'?'regional':scope==='college'?'college-town':scope==='investment'?'Section 8/seller finance':'under-$100K'} workspace · ${excluded} closed/pending hidden`;
  $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || sourceRows.length === 0;
- $('discovery-results').className=f.compact?'organized-results compact-results':'organized-results';
+ $('top-picks-workspace').classList.toggle('investment-mode',scope==='investment');
+ $('discovery-results').className=(f.compact?'organized-results compact-results':'organized-results')+(scope==='investment'?' investment-results':'');
  $('discovery-results').replaceChildren(...groups.map(g=>{const section=el('details',null,'result-group');section.open=true;const summary=el('summary');summary.append(el('strong',f.group==='market'?(markets[g.name]?.name||g.name):g.name));
   if(scope==='college'){
     const universities=[...new Set(g.items.flatMap(r=>r.markets||[]).filter(id=>markets[id]?.region==='College Towns').flatMap(id=>(markets[id].university||'').split(';').map(v=>v.trim()).filter(Boolean)))];
