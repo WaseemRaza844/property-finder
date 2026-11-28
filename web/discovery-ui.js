@@ -1,6 +1,7 @@
 import {listingURL,markets} from './search.js';
 import {selectDiscoveries,groupDiscoveries,topPicks,scopedDiscoveries,isNewDiscovery} from './discovery-view.js';
 import {populateMarkets} from './market-controls.js';
+import {dealBox,initInvestments,rankInvestment,investmentSummary} from './investment-ui.js';
 const $=id=>document.getElementById(id),el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
 const date=x=>x?new Date(x).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Not supplied';
 const ageLabel=x=>{
@@ -37,12 +38,14 @@ function card(r){
    scenario.addEventListener('click',()=>{$('aff-price').value=String(r.price);computeCashflow();$('affordable-finances').scrollIntoView({behavior:'smooth'});});
    body.append(scenario);
  }
+ if(scope==='investment')body.append(dealBox(r));
  body.append(details);article.append(el('span',String(r.number).padStart(2,'0'),'result-number'),body);return article;
 }
-function render(){if(!data)return;const f={...filters(),scope,collegeState:$('discovery-college-state').value,affordableState:$('discovery-affordable-state').value,affordableUnverified:$('affordable-unverified').checked},sourceRows=scopedDiscoveries(data.results,scope),rows=selectDiscoveries(data.results,f),groups=groupDiscoveries(rows,f.group),excluded=sourceRows.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
- const picks=topPicks(data.results,f);$('top-picks').replaceChildren(...picks.map(r=>{const item=el('div',null,'pick-item');item.append(el('p',r.pick_reason,'pick-reason'),card(r));return item;}));$('picks-empty').hidden=picks.length>0;$('picks-empty').textContent='No matching indexed properties yet. Check the full list and available review filters.';
+function render(){if(!data)return;const f={...filters(),scope,collegeState:$('discovery-college-state').value,affordableState:$('discovery-affordable-state').value,affordableUnverified:$('affordable-unverified').checked},sourceRows=scopedDiscoveries(data.results,scope),baseRows=selectDiscoveries(data.results,f),rows=scope==='investment'?rankInvestment(baseRows):baseRows,groups=groupDiscoveries(rows,scope==='investment'?'none':f.group),excluded=sourceRows.filter(r=>['sold','off_market','pending'].includes(r.listing_status)).length;
+ if(scope==='investment')$('inv-summary').textContent=investmentSummary(baseRows);
+ const picks=scope==='investment'?rows.slice(0,4).map((r,i)=>({...r,pick_reason:'Deal scenario · verify',number:i+1})):topPicks(data.results,f);$('top-picks').replaceChildren(...picks.map(r=>{const item=el('div',null,'pick-item');item.append(el('p',r.pick_reason,'pick-reason'),card(r));return item;}));$('picks-empty').hidden=picks.length>0;$('picks-empty').textContent='No matching indexed properties yet. Check the full list and available review filters.';
  const newest=rows.filter(r=>isNewDiscovery(r));
- $('discovery-count').textContent=`${newest.length} first discovered in last 72 hours · ${rows.length} matches · ${sourceRows.length} saved in ${scope==='regional'?'regional':scope==='college'?'college-town':'under-$100K'} workspace · ${excluded} closed/pending hidden`;
+ $('discovery-count').textContent=`${newest.length} first discovered in last 72 hours · ${rows.length} matches · ${sourceRows.length} saved in ${scope==='regional'?'regional':scope==='college'?'college-town':scope==='investment'?'Section 8/seller finance':'under-$100K'} workspace · ${excluded} closed/pending hidden`;
  $('review-discovery').hidden = rows.length > 0 || f.status === 'review' || sourceRows.length === 0;
  $('discovery-results').className=f.compact?'organized-results compact-results':'organized-results';
  $('discovery-results').replaceChildren(...groups.map(g=>{const section=el('details',null,'result-group');section.open=true;const summary=el('summary');summary.append(el('strong',f.group==='market'?(markets[g.name]?.name||g.name):g.name));
@@ -69,34 +72,37 @@ function refreshMarketOptions() {
 function refreshMarketSelect() {
  const select=control('market'),previous=select.value;
  select.replaceChildren(new Option('All markets',''));
- const items=Object.values(markets).filter(m=>scope==='college'?m.region==='College Towns'&&(!$('discovery-college-state').value||m.college_region===$('discovery-college-state').value):scope==='affordable'?m.region==='Move-in Ready Under $100K'&&(!$('discovery-affordable-state').value||m.towns[0].endsWith(' '+$('discovery-affordable-state').value)):!['College Towns','Move-in Ready Under $100K'].includes(m.region)&&(!control('region').value||m.region===control('region').value));
+ const items=Object.values(markets).filter(m=>scope==='college'?m.region==='College Towns'&&(!$('discovery-college-state').value||m.college_region===$('discovery-college-state').value):['affordable','investment'].includes(scope)?m.region==='Move-in Ready Under $100K'&&(!$('discovery-affordable-state').value||m.towns[0].endsWith(' '+$('discovery-affordable-state').value)):!['College Towns','Move-in Ready Under $100K'].includes(m.region)&&(!control('region').value||m.region===control('region').value));
  for(const m of items)select.add(new Option(m.name,m.id));
  if(items.some(m=>m.id===previous))select.value=previous;
 }
 function switchScope(next,scroll=false) {
- scope=['college','affordable'].includes(next)?next:'regional';
+ scope=['college','affordable','investment'].includes(next)?next:'regional';
  for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'newest':k==='group'?'town':'';}
  $('discovery-college-state').value='';
  $('discovery-affordable-state').value='';
  $('affordable-unverified').checked=scope==='affordable';
  $('affordable-unverified-label').hidden=scope!=='affordable';
- $('affordable-state-label').hidden=scope!=='affordable';
+ $('affordable-state-label').hidden=!['affordable','investment'].includes(scope);
  $('affordable-finances').hidden=scope!=='affordable';
+ $('investment-controls').hidden=scope!=='investment';
  $('review-discovery').textContent=scope==='affordable'?'Show condition-unverified candidates':'Review unverified properties';
  $('discovery-complete-label').hidden=scope==='affordable';
- control('price').value=scope==='affordable'?'100000':'';
- control('price').readOnly=scope==='affordable';
+ control('price').value=['affordable','investment'].includes(scope)?'100000':'';
+ control('price').readOnly=['affordable','investment'].includes(scope);
  $('regional-region-label').hidden=scope!=='regional';
  $('college-state-label').hidden=scope!=='college';
  $('mode-regional').classList.toggle('is-active',scope==='regional');
  $('mode-college').classList.toggle('is-active',scope==='college');
  $('mode-affordable').classList.toggle('is-active',scope==='affordable');
+ $('mode-investment').classList.toggle('is-active',scope==='investment');
  $('mode-regional').setAttribute('aria-pressed',String(scope==='regional'));
  $('mode-college').setAttribute('aria-pressed',String(scope==='college'));
  $('mode-affordable').setAttribute('aria-pressed',String(scope==='affordable'));
- $('picks-heading').textContent=scope==='college'?'New college-town discoveries':scope==='affordable'?'Move-in ready · Under $100K':'New regional discoveries';
- $('discovery-heading').textContent=scope==='college'?'College-town property listings':scope==='affordable'?'Affordable rental house candidates':'Regional property listings';
- $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':scope==='affordable'?'2+ beds · Asking price under $100K · For-sale indexed candidates · Condition and house type must be checked. Uncheck review to require explicit evidence.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
+ $('mode-investment').setAttribute('aria-pressed',String(scope==='investment'));
+ $('picks-heading').textContent=scope==='college'?'New college-town discoveries':scope==='affordable'?'Move-in ready · Under $100K':scope==='investment'?'Section 8 · Deal scenarios':'New regional discoveries';
+ $('discovery-heading').textContent=scope==='college'?'College-town property listings':scope==='affordable'?'Affordable rental house candidates':scope==='investment'?'Section 8 / seller-finance candidates':'Regional property listings';
+ $('mode-description').textContent=scope==='college'?'Student-oriented university markets nationwide · Listings are not rental-yield guarantees.':scope==='affordable'?'2+ beds · Asking price under $100K · For-sale indexed candidates · Condition and house type must be checked. Uncheck review to require explicit evidence.':scope==='investment'?'Underwrite Section 8 rent and seller-finance scenarios. Figures are hypothetical unless verified with a PHA, lender and seller.':'NJ · PA · Delaware · Maryland · Ohio · North/South Carolina · Georgia · Upstate NY';
  refreshMarketOptions();
  if(data)localityOptions();
  render();
@@ -105,17 +111,21 @@ function switchScope(next,scroll=false) {
 $('mode-regional').onclick=()=>switchScope('regional');
 $('mode-college').onclick=()=>switchScope('college');
 $('mode-affordable').onclick=()=>switchScope('affordable');
+$('mode-investment').onclick=()=>switchScope('investment');
 $('browse-regional').onclick=()=>switchScope('regional',true);
 $('browse-college').onclick=()=>switchScope('college',true);
 $('browse-affordable').onclick=()=>switchScope('affordable',true);
+$('browse-investment').onclick=()=>switchScope('investment',true);
 $('discovery-college-state').addEventListener('change',()=>{control('market').value='';refreshMarketSelect();localityOptions();render();});
 $('discovery-affordable-state').addEventListener('change',()=>{control('market').value='';refreshMarketSelect();localityOptions();render();});
 $('affordable-unverified').addEventListener('change',render);
+initInvestments();
+document.addEventListener('investment-updated',render);
 
 for(const k of controls)control(k).addEventListener(['keyword','price'].includes(k)?'input':'change',()=>{if(k==='region'){refreshMarketSelect();control('town').value='';control('zip').value='';}if(['region','market'].includes(k))localityOptions();render();});
 $('review-discovery').onclick=()=>{if(scope==='affordable'){$('affordable-unverified').checked=true;}else{control('status').value='review';}render();};
 $('collapse-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=false);$('expand-groups').onclick=()=>document.querySelectorAll('.result-group').forEach(n=>n.open=true);
-$('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}if(scope==='affordable'){control('price').value='100000';control('price').readOnly=true; $('affordable-unverified').checked=true;}localityOptions();render();};
+$('reset-discovery').onclick=()=>{refreshMarketOptions();for(const k of controls){const n=control(k);if(n.type==='checkbox')n.checked=k==='compact';else n.value=k==='status'?'latest':k==='sort'?'price':k==='group'?'town':'';}if(['affordable','investment'].includes(scope)){control('price').value='100000';control('price').readOnly=true; $('affordable-unverified').checked=scope==='affordable';}localityOptions();render();};
 // Local-only cash-flow scenario: refuse to produce a number until key inputs exist.
 const financialInputs=['price','down','rate','rent','tax','insurance','repairs','vacancy','management'].map(id=>$('aff-'+id));
 function computeCashflow(){
