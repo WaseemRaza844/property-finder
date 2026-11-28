@@ -11,7 +11,7 @@ const BENCHMARKS={
 export function rentBenchmark(r){
   const key=[r.town?.trim(),r.state].join('|');
   const entry=BENCHMARKS[key],beds=Number(r.beds);
-  const bedrooms=Math.min(3,Math.floor(beds));
+  const bedrooms=Number.isInteger(beds)?beds:null;
   return entry&&entry[bedrooms] ? {gross:entry[bedrooms],source:entry.source,year:BENCHMARK_YEAR,kind:'area-fmr-not-approval'} : null;
 }
 export const DEFAULTS={
@@ -41,7 +41,7 @@ export function underwrite(r,overrides={},mode='conventional'){
  const rate=Number(seller?x.sellerInterest:x.annualInterest);
  const years=Number(seller?x.sellerTermYears:x.termYears);
  const validate=[x.closingPercent,x.closingFixed,x.upfrontRepairs,x.initialReserves,x.propertyTaxPercent,x.insuranceMonthly,x.repairsMonthly,x.capexMonthly,x.vacancyPercent,x.managementPercent,x.utilitiesMonthly,x.utilityAllowance];
- if(!validate.every(nonneg)||!nonneg(downPct)||!nonneg(rate)||!nonneg(years)||years<=0||downPct>100||x.vacancyPercent>100||x.managementPercent>100)return null;
+ if(!validate.every(nonneg)||!nonneg(downPct)||!nonneg(rate)||!nonneg(years)||years<=0||downPct>100||Number(x.vacancyPercent)+Number(x.managementPercent)>=100)return null;
  const down=price*downPct/100;
  const closing=price*Number(x.closingPercent)/100+Number(x.closingFixed);
  const cashToClose=down+closing+Number(x.upfrontRepairs)+Number(x.initialReserves);
