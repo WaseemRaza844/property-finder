@@ -1,3 +1,4 @@
+import {underwrite,rentBenchmark,dealEligibility,mortgagePayment} from '../web/underwriting.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {filterListings,miles,safeURL} from '../web/filters.js';
@@ -180,4 +181,39 @@ test('affordable workspace isolates verified 2+ bed sub-100k houses',()=>{
  assert.deepEqual(topPicks(rows,{scope:'affordable',status:'latest'},discoveryNow).map(r=>r.url),[home.url]);
  assert.deepEqual(selectDiscoveries(rows,{scope:'affordable',status:'latest',affordableState:'OH'},discoveryNow).map(r=>r.url),[home.url]);
  assert.equal(selectDiscoveries(rows,{scope:'affordable',status:'latest',affordableState:'PA'},discoveryNow).length,0);
+});
+
+test('FY2027 metro FMR benchmarks are distinguished from approved Section 8 rent',()=>{
+ const muncie={town:'Muncie',state:'IN',beds:2,price:85000};
+ const topeka={town:'Topeka',state:'KS',beds:2,price:74500};
+ assert.equal(rentBenchmark(muncie).gross,1145);
+ assert.equal(rentBenchmark(topeka).gross,1172);
+ assert.equal(rentBenchmark({...muncie,town:'Unknown'}),null);
+ assert.equal(rentBenchmark({...muncie,beds:null}),null);
+ const d=underwrite(muncie);
+ assert.equal(d.rentGross,1145);
+ assert.equal(d.assumptionsOnly,true);
+ assert.equal(d.provenance,'FY2027 HUD area FMR gross benchmark');
+ assert.ok(d.cashToClose>25000); // 25% down + closing + reserves
+ assert.ok(Number.isFinite(d.cashFlow));
+});
+test('underwriter counts total cash and distinguishes seller scenario from verified offer',()=>{
+ const property={town:'Muncie',state:'IN',beds:2,price:85000};
+ const standard=underwrite(property,{downPercent:20,closingPercent:3,initialReserves:2000,upfrontRepairs:1000,annualInterest:7});
+ assert.equal(standard.cashToClose,22550);
+ assert.ok(standard.monthlyDebt>0);
+ assert.equal(standard.sellerTermsVerified,false);
+ const seller=underwrite(property,{sellerDownPercent:10,sellerInterest:4,sellerVerified:false},'seller');
+ assert.equal(seller.mode,'seller');
+ assert.equal(seller.sellerTermsVerified,false);
+ assert.equal(dealEligibility(seller,{budget:1,target:500}),'over-budget');
+ assert.equal(underwrite({...property,town:'NoSuchPlace'}).cashFlow,null);
+ assert.equal(dealEligibility(underwrite({...property,town:'NoSuchPlace'}),{budget:100000,target:500}),'rent-unavailable');
+ assert.equal(mortgagePayment(36000,0,30),100);
+});
+test('investment scope keeps Section 8 candidates distinct from regional and college',()=>{
+ const rows=[{...fact,url:'https://www.homes.com/property/muncie/test',title:'Test',source:'homes.com',town:'Muncie',state:'IN',markets:['affordable-muncie'],price:85000,beds:2,property_type:null},
+  {...fact,url:'https://www.homes.com/property/easton/test',markets:['easton'],price:85000,beds:2}];
+ assert.equal(selectDiscoveries(rows,{scope:'investment',status:'latest'}).length,1);
+ assert.equal(selectDiscoveries(rows,{scope:'regional',status:'latest'}).length,1);
 });
