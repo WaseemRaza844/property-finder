@@ -74,3 +74,11 @@ class FactsTests(unittest.TestCase):
         self.assertIsNone(repairs['condition_evidence'])
         historical=self.facts('For sale\n$83,000\n2 beds\nSale history\nMove-in ready sold record')
         self.assertIsNone(historical['condition_evidence'])
+
+    def test_seller_financing_requires_explicit_current_listing_wording(self):
+        supported=self.facts('For sale\n$85,000\n2 beds\nSeller financing available; call for terms')
+        self.assertEqual(supported['seller_finance_evidence'].lower(),'seller financing')
+        refused=self.facts('For sale\n$75,000\n2 beds\nNo owner financing')
+        self.assertIsNone(refused['seller_finance_evidence'])
+        historical=self.facts('For sale\n$79,000\n2 beds\nPrice history\nSeller financing previously offered')
+        self.assertIsNone(historical['seller_finance_evidence'])

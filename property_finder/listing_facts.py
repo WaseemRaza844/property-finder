@@ -122,4 +122,15 @@ def extract_facts(row, url, at):
     facts['condition_evidence'] = (
         positive_condition.group(0)[:80] if positive_condition and not negative_condition else None
     )
+    # Seller financing is a search signal only, NOT verified seller terms.
+    # Do not infer financing merely from the search query or comparable sales.
+    finance_text = title + '\n' + section[:1800]
+    evidence = re.search(
+        r'(?i)\b(?:seller[ -]?financ(?:ing|ed)|owner[ -]?financ(?:ing|ed)|'
+        r'owner[ -]?carry|seller[ -]?carry|land[ -]?contract)\b',
+        finance_text)
+    excluded_finance = re.search(
+        r'(?i)\b(?:no|not|without)\s+(?:seller|owner)[ -]?financ(?:ing|ed)\b',
+        finance_text)
+    facts['seller_finance_evidence'] = evidence.group(0)[:80] if evidence and not excluded_finance else None
     return facts

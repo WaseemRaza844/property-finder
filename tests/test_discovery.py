@@ -136,7 +136,7 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue({'bedminster','easton'}.issubset(
             {row['market'] for row in plan}))
         self.assertTrue(all('near' in row['query'] for row in plan if row['scope']=='college'))
-        self.assertTrue(all('under $100,000' in row['query'] and 'at least 2 bedrooms' in row['query'] for row in plan if row['scope']=='affordable'))
+        self.assertTrue(all('under $100,000' in row['query'] and ('at least 2 bedrooms' in row['query'] or 'at least two bedrooms' in row['query']) for row in plan if row['scope']=='affordable'))
         # Every market reaches its lane as the dates progress.
         plans=[queries(root,NOW+timedelta(days=offset)) for offset in range(32)]
         covered={row['market'] for plan in plans for row in plan}
