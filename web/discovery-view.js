@@ -27,6 +27,7 @@ export function marketScope(market) {
  return markets[market]?.region === 'College Towns' ? 'college' : markets[market]?.region === 'Move-in Ready Under $100K' ? 'affordable' : 'regional';
 }
 export function scopedDiscoveries(rows,scope='regional') {
+ if(scope==='investment')return rows.filter(r=>Array.isArray(r.markets)&&r.markets.some(id=>marketScope(id)==='affordable'));
  if(!['regional','college','affordable'].includes(scope)) return rows;
  return rows.filter(r=>Array.isArray(r.markets) && r.markets.some(id=>markets[id] && marketScope(id) === scope));
 }
@@ -39,6 +40,10 @@ export function selectDiscoveries(rows,f,now=Date.now()){
     if(f.region&&!r.markets.some(m=>markets[m]?.region===f.region))return false;
     if(f.collegeState&&!r.markets.some(m=>markets[m]?.region==='College Towns'&&markets[m]?.college_region===f.collegeState))return false;
     if(f.affordableState&&!r.markets.some(m=>markets[m]?.region==='Move-in Ready Under $100K'&&markets[m]?.towns?.[0].endsWith(' '+f.affordableState)))return false;
+    if(f.scope==='investment'){
+      if(r.listing_status!=='active'||!Number.isFinite(r.price)||r.price<=0||r.price>100000||!Number.isFinite(r.beds)||r.beds<2)return false;
+      if(r.property_type&&r.property_type!=='single-family')return false;
+    }
     if(f.scope==='affordable'){
       // Strict nationwide rental-candidate screen. Unknown affordability or beds
       // is never converted to a guess. Explicit condition evidence is mandatory
@@ -70,7 +75,7 @@ export function topPicks(rows,f={},now=Date.now()){
  // Quick Look exists to expose changed opportunities, not repeat the four
  // cheapest / largest historical records indefinitely.
  const eligible=selectDiscoveries(rows,{...f,status:f.status==='latest'||f.status==='review'?'latest':'active'},now)
-   .filter(r=>f.scope==='affordable'||r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
+   .filter(r=>['affordable','investment'].includes(f.scope)||r.units>=2||['duplex','triplex','fourplex','multifamily'].includes(r.property_type));
  const newest=[...eligible].sort((a,b)=>Date.parse(b.first_seen)-Date.parse(a.first_seen)||a.url.localeCompare(b.url));
  const recent=newest.filter(r=>isNewDiscovery(r,now));
  const selected=[],used=new Set();
