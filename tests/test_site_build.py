@@ -56,3 +56,11 @@ class SiteBuildTest(unittest.TestCase):
         self.assertIn('computeCashflow', controller)
         self.assertIn("$('affordable-unverified').checked=scope==='affordable'", controller)
         self.assertIn('House type not confirmed', controller)
+        self.assertIn("classList.toggle('investment-mode'", controller)
+        self.assertIn('#top-picks-workspace.investment-mode .top-picks', styles)
+        self.assertIn('grid-template-columns:repeat(2,minmax(0,1fr))', styles)
+        investment = (ROOT / 'dist/investment-ui.js').read_text(encoding='utf-8')
+        self.assertIn('Cash flow / month', investment)
+        self.assertIn('Total cash needed', investment)
+        self.assertIn('View expense breakdown & rent assumptions', investment)
+
